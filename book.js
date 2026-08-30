@@ -40,7 +40,12 @@ const DARK_STAR_BELL_PAGES = DARK_STAR_BELL_PANELS.map((panel, offset) => {
   return `bell.html?panel=${panel}&side=${side}`;
 });
 
-const DARK_STAR_PAGES_AFTER_BELL = [];
+const dogePhysicalPageIndex = 1 + DARK_STAR_PAGES_BEFORE_BELL.length + DARK_STAR_BELL_PAGES.length;
+const dogeSide = dogePhysicalPageIndex % 2 === 0 ? "left" : "right";
+
+const DARK_STAR_PAGES_AFTER_BELL = [
+  `doge-soup.html?side=${dogeSide}`
+];
 
 const DARK_STAR_READING_PAGES = [
   ...DARK_STAR_PAGES_BEFORE_BELL,

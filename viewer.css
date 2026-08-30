@@ -1,6 +1,8 @@
 :root {
   --sheet-width: 14;
   --sheet-height: 8.5;
+  --page-width: 7in;
+  --page-height: 8.5in;
 }
 
 * {
@@ -23,8 +25,8 @@ body {
 
 /*
   One legal sheet in landscape orientation, folded once:
-  14 x 8.5 inches -> two 7 x 8.5 inch facing pages.
-  Screen rendering scales this physical ratio to fit the viewport.
+  14 x 8.5 inches -> two fixed 7 x 8.5 inch facing pages.
+  The page itself never reflows. Only its screen preview is scaled.
 */
 #spread {
   display: grid;
@@ -36,16 +38,27 @@ body {
   box-shadow: 0 0 0 1px #ddd;
 }
 
-.page {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
+.page-slot {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
   background: #fff;
 }
 
-#page-left {
+#page-left-slot {
   border-right: 1px solid #ddd;
+}
+
+.page {
+  position: absolute;
+  inset: 0 auto auto 0;
+  display: block;
+  width: var(--page-width);
+  height: var(--page-height);
+  border: 0;
+  background: #fff;
+  transform-origin: top left;
 }
 
 /* Invisible navigation. Nothing here is part of the printed object. */
@@ -87,6 +100,21 @@ body {
     width: 14in;
     height: 8.5in;
     box-shadow: none;
+  }
+
+  .page-slot {
+    width: var(--page-width);
+    height: var(--page-height);
+  }
+
+  #page-left-slot {
+    border-right: 0;
+  }
+
+  .page {
+    width: var(--page-width);
+    height: var(--page-height);
+    transform: none !important;
   }
 
   .turn-zone {

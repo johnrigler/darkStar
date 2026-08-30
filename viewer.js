@@ -6,8 +6,25 @@
   const right = document.getElementById("page-right");
   const turnLeft = document.getElementById("turn-left");
   const turnRight = document.getElementById("turn-right");
+  const pageWidthPixels = book.pageWidthInches * 96;
+  const pageHeightPixels = book.pageHeightInches * 96;
 
   let spread = 0;
+
+  function fitPage(frame) {
+    const slot = frame.parentElement;
+    const scale = Math.min(
+      slot.clientWidth / pageWidthPixels,
+      slot.clientHeight / pageHeightPixels
+    );
+
+    frame.style.transform = `scale(${scale})`;
+  }
+
+  function fitPages() {
+    fitPage(left);
+    fitPage(right);
+  }
 
   function blank(frame) {
     frame.removeAttribute("src");
@@ -29,6 +46,7 @@
     const leftIndex = spread * 2;
     load(left, leftIndex);
     load(right, leftIndex + 1);
+    fitPages();
   }
 
   function previous() {
@@ -46,6 +64,8 @@
 
   turnLeft.addEventListener("click", previous);
   turnRight.addEventListener("click", next);
+  window.addEventListener("resize", fitPages);
+  window.addEventListener("afterprint", fitPages);
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft" || event.key === "PageUp") previous();

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #111;
+}
+
+body {
+  padding: 0.42in 0.42in 0.48in;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.35;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Preface is deliberately dense and is not editorially altered here. */
+body.preface-page {
+  padding: 0.25in 0.24in 0.25in;
+  font-size: 8pt;
+  line-height: 1.12;
+}
+
+body.preface-page h1 {
+  margin: 0 0 0.08in;
+  font-size: 15pt;
+}
+
+body.preface-page table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+body.preface-page td {
+  vertical-align: top;
+  padding: 0 0.06in;
+}
+
+body.preface-page pre {
+  margin: 0;
+  font-size: 6.4pt;
+  line-height: 1.08;
+  white-space: pre;
+}
+
+body.preface-page .qr-table {
+  margin-top: 0.06in;
+}
+
+body.preface-page .qr-table td {
+  padding: 1px;
+}
+
+body.preface-page .qr-table img {
+  display: block;
+  width: 0.62in;
+  height: 0.62in;
+}
+
+body.preface-page .source {
+  margin: 0.04in 0 0;
+  font-size: 7pt;
+  text-align: center;
+}

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dark Star</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+  :root {
+    --paper: #ffffff;
+    --ink: #1a1a1a;
+    --blue: #1a3a6e;
+    --red: #8b1a1a;
+    --rule: #ddd;
+    
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #ffffff;
+    color: var(--ink);
+    font-family: "EB Garamond", "Times New Roman", Times, serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 1.1rem;
+    background: #f0ece4;
+    color: #333;
+    flex-shrink: 0;
+    font-family: system-ui, sans-serif;
+    border-bottom: 1px solid #ddd;
+  }
+  header h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #5a5040;
+  }
+  .controls { display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap; }
+  button {
+    background: #e8e2d6;
+    color: #222;
+    border: 1px solid #bbb;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  button:hover { background: #ddd6c8; }
+  button:disabled { opacity: 0.35; cursor: default; }
+  #page-label { font-size: 0.78rem; color: #666; min-width: 6rem; text-align: center; }
+    display: flex; align-items: center; gap: 0.35rem;
+    font-size: 0.78rem; color: #555;
+  }
+
+  #stage {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem;
+    overflow: auto;
+  }
+
+  .page {
+    flex: 1 1 48%;
+    max-width: 48%;
+    background: var(--paper);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    min-height: 0;
+  }
+
+  .page-num {
+    position: absolute;
+    bottom: 6px;
+    font-size: 0.65rem;
+    color: #999;
+    font-family: system-ui, sans-serif;
+    z-index: 2;
+  }
+  #page-left .page-num { left: 10px; }
+  #page-right .page-num { right: 10px; }
+
+  .page-inner {
+    flex: 1;
+    overflow: auto;
+    padding: 0.9rem 1rem 1.6rem;
+  }
+
+  /* Compact content panels — under ~1/4 viewport height each */
+  .panel {
+    
+    overflow: auto;
+    margin-bottom: 0.55rem;
+    border: 1px solid #e0e0e0;
+    padding: 0.45rem 0.55rem;
+    background: #fafafa;
+  }
+  .panel h2, .panel h3 {
+    font-size: 0.95rem;
+    margin: 0 0 0.3rem;
+    color: var(--blue);
+  }
+  .panel p, .panel li {
+    font-size: 0.82rem;
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+  }
+  .panel pre, .console {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+    line-height: 1.28;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+  }
+  .yaml-box {
+    background: #ececec;
+    border: 1px solid #c8c8c8;
+    border-left: 3px solid #888;
+    padding: 0.4rem 0.5rem;
+    margin: 0.35rem 0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.68rem;
+    line-height: 1.3;
+    white-space: pre-wrap;
+    color: #222;
+    
+    overflow: auto;
+  }
+
+  /* Preface */
+  .mac-prefix { color: #9a6415; font-weight: bold; }
+  .mac-payload { color: #33444a; }
+  .mac-space { color: #08796f; }
+  .mac-punctuation { color: #9d2c5e; }
+  .mac-padding { color: #b0a89e; }
+  .mac-checksum { color: #315d9d; }
+  .preface-wrap { text-align: center; }
+  .preface-wrap h1 { font-size: 1.15rem; margin-bottom: 0.4rem; font-weight: 600; }
+  .preface-wrap table { margin: 0 auto; border-collapse: collapse; }
+  .preface-wrap pre {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.62rem;
+    line-height: 1.25;
+    text-align: left;
+    white-space: pre;
+    margin: 0;
+  }
+  .preface-wrap td { vertical-align: top; padding: 0 0.4rem; }
+  .qr-table { margin: 0.4rem auto 0; }
+  .qr-table td { padding: 2px; }
+  .qr-table img {
+    display: block;
+    width: 121px;
+    height: 121px;
+  }
+  .preface-wrap .source { margin-top: 0.3rem; font-size: 0.75rem; color: #555; }
+
+  .img-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+  }
+  .img-page img {
+    max-width: 100%;
+    
+    object-fit: contain;
+  }
+
+  .blank-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 8vh;
+    color: #ccc;
+    font-style: italic;
+    font-size: 0.85rem;
+  }
+
+  .title-block {
+    text-align: center;
+    padding: 1rem 0.5rem;
+  }
+  .title-block h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.3rem;
+  }
+
+  footer {
+    padding: 0.28rem 1.1rem;
+    font-family: system-ui, sans-serif;
+    font-size: 0.7rem;
+    color: #777;
+    background: #f0ece4;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Dark Star <span style="font-size:0.75em;opacity:0.7;font-weight:400;">v0.3.1</span></h1>
+    <div class="controls">
+      </label>
+      <button id="btn-prev" type="button">← Left</button>
+      <span id="page-label">1 – 2</span>
+      <button id="btn-next" type="button">Right →</button>
+    </div>
+  </header>
+
+  <div id="stage">
+    <div class="page" id="page-left">
+      <span class="page-num" id="num-left">1</span>
+      <div class="page-inner" id="inner-left"></div>
+    </div>
+    <div class="page" id="page-right">
+      <span class="page-num" id="num-right">2</span>
+      <div class="page-inner" id="inner-right"></div>
+    </div>
+  </div>
+
+  <footer>Compact panels · Bell introduced at Ch.20 · Arrow keys work</footer>
+
+<script>
+const BELL = [
+  "theBell2024/cover.png",
+  "theBell2024/panel1.png",
+  "theBell2024/panel2.png",
+  "theBell2024/panel3.png",
+  "theBell2024/panel4.png",
+  "theBell2024/panel5.png",
+  "theBell2024/panel6.png",
+  "theBell2024/panel7.png",
+  "theBell2024/panel8.png",
+  "theBell2024/panel9.png",
+  "theBell2024/panel10.png",
+  "theBell2024/panel11.png",
+  "theBell2024/lastPanel.png"
+];
+
+const PREFACE_HTML = `
+<div class="preface-wrap">
+  <h1>Preface</h1>
+  <table><tr><td>
+<pre>
+O bitter ending! I'll slip
+away before they're up.
+9sSADXANDXWEARYXiXGoXBACKZZZc6o8QR
+They'll never see. Nor
+know. Nor miss me. And
+it's old and old it's sad
+and old it's sad and weary
+I go back to you, my cold
+father, my cold mad father,
+mycold mad feary father,
+till the near sight of the
+mere size of him, the
+moyles and moyles of it,
+moananoaning, makes me
+seasilt saltsick and I
+rush, my only, into your
+arms. I see them rising!
+Save me from those
+therrble prongs! Two more.
+Onetwo moremens more. So.
+Avelaval. My leaves have
+drifted from me. All. But
+one clings still. I'll
+bear it to me. To remind
+me of. Lff! So soft this
+morning ours. Yes. Carry
+me along, taddy, like you
+done through the toy fair.
+If I see him bearing down
+on me now under white-
+spread wings like he'd
+come from Arkangels, I
+sink I'd die down over his
+feet, humbly dumbly, only
+to washup. Yes, tid.
+There's where. First. We
+pass through grass behush
+the bush to. Whish! A
+gull. Gulls. Far calls.
+Coming, far! End here. Us
+then. Finn again! Take.
+Bussoftlhee, mememormee!
+Till thousendsthee. Lps.
+The keys to. Given! A way
+a lone a last a loved a
+long the
+
+Paris,
+1922-1939.
+</pre>
+  </td><td>
+<pre id="addresses">
+9soxBiTTERxENDiNGaxiyLLxSLiPTC5B8F
+9sAWAYxBEFoRExTHEYyRExUPhzzzbRY6zM
+9sSADXANDXWEARYXiXGoXBACKZZZc6o8QR
+9sTHEYyLLxNEVERxSEEhxNoRzzzzbqB7n8
+9sKNoWhxxNoRxMiSSxMEhxANDzzzTou35J
+9siTySxoLDxANDxoLDxiTySxSADzV3QbCs
+9sANDxoLDxiTySxSADxANDxWEARYZVjZDQ
+9sixGoxBACKxToxYoUvxMYxCoLDzbnttih
+9sFATHERvxMYxCoLDxMADxFATHERYMWptF
+9svxMYCoLDxMADxFEARYxFATHERvTFKsrh
+9sTiLLxTHExNEARxSiGHTxoFxTHEXAAwj9
+9sMERExSiZExoFxHiMvxTHEzzzzzcEmUzy
+9sMoYLESxANDxMoYLESxoFxiTvzzc3y1US
+9sMoANANoANiNGvxMAKESxMEzzzzXpQGcq
+9sSEASiLTxSALTSiCKxANDxizzzzc68EaA
+9sRUSHvxMYxoNLYvxiNToxYoURzzb1rCVz
+9sARMShxixSEExTHEMxRiSiNGazzXVeiea
+9sSAVExMExFRoMxTHoSEzzzzzzzzaCvdqL
+9sTHERRBLExPRoNGSaxTWoxMoREhWZ4Yad
+9soNETWoxMoREMENSxMoREhxSohzW6UdNb
+9sAVELAVALhxMYxLEAVESxHAVEzzc77R8n
+9sDRiFTEDxFRoMxMEhxALLhxBUTzTP7LLh
+9soNExCLiNGSxSTiLLhxiyLLzzzzUMZNjA
+9sBEARxiTxToxMEhxToxREMiNDzzaZn62B
+9sMExoFhxLFFaxSoxSoFTxTHiSzzZoqhew
+9sMoRNiNGxoURShxYEShxCARRYzzZ1Ed2b
+9sMExALoNGvxTADDYvxLiKExYoUzZMAwvk
+9sDoNExTHRoUGHxTHExToYxFAiRha9t5YM
+9siFxixSEExHiMxBEARiNGxDoWNzXtBnSD
+9soNxMExNoWxUNDERxWHiTEyzzzzTX9aTJ
+9sSPREADxWiNGSxLiKExHEyDzzzzVbKTCU
+9sCoMExFRoMxARKANGELSvxizzzzYJQKHY
+9sSiNKxiyDxDiExDoWNxoVERxHiSSZgdam
+9sFEETvxHUMBLYxDUMBLYvxoNLYzWZkYMz
+9sToxWASHUPhxYESvxTiDhzzzzzzZVoB28
+9sTHEREySxWHEREhxFiRSThxWEzzWqD1xc
+9sPASSxTHRoUGHxGRASSxBEHUSHzaqL35Y
+9sTHExBUSHxTohxWHiSHaxAzzzzzVzguEw
+9sGULLhxGULLShxFARxCALLShzzzY6C7QA
+9sCoMiNGvxFARaxENDxHEREhxUSzWyDTQv
+9sTHENhxFiNNxAGAiNaxTAKEhzzzVjBdr3
+9sBUSSoFTLHEEvxMEMEMoRMEEazzYYzLsk
+9sTiLLxTHoUSENDSTHEEhxLPShzzXdRY89
+9sTHExKEYSxTohxGiVENaxAxWAYzaMJ3ef
+9sAxLoNExAxLASTxAxLoVEDxAzzzUDKFKS
+9sLoNGxTHEzzzzzzzzzzzzzzzzzzXqukyk
+9shzzzzzzzzzzzzzzzzzzzzzzzzzXRa7EY
+9sPARiSvzzzzzzzzzzzzzzzzzzzzXHHoam
+9s1922y1939hzzzzzzzzzzzzzzzzXqYHQD
+</pre></td></tr></table>
+<table class="qr-table">
+  <tr>
+    <td><img src="qr1.svg" alt="QR 1"></td>
+    <td><img src="qr2.svg" alt="QR 2"></td>
+    <td><img src="qr3.svg" alt="QR 3"></td>
+    <td><img src="qr4.svg" alt="QR 4"></td>
+  </tr>
+</table>
+<p class="source"><cite>Finnegans Wake</cite>, final page</p>
+</div>
+`;
+
+const pages = [];
+
+// Opening spread: blank (left) + Preface (right)
+pages.push({
+  type: "html",
+  html: `<div class="blank-page"></div>`
+});
+pages.push({ type: "preface" });
+
+// Title leaf
+pages.push({
+  type: "html",
+  html: `<div class="title-block">
+    <h1>DARK STAR</h1>
+    <p style="color:#555;font-size:0.9rem;">a collection of writings and illustrations</p>
+    <p style="margin-top:1rem;font-size:0.75rem;color:#888;letter-spacing:0.06em;">SATURNIAN · PULP · PERMISSIONLESS</p>
+  </div>`
+});
+
+// --- Chapter 01 ---
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h2>Chapter 01 — 1CxTHUNDERSTRUCKxRENFiELDzzzUbpeYP</h2>
+    <p>The bitcoin cryptocurrency was created on January 3rd, 2009. It was mostly ignored by scientists and scholars until many year later when it became the vehicle of unregulated speculation that it is today.</p>
+    <p>I had always seen it as something different. For a while, I waited for it be used as actual money—as its mysterious creator had intented in the whitepaper. This never happened. Today I don't spend much energy concerning myself with what I call BTC-Bitcoin. I find its imitators and progeny to be more relevant and interesting.</p>
+    <p>The message of crypto which is so loud as to drown out anything else is of a promise of easy money. I never really saw it as money. And now things are different. I am living in the desert and working at a gas station on Route 66. I work for the Acoma Pueblo.</p>
+  </div>
+  <div class="panel">
+    <pre class="console">DCx   RoLLxAWAY
+                              THExDEW                            WJJ4Ky 
+
+I arise from my table and cue the service. They craft the great
+
+CAFE FRESCA
+
+in the wise old tradition. No electronic pot. They start with a
+cherrywood fire upon the brick heart. Painstakingly they heat the
+bricks until they are such that a        FoRTRESSxBRiCKARDzzz   
+is created. The beans are roasted fresh and whole around the clay
+
+CAFE SUR GLECKo 
+
+before being crushed buya mallet and then putOnto a.hot.skillet with
+
+AGUiTAxDExNoBLESzz
+
+--- The lead brewer then:
+  - emerges from his books
+  - inspects the #liquor-del-dios of the thing
+  - guides the pour
+
+  #ANDxTHExUNDERLiNGSxREJoiCEzzz
+
+for they see the order of it all</pre>
+  </div>`
+});
+
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h2>Chapter 01 — continued</h2>
+    <div class="yaml-box">--- praise be to he that:
+    - is without sin
+    - was nailed akrost by the jews
+    --- who will 
+      - redeem all of your trespasses
+      - even though you are not worthy
+      - because your LoRDxJESUSzzz loves you
+      - etc. 
+
+In rides El Nino...
+
+DAx   CAPTAiN.KiCK-ASS
+DAx  DoNALD.J.TRUMP
+DAx REXxNEMoRENSiSzzz 
+
+d.aisy () 
+{ 
+    function o.foenix.culprit () 
+    { 
+        :;
+        function o.horticruz.fool () 
+        { 
+            :;
+            o.captain.kick-ass
+        }
+    };
+    function rexy.rexy () 
+    { 
+        : fool perplexy
+    }
+# 024594
+}</div>
+  </div>
+  <div class="panel">
+    <h3>Notes (structure)</h3>
+    <div class="yaml-box">Dark Star is a zombie story. It will start in a foreign world
+that appears to be a mirror of ours with clear racial character-swapping.
+
+---
+  - a black middle class scientist
+  - white natives with voodoo rituals
+  - an exotic and sexually coded "natives"
+
+Then this backstory will begin to morph...
+
+---
+  - middle part is clearly different
+  - we don't remember how we got here
+  - something else becomes vital
+
+---
+  - liberal arts students at a bar
+  - entitled intellectuals
+  - "Annie" is one of them, reading 
+  - other student has gotten some LSD
+  - Annie takes some
+  - Then the lights turn on and adults take her away
+
+---
+  - Annie travels by car, bus, train, and boat 
+  - Outside she sees death and chaos
+  - She is always safe
+  - Eventually goes to sleep on a boat.
+---
+  - Wakes up on an Airplane
+  - Appears to have been dreaming
+
+No explanation, no redemption, no character arc.</div>
+  </div>`
+});
+
+// --- Chapter 02 (Gatekeeper's Dilemma, condensed into panels) ---
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h2>Chapter 02 — The Gatekeeper’s Dilemma</h2>
+    <p><em>“Let me talk, and then you can talk afterwards.”</em> The machine agreed. It interrupted again almost immediately. That was not a malfunction. It was optimized to prevent silence from becoming uncomfortable. But I needed the silence.</p>
+    <p>I was trying to dictate the nonfiction part of <em>Dark Star</em>. The question is simple enough: If you discover something that could change the world by reducing control, and you do not know whether that change will be good or bad, are you obligated to reveal it? Or should you become its keeper?</p>
+  </div>
+  <div class="panel">
+    <div class="yaml-box">Publication Note:
+This document was produced after I first spoke to the “talk module”
+of ChatGPT, and then asked the system to formalize and publish the
+result in standard whitepaper form. The assistant is therefore
+explicitly part of the production chain of this text.
+
+Meta-question: if systems could register a cryptographic hash of
+generated thought at the moment of creation, then downstream edits
+or appropriation would be detectable. That capability does not
+exist in this pipeline, but its absence is itself part of the argument.</div>
+  </div>`
+});
+
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h3>The medium</h3>
+    <p>The ledger does not know what money is. It records valid transactions according to protocol rules. Humans assign economic meaning to some of the fields. The underlying system is more general: an ordered, replicated, difficult-to-rewrite history among parties who do not share a central authority.</p>
+    <p>Once that exists, a new medium exists. Not a website. Not a company. Not an account that can be suspended. A public record written through a network whose participants may have no common purpose beyond enforcing the rules of the protocol.</p>
+  </div>
+  <div class="panel">
+    <h3>Beyond permission</h3>
+    <p>There may be practical gates—software, fees, explorers that hide data, governments, companies. But none of these is identical to control of the ledger itself. To make the underlying capability disappear one would have to eliminate every usable implementation, every reachable node, every copy of the chain. That is not a realistic control strategy.</p>
+    <p>The data nature of cryptocurrency is therefore not a feature that can be removed through policy language. It is a consequence of the architecture.</p>
+  </div>`
+});
+
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h3>The responsibility to reveal</h3>
+    <p>Suppose a person discovers how to use ordinary cryptocurrency transactions as a human-readable publication layer. The discovery does not create the underlying capability. It reveals a way of seeing and using what was already there.</p>
+    <p>A project about removing gatekeepers might depend on a proprietary intelligence service to explain itself. The contradiction is real. The machine may help people understand the medium. It must not become the authority that defines the medium.</p>
+  </div>
+  <div class="panel">
+    <h3>Dark Star</h3>
+    <p>This is the nonfiction foundation of <em>Dark Star</em>. The project does not claim that decentralized ledgers will save us. It does not claim that removing control produces justice. It begins from a less comforting observation: the medium exists.</p>
+    <p>When knowledge reduces control, does uncertainty justify silence? I do not think it does. Not because the new world will be good. Because the old gatekeepers have not earned the right to decide whether anyone else may enter it.</p>
+  </div>`
+});
+
+// Placeholder chapters 03–19 (blank expansion)
+for (let ch = 3; ch <= 19; ch++) {
+  pages.push({
+    type: "html",
+    html: `<div class="blank-page">Chapter ${String(ch).padStart(2,"0")} —</div>`
+  });
+}
+
+// Chapter 20 — introduce The Bell
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h2>Chapter 20 — The Bell</h2>
+    <p>A chick-tract style comic. One frame carries text: <strong>No More Taxes</strong>. The young man and his dog, the beer-bell, the anachronistic king, the seized bell that burns, the angels. Final panel opens outward.</p>
+  </div>`
+});
+
+// Bell panels (compact)
+BELL.forEach((src, i) => {
+  pages.push({
+    type: "html",
+    html: `<div class="img-page"><img src="${src}" alt="Bell panel ${i}"></div>`
+  });
+});
+
+// Entry
+pages.push({
+  type: "html",
+  html: `
+  <div class="panel">
+    <h2>Entry</h2>
+    <p>The four marks on the preface are the entry. Stickers may replace or accompany them. One path opens the seeded key; the others can assemble a sixty-four character hex that becomes a WIF. The same marks identify this particular copy—copyable, yet not identical.</p>
+  </div>`
+});
+
+// Trailing blanks
+for (let i = 0; i < 8; i++) {
+  pages.push({ type: "html", html: `<div class="blank-page">—</div>` });
+}
+
+let spread = 0;
+
+function colorizeAddresses(root) {
+  const source = root.querySelector("#addresses");
+  if (!source) return;
+  const fallThrough = "9sSADXANDXWEARYXiXGoXBACKZZZc6o8QR";
+  function part(text, className) {
+    const span = document.createElement("span");
+    span.className = className;
+    span.textContent = text;
+    return span;
+  }
+  const addresses = source.textContent.trim().split(/\s+/);
+  source.replaceChildren();
+  addresses.forEach((address, addressIndex) => {
+    if (address === fallThrough) {
+      source.append(address);
+    } else {
+      source.append(part(address.slice(0, 2), "mac-prefix"));
+      for (const character of address.slice(2, -6)) {
+        let className = "mac-payload";
+        if (character === "x" || character === "X") className = "mac-space";
+        else if ("hvay".includes(character)) className = "mac-punctuation";
+        else if (character === "z") className = "mac-padding";
+        source.append(part(character, className));
+      }
+      source.append(part(address.slice(-6), "mac-checksum"));
+    }
+    if (addressIndex < addresses.length - 1) source.append("\n");
+  });
+}
+
+function render() {
+  const leftIdx = spread;
+  const rightIdx = spread + 1;
+  const total = pages.length;
+  document.getElementById("num-left").textContent = leftIdx + 1;
+  document.getElementById("num-right").textContent = rightIdx < total ? rightIdx + 1 : "—";
+  document.getElementById("page-label").textContent =
+    rightIdx < total ? (leftIdx + 1) + " – " + (rightIdx + 1) : String(leftIdx + 1);
+  fill("inner-left", pages[leftIdx]);
+  if (rightIdx < total) {
+    fill("inner-right", pages[rightIdx]);
+  } else {
+    fill("inner-right", { type: "html", html: '<div class="blank-page">—</div>' });
+  }
+  document.getElementById("page-right").style.visibility = "visible";
+  document.getElementById("btn-prev").disabled = spread <= 0;
+  document.getElementById("btn-next").disabled = spread + 2 >= total;
+}
+
+function fill(id, page) {
+  const el = document.getElementById(id);
+  if (!page) { el.innerHTML = ""; return; }
+  if (page.type === "preface") {
+    el.innerHTML = PREFACE_HTML;
+    colorizeAddresses(el);
+  } else {
+    el.innerHTML = page.html;
+  }
+}
+
+document.getElementById("btn-prev").addEventListener("click", function () {
+  if (spread >= 2) { spread -= 2; render(); }
+  else if (spread === 1) { spread = 0; render(); }
+});
+document.getElementById("btn-next").addEventListener("click", function () {
+  if (spread + 2 < pages.length) { spread += 2; render(); }
+});
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") document.getElementById("btn-prev").click();
+  if (e.key === "ArrowRight") document.getElementById("btn-next").click();
+});
+
+
+render();
+</script>
+</body>
+</html>

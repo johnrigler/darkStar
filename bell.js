@@ -29,9 +29,14 @@
   const panel = panels[requestedPanel] || panels.cover;
   const side = requestedSide === "left" ? "left" : "right";
   const image = document.getElementById("bell-image");
+  const observation = document.getElementById("bell-observation");
 
   document.body.dataset.side = side;
   image.src = `theBell2024/${panel.file}`;
   image.alt = panel.label;
   document.title = panel.label;
+
+  if (observation) {
+    observation.textContent = `${panel.label}. The panel sits inside the larger manuscript page like a separate pamphlet page: drawing and lettering held together as the object to read, with placeholder prose flowing around its outside edge. This is only a first visual note, deliberately provisional.`;
+  }
 })();

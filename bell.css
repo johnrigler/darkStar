@@ -9,36 +9,44 @@ body.bell-page {
 }
 
 .bell-page .lorem {
+  margin: 0 0 0.14in;
   color: #606060;
+  font-family: "Courier New", Courier, monospace;
   font-size: 9pt;
-  line-height: 1.2;
-  white-space: pre;
+  line-height: 1.35;
+  white-space: pre-wrap;
 }
 
 .bell-window {
-  display: grid;
-  place-items: center;
-  width: 4.7in;
-  height: 3.12in;
-  margin: 0.25in auto;
+  width: 65%;
+  margin-top: 0.08in;
+  margin-bottom: 0.16in;
   overflow: hidden;
   border: 1.5pt solid #111;
   background: #fff;
+  break-inside: avoid;
+}
+
+.bell-page[data-side="left"] .bell-window {
+  float: right;
+  clear: right;
+  margin-left: 0.2in;
+}
+
+.bell-page[data-side="right"] .bell-window {
+  float: left;
+  clear: left;
+  margin-right: 0.2in;
 }
 
 .bell-window img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
 @media print {
   .bell-page .lorem {
     color: #606060;
-  }
-
-  .bell-window {
-    break-inside: avoid;
   }
 }

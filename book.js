@@ -14,6 +14,7 @@ window.DARK_STAR_BOOK = {
     "preface.html",
     "01_01.html",
     "01_02.html",
-    "01_03.html"
+    "01_03.html",
+    "polygon.html"
   ]
 };

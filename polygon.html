@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polygon Word Address — Dark Star</title>
+  <link rel="stylesheet" href="polygon.css">
+</head>
+<body>
+  <main>
+    <h1>Funny Games: Polygon Word Address</h1>
+    <p class="lede">Turn up to twenty UTF-8 bytes of text into a 20-byte Polygon address, then ask your own wallet to send it a simple native-token transaction.</p>
+
+    <section id="frameNotice" class="frame-notice" hidden>
+      <p>Wallet extensions do not always inject themselves into book frames.</p>
+      <a class="button-link" href="polygon.html" target="_top">Open this exercise directly</a>
+    </section>
+
+    <section class="panel">
+      <div class="row">
+        <div>
+          <label for="wallet">Injected wallet</label>
+          <select id="wallet">
+            <option value="">Searching for MetaMask, Backpack, or another EVM wallet…</option>
+          </select>
+        </div>
+        <button id="connect" type="button">Connect</button>
+      </div>
+      <p class="small">Account: <strong id="account">Not connected</strong></p>
+    </section>
+
+    <section class="panel">
+      <label for="words">Words</label>
+      <input id="words" type="text" value="DARK STAR" autocomplete="off" spellcheck="false">
+      <p id="byteCount" class="muted small"></p>
+
+      <span class="label">Destination</span>
+      <div id="address" class="address" data-valid="false">—</div>
+
+      <label for="amount">POL sent to the word address</label>
+      <input id="amount" type="text" inputmode="decimal" value="0.000001" autocomplete="off">
+
+      <label class="check" for="understand">
+        <input id="understand" type="checkbox">
+        <span>I understand that this address is made from text, no recipient is expected to control it, and any value sent may be permanently unrecoverable.</span>
+      </label>
+
+      <button id="send" type="button" disabled>Ask wallet to send</button>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section id="result" class="panel" hidden>
+      <span class="label">Submitted transaction</span>
+      <code id="resultHash"></code>
+      <p><a id="resultLink" href="#" target="_blank" rel="noopener">Open in PolygonScan</a></p>
+    </section>
+
+    <details class="panel">
+      <summary>Jethro</summary>
+      <p>Dark Star recognizes the existing Jethro artifact contract on Polygon:</p>
+      <code id="jethro"></code>
+      <p class="small muted">This exercise uses the simpler direct-transfer form. It does not guess Jethro’s ABI and does not use Gomez.</p>
+    </details>
+  </main>
+
+  <script src="polygon-core.js"></script>
+  <script src="polygon.js"></script>
+</body>
+</html>

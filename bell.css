@@ -9,14 +9,12 @@ body.bell-page {
 }
 
 .bell-page .lorem {
+  margin: 0 0 0.14in;
   color: #606060;
   font-family: "Courier New", Courier, monospace;
   font-size: 9pt;
   line-height: 1.35;
-}
-
-.bell-page .lorem p {
-  margin: 0 0 0.14in;
+  white-space: pre-wrap;
 }
 
 .bell-window {

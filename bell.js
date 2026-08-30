@@ -23,10 +23,14 @@
     }
   };
 
-  const requestedPanel = new URLSearchParams(window.location.search).get("panel");
+  const parameters = new URLSearchParams(window.location.search);
+  const requestedPanel = parameters.get("panel");
+  const requestedSide = parameters.get("side");
   const panel = panels[requestedPanel] || panels.cover;
+  const side = requestedSide === "left" ? "left" : "right";
   const image = document.getElementById("bell-image");
 
+  document.body.dataset.side = side;
   image.src = `theBell2024/${panel.file}`;
   image.alt = panel.label;
   document.title = panel.label;

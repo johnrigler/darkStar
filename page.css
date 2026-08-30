@@ -1,3 +1,5 @@
+@import url("style.css?asdf1");
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +21,11 @@ body {
   line-height: 1.35;
 }
 
-h1,
+h1 { 
+  font-size: 14.5pt;
+
+}
+
 h2,
 h3 {
   line-height: 1.2;
@@ -30,10 +36,12 @@ code {
   font-family: "Courier New", Courier, monospace;
 }
 
+/*
 pre {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
-}
+}*/
+
 
 /* Preface is deliberately dense and is not editorially altered here. */
 body.preface-page {

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dogecoin Explorer Fragment</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="bell.css">
+</head>
+<body class="bell-page soup-page">
+  <main aria-label="Dogecoin Explorer screenshot embedded in the placeholder chapter">
+    <figure class="soup-figure">
+      <img id="doge-image"
+        alt="Dogecoin Explorer mobile screenshot showing one input, fifty outputs, repeated 0.0001 DOGE amounts, readable text-like output addresses, and a larger change output">
+    </figure>
+
+<pre class="lorem soup-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
+justo sed erat fermentum dignissim. Praesent ultricies, neque in porta
+viverra, velit massa tempor augue, sit amet posuere lectus sapien sed
+nibh. Nulla facilisi. Donec dictum orci at sem aliquet, quis tincidunt
+mauris volutpat. Sed vitae lacus non arcu sollicitudin pellentesque.
+
+A phone screen says Dogecoin Explorer. One input enters above Output(50).
+Blue address strings descend the screen, each one paired with 0.0001 DOGE,
+small repeated outputs carrying fragments that begin to read as language.
+The ledger looks less like a wallet than a paragraph that has been forced
+through address syntax. One larger output sits among the dust as change.
+
+Curabitur interdum, nisl sed porta luctus, justo metus gravida lorem, vel
+posuere ipsum sapien a neque. Vivamus feugiat nibh vel sem consequat, vel
+feugiat ligula fermentum. Aliquam erat volutpat. Morbi egestas justo vitae
+risus finibus, vitae mollis massa posuere. Suspendisse potenti. Duis
+consequat lorem sed turpis malesuada, ut luctus neque aliquam.
+
+The machine notices the repetition before it notices the sentences:
+0.0001 DOGE, 0.0001 DOGE, 0.0001 DOGE. Then the strings begin resolving
+into words: endings, before they, never see, father, fear, miles. The
+screen itself remains in the artifact. The time is 9:49. The battery says
+63. An advertisement crowds the bottom edge with a black close button.
+The browser chrome, the ad, the transaction and the human-readable burn
+addresses all arrive together. Nothing has been cleaned into an ideal
+ledger diagram. This is how the thing was actually encountered.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada
+fames ac turpis egestas. Fusce euismod, arcu quis volutpat viverra, erat
+tellus tristique nunc, at faucibus velit arcu sed erat. Etiam imperdiet
+consequat ullamcorper. Aenean non ligula sed sem ullamcorper tincidunt.
+
+For now this is still lorem ipsum soup with scraps of observation in it.
+The filler is beginning to ferment around the evidence. Later readings
+can replace more of the Latin with what the page turns out to be saying,
+without requiring the first pass to pretend it already knows.</pre>
+  </main>
+
+  <script src="doge-image-0.js"></script>
+  <script src="doge-image-1.js"></script>
+  <script src="doge-image-2.js"></script>
+  <script src="doge-image-3.js"></script>
+  <script src="doge-image-4.js"></script>
+  <script src="doge-image-5.js"></script>
+  <script src="doge-image-6.js"></script>
+  <script>
+    (() => {
+      const side = new URLSearchParams(window.location.search).get("side");
+      document.body.dataset.side = side === "right" ? "right" : "left";
+      document.getElementById("doge-image").src =
+        `data:image/webp;base64,${window.DOGE_IMAGE_CHUNKS.join("")}`;
+    })();
+  </script>
+</body>
+</html>

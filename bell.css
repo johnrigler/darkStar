@@ -45,6 +45,46 @@ body.bell-page {
   height: auto;
 }
 
+/*
+  Other found artifacts can use the same lorem soup without pretending to
+  be full-page illustrations. Keep them narrow and pull them toward the
+  center binding; the text stays visibly provisional around them.
+*/
+.soup-page .soup-figure {
+  width: 40%;
+  margin-top: 0.04in;
+  margin-bottom: 0.16in;
+  overflow: hidden;
+  border: 1.5pt solid #111;
+  background: #fff;
+  break-inside: avoid;
+}
+
+.soup-page[data-side="left"] .soup-figure {
+  float: right;
+  clear: right;
+  margin-left: 0.22in;
+  margin-right: 0.14in;
+}
+
+.soup-page[data-side="right"] .soup-figure {
+  float: left;
+  clear: left;
+  margin-right: 0.22in;
+  margin-left: 0.14in;
+}
+
+.soup-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.soup-copy {
+  font-size: 8.5pt !important;
+  line-height: 1.22 !important;
+}
+
 @media print {
   .bell-page .lorem {
     color: #606060;

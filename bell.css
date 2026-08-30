@@ -18,9 +18,9 @@ body.bell-page {
 .bell-window {
   display: grid;
   place-items: center;
-  width: 6.16in;
-  height: 4.1in;
-  margin: 0.18in 0;
+  width: 4.7in;
+  height: 3.12in;
+  margin: 0.25in auto;
   overflow: hidden;
   border: 1.5pt solid #111;
   background: #fff;

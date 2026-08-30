@@ -4,9 +4,9 @@
   Each non-null entry is one physical 7 x 8.5 inch page resource.
   A null entry is an intentionally blank page.
 
-  Add ordinary pages before or after the Bell chapter below. The Bell page
-  alignment is calculated from its physical page index, so its images keep
-  facing the center binding when earlier pages are added.
+  The Bell pages are deliberately separate HTML files. This is redundant
+  on purpose: each physical page can be opened and hand-edited directly
+  without changing a shared template or query-string renderer.
 
   polygon.html is deliberately appended after all reading pages so the
   Polygon writer remains the final page as the book grows.
@@ -18,33 +18,24 @@ const DARK_STAR_PAGES_BEFORE_BELL = [
   "01_03.html"
 ];
 
-const DARK_STAR_BELL_PANELS = [
-  "cover",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "last"
+const DARK_STAR_BELL_PAGES = [
+  "bell-cover.html",
+  "bell-01.html",
+  "bell-02.html",
+  "bell-03.html",
+  "bell-04.html",
+  "bell-05.html",
+  "bell-06.html",
+  "bell-07.html",
+  "bell-08.html",
+  "bell-09.html",
+  "bell-10.html",
+  "bell-11.html",
+  "bell-last.html"
 ];
 
-const DARK_STAR_BELL_PAGES = DARK_STAR_BELL_PANELS.map((panel, offset) => {
-  const physicalPageIndex = 1 + DARK_STAR_PAGES_BEFORE_BELL.length + offset;
-  const side = physicalPageIndex % 2 === 0 ? "left" : "right";
-  return `bell.html?panel=${panel}&side=${side}`;
-});
-
-const dogePhysicalPageIndex = 1 + DARK_STAR_PAGES_BEFORE_BELL.length + DARK_STAR_BELL_PAGES.length;
-const dogeSide = dogePhysicalPageIndex % 2 === 0 ? "left" : "right";
-
 const DARK_STAR_PAGES_AFTER_BELL = [
-  `doge-soup.html?side=${dogeSide}`
+  "doge-soup.html"
 ];
 
 const DARK_STAR_READING_PAGES = [

@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="page.css">
   <link rel="stylesheet" href="bell.css">
 </head>
-<body class="bell-page soup-page">
-  <main aria-label="Dogecoin Explorer screenshot embedded in the placeholder chapter">
+<body class="bell-page soup-page" data-side="left">
+  <!-- EDIT THIS PAGE DIRECTLY. The source screenshot is 1000001499.jpg. -->
+  <main aria-label="Dogecoin Explorer screenshot embedded in provisional text">
     <figure class="soup-figure">
-      <img id="doge-image"
-        alt="Dogecoin Explorer mobile screenshot showing one input, fifty outputs, repeated 0.0001 DOGE amounts, readable text-like output addresses, and a larger change output">
+      <img id="doge-image" alt="Dogecoin Explorer mobile screenshot showing one input, fifty outputs, repeated 0.0001 DOGE amounts, readable text-like output addresses, and a larger change output">
     </figure>
 
 <pre class="lorem soup-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
@@ -20,48 +20,48 @@ viverra, velit massa tempor augue, sit amet posuere lectus sapien sed
 nibh. Nulla facilisi. Donec dictum orci at sem aliquet, quis tincidunt
 mauris volutpat. Sed vitae lacus non arcu sollicitudin pellentesque.
 
-A phone screen says Dogecoin Explorer. One input enters above Output(50).
-Blue address strings descend the screen, each one paired with 0.0001 DOGE,
-small repeated outputs carrying fragments that begin to read as language.
-The ledger looks less like a wallet than a paragraph that has been forced
-through address syntax. One larger output sits among the dust as change.
+A phone screen says Dogecoin Explorer. Input(1): 619.99183576 DOGE.
+Below it Output(50): 568.99183576 DOGE. Blue address strings descend the
+screen, most paired with the repeated amount 0.0001 DOGE. The address
+bodies are not visually random. ENDING, BEFORE, THEY, NEVER, FATHER,
+FEAR, MILES and other fragments surface inside them. A larger
+568.98693576 DOGE output interrupts the dust and reads as the change.
 
-Curabitur interdum, nisl sed porta luctus, justo metus gravida lorem, vel
-posuere ipsum sapien a neque. Vivamus feugiat nibh vel sem consequat, vel
-feugiat ligula fermentum. Aliquam erat volutpat. Morbi egestas justo vitae
-risus finibus, vitae mollis massa posuere. Suspendisse potenti. Duis
-consequat lorem sed turpis malesuada, ut luctus neque aliquam.
+Curabitur interdum, nisl sed porta luctus, justo metus gravida lorem.
+The machine notices the frame too. 9:49 at the top. Wi-Fi. Signal bars.
+Battery 63. A Rainbet advertisement occupies the bottom edge and a black
+circle with a white X tries to close it. The Android navigation buttons
+remain below. The artifact is therefore not only the blockchain data.
+It is a blockchain transaction caught inside an explorer, inside a web
+page, inside a phone screenshot, with advertising and operating-system
+chrome still attached.
 
-The machine notices the repetition before it notices the sentences:
-0.0001 DOGE, 0.0001 DOGE, 0.0001 DOGE. Then the strings begin resolving
-into words: endings, before they, never see, father, fear, miles. The
-screen itself remains in the artifact. The time is 9:49. The battery says
-63. An advertisement crowds the bottom edge with a black close button.
-The browser chrome, the ad, the transaction and the human-readable burn
-addresses all arrive together. Nothing has been cleaned into an ideal
-ledger diagram. This is how the thing was actually encountered.
-
+Duis consequat lorem sed turpis malesuada, ut luctus neque aliquam.
 Pellentesque habitant morbi tristique senectus et netus et malesuada
 fames ac turpis egestas. Fusce euismod, arcu quis volutpat viverra, erat
-tellus tristique nunc, at faucibus velit arcu sed erat. Etiam imperdiet
-consequat ullamcorper. Aenean non ligula sed sem ullamcorper tincidunt.
+tellus tristique nunc, at faucibus velit arcu sed erat.
 
-For now this is still lorem ipsum soup with scraps of observation in it.
-The filler is beginning to ferment around the evidence. Later readings
-can replace more of the Latin with what the page turns out to be saying,
-without requiring the first pass to pretend it already knows.</pre>
+For now this is intentionally crude: lorem ipsum, literal observation,
+then lorem ipsum again. The filler can be reread and spoiled by meaning.
+Later edits can replace individual lines without having to understand a
+template or regenerate the whole sequence. The page itself is the draft.
+
+Etiam imperdiet consequat ullamcorper. Aenean non ligula sed sem
+ullamcorper tincidunt. Cras vitae dictum ipsum, ac ullamcorper metus.
+Nam consequat feugiat enim, vel volutpat lorem luctus quis.</pre>
   </main>
 
   <script src="doge-image-0.js"></script>
   <script src="doge-image-1.js"></script>
   <script src="doge-image-2.js"></script>
+  <script src="doge-image-3.js"></script>
+  <script src="doge-image-4.js"></script>
+  <script src="doge-image-5.js"></script>
+  <script src="doge-image-6.js"></script>
+  <script src="doge-image-7.js"></script>
   <script>
-    (() => {
-      const side = new URLSearchParams(window.location.search).get("side");
-      document.body.dataset.side = side === "right" ? "right" : "left";
-      document.getElementById("doge-image").src =
-        `data:image/webp;base64,${window.DOGE_IMAGE_CHUNKS.join("")}`;
-    })();
+    document.getElementById("doge-image").src =
+      `data:image/jpeg;base64,${window.DOGE_IMAGE_CHUNKS.join("")}`;
   </script>
 </body>
 </html>

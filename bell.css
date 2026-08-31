@@ -17,32 +17,109 @@ body.bell-page {
   white-space: pre-wrap;
 }
 
-.bell-window {
-  width: 65%;
+.bell-tract {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 56.5% 43.5%;
+  width: 78%;
+  aspect-ratio: 2220 / 1244;
   margin-top: 0.08in;
   margin-bottom: 0.16in;
   overflow: hidden;
-  border: 1.5pt solid #111;
+  border: 2pt solid #111;
   background: #fff;
   break-inside: avoid;
 }
 
-.bell-page[data-side="left"] .bell-window {
+.bell-page[data-side="left"] .bell-tract {
   float: right;
   clear: right;
   margin-left: 0.2in;
 }
 
-.bell-page[data-side="right"] .bell-window {
+.bell-page[data-side="right"] .bell-tract {
   float: left;
   clear: left;
   margin-right: 0.2in;
 }
 
-.bell-window img {
+.bell-tract img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bell-tract figcaption {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0.14in 0.13in 0.12in;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 8pt;
+  font-weight: 600;
+  line-height: 1.16;
+}
+
+.bell-tract figcaption p {
+  margin: 0 0 0.09in;
+}
+
+.bell-tract figcaption p:last-child {
+  margin-bottom: 0;
+}
+
+.bell-tract figcaption strong {
+  display: block;
+  margin-bottom: 0.08in;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.bell-page[data-side="left"] .bell-tract img {
+  order: 2;
+}
+
+.bell-page[data-side="left"] .bell-tract figcaption {
+  order: 1;
+  border-right: 1.5pt solid #111;
+}
+
+.bell-page[data-side="right"] .bell-tract figcaption {
+  border-left: 1.5pt solid #111;
+}
+
+.bell-cover-tract {
+  display: block;
+}
+
+.bell-cover-tract img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bell-final-tract {
+  display: grid;
+  grid-template-rows: 59% 41%;
+  grid-template-columns: 100%;
+}
+
+.bell-final-tract img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-bottom: 1.5pt solid #111;
+}
+
+.bell-final-tract figcaption,
+.bell-page[data-side="left"] .bell-final-tract figcaption,
+.bell-page[data-side="right"] .bell-final-tract figcaption {
+  order: initial;
+  padding: 0.09in 0.14in;
+  border: 0;
 }
 
 /*

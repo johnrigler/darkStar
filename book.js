@@ -30,7 +30,10 @@ const DARK_STAR_BELL_PAGES = [
   "bell-08.html",
   "bell-09.html",
   "bell-10.html",
+  "bell-10a.html",
+  "bell-10b.html",
   "bell-11.html",
+  "bell-12.html",
   "bell-last.html"
 ];
 

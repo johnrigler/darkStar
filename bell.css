@@ -95,6 +95,33 @@ body.bell-page {
   border-left: 1.5pt solid #111;
 }
 
+.bell-revelation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.18in;
+  background: #090909;
+  color: #fff;
+  text-align: center;
+}
+
+.bell-revelation figcaption,
+.bell-page[data-side="left"] .bell-revelation figcaption,
+.bell-page[data-side="right"] .bell-revelation figcaption {
+  order: initial;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  font-size: 8.3pt;
+  line-height: 1.2;
+}
+
+.bell-revelation figcaption strong {
+  margin-bottom: 0.13in;
+  font-size: 12pt;
+  line-height: 1.05;
+}
+
 .bell-cover-tract {
   display: block;
 }

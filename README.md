@@ -1,3 +1,69 @@
 # darkStar
 
-This is my Novel work of comic fiction. It is a highly experimental piece of writing.It is typeset to be printed in the United States with standard 8.5 x 11 inch "lettter" paper.  It is also formatted to be printed in a book formatwith pages transposed such that an 11x17 version can be printed in landscape format and printed. The book also has a section at the end where the reader is encouraged to (perhaps in the company of others) create a secret and personalized paper wallet that leads into a new universe of ideas which I sometimes call #web3
+Dark Star is an experimental work of comic fiction. Every physical page is
+an ordinary HTML resource that can be opened and edited directly. The book
+ends with a page that encourages the reader—perhaps in the company of
+others—to create a secret, personalized paper wallet leading into the
+universe of ideas sometimes called #web3.
+
+## Edit one physical page
+
+The manuscript pages remain deliberately redundant and local. Edit the
+exact page you see:
+
+```sh
+vi bell-05.html
+vi doge-soup.html
+vi 01_01.html
+```
+
+Each resource has a fixed 7 × 8.5 inch typeset area. Hand-authored
+`<pre>` spacing and line breaks remain unchanged.
+
+## Print one page on 8.5 × 11
+
+Open the page itself, or use:
+
+```text
+print-letter.html?page=6
+```
+
+Without `?page=`, `print-letter.html` produces the whole book in reading
+order, one page per US Letter sheet.
+
+Print settings:
+
+- US Letter, portrait
+- 100% or “Actual size”
+- no added margins
+- headers and footers off
+- background graphics on when the page uses them
+
+The 7 × 8.5 inch typeset area is centered on the 8.5 × 11 sheet.
+
+## Print the one-fold 17 × 11 booklet
+
+Open:
+
+```text
+print-booklet.html
+```
+
+The print job reads `book.js`, pads the book with blank pages until its
+length is divisible by four, and imposes the pages in booklet order. It
+produces consecutive front and back sides for each 17 × 11 sheet.
+
+Print settings:
+
+- Tabloid / 11 × 17 paper
+- landscape
+- two-sided
+- flip on short edge
+- 100% or “Actual size”
+- no added margins
+- headers and footers off
+- background graphics on
+
+Keep the sheets in printed order, nest them, and fold once through the
+center. Page order is generated at print time, so adding or editing an
+HTML page does not require manually rebuilding the imposition.

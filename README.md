@@ -12,13 +12,15 @@ The manuscript pages remain deliberately redundant and local. Edit the
 exact page you see:
 
 ```sh
+vi front-cover.html
 vi bell-05.html
 vi doge-soup.html
 vi 01_01.html
 ```
 
 Each resource has a fixed 7 × 8.5 inch typeset area. Hand-authored
-`<pre>` spacing and line breaks remain unchanged.
+`<pre>` spacing and line breaks remain unchanged. The front cover is the
+first physical page, while `polygon.html` remains the final page.
 
 ## Print one page on 8.5 × 11
 

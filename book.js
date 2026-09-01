@@ -52,7 +52,7 @@ window.DARK_STAR_BOOK = {
   pageWidthInches: 7,
   pageHeightInches: 8.5,
   pages: [
-    null,
+    "front-cover.html",
     ...DARK_STAR_READING_PAGES,
     "polygon.html"
   ]

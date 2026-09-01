@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark Star — Letter print job</title>
+  <link rel="stylesheet" href="print.css">
+  <style>
+    @page {
+      size: letter portrait;
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="letter-preview" data-print-mode="letter">
+  <aside class="print-help">
+    <strong>US Letter proof pages</strong>
+    <span>Print at 100%, portrait, no margins, headers or footers off.</span>
+    <span>Add <code>?page=6</code> to print only physical page 6.</span>
+  </aside>
+
+  <main id="print-document" aria-label="Dark Star Letter print job"></main>
+
+  <script src="book.js"></script>
+  <script src="print.js"></script>
+</body>
+</html>

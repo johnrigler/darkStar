@@ -1,0 +1,156 @@
+:root {
+  --page-width: 7in;
+  --page-height: 8.5in;
+  --letter-width: 8.5in;
+  --letter-height: 11in;
+  --tabloid-width: 17in;
+  --tabloid-height: 11in;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: #777;
+}
+
+body {
+  padding: 0.25in;
+  font-family: system-ui, sans-serif;
+}
+
+.print-help {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.12in 0.28in;
+  margin: 0 auto 0.25in;
+  padding: 0.14in 0.18in;
+  max-width: 11in;
+  border: 1px solid #aaa;
+  background: #fff;
+  color: #111;
+  font-size: 10pt;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+}
+
+#print-document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25in;
+}
+
+.sheet {
+  position: relative;
+  flex: none;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 28%);
+  break-after: page;
+  page-break-after: always;
+}
+
+.sheet:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+.letter-sheet {
+  display: grid;
+  place-items: center;
+  width: var(--letter-width);
+  height: var(--letter-height);
+}
+
+.booklet-sheet {
+  display: grid;
+  grid-template-columns: var(--letter-width) var(--letter-width);
+  width: var(--tabloid-width);
+  height: var(--tabloid-height);
+}
+
+.booklet-half {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--letter-width);
+  height: var(--letter-height);
+  overflow: hidden;
+}
+
+.booklet-half:first-child {
+  border-right: 1px dashed #ccc;
+}
+
+.print-page {
+  display: block;
+  width: var(--page-width);
+  height: var(--page-height);
+  border: 0;
+  background: #fff;
+}
+
+.sheet-label {
+  position: absolute;
+  right: 0.12in;
+  bottom: 0.08in;
+  color: #777;
+  font-size: 8pt;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .booklet-preview .booklet-sheet {
+    zoom: 0.7;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .booklet-preview .booklet-sheet {
+    zoom: 0.5;
+  }
+
+  .letter-preview .letter-sheet {
+    zoom: 0.8;
+  }
+}
+
+@media print {
+  html,
+  body {
+    min-width: 0;
+    min-height: 0;
+    background: #fff;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .print-help,
+  .sheet-label {
+    display: none;
+  }
+
+  #print-document {
+    display: block;
+  }
+
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    zoom: 1 !important;
+  }
+
+  .booklet-half:first-child {
+    border-right: 0;
+  }
+}

@@ -98,9 +98,14 @@ body.preface-page .source {
   text-align: center;
 }
 
+/*
+  A page opened directly is a US Letter proof. The fixed 7 x 8.5 inch
+  typeset area is centered on the sheet, so editing and proof printing do
+  not change any hand-spaced manuscript line.
+*/
 @media print {
   @page {
-    size: 7in 8.5in;
-    margin: 0;
+    size: letter portrait;
+    margin: 1.25in 0.75in;
   }
 }

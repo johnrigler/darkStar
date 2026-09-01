@@ -6,6 +6,12 @@ ends with a page that encourages the reader—perhaps in the company of
 others—to create a secret, personalized paper wallet leading into the
 universe of ideas sometimes called #web3.
 
+The project's symbolic framework is preserved in `DARK_STAR_MYTHOS.md`.
+It distinguishes established Dark Star ideas from speculative cross-cultural
+and historical connections. Some of the same material may also appear as
+hidden mythos in HTML comments, glyphs, addresses, and other source-level
+artifacts.
+
 ## Edit one physical page
 
 The manuscript pages remain deliberately redundant and local. Edit the
@@ -21,6 +27,9 @@ vi 01_01.html
 Each resource has a fixed 7 × 8.5 inch typeset area. Hand-authored
 `<pre>` spacing and line breaks remain unchanged. The front cover is the
 first physical page, while `polygon.html` remains the final page.
+
+The current front cover is `cover-dark-star.jpg`, placed by
+`front-cover.html` without changing the physical page dimensions.
 
 ## Print one page on 8.5 × 11
 

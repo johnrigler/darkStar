@@ -84,6 +84,58 @@ The project proposition is:
 
 In Dark Star, Chisel-like systems rummage through that machinery and ask what it is actually good for.
 
+### Behemoth and the Digital Leviathan
+
+Dark Star uses **Behemoth** and **Leviathan** as a paired hidden structure, but the Leviathan here is explicitly **not Hobbes's sovereign Leviathan**.
+
+**Behemoth** is the accumulated architecture of institutional power: government, industry, finance, academia, religion, media, credentialing systems, platforms, and the other structures that mediate access, legitimacy, publication, exchange, and action. It is not one conspiracy or one command center. It is an ecology of gates.
+
+Yarvin's Cathedral can be thrown into Behemoth as one description of part of that ecology. Dark Star does not need the Cathedral as the master metaphor because Behemoth is larger than any one institutional theory.
+
+**Leviathan** is the counterforce: an amoral digital force of nature produced when an exact technical hack becomes instantiated and portable. It is not benevolent, democratic, moral, or sovereign. It does not represent the people. It simply changes what actions are technically possible.
+
+The hack must be exact. A signature either verifies or it does not. A key authorizes according to the protocol or it does not. A valid transaction does not become more valid because an institution approves it. The fundamental hack cannot be tuned into a qualified political compromise without becoming a different mechanism.
+
+In this sense the Digital Leviathan is technology escaping not necessarily from humanity, but from the particular humans and institutions that have claimed the right to hold technology on humanity's behalf. The ordinary person at a drugstore counter is not necessarily attempting to restrain the machinery. The restraint is often exercised by gatekeepers, technocrats, platforms, regulators, investors, and institutions positioned between the person and the capability.
+
+This does not make all restraint illegitimate. Safety, privacy, fraud prevention, consumer protection, and other constraints can serve ordinary people. The mythic distinction is narrower: Leviathan routes around **mandatory mediation** when the underlying protocol permits it.
+
+Behemoth says: pass through us.
+
+Leviathan says nothing.
+
+The packet moves.
+
+The signature verifies.
+
+The river finds another channel.
+
+The King reaches for the Bell.
+
+The text changes phase.
+
+The reader scans an object that is not merely a URL.
+
+### Anna Livia Plurabelle and Leviathan
+
+**Anna Livia Plurabelle** enters this layer through water, flow, language, recurrence, and the dissolution of fixed boundaries. Dark Star does not need to settle the relationship into a single allegory.
+
+She may be the daughter of Leviathan.
+
+She may become Leviathan.
+
+She may be the voice heard when Leviathan passes through language.
+
+She may simply run alongside it until the distinction disappears.
+
+The useful correspondence is movement. Behemoth is architecture. Leviathan is flow. Anna Livia carries language toward water and return. In Dark Star that flow can continue into encoded text, addresses, QR objects, transactions, ledgers, and other forms that cease to belong exclusively to the printed page.
+
+The King attempts to possess the Bell at the same point that the text begins escaping ordinary representation. Phase changes, MacDougall text, ledger artifacts, and machine-readable objects should not be decorative corruption. They are genuine transport. The page is becoming something that can move through systems outside the book.
+
+This is why the reader's transition into Web3 should be authentic rather than simulated. A block explorer should show a real ledger object. An address should be a real address. Encoded text should actually decode. A QR object should contain durable data rather than merely point to a fragile DNS destination when possible. Chisel and Mogwai are possible instruments for reading this territory, not owners of the territory.
+
+The book does not merely tell a story about another place. At certain points it contains pieces of that place.
+
 ## Speculative connections and overlays
 
 The following are deliberately preserved as speculative or interpretive connections. They should not be collapsed into claims that different cultures or theories are secretly identical.
@@ -127,6 +179,8 @@ Dark Star intentionally places different traditions and methodologies atop one a
 - Burroughs
 - the Fourth Turning
 - hacker culture
+- Behemoth and Leviathan
+- Anna Livia Plurabelle
 - public ledgers and cryptographic artifacts
 
 The claim is not that these are historically identical. The method is **correspondence**: different systems produce related shapes that can be made to resonate inside the work.
@@ -149,10 +203,16 @@ The claim is not that these are historically identical. The method is **correspo
 
 **Reversal of Power** is the recurring transformation by which the marginal, mocked, or apparently useless becomes unexpectedly useful.
 
+**Behemoth** is the ecology of institutional gates and accumulated structures of mediation.
+
+**The Digital Leviathan** is the amoral, exact, portable technical force that can route around mandatory mediation without becoming another sovereign.
+
+**Anna Livia Plurabelle** is flow, language, recurrence, and a possible daughter, manifestation, or voice of Leviathan.
+
 **Hidden Mythos** makes the source code and encoded artifacts part of the literary form.
 
 **Post-Collapse Tools** are portable artifacts built in one order that can remain useful in the next.
 
 ## Short statement
 
-**Dark Star is a Saturnian novel/tool about turning.** It stacks myth, history, literature, cryptography, and hacker practice around recurrence, reversal, institutional mortality, and the survival of portable artifacts. It is not a claim that collapse is certain or that its source traditions all say the same thing. It is a machine built from correspondences, with Saturn at the dark center and the possibility that the strangest artifacts of the old order become unexpectedly useful after the turn.
+**Dark Star is a Saturnian novel/tool about turning.** It stacks myth, history, literature, cryptography, and hacker practice around recurrence, reversal, institutional mortality, and the survival of portable artifacts. Behemoth gathers the gates of the old order. The Digital Leviathan is not a new king but an amoral technical force whose exact mechanisms can escape mandatory mediation. Anna Livia runs through this structure as language, river, recurrence, and possible Leviathan. The work is not a claim that collapse is certain or that its source traditions all say the same thing. It is a machine built from correspondences, with Saturn at the dark center and the possibility that the strangest artifacts of the old order become unexpectedly useful after the turn.

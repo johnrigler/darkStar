@@ -90,6 +90,28 @@ body {
   border-right: 1px dashed #ccc;
 }
 
+/*
+  Folded US Letter booklet: one landscape 11 x 8.5 sheet becomes two
+  5.5 x 8.5 book pages. Keep the authored 7 x 8.5 page unchanged and
+  scale it uniformly to fit each half. This preserves hand spacing while
+  giving us a correct duplex-imposed PDF/print target.
+*/
+.letter-booklet-preview .booklet-sheet {
+  grid-template-columns: 5.5in 5.5in;
+  width: 11in;
+  height: 8.5in;
+}
+
+.letter-booklet-preview .booklet-half {
+  width: 5.5in;
+  height: 8.5in;
+}
+
+.letter-booklet-preview .print-page {
+  transform: scale(0.7857142857);
+  transform-origin: center center;
+}
+
 .print-page {
   display: block;
   width: var(--page-width);

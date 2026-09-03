@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark Star — Letter booklet print job</title>
+  <link rel="stylesheet" href="print.css">
+  <style>
+    @page {
+      size: letter landscape;
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="booklet-preview letter-booklet-preview" data-print-mode="booklet">
+  <aside class="print-help">
+    <strong>8.5×11 one-fold booklet</strong>
+    <span>Print at 100%, landscape, two-sided, flip on short edge.</span>
+    <span>Use no margins, turn headers and footers off, and enable background graphics.</span>
+    <span>Each Letter sheet contains four book pages. Fold once through the center.</span>
+    <span>The job pads itself to a multiple of four pages and imposes every sheet in folding order.</span>
+    <span>Reload before printing to generate a different ornament arrangement.</span>
+  </aside>
+
+  <main id="print-document" aria-label="Dark Star Letter booklet print job"></main>
+
+  <script src="book.js"></script>
+  <script src="print-random.js"></script>
+  <script src="print.js"></script>
+</body>
+</html>

@@ -52,6 +52,36 @@ Print settings:
 
 The 7 × 8.5 inch typeset area is centered on the 8.5 × 11 sheet.
 
+## Print a folded booklet on ordinary Letter paper
+
+Open:
+
+```text
+print-booklet-letter.html
+```
+
+This is the simplest physical edition. Each ordinary 8.5 × 11 sheet is
+printed landscape on both sides and folded once through the center. The
+print job imposes four book pages per physical sheet in booklet order.
+
+The authored 7 × 8.5 pages are scaled uniformly to fit each 5.5 × 8.5 half
+without changing their hand-authored spacing. This makes the browser print
+output suitable for saving directly as a PDF and later printing unchanged.
+
+Print / PDF settings:
+
+- US Letter, landscape
+- two-sided
+- flip on short edge
+- 100% or “Actual size”
+- no added margins
+- headers and footers off
+- background graphics on
+
+Save-to-PDF from this view to freeze one generated edition, including its
+current randomized print ornaments. A new reload can produce a different
+arrangement before creating another PDF.
+
 ## Print the one-fold 17 × 11 booklet
 
 Open:

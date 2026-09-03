@@ -21,6 +21,14 @@ Each invocation of a print view should generate a fresh arrangement so that two 
 
 Prefer a client-side vanilla-JavaScript implementation. No server state should be required. A print-specific seed may optionally be displayed or encoded so a particular copy can be reproduced later, but unseeded printing should remain the default.
 
+### Current implementation
+
+`print-random.js` now provides the first safe slice. It decorates `pre.lorem` blocks inside the print-page iframes with 1–3 randomly selected non-QR ornaments per block. The initial pool is deliberately simple: cherries, strawberries, and a few geometric glyphs. The authored HTML pages are not modified by the randomizer.
+
+Both `print-letter.html` and `print-booklet.html` load the module before `print.js`, and their print instructions explicitly note that reloading creates a different ornament arrangement.
+
+This first implementation is intentionally conservative. It does not yet place QR codes, Chisel addresses, blockchain data, margin-spanning artifacts, or collision-aware free-positioned objects.
+
 ## 2. Multiple physical formats
 
 Keep the same authored page resources and provide print transforms for:
@@ -64,7 +72,7 @@ No CID should be invented ahead of publication. Build the IPFS document first, a
 
 Keep authored pages dumb and printable.
 
-Add a small print-only module, for example `print-random.js`, loaded by the Letter, Legal, and booklet print shells. It can:
+Use the existing `print-random.js` as the print-only module loaded by the Letter, Legal, and booklet print shells. It should evolve to:
 
 1. locate designated filler regions or safe page-margin regions;
 2. choose a random number of artifacts per printed physical page;
@@ -80,8 +88,9 @@ A later Chisel integration can expose a plain array of QR payloads/artifacts to 
 
 ## 6. Implementation order
 
-- [ ] Add `print-random.js` with non-QR placeholder glyphs first.
-- [ ] Mark safe random/filler regions in several pages and test collision behavior.
+- [x] Add `print-random.js` with non-QR placeholder glyphs first.
+- [x] Load the randomizer in Letter and 11 × 17 booklet print views.
+- [ ] Mark additional safe random/filler regions in several pages and test collision behavior.
 - [ ] Add QR generation / Chisel artifact pool.
 - [ ] Add `print-legal.html` alongside the existing Letter and 11 × 17 booklet printers.
 - [ ] Verify randomized output in Letter, Legal, and booklet modes.

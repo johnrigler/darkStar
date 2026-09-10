@@ -15,7 +15,11 @@ const DARK_STAR_PAGES_BEFORE_BELL = [
   "preface.html",
   "01_01.html",
   "01_02.html",
-  "01_03.html"
+  "01_03.html",
+  "gospel-matthew.html",
+  "gospel-mark.html",
+  "gospel-luke.html",
+  "gospel-john.html"
 ];
 
 const DARK_STAR_BELL_PAGES = [
@@ -38,6 +42,9 @@ const DARK_STAR_BELL_PAGES = [
 ];
 
 const DARK_STAR_PAGES_AFTER_BELL = [
+  "part-one-card.html",
+  "part-two-carolyn-01.html",
+  "part-two-carolyn-02.html",
   "doge-soup.html"
 ];
 

@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --note-navy: #17385f;
+  --note-purple: #5b3b72;
+  --note-brown: #76502f;
+  --note-rust: #8a4939;
+  --note-teal: #2f6261;
+  --note-plum: #70445f;
+  --note-paper: #fbf8f2;
+}
+
 html,
 body {
   margin: 0;
@@ -47,6 +57,82 @@ pre {
   line-height: 1.35;
   white-space: pre;
   tab-size: 8;
+}
+
+/* Visible manuscript notes. These are intentionally not black. */
+.note-navy { --novel-note-color: var(--note-navy); }
+.note-purple { --novel-note-color: var(--note-purple); }
+.note-brown { --novel-note-color: var(--note-brown); }
+.note-rust { --novel-note-color: var(--note-rust); }
+.note-teal { --novel-note-color: var(--note-teal); }
+.note-plum { --novel-note-color: var(--note-plum); }
+
+.novel-note {
+  color: var(--novel-note-color, var(--note-navy)) !important;
+}
+
+pre.novel-note {
+  font-size: 8.55pt;
+  line-height: 1.27;
+  white-space: pre-wrap;
+}
+
+.novel-sheet {
+  height: 7.6in;
+  overflow: hidden;
+  color: var(--novel-note-color, var(--note-navy));
+}
+
+.novel-sheet .part-label {
+  margin: 0 0 0.1in;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 8.5pt;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.novel-sheet h1 {
+  margin: 0 0 0.18in;
+  color: inherit;
+  font-size: 23pt;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+}
+
+.novel-sheet h2 {
+  margin: 0.22in 0 0.08in;
+  color: inherit;
+  font-size: 13pt;
+}
+
+.novel-sheet p {
+  margin: 0 0 0.13in;
+  font-size: 10.4pt;
+  line-height: 1.32;
+}
+
+.novel-sheet .scratch {
+  margin-top: 0.18in;
+  padding: 0.13in 0.16in;
+  border-left: 2pt solid currentColor;
+  background: #faf7f1;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 9pt;
+  line-height: 1.28;
+  white-space: pre-wrap;
+}
+
+.novel-sheet .split-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.18in;
+  margin-top: 0.18in;
+}
+
+.novel-sheet .split-notes > div {
+  padding-top: 0.08in;
+  border-top: 1pt solid currentColor;
 }
 
 /* Preface is deliberately dense and is not editorially altered here. */

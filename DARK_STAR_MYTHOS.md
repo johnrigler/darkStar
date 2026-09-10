@@ -136,6 +136,159 @@ This is why the reader's transition into Web3 should be authentic rather than si
 
 The book does not merely tell a story about another place. At certain points it contains pieces of that place.
 
+### Narrative Architecture: the Four Gospels
+
+The opening movement of **Dark Star** is organized as four chapters named **Matthew, Mark, Luke, and John**. They are not merely biblical labels. They are four progressively less stable systems for rendering the same world.
+
+The first three function as Dark Star's synoptics. By the fourth chapter, **John**, the apparent stability of the synoptic view breaks down and the work begins attacking the idea that there was ever a single reliable optics in the first place.
+
+#### Matthew
+
+**Matthew** is built around a composite of **Nick Hanauer and Paul Graham**.
+
+The chapter can initially occupy recognizable contemporary language: wealth, entrepreneurship, inequality, startups, patronage, social responsibility, and the class of people who both create and explain economic systems. Hanauer and Graham point in different directions while emerging from overlapping technological and economic terrain, so Matthew is already doubled internally.
+
+The biblical association with Matthew as a tax collector can remain available as another layer without being explained to the reader.
+
+Matthew should feel comparatively legible. It is still possible here to believe that the book is describing the world using ordinary categories.
+
+#### Mark
+
+**Mark** centers on **Peter Thiel**, but identity and taxonomy begin to slip.
+
+Thiel appears to become a **T-Rex dinosaur playing marbles**, except the marble game is an elaborate mathematical or philosophical game presented partly in German and connected to Hermann Hesse's **The Glass Bead Game**.
+
+The sequence should keep producing explanations that appear to resolve the absurdity and then become unstable themselves:
+
+1. Peter Thiel appears as a dinosaur playing an intellectualized marble game.
+2. The German Glass Bead Game material makes the scene appear allegorical or philosophical.
+3. A paleontological explanation then appears: perhaps the dinosaur is named for a paleontologist named Thiel.
+4. The name itself becomes disputed because another dinosaur name already exists, including the **Elon Muskiest dinosaur** layer.
+5. The intellectual and taxonomic explanations finally regress into dinosaur time, childhood, or both.
+6. The apparent dinosaurs become children dressed as dinosaurs for Halloween, shooting marbles and arguing with each other.
+
+The movement is therefore:
+
+**metaphor → scholarship → taxonomy → scientific explanation → naming dispute → deep time → children's game**
+
+The joke is not merely that powerful men are dinosaurs. The chapter repeatedly constructs authoritative interpretive machinery and then discovers that the machinery may itself be part of the game.
+
+#### Luke
+
+**Luke** is the chapter in which language becomes the destabilizing engine.
+
+The operative sequence is **Luke / look / luck / looks like**. A Dr. Seuss-like mode can emerge from repetition, rhyme, near-homophones, spelling substitutions, visual echoes, childish rules, and increasingly literal transformations produced by language.
+
+"What does Luke look like?" can cease to be a figure of speech and become a genuine ontological problem.
+
+Where Mark destabilizes the world through scholarship, metaphor, taxonomy, and regression, Luke destabilizes it through the mechanics of words themselves. The linguistic rules may become increasingly ridiculous while remaining internally executable.
+
+#### John
+
+**John is qualitatively different from the first three chapters.**
+
+John is not simply the fourth synoptic. John attacks the synoptic frame.
+
+The word **synoptic** can collapse into **sin-optic**, producing the **optics of sin** alongside the theological term. The earlier chapters begin to look like defective rendering systems rather than authoritative descriptions.
+
+By John, ordinary prose is no longer privileged. The unstable language has shifted far enough that the reader is entering a more native Web3 landscape. McDougall addresses, QR codes, transaction identifiers, hashes, signatures, unusual capitalization, checksums, fragments, images, executable artifacts, and ledger references can become part of the language of the chapter rather than annotations attached to it.
+
+The transition should be real rather than decorative. John is where the book begins changing medium while the reader is still holding the book.
+
+### Johnnie McDougall
+
+**Johnnie McDougall is the narrator and may also be a recurring character across the Gospel movement.**
+
+His apparent identity should remain unstable.
+
+He seems wealthy.
+
+He appears, at least at times, to be a Catholic priest.
+
+Children keep coming to speak with him.
+
+He may be the person involved in earlier coffee conversations.
+
+He appears to be living with or "shacking up with" **Ann Olivia**, who is Baptist and plays the organ. The organ should support several simultaneous registers: sacred music, physical instrument, bodily language, denominational culture, and running joke. Actual organ music may enter the work through references, QR material, notation, recordings, or other artifacts.
+
+Eventually the children turn out to be dogs.
+
+This revelation should retroactively alter the reader's interpretation without necessarily resolving it. Johnnie may not have been a priest receiving children at all. He may simply be an eccentric man talking to dogs. Because Johnnie is also a narrator, neither reading must completely defeat the other.
+
+A useful distinction should be maintained:
+
+- **John** is a textual regime or mode of representation.
+- **Johnnie McDougall** is a narrator/character who exists within, produces, or is produced by that regime.
+
+This prevents the chapter from collapsing into a simple autobiographical identification.
+
+### Ann Olivia
+
+**Ann Olivia** participates in the Anna Livia layer but remains a character rather than a one-to-one allegorical key.
+
+She is Baptist, plays the organ, and exists in a domestic or intimate relationship with Johnnie whose exact status may remain unclear. Her music provides a route for hymnody, church culture, jokes, sound, notation, recordings, and other media to enter the text.
+
+The Anna Livia / Ann Olivia echo should remain productive rather than resolved.
+
+### Carolyn Fowler and the Second Movement
+
+A later movement or **Part Two** is the **Carolyn Fowler** section.
+
+Its surface form is closer to a woman's novel, but it is physically rooted in **Grants, New Mexico**, the **Continental Divide**, and the cultural geography around Navajo, Laguna, and Acoma communities.
+
+The conflict can involve Navajo and Laguna/Acoma people arguing with one another across cultural, geographic, historical, and linguistic boundaries. Relevant passages may move into Navajo and the languages or language varieties associated with Laguna and Acoma rather than flattening every exchange into English.
+
+Language accuracy, naming, orthography, permissions, translation, and cultural context must be verified when actual Indigenous-language material is inserted. Dark Star should not fabricate linguistic authenticity merely because opacity is aesthetically useful.
+
+This movement reverses the direction of the Gospel chapters. The Gospels begin with enormous Western intellectual, religious, economic, and technological systems and progressively make their explanatory machinery unstable. The Carolyn Fowler movement begins from a highly specific physical place and allows larger systems to emerge from that locality.
+
+### QR References as Native Footnotes
+
+QR codes throughout Dark Star are not decorative futurism and should not function only as ordinary web links.
+
+They can act simultaneously as:
+
+- footnotes;
+- citations;
+- translations;
+- recordings;
+- maps;
+- block-explorer references;
+- Chisel or Mogwai entry points;
+- ledger artifacts;
+- executable or machine-readable objects;
+- exits from the printed narrative into third-space activity.
+
+Where possible, the referenced object should be durable and verifiable. The QR code should create a trail outward from the printed page rather than merely advertising another page.
+
+### The Perforated Ending and Third-Space Action
+
+The physical ending should make the book stop behaving only as a book.
+
+A page can be designed specifically for **8.5 × 11 inch perforated paper**. The reader tears the section free, turns it sideways, and applies physical stickers to it. This detachable artifact participates in the previously developed four-part ending.
+
+The exact content of those four parts remains a preserved open structure until the earlier ending is recovered or rewritten. Do not silently invent replacements for them.
+
+The important transition is:
+
+**page → reference → QR → network → physical object → other person → ledger**
+
+At the perforation, the conceptual transition becomes literal. Something is detached from the publication and manipulated in physical space. Typography becomes an object. Reading becomes handling. The reader can move from handling into scanning, signing, exchanging, showing, teaching, or performing some other protocol-level action.
+
+This is where the **Chick tract** analogy becomes structurally important. A Chick tract is not designed merely to be admired as print. It is a delivery mechanism intended to produce action beyond itself.
+
+Dark Star uses the same pulp logic without requiring assent to a doctrine. Its desired conversion is a change of role:
+
+**spectator → participant**
+
+The destination is **third space**: a social and technical territory in which people meet, scan, exchange, verify, print, stick, sign, teach, argue, or otherwise interact through artifacts that can continue outside the book and outside a single platform.
+
+The theology, dinosaurs, Hesse, unstable language, Finnegans Wake machinery, organ jokes, dogs, New Mexico geography, Indigenous-language passages, cryptography, blockchains, QR codes, and paper-wallet ritual are therefore not separate ornaments. They are parts of a delivery machine whose final action is to push the reader across the boundary between representation and participation.
+
+The book begins by describing strange systems.
+
+It ends by handing the reader one.
+
 ## Speculative connections and overlays
 
 The following are deliberately preserved as speculative or interpretive connections. They should not be collapsed into claims that different cultures or theories are secretly identical.

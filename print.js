@@ -179,6 +179,16 @@
     ]
   };
 
+  const PRINT_CAPTIONS = {
+    "bell-06.html": {
+      title: "The Programmer King",
+      paragraphs: [
+        "The modern king may be the programmer: the builder becomes sovereign because he understands the machine.",
+        "The harder rule runs the other way. Build the bell so it does not need its maker."
+      ]
+    }
+  };
+
   function applyNovelNotes(frame, resource) {
     const notes = NOVEL_NOTES[resource];
     if (!notes) return;
@@ -195,6 +205,20 @@
       target.classList.add("novel-note", note.color);
       target.classList.remove("panel-notes");
     });
+
+    const captionNote = PRINT_CAPTIONS[resource];
+    const caption = captionNote && doc.querySelector(".bell-tract figcaption");
+    if (caption) {
+      caption.replaceChildren();
+      const strong = doc.createElement("strong");
+      strong.textContent = captionNote.title;
+      caption.appendChild(strong);
+      captionNote.paragraphs.forEach((text) => {
+        const paragraph = doc.createElement("p");
+        paragraph.textContent = text;
+        caption.appendChild(paragraph);
+      });
+    }
 
     if (doc.body) doc.body.dataset.printNovelized = "true";
   }

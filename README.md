@@ -6,6 +6,14 @@ ends with a page that encourages the reader—perhaps in the company of
 others—to create a secret, personalized paper wallet leading into the
 universe of ideas sometimes called #web3.
 
+## Dated concept notes
+
+- [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)
+
+The dated notes preserve the evolving architecture around Dark Star, including
+its relationship to Mogwai and the separate CertLedger training edition,
+without replacing the current printable literary edition.
+
 The project's symbolic framework is preserved in `DARK_STAR_MYTHOS.md`.
 It distinguishes established Dark Star ideas from speculative cross-cultural
 and historical connections. Some of the same material may also appear as

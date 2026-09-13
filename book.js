@@ -1,15 +1,14 @@
 /*
   Dark Star book manifest.
 
-  Each non-null entry is one physical 7 x 8.5 inch page resource.
-  A null entry is an intentionally blank page.
+  The source pages remain the editable book resources. The Letter booklet
+  renderer can re-typeset them as native 5.5 x 8.5 inch pages without
+  changing the older legal-size screen viewer.
 
-  The Bell pages are deliberately separate HTML files. This is redundant
-  on purpose: each physical page can be opened and hand-edited directly
-  without changing a shared template or query-string renderer.
-
-  polygon.html is deliberately appended after all reading pages so the
-  Polygon writer remains the final page as the book grows.
+  The 36-page Letter edition is deliberate:
+    - pages 18-19 are the physical center spread
+    - pages 35-36 are the final tear-out spread
+    - the two null pages before the tear-out keep the booklet divisible by 4
 */
 const DARK_STAR_PAGES_BEFORE_BELL = [
   "preface.html",
@@ -41,6 +40,11 @@ const DARK_STAR_BELL_PAGES = [
   "bell-last.html"
 ];
 
+const DARK_STAR_CENTERFOLD = [
+  "centerfold-train-left.html",
+  "centerfold-train-right.html"
+];
+
 const DARK_STAR_PAGES_AFTER_BELL = [
   "part-one-card.html",
   "part-two-carolyn-01.html",
@@ -48,9 +52,21 @@ const DARK_STAR_PAGES_AFTER_BELL = [
   "doge-soup.html"
 ];
 
+const DARK_STAR_TEAROUT = [
+  "tearout-left.html",
+  "tearout-right.html"
+];
+
 const DARK_STAR_READING_PAGES = [
   ...DARK_STAR_PAGES_BEFORE_BELL,
-  ...DARK_STAR_BELL_PAGES,
+
+  // Eight Bell pages put the following pair at pages 18-19 once the
+  // front cover and opening pages are counted. That is the exact center
+  // spread of the 36-page Letter booklet.
+  ...DARK_STAR_BELL_PAGES.slice(0, 8),
+  ...DARK_STAR_CENTERFOLD,
+  ...DARK_STAR_BELL_PAGES.slice(8),
+
   ...DARK_STAR_PAGES_AFTER_BELL
 ];
 
@@ -61,6 +77,13 @@ window.DARK_STAR_BOOK = {
   pages: [
     "front-cover.html",
     ...DARK_STAR_READING_PAGES,
-    "polygon.html"
+    "polygon.html",
+
+    // Binding / separator leaves. Keeping them explicit makes the final
+    // spread the removable object rather than automatic printer padding.
+    null,
+    null,
+
+    ...DARK_STAR_TEAROUT
   ]
 };

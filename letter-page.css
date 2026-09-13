@@ -116,19 +116,30 @@ body.bell-page main {
   font-size: 7.5pt !important;
 }
 
-/* Cover is cropped to the finished half-letter page rather than letterboxed. */
+/* Print-friendly cover: white border, contained artwork, lower ink load. */
 body.front-cover {
-  padding: 0 !important;
   width: 5.5in !important;
   height: 8.5in !important;
+  padding: 0.34in 0.30in 0.38in !important;
+  background: #fff !important;
+}
+
+body.front-cover .cover-frame {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: #fff !important;
 }
 
 body.front-cover .cover-image {
   width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  max-height: none !important;
-  object-fit: cover !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 7.70in !important;
+  object-fit: contain !important;
+  filter: brightness(1.18) contrast(0.90) saturate(1.08) !important;
 }
 
 /* Purpose-built spread pages already own their complete geometry. */

@@ -38,7 +38,16 @@
   }
 
   function uniformStyleHref() {
-    return new URL("style.css?page-model=0.3.2", window.location.href).href;
+    return new URL("style.css?page-model=0.3.3", window.location.href).href;
+  }
+
+  function disableLegacyStyles(doc) {
+    // Source resources are content containers now, not page-layout authorities.
+    // Remove their old styles only inside the runtime iframe. The source files
+    // remain untouched and can still be opened directly for archival reference.
+    doc.head
+      .querySelectorAll('link[rel~="stylesheet"], style')
+      .forEach((node) => node.remove());
   }
 
   function injectUniformStyle(doc) {
@@ -90,6 +99,9 @@
     const doc = frame.contentDocument;
     if (!doc || !doc.body) return;
 
+    // The unified page system owns all interior presentation. Legacy page CSS
+    // is deliberately removed before the common stylesheet is installed.
+    disableLegacyStyles(doc);
     injectUniformStyle(doc);
     doc.documentElement.classList.add("darkstar-page");
     doc.body.classList.add("darkstar-interior");

@@ -91,11 +91,16 @@ body {
 }
 
 /*
-  Folded US Letter booklet: one landscape 11 x 8.5 sheet becomes two
-  5.5 x 8.5 book pages. Keep the authored 7 x 8.5 page unchanged and
-  scale it uniformly to fit each half. This preserves hand spacing while
-  giving us a correct duplex-imposed PDF/print target.
+  Letter magazine mode is not a scaled legal page. Each physical 11 x 8.5
+  sheet contains two native 5.5 x 8.5 pages. The iframe is therefore the
+  exact finished page size and the page is re-typeset internally by
+  letter-page.css instead of being uniformly shrunk.
 */
+.letter-booklet-preview {
+  --page-width: 5.5in;
+  --page-height: 8.5in;
+}
+
 .letter-booklet-preview .booklet-sheet {
   grid-template-columns: 5.5in 5.5in;
   width: 11in;
@@ -108,7 +113,7 @@ body {
 }
 
 .letter-booklet-preview .print-page {
-  transform: scale(0.7857142857);
+  transform: none;
   transform-origin: center center;
 }
 

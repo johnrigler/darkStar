@@ -1,0 +1,138 @@
+/*
+  Native 5.5 x 8.5 page geometry for print-booklet-letter.html.
+  This stylesheet is injected into each source page by print.js so the
+  older 7 x 8.5 legal viewer can remain unchanged.
+*/
+
+html,
+body {
+  width: 5.5in !important;
+  height: 8.5in !important;
+  max-width: none !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+body {
+  padding: 0.30in 0.28in 0.34in !important;
+  font-size: 9.25pt !important;
+  line-height: 1.28 !important;
+}
+
+h1 {
+  font-size: 13pt !important;
+}
+
+pre {
+  font-size: 7.55pt !important;
+  line-height: 1.24 !important;
+}
+
+pre.novel-note {
+  font-size: 7.35pt !important;
+  line-height: 1.20 !important;
+}
+
+.novel-sheet {
+  height: 7.86in !important;
+}
+
+.novel-sheet h1 {
+  font-size: 19pt !important;
+}
+
+.novel-sheet h2 {
+  font-size: 11.5pt !important;
+}
+
+.novel-sheet p {
+  font-size: 9pt !important;
+  line-height: 1.26 !important;
+}
+
+.novel-sheet .scratch {
+  font-size: 7.7pt !important;
+  line-height: 1.22 !important;
+}
+
+.novel-sheet .split-notes {
+  gap: 0.12in !important;
+}
+
+/* The preface is intentionally dense. */
+body.preface-page {
+  padding: 0.18in 0.16in 0.20in !important;
+  font-size: 6.4pt !important;
+  line-height: 1.04 !important;
+}
+
+body.preface-page h1 {
+  font-size: 12pt !important;
+}
+
+body.preface-page pre {
+  font-size: 5.0pt !important;
+  line-height: 1.02 !important;
+}
+
+body.preface-page .qr-table img {
+  width: 0.48in !important;
+  height: 0.48in !important;
+}
+
+body.preface-page .source {
+  font-size: 5.8pt !important;
+}
+
+/* Bell pages need their internal 6.16in legal measure released. */
+body.bell-page {
+  padding: 0.28in 0.26in 0.32in !important;
+}
+
+body.bell-page main {
+  width: 100% !important;
+  height: 7.90in !important;
+}
+
+.bell-page .lorem {
+  font-size: 7.1pt !important;
+  line-height: 1.19 !important;
+}
+
+.bell-tract {
+  width: 78% !important;
+  height: 1.92in !important;
+  margin-top: 0.05in !important;
+  margin-bottom: 0.11in !important;
+}
+
+.bell-tract figcaption {
+  padding: 0.10in !important;
+  font-size: 6.7pt !important;
+  line-height: 1.10 !important;
+}
+
+.bell-tract figcaption strong {
+  font-size: 7.5pt !important;
+}
+
+/* Cover is cropped to the finished half-letter page rather than letterboxed. */
+body.front-cover {
+  padding: 0 !important;
+  width: 5.5in !important;
+  height: 8.5in !important;
+}
+
+body.front-cover .cover-image {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+}
+
+/* Purpose-built spread pages already own their complete geometry. */
+body.centerfold-page,
+body.tearout-page {
+  padding: 0 !important;
+}

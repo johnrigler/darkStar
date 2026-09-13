@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 5.5in; height: 8.5in; overflow: hidden; background: #fffdf7; }
+body.tearout-page { position: relative; padding: 0; color: #241f1a; font-family: "Segoe Print", "Comic Sans MS", cursive; }
+.tearout-sheet { position: relative; width: 5.5in; height: 8.5in; padding: .34in .32in .30in; border-top: 1.5pt dashed #8b8172; border-bottom: 1.5pt dashed #8b8172; background: #fffdf7; }
+.tear-guide { position: absolute; top: 0; bottom: 0; width: 1.5pt; border-left: 1.5pt dashed #8b8172; }
+body[data-half="left"] .tear-guide { right: .04in; }
+body[data-half="right"] .tear-guide { left: .04in; }
+.warning { margin: 0; min-height: .82in; color: #15120f; font-size: 25pt; font-weight: 700; line-height: .95; letter-spacing: .015em; text-transform: uppercase; }
+body[data-half="left"] .warning { text-align: right; transform: rotate(-1deg); }
+body[data-half="right"] .warning { text-align: left; transform: rotate(.8deg); }
+.subnote { margin: .05in 0 .24in; color: #665747; font-size: 9pt; line-height: 1.18; }
+body[data-half="left"] .subnote { text-align: right; padding-right: .06in; }
+body[data-half="right"] .subnote { text-align: left; padding-left: .06in; }
+.stickers { display: grid; grid-template-rows: 1fr 1fr; gap: .34in; height: 6.35in; }
+.sticker-place { display: grid; place-items: center; margin: .08in .20in; border: 2pt dashed #40382f; border-radius: .08in; background: #fff; color: #40382f; text-align: center; }
+.sticker-place strong { display: block; font-size: 13pt; }
+.sticker-place span { display: block; margin-top: .06in; font-size: 8.5pt; letter-spacing: .04em; }
+.corner-note { position: absolute; bottom: .12in; color: #7a6b5a; font-size: 7.8pt; }
+body[data-half="left"] .corner-note { left: .28in; transform: rotate(-2deg); }
+body[data-half="right"] .corner-note { right: .28in; transform: rotate(2deg); }
+@media print { .tearout-sheet { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

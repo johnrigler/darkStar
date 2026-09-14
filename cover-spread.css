@@ -1,0 +1,81 @@
+/* Cover-spread companion panel. The cover itself remains a single 7 x 8.5 page. */
+#cover-info {
+  display: none;
+}
+
+#spread.cover-spread #cover-info {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 9% 10%;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.cover-info-inner {
+  width: min(100%, 31rem);
+}
+
+.cover-info-kicker {
+  margin: 0 0 1.1rem;
+  color: #75664d;
+  font: 600 clamp(.62rem, .9vw, .78rem)/1.2 system-ui, sans-serif;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+#cover-info h1 {
+  margin: 0 0 .55rem;
+  font-size: clamp(1.55rem, 3vw, 2.55rem);
+  font-weight: 500;
+  letter-spacing: .16em;
+  line-height: 1;
+}
+
+.cover-info-copy {
+  max-width: 28rem;
+  margin: 0 0 1.6rem;
+  font-size: clamp(.78rem, 1.15vw, 1rem);
+  line-height: 1.45;
+}
+
+.cover-info-links {
+  border-top: 1px solid #d5cec1;
+  border-bottom: 1px solid #d5cec1;
+  padding: .7rem 0 .75rem;
+  font: clamp(.68rem, 1vw, .88rem)/1.5 system-ui, sans-serif;
+}
+
+.cover-info-links p {
+  margin: 0 0 .7rem;
+}
+
+.cover-info-links p:last-child {
+  margin-bottom: 0;
+}
+
+.cover-info-links a {
+  color: #343434;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  border-bottom: 1px dotted #8e8578;
+}
+
+.cover-info-note {
+  margin: 1.2rem 0 0;
+  color: #6b645a;
+  font: clamp(.6rem, .82vw, .74rem)/1.35 system-ui, sans-serif;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+@media print {
+  #spread.cover-spread #cover-info {
+    padding: .7in;
+  }
+}

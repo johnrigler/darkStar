@@ -4,12 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dark Star</title>
-  <link rel="stylesheet" href="style.css?v=0.3.6">
+  <link rel="stylesheet" href="style.css?v=0.3.7">
+  <link rel="stylesheet" href="cover-spread.css?v=0.3.7">
 </head>
 <body>
   <main id="spread" aria-label="Dark Star page spread">
     <div id="page-left-slot" class="page-slot">
       <iframe id="page-left" class="page" title="Left page"></iframe>
+      <aside id="cover-info" aria-label="Dark Star source and web links">
+        <div class="cover-info-inner">
+          <p class="cover-info-kicker">print + web artifact</p>
+          <h1>DARK STAR</h1>
+          <p class="cover-info-copy">The printed cover occupies the facing page. This field stays outside the interior page model and points back to the living source.</p>
+          <div class="cover-info-links">
+            <p><strong>Source repository</strong><br><a href="https://github.com/johnrigler/darkStar" target="_blank" rel="noopener">github.com/johnrigler/darkStar</a></p>
+            <p><strong>Web version</strong><br><a href="https://johnrigler.github.io/darkStar/" target="_blank" rel="noopener">johnrigler.github.io/darkStar/</a></p>
+          </div>
+          <p class="cover-info-note">Saturnian mythos · ledger text · pulp booklet · permissionless artifact</p>
+        </div>
+      </aside>
     </div>
     <div id="page-right-slot" class="page-slot">
       <iframe id="page-right" class="page" title="Right page"></iframe>
@@ -19,7 +32,7 @@
   <div id="turn-left" class="turn-zone turn-left" aria-label="Previous spread"></div>
   <div id="turn-right" class="turn-zone turn-right" aria-label="Next spread"></div>
 
-  <script src="book.js?v=0.3.6"></script>
-  <script src="viewer.js?v=0.3.6"></script>
+  <script src="book.js?v=0.3.7"></script>
+  <script src="viewer.js?v=0.3.7"></script>
 </body>
 </html>

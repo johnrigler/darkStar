@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 900" role="img" aria-labelledby="title desc">
+<title id="title">Dark Star blockchain freight train</title>
+<desc id="desc">A long desert freight train. Value and transactions are visible inside cutaway cars while graffiti and public expression appear outside.</desc>
+<rect width="2200" height="900" fill="#faf7ef"/>
+<path d="M0 520 C260 455 470 485 690 445 C930 400 1170 435 1400 390 C1640 345 1880 365 2200 330 L2200 625 L0 625 Z" fill="#e9e0cf"/>
+<path d="M0 560 C250 505 480 540 720 505 C980 470 1210 500 1460 455 C1710 410 1940 440 2200 400" fill="none" stroke="#b7aa96" stroke-width="8"/>
+<line x1="0" y1="720" x2="2200" y2="720" stroke="#222" stroke-width="18"/>
+<line x1="0" y1="752" x2="2200" y2="752" stroke="#666" stroke-width="8"/>
+<g stroke="#111" stroke-width="10" fill="#f4f0e6">
+<rect x="80" y="410" width="470" height="270" rx="12"/>
+<rect x="575" y="380" width="520" height="300" rx="12"/>
+<rect x="1120" y="395" width="500" height="285" rx="12"/>
+<rect x="1645" y="430" width="390" height="250" rx="80"/>
+</g>
+<g fill="#222">
+<circle cx="165" cy="702" r="46"/><circle cx="455" cy="702" r="46"/>
+<circle cx="670" cy="702" r="46"/><circle cx="995" cy="702" r="46"/>
+<circle cx="1215" cy="702" r="46"/><circle cx="1520" cy="702" r="46"/>
+<circle cx="1735" cy="702" r="46"/><circle cx="1950" cy="702" r="46"/>
+</g>
+<g fill="#faf7ef"><circle cx="165" cy="702" r="17"/><circle cx="455" cy="702" r="17"/><circle cx="670" cy="702" r="17"/><circle cx="995" cy="702" r="17"/><circle cx="1215" cy="702" r="17"/><circle cx="1520" cy="702" r="17"/><circle cx="1735" cy="702" r="17"/><circle cx="1950" cy="702" r="17"/></g>
+<g stroke="#111" stroke-width="6" fill="#fffdf7">
+<rect x="245" y="470" width="260" height="155"/>
+<rect x="650" y="450" width="370" height="175"/>
+<rect x="1190" y="455" width="355" height="170"/>
+</g>
+<g fill="#d8c28e" stroke="#6a5938" stroke-width="4">
+<rect x="270" y="495" width="60" height="40"/><rect x="345" y="495" width="60" height="40"/><rect x="420" y="495" width="60" height="40"/>
+<rect x="270" y="550" width="60" height="40"/><rect x="345" y="550" width="60" height="40"/><rect x="420" y="550" width="60" height="40"/>
+<rect x="690" y="480" width="70" height="45"/><rect x="780" y="480" width="70" height="45"/><rect x="870" y="480" width="70" height="45"/>
+<rect x="690" y="545" width="70" height="45"/><rect x="780" y="545" width="70" height="45"/><rect x="870" y="545" width="70" height="45"/>
+<rect x="1230" y="485" width="70" height="45"/><rect x="1320" y="485" width="70" height="45"/><rect x="1410" y="485" width="70" height="45"/>
+<rect x="1230" y="550" width="70" height="45"/><rect x="1320" y="550" width="70" height="45"/><rect x="1410" y="550" width="70" height="45"/>
+</g>
+<g font-family="Arial Black,Impact,sans-serif" font-weight="900" fill="#222">
+<text x="105" y="470" font-size="54" transform="rotate(-6 105 470)">MOGWAI</text>
+<text x="620" y="430" font-size="52" transform="rotate(4 620 430)">FREEDOM</text>
+<text x="1160" y="445" font-size="43" transform="rotate(-3 1160 445)">UNCENSORED</text>
+<text x="1695" y="520" font-size="38" transform="rotate(-5 1695 520)">PEOPLE</text>
+<text x="1695" y="565" font-size="38" transform="rotate(-5 1695 565)">POST</text>
+<text x="1695" y="610" font-size="38" transform="rotate(-5 1695 610)">CREATE</text>
+</g>
+<g font-family="Georgia,serif" fill="#4f4638">
+<text x="85" y="825" font-size="28">outside the car = public expression / graffiti / culture</text>
+<text x="1115" y="825" font-size="28">inside the car = value / transactions / ledger</text>
+</g>
+<line x1="1100" y1="355" x2="1100" y2="860" stroke="#8a8173" stroke-width="2" stroke-dasharray="10 12" opacity=".45"/>
+</svg>

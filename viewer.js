@@ -10,11 +10,8 @@
   const pageWidthPixels = book.pageWidthInches * 96;
   const pageHeightPixels = book.pageHeightInches * 96;
 
-  /*
-    The front cover is not an interior page pair. It gets its own spread
-    state: negative space on the left, cover on the right. After that,
-    interior resources pair normally as left/right Chick-tract spreads.
-  */
+  // The front cover is its own state. All following resources are ordinary
+  // interior pages, including intentionally blank pages.
   const interiorPageCount = Math.max(0, book.pages.length - 1);
   const spreadCount = 1 + Math.ceil(interiorPageCount / 2);
 
@@ -50,13 +47,12 @@
   }
 
   function uniformStyleHref() {
-    return new URL("style.css?page-model=0.3.5", window.location.href).href;
+    return new URL("style.css?page-model=0.3.6", window.location.href).href;
   }
 
   function disableLegacyStyles(doc) {
-    // Source resources are content containers now, not page-layout authorities.
-    // Remove their old styles only inside the runtime iframe. The source files
-    // remain untouched and can still be opened directly for archival reference.
+    // Source resources provide content only. Their old page-layout styles are
+    // retained in the repository but removed from the live iframe.
     doc.head
       .querySelectorAll('link[rel~="stylesheet"], style')
       .forEach((node) => node.remove());
@@ -84,8 +80,8 @@
   function sourceNodes(body) {
     let nodes = substantiveNodes(body);
 
-    // Old source files often have one structural wrapper. The wrapper is not
-    // a page type, so peel it away and make its children movable blocks.
+    // Peel away a single old structural wrapper. It is content scaffolding,
+    // not a second page template.
     if (nodes.length === 1 && nodes[0].nodeType === Node.ELEMENT_NODE) {
       const wrapper = nodes[0];
       if (["MAIN", "CENTER", "ARTICLE"].includes(wrapper.tagName)) {
@@ -105,21 +101,38 @@
     return explicit ? `${stem}:${explicit}` : `${stem}:${String(index + 1).padStart(2, "0")}`;
   }
 
+  function identifyArtifact(block) {
+    if (block.querySelector(":scope > .bell-tract")) return "bell";
+    if (block.querySelector(":scope > .train-art")) return "train";
+    return null;
+  }
+
+  function normalizeArtifactSlots(flow) {
+    const artifacts = [];
+
+    Array.from(flow.children).forEach((block) => {
+      const artifact = identifyArtifact(block);
+      if (!artifact) return;
+      block.dataset.artifact = artifact;
+      artifacts.push(block);
+    });
+
+    // Fixed artifacts are placed first in DOM flow. Their CSS floats carry an
+    // exact top offset, so ordinary prose can occupy space above, beside, and
+    // below them without changing the artifact coordinates.
+    artifacts.reverse().forEach((block) => flow.prepend(block));
+  }
+
   function normalizeInterior(frame, pageIndex, side) {
     if (pageIndex === book.coverIndex) return;
 
     const doc = frame.contentDocument;
     if (!doc || !doc.body) return;
 
-    // The unified page system owns all interior presentation. Legacy page CSS
-    // is deliberately removed before the common stylesheet is installed.
     disableLegacyStyles(doc);
     injectUniformStyle(doc);
     doc.documentElement.classList.add("darkstar-page");
     doc.body.classList.add("darkstar-interior");
-
-    // Position in the live spread owns left/right behavior. This remains true
-    // when pages are inserted, deleted, or moved in book.js.
     doc.body.dataset.side = side;
 
     if (doc.body.querySelector(":scope > .interior-page[data-darkstar-uniform]")) return;
@@ -141,6 +154,7 @@
       flow.appendChild(block);
     });
 
+    normalizeArtifactSlots(flow);
     article.appendChild(flow);
     doc.body.appendChild(article);
   }
@@ -175,8 +189,6 @@
     let urlPageIndex;
 
     if (isCoverSpread) {
-      // A closed book: front cover on the right, intentional negative space
-      // on the left. The Preface does not share this spread.
       blank(left);
       load(right, book.coverIndex, "right");
       urlPageIndex = book.coverIndex;
@@ -212,8 +224,7 @@
       .filter(Boolean);
   }
 
-  // A small editing primitive for the current spread. Moving a block causes
-  // the target page to reflow without changing either page's format.
+  // Editing primitive for movable prose/media blocks on the current spread.
   function moveBlock(blockIdToMove, targetSide = "right", targetPosition = null) {
     const frames = targetSide === "left" ? [left, right] : [right, left];
     const targetFlow = frames[0].contentDocument?.querySelector(".page-flow");

@@ -48,17 +48,17 @@ body[data-half="right"] .centerfold-kicker {
 }
 
 /*
-  Both pages display the same 11-inch-wide train image, shifted by one
-  finished page width. The image therefore crosses the physical fold with
-  no duplicated seam. Keep important detail away from x=5.5in.
+  Both pages display one continuous train image across the physical fold.
+  The page HTML supplies --train-top and --train-height so the centerfold
+  geometry is explicit instead of letting generic image sizing collapse it.
 */
 .train-art {
   position: absolute;
-  bottom: 0.28in;
+  top: var(--train-top, 3.45in);
   width: 10.5in;
-  height: 3.35in;
-  object-fit: contain;
-  object-position: center bottom;
+  height: var(--train-height, 4.09in);
+  object-fit: cover;
+  object-position: center center;
   max-width: none;
   max-height: none;
 }

@@ -38,7 +38,7 @@
   }
 
   function uniformStyleHref() {
-    return new URL("style.css?page-model=0.3.3", window.location.href).href;
+    return new URL("style.css?page-model=0.3.4", window.location.href).href;
   }
 
   function disableLegacyStyles(doc) {
@@ -105,6 +105,11 @@
     injectUniformStyle(doc);
     doc.documentElement.classList.add("darkstar-page");
     doc.body.classList.add("darkstar-interior");
+
+    // Spread geometry owns left/right placement. Source files may retain old
+    // data-side values for archival direct viewing, but rearranging book.js no
+    // longer requires editing them.
+    doc.body.dataset.side = pageIndex % 2 === 0 ? "left" : "right";
 
     if (doc.body.querySelector(":scope > .interior-page[data-darkstar-uniform]")) return;
 

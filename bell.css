@@ -20,9 +20,9 @@ body.bell-page {
 .bell-tract {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 56.5% 43.5%;
-  width: 65%;
-  height: 2.24in;
+  grid-template-columns: 52% 48%;
+  width: 58%;
+  height: 1.9in;
   margin-top: 0.08in;
   margin-bottom: 0.16in;
   overflow: hidden;
@@ -51,22 +51,22 @@ body.bell-page {
   max-height: 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .bell-tract figcaption {
   box-sizing: border-box;
   overflow: hidden;
-  padding: 0.14in 0.13in 0.12in;
+  padding: 0.11in 0.11in 0.1in;
   color: #111;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 8pt;
+  font-size: 7.5pt;
   font-weight: 600;
-  line-height: 1.16;
+  line-height: 1.14;
 }
 
 .bell-tract figcaption p {
-  margin: 0 0 0.09in;
+  margin: 0 0 0.07in;
 }
 
 .bell-tract figcaption p:last-child {
@@ -75,9 +75,9 @@ body.bell-page {
 
 .bell-tract figcaption strong {
   display: block;
-  margin-bottom: 0.08in;
+  margin-bottom: 0.06in;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 9pt;
+  font-size: 8.5pt;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -124,18 +124,21 @@ body.bell-page {
 
 .bell-cover-tract {
   display: block;
+  width: 42%;
+  height: 2.1in;
 }
 
 .bell-cover-tract img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .bell-final-tract {
   display: grid;
-  grid-template-rows: 59% 41%;
+  grid-template-rows: 55% 45%;
   grid-template-columns: 100%;
+  height: 2.45in;
 }
 
 .bell-final-tract img {
@@ -149,7 +152,7 @@ body.bell-page {
 .bell-page[data-side="left"] .bell-final-tract figcaption,
 .bell-page[data-side="right"] .bell-final-tract figcaption {
   order: initial;
-  padding: 0.09in 0.14in;
+  padding: 0.08in 0.12in;
   border: 0;
 }
 

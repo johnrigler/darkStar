@@ -209,6 +209,170 @@ body.darkstar-interior {
   object-fit: contain;
 }
 
+/*
+  Chick-tract content blocks inside the invariant page model.
+
+  The tract is content, not a page type. It floats toward the gutter so the
+  surrounding prose can occupy the outside edge. viewer.js derives data-side
+  from the current spread, so moving a page in book.js does not require
+  renumbering or hand-flipping the source HTML.
+*/
+.page-block:has(> .bell-tract) {
+  width: 58% !important;
+  max-width: 3.55in !important;
+  margin-bottom: .72em !important;
+}
+
+body.darkstar-interior[data-side="left"] .page-block:has(> .bell-tract) {
+  float: right !important;
+  margin-left: .22in !important;
+  margin-right: 0 !important;
+}
+
+body.darkstar-interior[data-side="right"] .page-block:has(> .bell-tract) {
+  float: left !important;
+  margin-right: .22in !important;
+  margin-left: 0 !important;
+}
+
+.page-block > .bell-tract {
+  display: grid !important;
+  grid-template-columns: 52% 48%;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 1.55in;
+  max-height: 1.9in;
+  margin: 0 !important;
+  overflow: hidden;
+  border: 1.5pt solid var(--ink);
+  background: var(--paper);
+}
+
+.page-block > .bell-tract img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: 1.9in !important;
+  margin: 0 !important;
+  object-fit: contain;
+}
+
+.page-block > .bell-tract figcaption {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: .09in .1in .08in;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 7.4pt;
+  font-weight: 600;
+  line-height: 1.13;
+}
+
+.page-block > .bell-tract figcaption p {
+  margin: 0 0 .06in;
+}
+
+.page-block > .bell-tract figcaption p:last-child {
+  margin-bottom: 0;
+}
+
+.page-block > .bell-tract figcaption strong {
+  display: block;
+  margin-bottom: .05in;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8.3pt;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+body.darkstar-interior[data-side="left"] .page-block > .bell-tract img {
+  order: 2;
+}
+
+body.darkstar-interior[data-side="left"] .page-block > .bell-tract figcaption {
+  order: 1;
+  border-right: 1pt solid var(--ink);
+}
+
+body.darkstar-interior[data-side="right"] .page-block > .bell-tract figcaption {
+  border-left: 1pt solid var(--ink);
+}
+
+.page-block:has(> .bell-cover-tract) {
+  width: 42% !important;
+  max-width: 2.55in !important;
+}
+
+.page-block > .bell-cover-tract {
+  display: block !important;
+  min-height: 0;
+  max-height: 2.2in;
+}
+
+.page-block > .bell-cover-tract img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 2.2in !important;
+}
+
+.page-block:has(> .bell-revelation) {
+  width: 52% !important;
+  max-width: 3.2in !important;
+}
+
+.page-block > .bell-revelation {
+  display: block !important;
+  min-height: 1.35in;
+  padding: .14in !important;
+  background: #090909;
+  color: #fff;
+  text-align: center;
+}
+
+.page-block > .bell-revelation figcaption,
+body.darkstar-interior[data-side="left"] .page-block > .bell-revelation figcaption,
+body.darkstar-interior[data-side="right"] .page-block > .bell-revelation figcaption {
+  order: initial;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  font-size: 8pt;
+  line-height: 1.18;
+}
+
+.page-block > .bell-revelation figcaption strong {
+  margin-bottom: .1in;
+  font-size: 10.5pt;
+  line-height: 1.04;
+}
+
+.page-block:has(> .bell-final-tract) {
+  width: 60% !important;
+  max-width: 3.7in !important;
+}
+
+.page-block > .bell-final-tract {
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.25in auto;
+  max-height: 2.5in;
+}
+
+.page-block > .bell-final-tract img {
+  order: initial !important;
+  width: 100% !important;
+  height: 1.25in !important;
+  max-height: 1.25in !important;
+  border-bottom: 1pt solid var(--ink);
+}
+
+.page-block > .bell-final-tract figcaption,
+body.darkstar-interior[data-side="left"] .page-block > .bell-final-tract figcaption,
+body.darkstar-interior[data-side="right"] .page-block > .bell-final-tract figcaption {
+  order: initial;
+  border: 0;
+}
+
 @media print {
   @page {
     size: legal landscape;

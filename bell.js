@@ -3,22 +3,22 @@
 
   const panels = {
     cover: {
-      file: "cover.png",
+      file: "assets/bell/bell-42fffb2d.png",
       label: "The Bell cover"
     },
-    "1": { file: "panel1.png", label: "The Bell, panel 1" },
-    "2": { file: "panel2.png", label: "The Bell, panel 2" },
-    "3": { file: "panel3.png", label: "The Bell, panel 3" },
-    "4": { file: "panel4.png", label: "The Bell, panel 4" },
-    "5": { file: "panel5.png", label: "The Bell, panel 5" },
-    "6": { file: "panel6.png", label: "The Bell, panel 6" },
-    "7": { file: "panel7.png", label: "The Bell, panel 7" },
-    "8": { file: "panel8.png", label: "The Bell, panel 8" },
-    "9": { file: "panel9.png", label: "The Bell, panel 9" },
-    "10": { file: "panel10.png", label: "The Bell, panel 10" },
-    "11": { file: "panel11.png", label: "The Bell, panel 11" },
+    "1": { file: "assets/bell/bell-9b1baf54.png", label: "The Bell, panel 1" },
+    "2": { file: "assets/bell/bell-33604ec9.png", label: "The Bell, panel 2" },
+    "3": { file: "assets/bell/bell-c8cdf0c1.png", label: "The Bell, panel 3" },
+    "4": { file: "assets/bell/bell-1fecc426.png", label: "The Bell, panel 4" },
+    "5": { file: "assets/bell/bell-c9af16fd.png", label: "The Bell, panel 5" },
+    "6": { file: "assets/bell/bell-f6021db7.png", label: "The Bell, panel 6" },
+    "7": { file: "assets/bell/bell-3f90b579.png", label: "The Bell, panel 7" },
+    "8": { file: "assets/bell/bell-01351232.png", label: "The Bell, panel 8" },
+    "9": { file: "assets/bell/bell-97b80da2.png", label: "The Bell, panel 9" },
+    "10": { file: "assets/bell/bell-215b542e.png", label: "The Bell, panel 10" },
+    "11": { file: "assets/bell/bell-f69a2913.png", label: "The Bell, panel 11" },
     last: {
-      file: "lastPanel.png",
+      file: "assets/bell/bell-48bf9231.png",
       label: "The Bell, final panel"
     }
   };
@@ -32,7 +32,7 @@
   const observation = document.getElementById("bell-observation");
 
   document.body.dataset.side = side;
-  image.src = `theBell2024/${panel.file}`;
+  image.src = panel.file;
   image.alt = panel.label;
   document.title = panel.label;
 

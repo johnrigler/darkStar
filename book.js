@@ -1,13 +1,17 @@
 /*
   Dark Star active reading order.
 
-  v0.3.2 deliberately has no chapter/page-type groups. The filenames below
-  are source resources only; they do not define page layout. The viewer wraps
-  every resource after the front cover in the same interior-page structure.
+  Source filenames are manuscript/media resources only. They do not define
+  page geometry. viewer.js wraps every resource after the front cover in the
+  same interior-page structure and gives fixed artifacts named slots.
 */
 const DARK_STAR_PAGES = [
   "front-cover.html",
+
+  // Inside front cover. Keeping this explicit puts the Preface on a recto.
+  "blank.html",
   "preface.html",
+
   "01_01.html",
   "01_02.html",
   "01_03.html",
@@ -15,14 +19,19 @@ const DARK_STAR_PAGES = [
   "gospel-mark.html",
   "gospel-luke.html",
   "gospel-john.html",
+
   "bell-cover.html",
   "bell-01.html",
   "bell-02.html",
   "bell-03.html",
   "bell-04.html",
-  "bell-05.html",
+
+  // The added blank page changes page parity. Moving bell-05 to the far side
+  // of the centerfold keeps the two train halves on one facing spread.
   "centerfold-train-left.html",
   "centerfold-train-right.html",
+
+  "bell-05.html",
   "bell-06.html",
   "bell-07.html",
   "bell-08.html",
@@ -33,6 +42,7 @@ const DARK_STAR_PAGES = [
   "bell-11.html",
   "bell-12.html",
   "bell-last.html",
+
   "part-one-card.html",
   "part-two-carolyn-01.html",
   "part-two-carolyn-02.html",

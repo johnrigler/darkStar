@@ -2,13 +2,21 @@
   "use strict";
 
   const book = window.DARK_STAR_BOOK;
+  const spreadElement = document.getElementById("spread");
   const left = document.getElementById("page-left");
   const right = document.getElementById("page-right");
   const turnLeft = document.getElementById("turn-left");
   const turnRight = document.getElementById("turn-right");
   const pageWidthPixels = book.pageWidthInches * 96;
   const pageHeightPixels = book.pageHeightInches * 96;
-  const spreadCount = Math.ceil(book.pages.length / 2);
+
+  /*
+    The front cover is not an interior page pair. It gets its own spread
+    state: negative space on the left, cover on the right. After that,
+    interior resources pair normally as left/right Chick-tract spreads.
+  */
+  const interiorPageCount = Math.max(0, book.pages.length - 1);
+  const spreadCount = 1 + Math.ceil(interiorPageCount / 2);
 
   function spreadFromUrl() {
     const pageNumber = Number.parseInt(
@@ -16,8 +24,12 @@
       10
     );
 
-    if (!Number.isFinite(pageNumber) || pageNumber < 1) return 0;
-    return Math.min(Math.floor((pageNumber - 1) / 2), spreadCount - 1);
+    if (!Number.isFinite(pageNumber) || pageNumber <= 1) return 0;
+
+    return Math.min(
+      1 + Math.floor((pageNumber - 2) / 2),
+      spreadCount - 1
+    );
   }
 
   let spread = spreadFromUrl();
@@ -38,7 +50,7 @@
   }
 
   function uniformStyleHref() {
-    return new URL("style.css?page-model=0.3.4", window.location.href).href;
+    return new URL("style.css?page-model=0.3.5", window.location.href).href;
   }
 
   function disableLegacyStyles(doc) {
@@ -93,7 +105,7 @@
     return explicit ? `${stem}:${explicit}` : `${stem}:${String(index + 1).padStart(2, "0")}`;
   }
 
-  function normalizeInterior(frame, pageIndex) {
+  function normalizeInterior(frame, pageIndex, side) {
     if (pageIndex === book.coverIndex) return;
 
     const doc = frame.contentDocument;
@@ -106,10 +118,9 @@
     doc.documentElement.classList.add("darkstar-page");
     doc.body.classList.add("darkstar-interior");
 
-    // Spread geometry owns left/right placement. Source files may retain old
-    // data-side values for archival direct viewing, but rearranging book.js no
-    // longer requires editing them.
-    doc.body.dataset.side = pageIndex % 2 === 0 ? "left" : "right";
+    // Position in the live spread owns left/right behavior. This remains true
+    // when pages are inserted, deleted, or moved in book.js.
+    doc.body.dataset.side = side;
 
     if (doc.body.querySelector(":scope > .interior-page[data-darkstar-uniform]")) return;
 
@@ -140,7 +151,7 @@
     frame.srcdoc = "<!doctype html><html><body style='margin:0;background:#fff'></body></html>";
   }
 
-  function load(frame, pageIndex) {
+  function load(frame, pageIndex, side) {
     const resource = book.pages[pageIndex];
     if (!resource) {
       blank(frame);
@@ -150,7 +161,7 @@
     frame.dataset.pageIndex = String(pageIndex);
     frame.onload = () => {
       const currentIndex = Number.parseInt(frame.dataset.pageIndex, 10);
-      if (Number.isFinite(currentIndex)) normalizeInterior(frame, currentIndex);
+      if (Number.isFinite(currentIndex)) normalizeInterior(frame, currentIndex, side);
       fitPage(frame);
     };
     frame.removeAttribute("srcdoc");
@@ -158,13 +169,28 @@
   }
 
   function render() {
-    const leftIndex = spread * 2;
-    load(left, leftIndex);
-    load(right, leftIndex + 1);
+    const isCoverSpread = spread === 0;
+    spreadElement.classList.toggle("cover-spread", isCoverSpread);
+
+    let urlPageIndex;
+
+    if (isCoverSpread) {
+      // A closed book: front cover on the right, intentional negative space
+      // on the left. The Preface does not share this spread.
+      blank(left);
+      load(right, book.coverIndex, "right");
+      urlPageIndex = book.coverIndex;
+    } else {
+      const leftIndex = 1 + (spread - 1) * 2;
+      load(left, leftIndex, "left");
+      load(right, leftIndex + 1, "right");
+      urlPageIndex = leftIndex;
+    }
+
     fitPages();
 
     const url = new URL(window.location.href);
-    url.searchParams.set("page", leftIndex + 1);
+    url.searchParams.set("page", urlPageIndex + 1);
     window.history.replaceState(null, "", url);
   }
 
@@ -175,8 +201,7 @@
   }
 
   function next() {
-    const nextLeft = (spread + 1) * 2;
-    if (nextLeft >= book.pages.length) return;
+    if (spread + 1 >= spreadCount) return;
     spread += 1;
     render();
   }

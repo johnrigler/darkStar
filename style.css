@@ -17,6 +17,8 @@
   --bell-height: 1.90in;
   --train-top: 3.15in;
   --train-height: 2.82in;
+  --train-image-width: 12.28in;
+  --train-right-offset: -6.14in;
 }
 
 * {
@@ -382,7 +384,7 @@ body.darkstar-interior[data-side="right"] .page-block[data-artifact="bell"] > .b
 .page-block[data-artifact="train"] > .train-art {
   position: absolute !important;
   top: var(--train-top) !important;
-  width: calc(var(--flow-width) * 2) !important;
+  width: var(--train-image-width) !important;
   max-width: none !important;
   height: var(--train-height) !important;
   max-height: none !important;
@@ -396,7 +398,7 @@ body.darkstar-interior[data-side="left"] .page-block[data-artifact="train"] > .t
 }
 
 body.darkstar-interior[data-side="right"] .page-block[data-artifact="train"] > .train-art {
-  left: calc(-1 * var(--flow-width)) !important;
+  left: var(--train-right-offset) !important;
 }
 
 @media print {

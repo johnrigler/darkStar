@@ -3,9 +3,20 @@
   --sheet-height: 8.5;
   --page-width: 7in;
   --page-height: 8.5in;
+  --page-pad-x: .43in;
+  --page-pad-top: .38in;
+  --page-pad-bottom: .45in;
+  --flow-width: 6.14in;
   --paper: #fff;
   --ink: #1a1a1a;
   --rule: #ddd;
+
+  /* Fixed artifact coordinates measured from the top of page-flow. */
+  --bell-top: 1.08in;
+  --bell-width: 3.55in;
+  --bell-height: 1.90in;
+  --train-top: 3.15in;
+  --train-height: 2.82in;
 }
 
 * {
@@ -81,13 +92,7 @@ body:not(.darkstar-interior) {
   cursor: e-resize;
 }
 
-/*
-  THE invariant Dark Star interior page.
-
-  viewer.js adds these classes after each source resource has loaded. Source
-  filenames and old body classes remain archival/content metadata only. They
-  no longer choose the geometry of a page.
-*/
+/* One invariant interior page. */
 html.darkstar-page,
 html.darkstar-page body.darkstar-interior {
   width: 100% !important;
@@ -113,12 +118,13 @@ body.darkstar-interior {
   width: 100% !important;
   height: 100% !important;
   margin: 0 !important;
-  padding: .38in .43in .45in !important;
+  padding: var(--page-pad-top) var(--page-pad-x) var(--page-pad-bottom) !important;
   overflow: hidden !important;
   background: var(--paper) !important;
 }
 
 .page-flow {
+  position: relative !important;
   width: 100% !important;
   height: 100% !important;
   margin: 0 !important;
@@ -189,8 +195,6 @@ body.darkstar-interior {
 }
 
 .page-block figure {
-  position: static !important;
-  float: none !important;
   max-width: 100% !important;
   margin: .3em auto !important;
 }
@@ -210,55 +214,71 @@ body.darkstar-interior {
 }
 
 /*
-  Chick-tract content blocks inside the invariant page model.
+  Fixed artifact slots.
 
-  The tract is content, not a page type. It floats toward the gutter so the
-  surrounding prose can occupy the outside edge. viewer.js derives data-side
-  from the current spread, so moving a page in book.js does not require
-  renumbering or hand-flipping the source HTML.
+  viewer.js moves artifact blocks to the beginning of page-flow. Each artifact
+  is a float whose exclusion shape begins at an exact Y coordinate. Text can
+  therefore fill the page above the artifact, flow beside it where there is
+  room, and continue below it. The artifact itself never moves because text
+  was added or removed.
 */
-.page-block:has(> .bell-tract) {
-  width: 58% !important;
-  max-width: 3.55in !important;
-  margin-bottom: .72em !important;
+.page-block[data-artifact] {
+  position: relative !important;
+  z-index: 2;
+  padding: 0 !important;
+  break-inside: avoid;
 }
 
-body.darkstar-interior[data-side="left"] .page-block:has(> .bell-tract) {
+/* Bell: identical rectangle and vertical coordinate on every Bell page. */
+.page-block[data-artifact="bell"] {
+  width: var(--bell-width) !important;
+  max-width: var(--bell-width) !important;
+  height: calc(var(--bell-top) + var(--bell-height)) !important;
+  min-height: calc(var(--bell-top) + var(--bell-height)) !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  shape-outside: inset(var(--bell-top) 0 0 0);
+  shape-margin: .18in;
+}
+
+body.darkstar-interior[data-side="left"] .page-block[data-artifact="bell"] {
   float: right !important;
-  margin-left: .22in !important;
-  margin-right: 0 !important;
+  clear: right !important;
 }
 
-body.darkstar-interior[data-side="right"] .page-block:has(> .bell-tract) {
+body.darkstar-interior[data-side="right"] .page-block[data-artifact="bell"] {
   float: left !important;
-  margin-right: .22in !important;
-  margin-left: 0 !important;
+  clear: left !important;
 }
 
-.page-block > .bell-tract {
+.page-block[data-artifact="bell"] > .bell-tract {
+  position: absolute !important;
+  top: var(--bell-top) !important;
+  left: 0 !important;
   display: grid !important;
   grid-template-columns: 52% 48%;
-  width: 100% !important;
-  max-width: none !important;
-  min-height: 1.55in;
-  max-height: 1.9in;
+  width: var(--bell-width) !important;
+  max-width: var(--bell-width) !important;
+  height: var(--bell-height) !important;
+  min-height: var(--bell-height) !important;
+  max-height: var(--bell-height) !important;
   margin: 0 !important;
-  overflow: hidden;
+  overflow: hidden !important;
   border: 1.5pt solid var(--ink);
   background: var(--paper);
 }
 
-.page-block > .bell-tract img {
+.page-block[data-artifact="bell"] > .bell-tract img {
   display: block;
   width: 100% !important;
   height: 100% !important;
   max-width: none !important;
-  max-height: 1.9in !important;
+  max-height: none !important;
   margin: 0 !important;
   object-fit: contain;
 }
 
-.page-block > .bell-tract figcaption {
+.page-block[data-artifact="bell"] > .bell-tract figcaption {
   box-sizing: border-box;
   overflow: hidden;
   padding: .09in .1in .08in;
@@ -268,15 +288,15 @@ body.darkstar-interior[data-side="right"] .page-block:has(> .bell-tract) {
   line-height: 1.13;
 }
 
-.page-block > .bell-tract figcaption p {
+.page-block[data-artifact="bell"] > .bell-tract figcaption p {
   margin: 0 0 .06in;
 }
 
-.page-block > .bell-tract figcaption p:last-child {
+.page-block[data-artifact="bell"] > .bell-tract figcaption p:last-child {
   margin-bottom: 0;
 }
 
-.page-block > .bell-tract figcaption strong {
+.page-block[data-artifact="bell"] > .bell-tract figcaption strong {
   display: block;
   margin-bottom: .05in;
   font-family: Arial, Helvetica, sans-serif;
@@ -285,53 +305,43 @@ body.darkstar-interior[data-side="right"] .page-block:has(> .bell-tract) {
   text-transform: uppercase;
 }
 
-body.darkstar-interior[data-side="left"] .page-block > .bell-tract img {
+body.darkstar-interior[data-side="left"] .page-block[data-artifact="bell"] > .bell-tract img {
   order: 2;
 }
 
-body.darkstar-interior[data-side="left"] .page-block > .bell-tract figcaption {
+body.darkstar-interior[data-side="left"] .page-block[data-artifact="bell"] > .bell-tract figcaption {
   order: 1;
   border-right: 1pt solid var(--ink);
 }
 
-body.darkstar-interior[data-side="right"] .page-block > .bell-tract figcaption {
+body.darkstar-interior[data-side="right"] .page-block[data-artifact="bell"] > .bell-tract figcaption {
   border-left: 1pt solid var(--ink);
 }
 
-.page-block:has(> .bell-cover-tract) {
-  width: 42% !important;
-  max-width: 2.55in !important;
-}
-
-.page-block > .bell-cover-tract {
+/* Bell cover/revelation/final still occupy the same outer slot. */
+.page-block[data-artifact="bell"] > .bell-cover-tract {
   display: block !important;
-  min-height: 0;
-  max-height: 2.2in;
 }
 
-.page-block > .bell-cover-tract img {
+.page-block[data-artifact="bell"] > .bell-cover-tract img {
   width: 100% !important;
-  height: auto !important;
-  max-height: 2.2in !important;
+  height: 100% !important;
+  object-fit: contain;
 }
 
-.page-block:has(> .bell-revelation) {
-  width: 52% !important;
-  max-width: 3.2in !important;
-}
-
-.page-block > .bell-revelation {
-  display: block !important;
-  min-height: 1.35in;
+.page-block[data-artifact="bell"] > .bell-revelation {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   padding: .14in !important;
   background: #090909;
   color: #fff;
   text-align: center;
 }
 
-.page-block > .bell-revelation figcaption,
-body.darkstar-interior[data-side="left"] .page-block > .bell-revelation figcaption,
-body.darkstar-interior[data-side="right"] .page-block > .bell-revelation figcaption {
+.page-block[data-artifact="bell"] > .bell-revelation figcaption,
+body.darkstar-interior[data-side="left"] .page-block[data-artifact="bell"] > .bell-revelation figcaption,
+body.darkstar-interior[data-side="right"] .page-block[data-artifact="bell"] > .bell-revelation figcaption {
   order: initial;
   padding: 0;
   border: 0;
@@ -340,37 +350,53 @@ body.darkstar-interior[data-side="right"] .page-block > .bell-revelation figcapt
   line-height: 1.18;
 }
 
-.page-block > .bell-revelation figcaption strong {
-  margin-bottom: .1in;
-  font-size: 10.5pt;
-  line-height: 1.04;
-}
-
-.page-block:has(> .bell-final-tract) {
-  width: 60% !important;
-  max-width: 3.7in !important;
-}
-
-.page-block > .bell-final-tract {
-  display: grid !important;
+.page-block[data-artifact="bell"] > .bell-final-tract {
   grid-template-columns: 100%;
-  grid-template-rows: 1.25in auto;
-  max-height: 2.5in;
+  grid-template-rows: 1.05in auto;
 }
 
-.page-block > .bell-final-tract img {
+.page-block[data-artifact="bell"] > .bell-final-tract img {
   order: initial !important;
   width: 100% !important;
-  height: 1.25in !important;
-  max-height: 1.25in !important;
+  height: 1.05in !important;
   border-bottom: 1pt solid var(--ink);
 }
 
-.page-block > .bell-final-tract figcaption,
-body.darkstar-interior[data-side="left"] .page-block > .bell-final-tract figcaption,
-body.darkstar-interior[data-side="right"] .page-block > .bell-final-tract figcaption {
-  order: initial;
-  border: 0;
+/*
+  Train: one continuous 12.28-inch image viewed through two identical
+  6.14-inch page windows. The right page is shifted exactly one flow width,
+  so the seam is mathematical rather than eyeballed.
+*/
+.page-block[data-artifact="train"] {
+  float: left !important;
+  clear: both !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: calc(var(--train-top) + var(--train-height)) !important;
+  min-height: calc(var(--train-top) + var(--train-height)) !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  shape-outside: inset(var(--train-top) 0 0 0);
+}
+
+.page-block[data-artifact="train"] > .train-art {
+  position: absolute !important;
+  top: var(--train-top) !important;
+  width: calc(var(--flow-width) * 2) !important;
+  max-width: none !important;
+  height: var(--train-height) !important;
+  max-height: none !important;
+  margin: 0 !important;
+  object-fit: contain;
+  object-position: center center;
+}
+
+body.darkstar-interior[data-side="left"] .page-block[data-artifact="train"] > .train-art {
+  left: 0 !important;
+}
+
+body.darkstar-interior[data-side="right"] .page-block[data-artifact="train"] > .train-art {
+  left: calc(-1 * var(--flow-width)) !important;
 }
 
 @media print {

@@ -176,6 +176,80 @@ But consequential actions should remain legible.
 
 The strongest form of Dark Star does not require trust in its creator in order to explore it.
 
+
+## From reader to operator
+
+The decisive result is not that the reader agrees with Dark Star. It is that
+the reader becomes capable of acting inside the medium.
+
+A political book can end at recognition:
+
+**problem → interpretation → agreement → another interpretation**
+
+Dark Star should continue:
+
+**impact → entry → legible action → persistent artifact → operator**
+
+Passion, offense, and anger can activate this transition as legitimately as
+curiosity or sympathy. A participant who enters in order to rebut, parody,
+annotate, fork, or contradict Dark Star has still learned to operate the
+machinery. The medium should preserve provenance while permitting actual
+opposition. It should not require ideological assent.
+
+The relevant challenge is not to make Chisel the only possible place to
+complain. It is to make entry into the medium the most complete way to answer an
+artifact at the level on which it was made.
+
+## Executable publication
+
+Dark Star can function as boot media rather than as a book with a companion
+site.
+
+Paper carries the participant through an initial QR code, printed CID, ledger
+address, sticker, or other identifier. An IPFS edition supplies the narrative
+interface. Chisel exposes structured artifacts and operating tools. Mogwai
+connects those artifacts to media and other people.
+
+The participant may stop using the paper after crossing the boundary. The
+physical copy has still succeeded: it supplied a route around the ordinary
+platform account and, when a raw content or ledger identifier is used, around
+dependence on a single DNS name.
+
+The strongest first encounter ends with one small persistent act. Without that
+act, the participant has toured the environment. With it, the participant has
+entered it.
+
+## Paper as a writable interface
+
+Stickers can act as user-installed physical hyperlinks rather than wallet
+fragments.
+
+A participant can place a uniquely identified sticker beside a passage, bind it
+by signature to an edition and semantic anchor, and later scan it to reopen a
+scene, ledger object, annotation, branch, gathering point, or personal state.
+The book becomes a paper controller whose buttons are positioned by the reader.
+
+The visible sticker identifier is a public pointer, not proof of possession.
+Authority to bind or rebind it belongs to a signer unless the physical sticker
+contains a concealed secret.
+
+Different copies of the same printed edition can therefore become different
+spatial indexes into the living work.
+
+## One cartridge, not the instrument
+
+Dark Star is one score or campaign cartridge that can be consumed by a more
+general instrument.
+
+Chisel is the runtime, ledgers are shared memory, wallets are identities and
+controllers, stickers are physical inputs, and Mogwai is a media-facing reader.
+Another cartridge can define a different universe, ideology, rule set, action
+grammar, credential system, or institutional objective without becoming a
+Dark Star sequel.
+
+The complete architecture is recorded in
+[DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md](DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md).
+
 ## In one sentence
 
 **Dark Star uses emotionally powerful and difficult-to-classify artifacts to pull people across the boundary into a decentralized medium before they need to understand that such a boundary exists, then leaves them there with the tools necessary to navigate it.**

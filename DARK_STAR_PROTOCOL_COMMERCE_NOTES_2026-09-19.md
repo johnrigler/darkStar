@@ -230,3 +230,40 @@ Not one company.
 Not one monopoly.
 
 A larger field of commerce in which the protocol survives the proprietor.
+
+
+## Campaign Cartridges and Organized Constituencies
+
+The same protocol logic can apply to publications themselves.
+
+A Dark Star-style cartridge is a loadable world containing narrative, rules,
+anchors, tasks, credentials, and permitted actions. Chisel acts as an
+instrument or runtime; ledgers supply shared memory; wallets supply identities
+and signatures; stickers supply physical inputs; Mogwai supplies a
+media-facing reader.
+
+Different cartridges can be Christian, queer, labor, educational, artistic,
+local, commercial, or adversarial. They need not share an ideology. Their
+common ground is the ability to load, navigate, sign, verify, preserve, and
+fork artifacts without one platform owning every participant relationship.
+
+A legal-action cartridge illustrates the commercial and institutional
+consequence. Participants could identify related experiences, normalize facts,
+commit timestamped evidence, pool investigative resources, and establish rules
+for selecting counsel before a law firm owns the claimant list or originating
+conversation.
+
+This would route around legal-industry intake and coordination bottlenecks, not
+around the legal system. Courts still determine standing and certification,
+appoint class counsel where required, and supervise settlements and fees.
+Lawyers still supply legal judgment and the regulated interface to the court.
+The reversal is that professional service can meet an already organized
+constituency rather than exclusively manufacturing and controlling it.
+
+Public ledgers should contain commitments, timestamps, consent receipts,
+membership proofs, and encrypted references—not raw allegations, names,
+medical or employment records, privileged communications, or other sensitive
+evidence.
+
+The larger architecture is described in
+[DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md](DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md).

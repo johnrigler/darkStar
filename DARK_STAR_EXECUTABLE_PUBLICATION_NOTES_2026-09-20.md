@@ -254,6 +254,142 @@ selective and controlled by the relevant participant or legal process.
 The cartridge is an organizing and evidentiary instrument, not automatic legal
 advice and not a class action merely because many people have entered it.
 
+
+## The Continental Divide story and contested transmission
+
+The story read by Carolyn Fowler's reading group is the Continental Divide
+story. It begins with two women from different Native nations speaking across
+a divide, structurally recalling the two washerwomen in the "Anna Livia
+Plurabelle" chapter of *Finnegans Wake*. The field expands as additional women,
+girls, elders, nations, and languages enter.
+
+Acoma may appear to morph into and out of Laguna before the distinctions become
+important. Laguna and Diné/Navajo participants may argue with one another in
+different languages. This apparent instability must belong to the characters,
+translations, or reader's position rather than to an underlying assumption
+that the nations are interchangeable.
+
+Elders speak in their own languages. Women and girls translate for older
+members of their communities, but translation is not a transparent relay.
+Translators may clarify, protect, soften, exaggerate, censor, retaliate, or lie.
+A mistranslation may be selfish, strategic, compassionate, politically
+necessary, or several of these at once. Women then interpret and argue against
+one another across the translations.
+
+The layered transmission is:
+
+```text
+elder's speech
+→ woman's or girl's translation
+→ argument among communities
+→ Continental Divide written story
+→ women's reading group
+→ Carolyn's apology or defense
+→ online reader's chosen path
+→ generated printable edition
+```
+
+The reading group imposes another set of voices on an already unstable and
+emotional story. Carolyn is present as both author and character, but her
+apologetics do not settle what the story means.
+
+There is no required central protagonist. The reader follows whichever
+character or voice produces a connection. That traversal can gather a distinct
+sequence of scenes until the selected character appears to possess a book of
+her own. The reader chooses whose continuity becomes visible, not what events
+are allowed to happen. Other paths and incompatible accounts continue outside
+that edition.
+
+Strong emotional scenes should remain exact even when the overall world is
+bizarre. Several invariant encounters may appear in many paths—a death,
+accusation, ceremony, disappearance, translation dispute, or supernatural
+attack—but their meaning changes with the selected voice. The world and its
+contested transmission become the nearest thing to a central character.
+
+## Compiled image edition
+
+HTML is an editable and inspectable stage of the publication, but it need not
+remain the definitive reading form. A selected narrative path can be compiled
+into fixed page images, with a PDF acting primarily as a lossless ordered
+container for those images. The image edition freezes character placement,
+spacing, type, color, ornaments, and page geometry.
+
+The build can resemble `make`: source fragments, character paths, page rules,
+fonts, images, and edition state are dependencies; a Lisp program or another
+small deterministic builder resolves them into fixed pages. Only affected pages
+need to be rebuilt when an input changes.
+
+A conceptual pipeline is:
+
+```text
+prose and scene fragments
++ character/path selection
++ page and color rules
++ visual assets
++ edition metadata
+→ deterministic builder
+→ fixed raster pages
+→ printable PDF / image sequence
+```
+
+During composition, HTML should move toward locked preformatted layout rather
+than responsive paragraphs. `<pre>` or equivalent preserved-whitespace rules
+can make authored line breaks and horizontal placement explicit. This is still
+an intermediate preview: different browsers, fonts, and rendering engines can
+move pixels. Compilation freezes a particular edition.
+
+For reproducibility, a build manifest should eventually identify at least the
+source revision, path selection, builder version, fonts, viewport, scale,
+color profile, asset hashes, page dimensions, and output hashes.
+
+### A machine-readable side channel
+
+The definitive page image should be readable by a computer without requiring
+OCR. A narrow side region, border, or microdot field can operate like the
+soundtrack beside frames of film. It can encode the page's characters and
+structural data while the visible page retains traditional typography.
+
+Possible payloads include:
+
+- exact textual characters and line breaks;
+- semantic spans or speaker identifiers;
+- selected narrative path and page sequence;
+- edition and source hashes;
+- links, addresses, CIDs, or ledger anchors;
+- checksums and error-correction data;
+- color-role or game-state information.
+
+The encoding is not yet selected. PNG metadata alone is insufficient because a
+screenshot, conversion, or physical print can discard it. If the channel is
+expected to survive printing and scanning, its marks must exist in the rendered
+page itself and use registration, redundancy, checksums, and error correction.
+A screen edition might keep an additional data strip outside the ordinary
+viewing crop, while a printed edition may require a visible or nearly invisible
+border or microdot field.
+
+This creates two related artifacts:
+
+- the image as the definitive human-facing page for an edition;
+- embedded or adjacent page data as a fast machine-readable transcription and
+  structural index.
+
+The system should preserve an ordinary visual reading experience even when the
+data channel is ignored.
+
+### Type and color as exact state
+
+The fixed image can combine traditional black book typography with literal
+colored characters. Color is not limited to decoration; it may distinguish
+voices, encode state, identify character ownership, or participate in a scene's
+mechanics.
+
+The Mark episode can exploit this directly. It can behave visually like a game
+of marbles, with colored characters occupying exact positions and functioning
+as pieces, collisions, claims, or moves. The compiled page preserves that state
+more reliably than flowing HTML. The same page can therefore be prose,
+typesetting, image, game board, and machine-readable record at once.
+
+
 ## Design test
 
 Every cartridge should be tested with concrete questions:

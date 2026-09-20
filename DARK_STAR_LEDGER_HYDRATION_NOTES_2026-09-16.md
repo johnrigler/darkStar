@@ -80,3 +80,53 @@ This is especially important in Mark:
 **permanence of symbols is not permanence of meaning.**
 
 The ledger may preserve the exact marble colors and positions while future players invent entirely different rules for them.
+
+
+## CID-first entry and dynamic editions
+
+A QR containing an HTTPS gateway URL does not itself route around DNS. Durable
+paper should preserve a raw CID, `ipfs://` reference, ledger identifier, or
+enough printed text to reconstruct one.
+
+A resolver can attempt, in order:
+
+1. a local IPFS node;
+2. an IPFS-capable browser or extension;
+3. a configured gateway;
+4. alternate gateways;
+5. deterministic hydration from ledger records.
+
+The immutable IPFS edition and the changing Dark Star experience are separate.
+The CID identifies exact edition bytes. JavaScript in that edition may read
+ledger state, signed manifests, annotations, or branches and render a changing
+environment around those bytes. An old paper copy should continue to identify
+the original edition even when a newer manifest exists.
+
+## Signed physical-anchor bindings
+
+A sticker may carry only a persistent public identifier:
+
+```text
+sticker 7K4M9Q...
+```
+
+A separate signed record can bind it to the work:
+
+```text
+STICKER 7K4M9Q...
+EDITION bafy...
+ANCHOR dinosaurs-and-marbles
+CONTROLLER <account or public key>
+SIGNATURE <network-specific signature>
+```
+
+A Chisel or Dark Star reader resolves the sticker identifier, verifies the
+network-specific signature, and opens the bound scene or state.
+
+Because a visible identifier can be photographed, the sticker is normally a
+public pointer rather than an authenticator. Rebinding authority comes from the
+controller's signature. A possession-controlled sticker requires a concealed
+secret and a different threat model.
+
+This mechanism lets individual paper copies acquire different spatial indexes
+without modifying the immutable edition underneath them.

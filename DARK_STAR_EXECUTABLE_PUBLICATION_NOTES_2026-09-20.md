@@ -285,33 +285,80 @@ elder's speech
 → Continental Divide written story
 → women's reading group
 → Carolyn's apology or defense
-→ online reader's chosen path
-→ generated printable edition
+→ online expansion and participation
+→ extracted or compiled pages
 ```
 
 The reading group imposes another set of voices on an already unstable and
 emotional story. Carolyn is present as both author and character, but her
 apologetics do not settle what the story means.
 
-There is no required central protagonist. The reader follows whichever
-character or voice produces a connection. That traversal can gather a distinct
-sequence of scenes until the selected character appears to possess a book of
-her own. The reader chooses whose continuity becomes visible, not what events
-are allowed to happen. Other paths and incompatible accounts continue outside
-that edition.
+There is no required central protagonist, character-following mode, or stable
+point of identification. Characters are present without being assigned the job
+of carrying a complete arc. As in the *Twin Peaks* universe, a figure may
+temporarily seem to provide orientation, but the world exceeds that figure and
+does not resolve into a hero story.
+
+The online system may expand into large amounts of prose, and individual pages
+or groups of pages may emerge from it and be printed. That does not mean that
+following a character generates a different book. Extraction, assembly, and
+printing are properties of the device and its material, not promises of a
+personalized point-of-view narrative.
 
 Strong emotional scenes should remain exact even when the overall world is
-bizarre. Several invariant encounters may appear in many paths—a death,
-accusation, ceremony, disappearance, translation dispute, or supernatural
-attack—but their meaning changes with the selected voice. The world and its
-contested transmission become the nearest thing to a central character.
+bizarre. A death, accusation, ceremony, disappearance, translation dispute, or
+supernatural attack can be written with complete local precision without
+creating a global arc or final explanation. The destabilizing world is not a
+substitute protagonist; it is the condition under which all of the characters
+briefly appear.
+
+
+## A universe intended to be exited
+
+Dark Star is not the first installment of a durable fictional universe. Its
+characters do not exist primarily to accumulate canon, sustain sequels, or
+support a franchise. The writing can be singular, emotionally exact, and
+memorable without asking the reader to treat the fictional world as a lasting
+substitute for action.
+
+The project begins from distrust of fiction's conventional social function.
+Fiction can give a reader the emotional impression of confronting danger,
+changing a society, or completing a quest while the reader remains materially
+inactive. Dark Star uses fiction but attempts to break that proxy relationship.
+The printed object is a device intended to push beyond interpretation and
+toward scanning, meeting, making, signing, publishing, exchanging, or another
+real act.
+
+Its movement is therefore:
+
+```text
+destabilizing fiction
+→ printed device
+→ encounter with the mechanism
+→ action outside the fiction
+```
+
+The pages do not need to produce a clear narrative arc, hero, resolution, or
+stable character identification. Unique scenes and voices can simply appear,
+collide, and disappear. Pages can detach from the larger body, be compiled,
+printed, carried, or used without becoming character-centered alternate novels.
+
+If another work is made with the same instrument, it should not have to extend
+Dark Star. It can be another cartridge, scroll, score, or device with a
+completely different world and purpose. The reusable object is the instrument
+and publication method, not the Dark Star universe.
+
+Dark Star's fictional world is deliberately expendable. It may persist as an
+artifact, but it is not designed to hold the participant inside it. In that
+sense, the universe succeeds when the reader leaves it and begins operating the
+machinery to which it points.
+
 
 ## Compiled image edition
 
 HTML is an editable and inspectable stage of the publication, but it need not
-remain the definitive reading form. A selected narrative path can be compiled
-into fixed page images, with a PDF acting primarily as a lossless ordered
-container for those images. The image edition freezes character placement,
+remain the definitive reading form. A provisional arrangement of pages can be compiled into fixed page images,
+with a PDF acting primarily as a lossless ordered container for those images. The image edition freezes character placement,
 spacing, type, color, ornaments, and page geometry.
 
 The build can resemble `make`: source fragments, character paths, page rules,
@@ -323,7 +370,7 @@ A conceptual pipeline is:
 
 ```text
 prose and scene fragments
-+ character/path selection
++ edition inputs and assembly rules
 + page and color rules
 + visual assets
 + edition metadata
@@ -353,7 +400,7 @@ Possible payloads include:
 
 - exact textual characters and line breaks;
 - semantic spans or speaker identifiers;
-- selected narrative path and page sequence;
+- page sequence and edition assembly information;
 - edition and source hashes;
 - links, addresses, CIDs, or ledger anchors;
 - checksums and error-correction data;

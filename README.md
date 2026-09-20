@@ -9,10 +9,19 @@ universe of ideas sometimes called #web3.
 ## Dated concept notes
 
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)
+- [2026-09-20 — Executable Publication and Campaign Cartridges](DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md)
 
 The dated notes preserve the evolving architecture around Dark Star, including
 its relationship to Mogwai and the separate CertLedger training edition,
 without replacing the current printable literary edition.
+
+Dark Star is also being developed as an executable publication: the paper
+edition acts as boot media, Chisel supplies operating tools, Mogwai supplies a
+media-facing reader, and signed ledger objects preserve state. Stickers can
+become user-installed physical hyperlinks, and the same mechanism can load
+other narrative, religious, educational, political, or legal-action
+cartridges. Dark Star is one world built for the instrument, not the only
+possible world.
 
 The project's symbolic framework is preserved in `DARK_STAR_MYTHOS.md`.
 It distinguishes established Dark Star ideas from speculative cross-cultural

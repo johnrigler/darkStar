@@ -29,6 +29,85 @@ and historical connections. Some of the same material may also appear as
 hidden mythos in HTML comments, glyphs, addresses, and other source-level
 artifacts.
 
+## Carolyn Fowler
+
+These are working narrative notes, not fixed explanations to be disclosed in
+the finished novel.
+
+Carolyn Fowler is the writer of the book and also a character inside it. No
+device or revelation needs to explain how she entered the story. She is simply
+present, and nobody acknowledges the basic impossibility of an author standing
+inside her own fiction. She is therefore not an ordinary human character, but
+the story does not stop to classify her.
+
+Carolyn has serious regrets about the book. She accompanies events as they
+unfold and apologizes for them, qualifies them, or performs apologetics for
+what she wrote. She may try to explain why a scene exists, defend a bad choice,
+distance herself from it, or insist that it was meant differently. Her
+explanations do not have to agree with one another.
+
+There does not need to be a mechanism by which Carolyn rewrites reality. The
+reader may never discover that events are changing because of her, and the
+story should not establish that she retains an author's power to revise it
+from within. Her presence and embarrassment are enough. She is caught in the
+work and forced to watch it continue.
+
+The book eventually turns away from literary and social comedy into a
+supernatural action story. Creatures begin attacking the characters, including
+Carolyn. The exact creatures remain open—zombies, vampires, or another form of
+predatory dead—but Carolyn is ultimately killed inside her own book. The
+author receives no immunity from the genre turn she helped create. Her death
+does not necessarily end the book, erase her earlier narration, or resolve the
+contradiction of her presence.
+
+### Carolyn's surrounding character system
+
+Carolyn is distinct from the two recurring mythic female figures:
+
+- **Anna Livia** is the mother figure derived from Anna Livia Plurabelle in
+  *Finnegans Wake*.
+- **Daisy** is the daughter figure and an adult recurrence of Issy/Isobel.
+  Daisy appears to be a wealthy young woman being pulled through ordinary
+  institutions, but she is not limited to an ordinary human role or experience.
+
+The father-position, Johnny McDougall, is gone. The younger man accompanying
+Daisy is provisionally becoming **Johnny Ravencoin** rather than replacing the
+father directly. He appears to morph toward a raven while also becoming
+associated with Ravencoin: young man, bird, coin, sign, and perhaps messenger.
+Neither he nor Daisy is simply a realistic person having a realistic romance.
+They are closer to aeon-like or mythic beings passing through a social system,
+although Dark Star need not reproduce historical Gnosticism literally.
+
+A women-only reading group, probably associated with a Unitarian church,
+occupies the ordinary social layer. Members state their pronouns; the exact
+membership rules remain unsettled and may include a man whose stated pronouns
+complicate the group's description of itself. Daisy appears to be part of the
+group but is not actually a member.
+
+The reading-group members compete with one another, possibly for Johnny
+Ravencoin's attention. They want to attract him, possess him, rescue him, or
+manipulate him into doing things ranging from trivial errands to consequential
+acts. They are also intensely concerned about Daisy. They project ordinary
+romantic, maternal, political, charitable, sexual, and class narratives onto
+both figures as Daisy and Johnny pass through their world.
+
+Daisy is not merely the passive rich girl over whom they worry. She may have
+scooped up Johnny herself and may understand his transformation better than
+the reading group does. What the group reads as a romance or unequal
+relationship may be an operation occurring at a different ontological level.
+
+The women's competition is deliberate rather than an accidental solution to
+the Smurfette problem. The group should nevertheless contain recognizable
+individuals with different motives; otherwise it becomes a single comic
+chorus surrounding one man. Their incompatible desires and interpretations
+should reveal them as people while also demonstrating how ordinary observers
+convert Daisy and Johnny into familiar social roles.
+
+Carolyn belongs to neither layer cleanly. She is not an ordinary reading-group
+woman, but neither is she a mythic visitor like Anna Livia or Daisy. She is the
+author caught among her characters, explaining a story that no longer grants
+her control and will eventually kill her.
+
 ## Edit one physical page
 
 The manuscript pages remain deliberately redundant and local. Edit the

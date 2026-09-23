@@ -6,6 +6,102 @@ ends with a page that encourages the reader—perhaps in the company of
 others—to create a secret, personalized paper wallet leading into the
 universe of ideas sometimes called #web3.
 
+## What Dark Star is
+
+Dark Star is a periodical that calls the reader out of the printed page and
+into a digital world.
+
+The paper object is not merely a printed version of a website. It is part of
+the system. Reading, marking, removing, attaching, scanning, or passing along
+the physical artifact can become a ritual through which a person begins to
+establish a self-sovereign identity.
+
+This matters because the digital identity does not need to begin with DNS, a
+conventional account, or an institution that assigns the person a username.
+The paper can contain or receive a physical identifier, such as a sticker,
+which points into a decentralized digital system. The transition from paper to
+network becomes an act of participation rather than an ordinary account
+signup.
+
+Dark Star has a deliberately strange religious and cultural shell. It can
+contain Joyce, *The Golden Bough*, mythology, theology, secularism, music,
+economics, fiction, comics, technical writing, anthropology, or whatever else
+belongs in a particular issue. The subjects can change radically while the
+reader keeps entering the same recognizable world.
+
+Underneath that shell is a technical toolkit.
+
+The toolkit is intended to supply primitives for identity, records,
+publication, association, attestation, memory, exchange, inheritance, forking,
+and exit. It does not require a common theology. A useful model is a
+**religious operating system**: common infrastructure on which different
+denominations, communities, mythologies, and practices can run.
+
+**Secular denominationalism** is the social architecture of that operating
+system. Communities can differ profoundly while sharing infrastructure. No
+single denomination needs to control identity, records, or the underlying
+network. A denomination should not own a person's identity any more than an
+application should own the computer on which it runs.
+
+Chisel and related tools provide access to the persistence layer beneath this
+system. Small durable records can be placed on blockchains without requiring a
+central registrar. IPFS can hold larger artifacts. M64 and related compact
+representations can make the instructions required to locate, reconstruct, or
+hydrate those artifacts small enough to preserve through highly resilient
+channels.
+
+The paper artifact therefore acts as a bootstrap mechanism:
+
+```text
+paper -> identifier -> decentralized record -> reconstructed digital object
+      -> identity and participation
+```
+
+A sticker or encoded identifier on a physical page can lead into IPFS without
+requiring the whole path to depend forever on a conventional URL or DNS name.
+Enough information can be preserved in decentralized records to reconstruct
+the route later.
+
+The paper ritual matters because it gives entry into the system a physical
+event. Identity does not simply appear because someone clicked "Create
+Account." A person performs an action, retains an artifact, and establishes a
+relationship between something physically possessed and something durably
+recorded.
+
+Dark Star is not primarily asking the reader to accept a doctrine. It asks
+whether some of the useful machinery historically bundled inside religion can
+be rebuilt deliberately and secularly: identity, belonging, memory, mutual
+aid, continuity, ritual, shared resources, and durable institutions.
+
+Religious communities have historically created economic capacity that does
+not operate purely through market transactions. Members find work through one
+another, share resources, provide shelter, teach skills, care for children and
+elders, make introductions, preserve records, and help one another through
+crises. These are real economic resources even when they are not expressed as
+priced transactions.
+
+Dark Star asks whether this kind of social infrastructure can be constructed
+intentionally without requiring centralized theological authority.
+
+Its religious shell provides mythology, narrative, ritual, symbolism, and a
+recognizable cultural space.
+
+Its technical core provides tools.
+
+Its paper form provides a physical ceremony of entry.
+
+Its decentralized digital layer provides persistence without requiring a
+single institution to remain alive forever.
+
+The periodical can then wander. One issue might discuss Joyce. Another might
+discuss Frazer. Another might contain fiction, local history, a technical
+protocol, a cooperative experiment, or instructions for using Chisel. The
+subjects do not have to resolve into a single ideology. The coherence is the
+world around them and the infrastructure underneath them.
+
+**Dark Star is not the religion. It is the strange printed doorway into a
+religious operating system.**
+
 ## Dated concept notes
 
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)

@@ -106,6 +106,7 @@ religious operating system.**
 
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)
 - [2026-09-20 — Executable Publication and Campaign Cartridges](DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md)
+- [2026-09-24 — Address Space as Public Index](DARK_STAR_ADDRESS_SPACE_INDEX_NOTES_2026-09-24.md)
 
 The dated notes preserve the evolving architecture around Dark Star, including
 its relationship to Mogwai and the separate CertLedger training edition,

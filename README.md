@@ -107,6 +107,25 @@ religious operating system.**
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)
 - [2026-09-20 — Executable Publication and Campaign Cartridges](DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md)
 - [2026-09-24 — Address Space as Public Index](DARK_STAR_ADDRESS_SPACE_INDEX_NOTES_2026-09-24.md)
+- [2026-09-24 — Dark Star: The Public Index (working essay)](dark-star-public-index.html)
+
+The working essay can be revised as wrapped text blocks with
+[`dark-star-essay-editor.html`](dark-star-essay-editor.html). The editor reads
+and writes through Chisel fileProxy; the proxy should be exposed only
+temporarily or behind access control because its current `/save` endpoint is
+not authenticated.
+
+Run fileProxy with the Dark Star checkout as its writable root:
+
+```sh
+CHISEL_FILE_ROOT=/path/to/darkStar CHISEL_FILE_PORT=7799 \
+  python3 /path/to/chisel/tools/fileProxy/proxy.py
+```
+
+On `rigler.org`, the editor defaults to `https://rigler.org:7799` and the path
+`dark-star-public-index.html`. A public HTTPS page cannot call a plain HTTP
+proxy, so port 7799 must have working TLS or be placed behind an HTTPS reverse
+proxy. Stop fileProxy or remove outside access when the edit is complete.
 
 The dated notes preserve the evolving architecture around Dark Star, including
 its relationship to Mogwai and the separate CertLedger training edition,

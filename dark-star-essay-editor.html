@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Dark Star essay editor</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #171411; background: #f3eee5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { position: sticky; top: 0; z-index: 2; padding: .65rem; color: #f7f0df; background: #171a26; box-shadow: 0 2px 10px #0005; }
+    .bar { width: min(72rem, 100%); margin: auto; display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+    input, button, textarea { font: inherit; }
+    input { min-width: 12rem; flex: 1 1 15rem; padding: .65rem; border: 1px solid #a99e8f; border-radius: .3rem; }
+    #path { flex-grow: 1.25; }
+    button { padding: .67rem .9rem; border: 0; border-radius: .3rem; color: #17130f; background: #cf9d43; font-weight: 750; }
+    button.secondary { background: #e8e0d3; }
+    button:disabled { opacity: .45; }
+    main { width: min(72rem, calc(100% - 1rem)); margin: 1rem auto 5rem; }
+    #status { min-height: 1.5rem; color: #51483e; }
+    #status.error { color: #971f18; font-weight: 750; }
+    .warning { margin: .8rem 0; padding: .7rem .8rem; border-left: .3rem solid #971f18; background: #fff8ed; font-size: .9rem; line-height: 1.45; }
+    .help { color: #5a5148; font-size: .9rem; line-height: 1.45; }
+    .block { margin: .85rem 0; padding: .65rem; border: 1px solid #c7bcad; border-radius: .45rem; background: #fff; }
+    .label { display: flex; justify-content: space-between; gap: .5rem; margin-bottom: .35rem; color: #665947; font: 700 .72rem/1.3 ui-monospace, monospace; text-transform: uppercase; }
+    textarea { display: block; width: 100%; min-height: 4.8rem; resize: vertical; overflow-wrap: anywhere; white-space: pre-wrap; padding: .72rem; border: 1px solid #aaa; border-radius: .3rem; color: #15120f; background: #fff; line-height: 1.5; }
+    textarea:focus { border-color: #7a5411; outline: 3px solid #c4932d55; }
+    @media (max-width: 44rem) {
+      header { position: static; }
+      .bar > * { width: 100%; }
+      button { flex: 1 1 29%; }
+      main { width: calc(100% - .6rem); }
+      .block { padding: .45rem; }
+      textarea { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <input id="proxy" spellcheck="false" aria-label="fileProxy URL">
+      <input id="path" spellcheck="false" value="dark-star-public-index.html" aria-label="Essay path">
+      <button id="load">Load</button>
+      <button id="save" disabled>Save</button>
+      <button id="preview" class="secondary" disabled>Preview</button>
+      <button id="download" class="secondary" disabled>Download</button>
+    </div>
+  </header>
+  <main>
+    <p id="status">Load the essay from fileProxy.</p>
+    <p class="warning"><strong>Security:</strong> the current fileProxy <code>/save</code> endpoint has no authentication. Expose it only temporarily or behind access control, and stop or block it when editing is finished.</p>
+    <p class="help">Each box edits one heading, paragraph, list item, or sequence line. Text wraps to the screen. Inline tags such as <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> may appear in a box; keep them when they carry formatting you want. Save checks that the server copy has not changed since it was loaded.</p>
+    <section id="fields"></section>
+  </main>
+  <script>
+  (() => {
+    "use strict";
+    const $ = selector => document.querySelector(selector);
+    const proxyInput = $("#proxy");
+    const pathInput = $("#path");
+    const loadButton = $("#load");
+    const saveButton = $("#save");
+    const previewButton = $("#preview");
+    const downloadButton = $("#download");
+    const fields = $("#fields");
+    const status = $("#status");
+    const selector = "h1,h2,h3,p,li,pre";
+    const params = new URLSearchParams(location.search);
+    const defaultProxy = location.hostname === "rigler.org"
+      ? "https://rigler.org:7799"
+      : "http://127.0.0.1:7799";
+    let source = "";
+    let nodes = [];
+
+    proxyInput.value = params.get("proxy") || localStorage.getItem("darkStarEssayProxy") || defaultProxy;
+    pathInput.value = params.get("path") || "dark-star-public-index.html";
+
+    const proxyBase = () => proxyInput.value.trim().replace(/\/+$/, "");
+    const filePath = () => pathInput.value.trim();
+    const setStatus = (message, error = false) => {
+      status.textContent = message;
+      status.className = error ? "error" : "";
+    };
+    const readJson = async response => {
+      const data = await response.json().catch(() => ({ ok: false, error: `HTTP ${response.status}` }));
+      if (!response.ok || !data.ok) throw new Error(data.error || `HTTP ${response.status}`);
+      return data;
+    };
+    const loadRemote = async () => {
+      const url = `${proxyBase()}/load?path=${encodeURIComponent(filePath())}`;
+      return readJson(await fetch(url, { cache: "no-store" }));
+    };
+    const grow = area => {
+      area.style.height = "auto";
+      area.style.height = Math.min(Math.max(area.scrollHeight + 2, 78), 620) + "px";
+    };
+    const editedHtml = () => {
+      if (!source) return "";
+      const doc = new DOMParser().parseFromString(source, "text/html");
+      const targets = [...doc.querySelectorAll(selector)];
+      const values = [...fields.querySelectorAll("textarea")];
+      targets.forEach((node, index) => {
+        if (!values[index]) return;
+        if (node.tagName === "PRE") node.textContent = values[index].value;
+        else node.innerHTML = values[index].value;
+      });
+      return "<!doctype html>\n" + doc.documentElement.outerHTML + "\n";
+    };
+    const render = html => {
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      nodes = [...doc.querySelectorAll(selector)];
+      fields.replaceChildren();
+      nodes.forEach((node, index) => {
+        const wrap = document.createElement("article");
+        wrap.className = "block";
+        const label = document.createElement("div");
+        label.className = "label";
+        const words = node.textContent.trim().split(/\s+/).filter(Boolean).length;
+        label.innerHTML = `<span>${index + 1}. ${node.tagName.toLowerCase()}</span><span>${words} words</span>`;
+        const area = document.createElement("textarea");
+        area.value = node.tagName === "PRE" ? node.textContent : node.innerHTML.trim();
+        area.spellcheck = true;
+        area.wrap = "soft";
+        area.addEventListener("input", () => grow(area));
+        wrap.append(label, area);
+        fields.append(wrap);
+        requestAnimationFrame(() => grow(area));
+      });
+      saveButton.disabled = false;
+      previewButton.disabled = false;
+      downloadButton.disabled = false;
+    };
+
+    loadButton.addEventListener("click", async () => {
+      if (!proxyBase() || !filePath()) return setStatus("Enter the fileProxy URL and essay path.", true);
+      loadButton.disabled = true;
+      setStatus("Loading…");
+      try {
+        localStorage.setItem("darkStarEssayProxy", proxyBase());
+        const data = await loadRemote();
+        source = data.text;
+        render(source);
+        setStatus(`Loaded ${data.path} — ${nodes.length} editable text blocks.`);
+      } catch (error) {
+        setStatus(error.message, true);
+      } finally {
+        loadButton.disabled = false;
+      }
+    });
+
+    saveButton.addEventListener("click", async () => {
+      saveButton.disabled = true;
+      setStatus("Checking server copy…");
+      try {
+        const current = await loadRemote();
+        if (current.text !== source && !confirm("The server copy changed after you loaded it. Overwrite those changes?")) {
+          setStatus("Save cancelled. Reload the current server copy before continuing.", true);
+          return;
+        }
+        const text = editedHtml();
+        setStatus("Saving…");
+        const data = await readJson(await fetch(`${proxyBase()}/save`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ path: filePath(), text })
+        }));
+        source = text;
+        setStatus(`Saved ${data.path} — ${data.size} bytes.`);
+      } catch (error) {
+        setStatus(error.message, true);
+      } finally {
+        saveButton.disabled = false;
+      }
+    });
+
+    previewButton.addEventListener("click", () => {
+      const url = URL.createObjectURL(new Blob([editedHtml()], { type: "text/html" }));
+      window.open(url, "_blank", "noopener");
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
+    });
+
+    downloadButton.addEventListener("click", () => {
+      const url = URL.createObjectURL(new Blob([editedHtml()], { type: "text/html" }));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filePath().split("/").pop() || "dark-star-public-index.html";
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+  })();
+  </script>
+</body>
+</html>

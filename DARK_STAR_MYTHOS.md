@@ -157,6 +157,58 @@ The opening movement of **Dark Star** is organized as four chapters named **Matt
 
 The first three function as Dark Star's synoptics. By the fourth chapter, **John**, the apparent stability of the synoptic view breaks down and the work begins attacking the idea that there was ever a single reliable optics in the first place.
 
+The four Gospel chapters also map onto four architectural layers of the project. The mapping should be structural rather than merely explanatory:
+
+```text
+MATTHEW
+literary world
+representation
+the book appears to be a book
+
+        ↓
+
+MARK
+mythic / symbolic layer
+correspondence
+the book begins interpreting itself through unstable systems
+
+        ↓
+
+LUKE
+executable publication
+action
+the book begins doing things and sending the reader elsewhere
+
+        ↓
+
+JOHN
+persistence / protocol layer
+ledger, identity, durable state
+the book escapes the book
+
+        ↓
+
+RICORSO
+the persisted artifact returns
+as material for another narrative cycle
+```
+
+This makes the Gospel structure an architecture diagram disguised as narrative.
+
+**Matthew** is where Dark Star operates most conventionally as literature, even when its characters and subjects are drawn from contemporary business, politics, technology, or religion.
+
+**Mark** is where literary events become symbolic machinery. Taxonomy, myth, Hesse, dinosaurs, marbles, Egypt, names, authorship, and historical association begin to cross-connect. The reader is still substantially inside the book, but the book has started behaving as though everything in it may belong to another interpretive system.
+
+**Luke** is where the publication becomes operational. Language itself becomes executable. QR codes, instructions, identity choices, paper actions, sticker rituals, and routes into other media begin to make the reader act rather than merely interpret.
+
+**John** is where the transition completes. Addresses, signatures, hashes, ledger records, IPFS objects, transaction identifiers, self-sovereign identity, and independently recoverable grammar become native parts of the work. The book no longer merely describes another medium. It has crossed into it.
+
+The end of John should therefore move toward **ricorso** rather than simple closure. Persistence enables return. A ledger artifact can become a future page. An identity can re-enter another issue. An old sticker can reopen a path years later. The fourth part therefore turns back toward the first:
+
+**representation → correspondence → execution → persistence → return**
+
+The structure should be available to a careful reader without requiring the printed book to explain it as a diagram.
+
 #### Matthew
 
 **Matthew** is built around a composite of **Nick Hanauer and Paul Graham**.

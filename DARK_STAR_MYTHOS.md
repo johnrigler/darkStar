@@ -18,6 +18,21 @@ Saturn is the organizing symbolic center: time, age, winter, harvest, limits, de
 
 The visual language follows from this: orbit, rings, rotation, the dark center, recurrence, and a turn that may happen before recovery is visible.
 
+Saturn should remain deliberately double.
+
+One Saturn is **Cronus, the old ruler who fears succession**. He consumes his children because the future threatens his incumbency. In Dark Star this becomes an image of jammed succession: an old order that can no longer reproduce itself naturally but still possesses the institutions through which replacement would ordinarily occur.
+
+The other Saturn is **the Dark Star itself**: not merely the ruler of the dying order, but the sign under which the transition becomes visible. The daytime star belongs to the visible order, to ordinary legitimacy, public confidence, and the world that appears self-evident. The Dark Star comes into symbolic prominence when that daylight order no longer explains the world beneath it.
+
+These two meanings are intentionally in tension.
+
+Saturn is therefore both:
+
+- the old king whose time is ending;
+- and the star of the interval in which the ending becomes intelligible.
+
+Dark Star should not resolve that contradiction. It is useful precisely because Saturn can be read backward toward the dying order and forward through the passage beyond it.
+
 ### Saturnalia and December
 
 **Saturnalia is the ritual frame of reversal.**
@@ -301,11 +316,52 @@ This is a hypothesis and narrative frame, not a proven law of history.
 
 Vico is the broader recurring structure. The Fourth Turning is one modern attempt to locate the present within such a structure.
 
+### Gerontocracy and jammed succession
+
+Dark Star can treat **gerontocracy** less as a complaint about old people than as a symbolic condition of failed succession.
+
+The important distinction is between age and incumbency.
+
+An older person can be inventive; a younger person can devote a life to preserving an exhausted institution. The Dark Star concern is the system that has become unusually effective at keeping incumbents in place while becoming less effective at transferring authority, wealth, legitimacy, and symbolic power into forms suited to the world replacing it.
+
+This produces a characteristic late-age mismatch:
+
+```text
+rapid cultural and technological change
+                +
+slow institutional succession
+                =
+loss of fit
+```
+
+The old order may remain physically present after it has lost the ability to describe the new conditions developing underneath it.
+
+This is where Cronus becomes useful. He is not simply old. He is the ruler who attempts to prevent replacement.
+
+Gerontocracy is therefore one modern political and institutional image that can be placed beside the Cronus myth without claiming that the myth predicts contemporary politics.
+
+The Dark Star formulation is:
+
+> The old age retains institutional power after it has begun losing symbolic command of the future.
+
+The resulting interval is neither the old order nor the new one. Succession has jammed.
+
+
 ### Apuk / Ah Pook / Ah Puch
 
 The project preserves the name **Apuk**, alongside the forms **Ah Pook** and **Ah Puch**, as part of its Burroughs-facing layer.
 
 Within Dark Star this figure carries death, decomposition, rot, bodily truth, exposure, and the collapse of false permanence. It should not be reduced to generic occult decoration, and Dark Star does not claim that this symbolic use exhausts or accurately represents Maya religious traditions.
+
+Apuk should not be collapsed into Saturn.
+
+**Saturn/Cronus** is the old ruler trying to hold the throne.
+
+**Apuk** is death entering the system and making indefinite preservation impossible.
+
+That difference matters. Cronus attempts to stop succession. Apuk destroys the fantasy that succession can be stopped forever.
+
+This places Apuk beside, rather than inside, the Saturnian structure.
 
 ### Burroughs and the death-cheaters
 
@@ -319,6 +375,53 @@ This produces an opposition:
 - the post-collapse tool preserves traces, authorship, agency, memory, and portable continuity.
 
 Burroughs is used here as literary and prophetic material, not as an authority on Maya history or religion.
+
+### Maize, death, and regeneration
+
+The Maya maize cycle contributes a different shape: death is not only termination but a condition of regeneration.
+
+Dark Star should be careful here. Ah Pook is not simply "the god who kills the maize god," and different Maya traditions, images, and texts should not be flattened into a single story. The useful correspondence is more general.
+
+The kernel must enter darkness.
+
+The old form decomposes.
+
+Something returns in another form.
+
+This creates a useful triad:
+
+```text
+CRONUS
+prevents succession
+
+APUK
+makes preservation impossible
+
+MAIZE
+turns death into regeneration
+```
+
+The maize layer therefore prevents Dark Star from becoming a mythology of pure collapse. Decay can be terminal, but it can also be the medium through which continuity becomes possible.
+
+The project does not need to promise resurrection. It needs to preserve the possibility that what survives the turn will not look like what entered it.
+
+### Rex Nemorensis and replacement
+
+**Rex Nemorensis** adds another parallel myth of succession.
+
+The important Dark Star correspondence is not the exact anthropology of Frazer's reconstruction but the image of rule whose legitimacy contains the possibility of replacement.
+
+Cronus clings to power.
+
+Rex Nemorensis embodies rule shadowed by the successor.
+
+Apuk introduces mortality.
+
+The maize cycle introduces return.
+
+Vico makes the entire sequence historical motion rather than a one-time apocalypse.
+
+These figures should remain parallel. Dark Star is strongest when they resonate without being declared secretly identical.
 
 ### Cross-cultural stacking
 
@@ -340,7 +443,9 @@ The claim is not that these are historically identical. The method is **correspo
 
 ## Working synthesis
 
-**Saturn** is the cycle and the dark center.
+**Saturn** is the cycle, the dark center, and the contradiction between the old ruler and the star of transition.
+
+**Cronus** is jammed succession: the incumbent order consuming the future in order to remain present.
 
 **Saturnalia** is inversion of rank and value.
 
@@ -348,7 +453,13 @@ The claim is not that these are historically identical. The method is **correspo
 
 **Vico** is the historical turning and return.
 
-**Apuk / Ah Pook / Ah Puch** is the death-and-decay layer, especially as refracted through Burroughs.
+**Gerontocracy** is a modern institutional image of succession failing to complete, not a claim that age itself is the problem.
+
+**Apuk / Ah Pook / Ah Puch** is the death-and-decay layer, especially as refracted through Burroughs. Death makes the fantasy of indefinite preservation impossible.
+
+**The maize cycle** is regeneration: the possibility that continuity passes through decomposition and returns in another form.
+
+**Rex Nemorensis** is replacement shadowing rule: the successor already exists as a possibility inside the reign of the incumbent.
 
 **Burroughs** names the modern death-cheater and the obscenity of power trying to escape limit.
 
@@ -368,4 +479,22 @@ The claim is not that these are historically identical. The method is **correspo
 
 ## Short statement
 
-**Dark Star is a Saturnian novel/tool about turning.** It stacks myth, history, literature, cryptography, and hacker practice around recurrence, reversal, institutional mortality, and the survival of portable artifacts. Behemoth gathers the gates of the old order. The Digital Leviathan is not a new king but an amoral technical force whose exact mechanisms can escape mandatory mediation. Anna Livia runs through this structure as language, river, recurrence, and possible Leviathan. The work is not a claim that collapse is certain or that its source traditions all say the same thing. It is a machine built from correspondences, with Saturn at the dark center and the possibility that the strangest artifacts of the old order become unexpectedly useful after the turn.
+**Dark Star is a Saturnian novel/tool about succession, death, and turning.**
+
+The daytime order can remain institutionally powerful after it has begun losing its ability to describe the world emerging beneath it. Cronus names the attempt of the old ruler to prevent succession. Gerontocracy supplies a modern institutional image of that jam. Apuk names mortality and decomposition, the force that ends the fantasy of indefinite preservation. The maize cycle preserves the possibility that death can become regeneration. Rex Nemorensis places replacement inside the structure of rule itself. Vico turns these images into recurrence rather than a single apocalypse.
+
+Saturn remains deliberately contradictory: he is both the old king whose time is ending and the Dark Star under which the ending becomes visible.
+
+Around that symbolic core, Dark Star stacks myth, history, literature, cryptography, and hacker practice. Behemoth gathers the gates of the old order. The Digital Leviathan is not a new king but an amoral technical force whose exact mechanisms can escape mandatory mediation. Anna Livia runs through this structure as language, river, recurrence, and possible Leviathan.
+
+The work does not claim that collapse is certain, that historical cycles are laws, or that Maya, Roman, Frazerian, Vichian, Burroughsian, and technological materials secretly describe the same religion. It is a machine built from correspondences.
+
+The old order tries to remain.
+
+Death enters.
+
+Succession resumes.
+
+Something survives by changing form.
+
+That interval is Dark Star.

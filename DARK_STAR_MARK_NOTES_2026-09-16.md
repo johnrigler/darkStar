@@ -106,18 +106,66 @@ What remains is colored spheres rolling around while nobody remembers the old ru
 
 ## Chisel / M64 / QR behavior inside Mark
 
-Mark is also where the delivery medium starts behaving strangely.
+Mark is also where the delivery medium first starts behaving strangely.
 
-The printed book can contain QR codes that open hydrated artifacts, extensions of the dinosaur story, alternate page states, or ledger-anchored fragments.
+The reader should be allowed to **leave the book before the book is finished**.
 
-The story therefore stops respecting the physical binding of the book.
+An early QR code can open what initially appears to be nothing more consequential than an online dinosaur-and-marbles game. The transition should not yet announce itself as "Web3," decentralized identity, ledger persistence, or executable publication. It is simply another part of the strange Peter Thiel / dinosaur / Glass Bead Game sequence.
 
-A colored marble in print may correspond to an object in a hydrated page. A word may move. A reference may open a second narrative. A QR may reveal another QR or a transaction reference.
+The game can pull its assets and logic from the web and present the marbles as a playable system: different sizes, colors, rules, collisions, territories, names, or symbolic values. Dinosaurs push the pieces around. The magnificent Glass Bead Game has regressed into literal marbles while simultaneously becoming executable.
 
-Mark becomes not merely a story *about* a Glass Bead Game, but a text whose delivery mechanism begins to behave like one.
+This is Mark's first exit ramp:
 
-The underlying proposition is:
+```text
+printed Mark
+   ↓
+QR
+   ↓
+game
+   ↓
+IPFS object
+   ↓
+return to the book
+```
+
+The point is experiential. The reader has crossed media before being told that crossing media is one of the subjects of Dark Star.
+
+### The first persistence lesson
+
+A QR code printed in the middle of a physical book creates a particular obligation: it should not become useless merely because an ordinary website disappears.
+
+That makes the Mark game a good place to introduce the persistence machinery invisibly.
+
+The game can be published as an IPFS object. The printed object should carry enough information to recover that object through more than one ordinary web URL. Where practical, the content or reconstruction recipe should also be recoverable through the project's compact M64 machinery.
+
+At this stage the reader does not need to know what M64 is.
+
+They merely discover that the game still exists.
+
+Later chapters can reveal why.
+
+This makes persistence part of the narrative grammar before persistence becomes an explicit technical subject.
+
+### Mark as symbolic crossing
+
+A colored marble in print may correspond to an object in the game. A word may move. A reference may open a second narrative. The game may reveal another reference, image, ledger artifact, or route back into the physical text.
+
+Mark therefore becomes not merely a story *about* a Glass Bead Game, but a text whose delivery mechanism begins to behave like one.
+
+The Egypt layer can remain associative rather than explanatory. The project's Mark material can connect Mark's Egyptian tradition, the **Egyptus** name as it appears in the Wake-facing layer, Thiel's unstable identity, deep time, pyramidal antiquity, taxonomy, and the dinosaur regression without requiring the reader to decide that these references form one historical claim. They are correspondences inside Mark's symbolic machine.
+
+The underlying proposition remains:
 
 **permanence of symbols is not permanence of meaning.**
 
-A ledger can preserve red, blue, green, position, relationship, and movement. It cannot guarantee that future readers will still agree on what those things mean.
+A ledger or content-addressed object can preserve red, blue, green, position, relationship, code, and movement. It cannot guarantee that future readers will still agree on what those things mean.
+
+That distinction is important. Mark introduces technical persistence while simultaneously undermining semantic certainty.
+
+The artifact survives.
+
+The game may survive.
+
+The rules can be recovered.
+
+Meaning can still mutate.

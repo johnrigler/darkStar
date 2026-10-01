@@ -253,3 +253,86 @@ The complete architecture is recorded in
 ## In one sentence
 
 **Dark Star uses emotionally powerful and difficult-to-classify artifacts to pull people across the boundary into a decentralized medium before they need to understand that such a boundary exists, then leaves them there with the tools necessary to navigate it.**
+
+
+## Page regions as parallel channels
+
+The printed page should not be treated as one rectangular field carrying one stream of information. Dark Star can divide the page into persistent regions with different roles. The principal narrative may remain mostly black while another visual channel runs through the outer edge, gutter, lower field, margin, or another recurring position.
+
+The Bell already establishes the precedent: a second object can occupy the physical book at the seam and behave independently of the main text.
+
+The next experiment should be simpler: colored text functioning as a page-turning signal.
+
+### The "52 Girls" name current
+
+Use the B-52s song **"52 Girls"** as a modern naming-current parallel to the river-name accumulation associated with Anna Livia Plurabelle in *Finnegans Wake*. The first name in the song is **Effie**.
+
+The implementation should use the names as a design current rather than reproduce the lyric as a block.
+
+Initial behavior:
+
+- the main body remains black;
+- the name-current is colored;
+- it begins on page 1;
+- it occupies the lower half and outer portion of the page rather than competing with the main text;
+- it appears on recto/right-hand pages only;
+- verso/left-hand pages omit it;
+- each later recto advances the sequence;
+- the repeated placement should become visually recognizable before it is explained.
+
+The exact side depends on imposition. "Outer edge" is the invariant, not a hard-coded left/right coordinate. In a bound spread the recto outer edge is on the right; if pagination or print imposition changes, the layout engine should preserve the semantic region rather than the literal coordinate.
+
+This creates a low-tech flip-book current. The reader sees a colored fragment on page 1, then learns that another fragment will appear after the next turn. Page turning itself becomes part of the interface.
+
+### Pull toward the centerfold
+
+The name-current should create forward momentum toward the centerfold. The centerfold is not merely another illustration; it is a physical event in the book.
+
+A later physical edition may include loose confetti or another contained insert that releases at the centerfold. If used, this is packaging and production behavior, not merely decoration.
+
+The intended rhythm is:
+
+```text
+edge signal
+    |
+turn
+    |
+signal absent on verso
+    |
+turn
+    |
+signal returns and advances
+    |
+repeat
+    |
+centerfold opens as event
+```
+
+The book temporarily behaves like a flip book without becoming a conventional animation flip book.
+
+### Clear-bag packaging
+
+A physical edition may be shipped or sold inside a transparent resealable bag.
+
+The bag can:
+
+- allow inspection before opening;
+- contain loose inserts or confetti;
+- keep stickers, tear-outs, or other components visibly associated with one package;
+- present the publication as an artifact kit rather than an ordinary bound book.
+
+The transparency matters. Packaging should reveal the strangeness of the object rather than hide it.
+
+### Adult-directed first edition
+
+For the initial physical product, take the conservative distribution position: do not market Dark Star as a children's product.
+
+This is not a claim that its ideas are inherently unsuitable for younger readers. It is a product-boundary decision because Dark Star can introduce cryptographic identity, money, persistent publication, and interaction with public networks.
+
+A later educational edition for younger participants could teach the concept of self-sovereign identity using non-consequential examples and explicit adult supervision where appropriate.
+
+The important idea remains:
+
+**There are many ways to establish and carry a self-sovereign digital identity.**
+
+QR is one entrance, not the system. Paper, conventional wallets, seed-based wallets, browser wallets, Chisel, and future tools can all be entrances. The identity belongs to the participant rather than to the interface.

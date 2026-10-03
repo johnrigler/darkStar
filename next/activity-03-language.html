@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Star Lab — Language</title>
+<link rel="stylesheet" href="../page.css">
+
+</head>
+<body>
+<main>
+<h1>Lab 3: make language mechanical</h1>
+<p><strong>Goal:</strong> separate encoding from financial value.</p>
+<ol>
+<li>Choose a short phrase.</li>
+<li>Use a local Chisel encoding tool or a documented paper rule to turn it into a readable artifact.</li>
+<li>Before publishing anything, decode it back into the original phrase.</li>
+<li>Identify which characters carry meaning, which carry structure, and which exist only for validity or padding.</li>
+<li>Save the readable artifact as plain text.</li>
+</ol>
+<p>Stop here unless you deliberately want a public ledger record.</p>
+<p><strong>Do not send meaningful funds to deliberately unspendable addresses.</strong></p>
+<pre>human phrase
+   ↓
+encoding rule
+   ↓
+protocol-valid object
+   ↓
+independent decoding
+   ↓
+same phrase</pre>
+<p>The important result is reproducibility, not broadcast.</p>
+</main>
+</body>
+</html>

@@ -292,3 +292,90 @@ The system is successful when those paths begin crossing.
 The publication does not need to make every reader understand the same thesis.
 
 It needs to make enough readers capable of entering the same public medium from different directions.
+
+---
+
+## 12. Ledger-native illustrations
+
+A recurring Dark Star illustration should often be more than an image placed beside prose.
+
+Where possible, the illustration should lead directly to the ledger object from which it came.
+
+This is especially important in the Luke section.
+
+The low-resolution Luke image shown in current Dark Star work is associated with a DigiByte transaction:
+
+`d8eef1586bb88d192d3284726407c307f0c54b1c023b7ef343e401eb89ea098d`
+
+Chisel currently surfaces that transaction in the DigiByte stream at block height 21778721.
+
+The design implication is:
+
+```text
+printed image
+-> visible phrase / readable address
+-> QR
+-> ledger transaction
+-> Chisel rendering
+-> alternate explorer / reader
+```
+
+The image is therefore not merely an illustration of the ledger system.
+
+It is one rendering of an object that already exists inside the ledger system.
+
+The same principle applies elsewhere.
+
+The *Finnegans Wake* quotation used in the Preface can point into its Dogecoin ledger artifact rather than functioning only as literary quotation.
+
+Other symbols, images, phrases, and recurring Dark Star motifs may appear in multiple ledgers. Repetition across DigiByte, Dogecoin, Polygon, Litecoin, or other supported chains should not automatically be treated as duplication error.
+
+It can function as recurrence.
+
+The same idea may be rewritten into another ledger in another technical period, using another encoding, another transaction form, or another experiment.
+
+This creates a useful distinction:
+
+- **the motif** is conceptual;
+- **the transaction** is one historical instantiation;
+- **the chain** is one transport;
+- **the book image** is one rendering;
+- **Chisel** is one reader.
+
+No one of these owns the object completely.
+
+### Luke marginalia
+
+The Luke / bull section should use the DigiByte Luke artifact as a major marginal insertion.
+
+Possible treatment:
+
+- the low-resolution image;
+- the literal transaction id;
+- selected readable address/output strings from the transaction;
+- the correct phrase as recovered from the actual address structure;
+- QR to the DigiByte transaction;
+- QR to Chisel with the transaction loaded or searchable;
+- alternate explorer QR if useful;
+- a small note that related Luke/Lakes material also appears in another ledger experiment.
+
+Do not normalize the phrase from memory when the transaction itself can supply the actual text.
+
+The ledger artifact is authoritative for what was written there.
+
+### Repeated ideas across chains
+
+A repeated phrase or symbol across chains can be presented as a recurrence trail:
+
+```text
+DOGE version
+DGB version
+Polygon version
+later Chisel interpretation
+```
+
+The reader can discover that the same conceptual object has been re-instantiated through different technical media.
+
+That is especially compatible with the Wake / ricorso layer of Dark Star.
+
+The idea returns, altered by its transport.

@@ -451,3 +451,145 @@ Chisel is one instrument for decoding it.
 Mogwai is one place where those decoded objects can become social again.
 
 The newspaper / Mamalujo format can expose this gradually by placing ledger fragments beside essays until the distinction between "illustration" and "source text" begins to collapse.
+
+---
+
+## 14. Multi-stream pages
+
+Dark Star should not assume that attention remains on one track.
+
+The early pages may offer a clear argumentative stream:
+
+headline -> short essay -> next short essay -> conclusion
+
+A reader who wants the argument should be able to follow that path with very little friction.
+
+But the page should also support wandering.
+
+If attention drifts, the drift should encounter another meaningful stream rather than blank margin or decorative filler.
+
+Possible secondary streams:
+
+- Mamalujo pictograms;
+- tiny Matthew / Mark / Luke / John labels;
+- ledger fragments;
+- readable addresses;
+- Base57 image rows;
+- QR exits;
+- continued-on-page jumps;
+- small myths;
+- source-code fragments;
+- miniature diagrams;
+- captions that become stories;
+- classified-style notices;
+- fake or semi-functional advertisements;
+- service listings;
+- public notices;
+- corrections;
+- obituaries for dead platforms or services;
+- weather-map-like charts for network conditions;
+- tiny recurring characters;
+- sticker instructions;
+- fragments from other sections.
+
+> If the reader's mind wanders, give the wandering mind somewhere meaningful to go.
+
+The main essay remains readable.
+
+The peripheral field becomes increasingly alive.
+
+---
+
+## 15. Advertisements can be part of the world
+
+Dark Star can contain advertisements.
+
+They should not merely imitate commercial clutter. Advertisements can function as another narrative and infrastructural layer.
+
+Possible ad types:
+
+### Real project ads
+
+- Chisel;
+- Mogwai;
+- Lantern;
+- Passport;
+- local printing;
+- node services;
+- temporary servers;
+- QR / sticker tools;
+- gatherings;
+- repair / transport / hosting.
+
+### Fictional ads
+
+- strange services;
+- obsolete technologies;
+- impossible products;
+- public notices;
+- lost-key notices;
+- ledger classifieds;
+- dead-platform memorials;
+- calls for translators, hosts, printers, archivists, or witnesses.
+
+### Functional ads
+
+An advertisement can itself be executable:
+
+- scan to open a ledger address;
+- scan to join a Mogwai stream;
+- scan to load a transaction in Chisel;
+- scan to print a sticker sheet;
+- scan to run a temporary service;
+- scan to fork the publication.
+
+### Editorial ads
+
+Some ads can quietly carry argument.
+
+Examples:
+
+**ACCOUNT LOST? KEEP THE PERSON. CHANGE THE SERVICE.**
+
+**PUBLIC SPACE FOR RENT — TERMS SUBJECT TO CHANGE.**
+
+**YOUR DATABASE IS NOT A COUNTRY.**
+
+The best ads should be ambiguous at first glance: part joke, part world-building, part instruction, part real doorway.
+
+---
+
+## 16. Attention should fork before the reader understands why
+
+The publication should gradually train the reader into non-linear reading.
+
+At first, the main column dominates.
+
+Then sidebars become interesting.
+
+Then corner symbols recur.
+
+Then one QR code opens something useful.
+
+Then an ad leads to a real service.
+
+Then a ledger fragment turns out to be the source of an image already seen elsewhere.
+
+Then Matthew / Mark / Luke / John marks begin to look related.
+
+The reader should be able to discover the architecture by following curiosity rather than being told the architecture first.
+
+This creates several simultaneous reading streams:
+
+- ARGUMENT STREAM — technical / explanatory prose
+- MAMALUJO STREAM — fourfold symbols / witnesses / recurring section logic
+- LEDGER STREAM — transactions / addresses / images / messages / media
+- PUBLIC-SQUARE STREAM — Mogwai / people / reputation / exchange / services
+- MYTH STREAM — Saturn / reversal / Wake / recurrence / transition
+- ACTION STREAM — QR / stickers / tools / printing / joining / forking
+
+The streams should cross.
+
+A reader can enter through any one of them and later discover the others.
+
+The result should feel less like reading a book and more like moving through a small public environment.

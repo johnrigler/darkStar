@@ -622,3 +622,65 @@ It is an argument for remembering that standards are tools.
 The final test is:
 
 > Can the project still say something the stack did not already know how to hear?
+
+
+---
+
+## 19. Web 2.8
+
+Dark Star should name a recurring result of stack capture **Web 2.8**.
+
+Web3 introduces primitives that can remove or weaken old dependencies:
+
+- user-controlled cryptographic keys;
+- shared public ledgers;
+- independently verifiable state;
+- content addressing;
+- direct value transfer;
+- applications that need not own the user's identity;
+- records that need not disappear with one service provider.
+
+But a development culture trained on Web2 can immediately rebuild the old architecture around those primitives.
+
+The result can contain a blockchain, wallet, smart contract, and token while still depending operationally on:
+
+- a permanent hosted application;
+- a company-controlled API;
+- a company-controlled database;
+- a framework and build environment;
+- cloud infrastructure;
+- platform-style accounts;
+- application state that cannot be reconstructed without the original operator.
+
+That is **Web 2.8**:
+
+> Web3 primitives embedded inside an architecture that still behaves like Web2 where it matters.
+
+This is not merely aesthetic bloat.
+
+If the point of the experiment is to remove permanent intermediaries, platform-owned identity, custodial state, or unnecessary servers, then adding those layers back to make the project look familiar reverses the experiment.
+
+The expected clues destroy the thing they are being added to explain.
+
+A common failure path is:
+
+```text
+Web3 primitive
+-> unfamiliar architecture
+-> explanation difficulty
+-> expected Web2/Web3 layers added for legibility
+-> old dependencies return
+-> Web 2.8
+```
+
+Stack capture should not be presented as the single cause of every Web3 failure. Speculation, governance, fraud, regulation, security failures, economics, and usability all matter.
+
+But stack capture provides a strong explanation for one recurring frustration: the substrate changes while the application architecture above it remains largely intact.
+
+The decisive question is therefore not:
+
+> Does this project use a blockchain?
+
+It is:
+
+> Which dependency disappeared because the blockchain was used?

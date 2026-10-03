@@ -1,5 +1,14 @@
 # Dark Star: print-ready PDF workflow
 
+## vNext prototype
+
+The 28-page essay/activity prototype has its own Letter booklet renderer:
+
+`print-booklet-letter-vnext.html`
+
+It uses the same duplex Letter workflow described below. The older `print-booklet-letter.html` remains available for the experimental edition.
+
+
 The repository already contains a US Letter booklet print renderer at `print-booklet-letter.html`.
 
 The simplest publication workflow is to use the browser to freeze one generated edition into a single PDF, then print that PDF unchanged.

@@ -245,7 +245,7 @@ Suggested project ethos:
 
 > Copy this. Sell copies. Give it away. Trade it. Modify your copy. Run your own gathering. If you are finished with this copy, pass it on.
 
-This is an intended permission statement, not yet a substitute for selecting and publishing an explicit legal license for the repository and printable material.
+This reader-facing permission is backed by the repository's split license: original publication content is CC BY-SA 4.0 and software code is MIT licensed. See `LICENSE.md`.
 
 ---
 

@@ -31,6 +31,18 @@
     table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.96rem}th,td{border-bottom:1px solid var(--line);padding:.7rem;text-align:left;vertical-align:top}th{font-family:Arial,Helvetica,sans-serif}
     .toc{border:1px solid var(--line);padding:1rem 1.25rem;background:#fff}.toc ol{columns:2;column-gap:2rem}.toc li{break-inside:avoid;margin:.25rem 0}
     .night{margin:3rem calc(50% - 50vw);padding:2.4rem max(1rem,calc(50vw - 24rem));background:var(--night);color:var(--nightInk)}.night h2{margin-top:0}
+    .address-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;margin:1.5rem 0 2.2rem}
+    .address-card{border:1px solid var(--line);background:#fff;padding:1rem;break-inside:avoid}
+    .address-card .kind{font:700 .7rem/1.3 Arial,Helvetica,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+    .address-card code{display:block;margin:.5rem 0;font-size:.88rem;overflow-wrap:anywhere;background:transparent;padding:0}
+    .address-card p{font-size:.92rem;line-height:1.45;color:var(--muted);margin:.4rem 0}
+    .explorer{border:1px solid #aaa;background:#fff;margin:1.7rem 0;box-shadow:0 .15rem .7rem rgba(0,0,0,.08)}
+    .explorer-head{padding:.65rem .9rem;background:#f0f2f5;border-bottom:1px solid #ccc;font:700 .78rem/1.4 Arial,Helvetica,sans-serif;letter-spacing:.03em}
+    .explorer-body{padding:1rem}.explorer-title{font:700 1rem/1.4 Arial,Helvetica,sans-serif;margin-bottom:.6rem}
+    .explorer-address{font:700 .92rem/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;padding:.65rem;background:#f7f7f7;border:1px solid #ddd}
+    .ledger-line{display:grid;grid-template-columns:7rem 1fr;gap:.5rem;padding:.55rem 0;border-bottom:1px solid #eee;font-size:.9rem}
+    .ledger-line:last-child{border-bottom:0}.ledger-line strong{font-family:Arial,Helvetica,sans-serif;font-size:.78rem;text-transform:uppercase;color:#666}
+    .mini-note{font-size:.88rem;color:var(--muted)}
     a{color:#513600;text-decoration-thickness:.08em;text-underline-offset:.13em}
     footer{border-top:1px solid var(--ink);margin-top:4rem;padding-top:1rem;color:var(--muted)}
     @page{size:letter;margin:.7in}@media(max-width:620px){.toc ol{columns:1}}
@@ -66,7 +78,9 @@
     <li><a href="#claim">The address can be the index</a></li>
     <li><a href="#unspendable">Obviously unspendable, technically precise</a></li>
     <li><a href="#language">Putting language into address space</a></li>
+    <li><a href="#wall">A wall of real addresses</a></li>
     <li><a href="#history">How an index accumulates history</a></li>
+    <li><a href="#youtube">A real index: YouTube</a></li>
     <li><a href="#wrongclues">Why this looks wrong</a></li>
     <li><a href="#images">The same carrier can hold other structure</a></li>
     <li><a href="#evm">The EVM without starting from a contract</a></li>
@@ -213,7 +227,70 @@
 
 <p>That distinction is important. No consensus change is required. No miners or validators need to agree that a particular prefix means “person” or “subject.” The ledger only needs to preserve the transaction exactly as it already does.</p>
 
-<h2 id="history">8. How an address becomes an index</h2>
+<h2 id="wall">8. A wall of real addresses</h2>
+
+<p>Before going further, it helps to simply look at these for a while. The following are not hypothetical examples invented for this chapter. They are addresses preserved in the Chisel project's bundled Dogecoin ledger data, plus the DigiByte YouTube address preserved in the original <code>unspendable</code> repository.</p>
+
+<div class="address-wall">
+  <div class="address-card">
+    <div class="kind">Subject · Dogecoin</div>
+    <code>DCxxxxFiNNEGANSxWAKEzzzzzzzzyYeZHb</code>
+    <p>“FINNEGANS WAKE” occupying the address payload. Bundled at Dogecoin block 2,764,925.</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Subject · Dogecoin</div>
+    <code>DCxFLYiNGxSPAGHETTixMoNSTERzY96vdG</code>
+    <p>“FLYING SPAGHETTI MONSTER.” Bundled at Dogecoin block 2,928,639.</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Subject · Dogecoin</div>
+    <code>DCxFREExSPEECHzzzzzzzzzzzzzzYjS7L6</code>
+    <p>“FREE SPEECH.” Bundled at Dogecoin block 3,273,847.</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Subject · Dogecoin</div>
+    <code>DCxLiNExMESSAGESvxAxLARGEzzzbw4RHd</code>
+    <p>A message-like subject carried directly in address space.</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Transport · Dogecoin</div>
+    <code>DBxDoGExToxDiGiBYTEzzzzzzzzzVG1Un7</code>
+    <p>A <code>DBx</code> transport label: “DOGE TO DIGIBYTE.”</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Transport · Dogecoin</div>
+    <code>DBxDiGiBYTExTUNNELzzzzzzzzzzdQazZG</code>
+    <p>Another transport label: “DIGIBYTE TUNNEL.”</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Transport · DigiByte</div>
+    <code>DBxYoUTUBEvCoMzzzzzzzzzzzzzzZ31xMU</code>
+    <p>The DigiByte YouTube transport/index address preserved in the original <code>unspendable</code> documentation.</p>
+  </div>
+  <div class="address-card">
+    <div class="kind">Subject · DigiByte</div>
+    <code>DCxHASHTANGLEMENTzzzzzzzzzzzWQovPd</code>
+    <p>“HASHTANGLEMENT,” linked from the Chisel archive to a DigiByte address-history page.</p>
+  </div>
+</div>
+
+<p>The visual effect matters. A normal cryptocurrency address looks random. These do not. They look like somebody wrote on the ledger because that is, functionally, what happened.</p>
+
+<div class="explorer">
+  <div class="explorer-head">Explorer-style view · ledger address</div>
+  <div class="explorer-body">
+    <div class="explorer-title">Address</div>
+    <div class="explorer-address">DCxxxxFiNNEGANSxWAKEzzzzzzzzyYeZHb</div>
+    <div class="ledger-line"><strong>Network</strong><span>Dogecoin</span></div>
+    <div class="ledger-line"><strong>Block</strong><span>2,764,925</span></div>
+    <div class="ledger-line"><strong>Txid</strong><span><code>94d0ed27787dc531e86683680d3975d93f3db79c6f76442d4b99a93885328832</code></span></div>
+    <div class="ledger-line"><strong>Meaning</strong><span>DCx subject label: FINNEGANS WAKE</span></div>
+  </div>
+</div>
+
+<p class="mini-note">This panel is a simplified explorer-style rendering of literal ledger data in Chisel's bundled Dogecoin feed. A live explorer may present the same fields differently or cease operating; the transaction and address are the durable references.</p>
+
+<h2 id="history">9. How an address becomes an index</h2>
 
 <p>The next step is the part I think is easiest to overlook because block explorers already make it look ordinary.</p>
 
@@ -237,7 +314,31 @@
 
 <p class="sequence">ledger record + address convention + published grammar + independent reader</p>
 
-<h2 id="wrongclues">9. Why this looks wrong from inside the normal stack</h2>
+<h2 id="youtube">10. A real index: YouTube</h2>
+
+<p>The DigiByte YouTube address makes the indexing claim easier to see:</p>
+
+<div class="explorer">
+  <div class="explorer-head">DigiByte · transport/index address</div>
+  <div class="explorer-body">
+    <div class="explorer-title">YouTube</div>
+    <div class="explorer-address">DBxYoUTUBEvCoMzzzzzzzzzzzzzzZ31xMU</div>
+    <div class="ledger-line"><strong>DBx</strong><span>Transport or medium</span></div>
+    <div class="ledger-line"><strong>Readable body</strong><span>YOUTUBE.COM</span></div>
+    <div class="ledger-line"><strong>Use</strong><span>Transactions associated with this coordinate can point to or describe YouTube material.</span></div>
+    <div class="ledger-line"><strong>Historical link</strong><span><a href="https://digibyteblockexplorer.com/address/DBxYoUTUBEvCoMzzzzzzzzzzzzzzZ31xMU">Open the address route recorded by the original project</a></span></div>
+  </div>
+</div>
+
+<p>This is the conceptual jump. The address does not need to represent one video. It can represent <em>YouTube as the transport</em>. Individual transactions can then add specific videos, subjects, people, or other coordinates. The address becomes a meeting point among records.</p>
+
+<p>That means the index can be relational without needing one master SQL database. A transaction can touch more than one readable coordinate. One coordinate can mean the transport, another the subject, another a person. Later software can reconstruct the intersections.</p>
+
+<p class="sequence">YouTube transport address + subject address + person address + transaction → one durable relation</p>
+
+<p>At this point the block explorer stops looking merely like a wallet-history screen. It starts looking like a crude database browser whose keys happen to be public ledger addresses.</p>
+
+<h2 id="wrongclues">11. Why this looks wrong from inside the normal stack</h2>
 
 <p>At this point Chapter 1 should be doing useful work.</p>
 
@@ -267,7 +368,7 @@
   <p>The missing pieces are not always unfinished work. Sometimes the missing pieces are the result.</p>
 </blockquote>
 
-<h2 id="images">10. The same carrier can hold other structure</h2>
+<h2 id="images">12. The same carrier can hold other structure</h2>
 
 <p>Once an address is understood as a fixed-width carrier rather than only as a payment destination, text is not the only possible interpretation.</p>
 
@@ -289,7 +390,7 @@
 
 <p>This is not the central claim of the chapter. It is evidence that once the address is treated as a carrier, other interpretations become possible.</p>
 
-<h2 id="evm">11. The EVM without starting from a contract</h2>
+<h2 id="evm">13. The EVM without starting from a contract</h2>
 
 <p>The same habit of looking underneath the expected stack applies to Ethereum-family chains.</p>
 
@@ -316,7 +417,7 @@
 
 <p>Again, the point is not that smart contracts are unnecessary. The point is that a smart contract should enter because its semantics are required, not because “Web3 project” has become synonymous with “smart-contract application.”</p>
 
-<h2 id="boundary">12. What the ledger knows, and what it does not</h2>
+<h2 id="boundary">14. What the ledger knows, and what it does not</h2>
 
 <p>The blockchain does not know that an address contains a word.</p>
 
@@ -346,7 +447,7 @@
 
 <p>The technique should be judged on the narrower claim it actually makes.</p>
 
-<h2 id="conclusion">13. The smaller claim</h2>
+<h2 id="conclusion">15. The smaller claim</h2>
 
 <p>The claim in this chapter is deliberately smaller than “blockchain changes everything.”</p>
 
@@ -370,6 +471,12 @@
 
 <p>Chisel is simply the working tool through which I have been exploring that question.</p>
 
+<p>The next chapter asks what follows if this indexing model is taken seriously: identity that is not issued by an application, reputation that can accumulate without one platform owning it, and payment that can sit beside other public meaning rather than swallowing the entire medium.</p>
+
+<section class="claim">
+  <p><strong>Next: <a href="no-gatekeeper.html">Chapter 3 · No Gatekeeper</a></strong></p>
+</section>
+
 <section class="warning">
   <h2>Technical caution</h2>
   <p>Human-readable burn-style addresses should not be described as mathematically impossible to spend unless the locking script itself makes that true. The project uses “unspendable” colloquially for addresses intentionally constructed without a retained private key, while distinguishing those from provably unspendable outputs such as compatible <code>OP_RETURN</code> scripts. These experiments should not be used to protect funds or credentials whose loss would matter without independent review.</p>
@@ -385,7 +492,7 @@
 </ol>
 
 <footer>
-  <p><a href="stack-capture.html">← Chapter 1: There Is No Spoon</a> · <a href="dark-star-world.html">Dark Star world index</a></p>
+  <p><a href="stack-capture.html">← Chapter 1: There Is No Spoon</a> · <a href="no-gatekeeper.html">Chapter 3: No Gatekeeper →</a> · <a href="dark-star-world.html">Dark Star world index</a></p>
   <p>Dark Star · Chapter 2 · October 2026</p>
 </footer>
 </main>

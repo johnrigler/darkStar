@@ -756,3 +756,74 @@ The lower-right corner can become a kind of persistent channel.
 That channel can later be occupied by names, story fragments, ledger clues, ads, or other recurring elements depending on the edition.
 
 The exact content can remain editable by hand during composition. The important thing to preserve in the system is the concept of a fixed recurring location carrying an independent sequence.
+---
+
+## 19. Publishing stack capture
+
+Wakeian means of or in the manner of *Finnegans Wake*.
+
+The publication architecture should treat Joyce's material constraint as a useful contrast.
+
+Joyce had print, typography, punctuation, multilingual language, page order, repetition, spacing, and a limited range of visual variation. He forced enormous semantic density through those channels.
+
+A contemporary publication has many more available channels:
+
+- color as semantic state;
+- exact recurring page position;
+- QR transitions;
+- removable and perforated paper;
+- paper-wallet behavior;
+- stickers;
+- cryptographic identity;
+- live ledger artifacts;
+- hyperlinks;
+- transaction-native images and text;
+- games and temporary services;
+- online social surfaces;
+- source code;
+- multiple interchangeable renderers;
+- print-to-network transitions.
+
+Yet publishing often reduces this enlarged medium back to an inherited pipeline:
+
+manuscript -> EPUB / PDF -> rectangular screen -> sequential pages -> reader
+
+That is a publishing form of stack capture.
+
+The richer question is not:
+
+"How should Dark Star become an e-book?"
+
+It is:
+
+> What can a publication be now that Joyce could not physically make one be?
+
+The Wakeian inheritance should therefore not mean imitating the visible surface of *Finnegans Wake*.
+
+It means treating every available property of the medium as potentially meaningful.
+
+Color can carry a secondary sequence.
+
+Page position can carry a secondary sequence.
+
+A QR can leave the publication.
+
+A sticker can change the participant's state.
+
+A page can be a wallet.
+
+An illustration can be a ledger transaction.
+
+An advertisement can launch a game.
+
+A game can create the practical need for identity.
+
+Another publication can use that identity without sharing Dark Star's editorial language.
+
+The ledger can continue the text after the printed object ends.
+
+EPUB, PDF, HTML, print, and image editions may all exist, but none should be mistaken for the work's ontological container.
+
+A conventional e-book is one rendering.
+
+The publication is the larger system of artifacts, transitions, identities, records, and participant actions.

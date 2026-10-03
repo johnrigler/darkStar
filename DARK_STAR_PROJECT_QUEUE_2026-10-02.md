@@ -233,3 +233,48 @@ For each tool or service, answer:
 - Which dependency actually disappeared because blockchain or content addressing was used?
 
 If the answer repeatedly returns to one official Dark Star service, the project is recreating the trap it describes.
+
+
+---
+
+## P0 — Printed spread versus online expansion
+
+The physical edition is a fixed left/right spread. It should never depend on expandable panels, accordions, hover states, or hidden text.
+
+The print rule is:
+
+```text
+fixed printed spread
+-> complete argument on paper
+-> visible marginal clue / artifact
+-> QR exit
+-> expandable online chapter
+```
+
+The printed spread must remain intelligible without scanning.
+
+The online chapter should not merely duplicate the PDF. It should provide additional depth: explorer views, source, live or archived transaction evidence, tools, longer notes, and recoverable identifiers.
+
+Each Chapter 1–4 printed entry/spread needs a durable QR exit to its full online chapter. The QR destination should be treated as a convenience route and, where possible, paired with a printed durable identifier or recoverable path so the publication does not contradict its own anti-fragility argument.
+
+---
+
+## P1 — Marginalia pressure across Chapters 1–3
+
+Chapter 4 is now **The Dark Interval** and explicitly gathers the larger Dark Star mythos.
+
+The earlier technical chapters should contain sparse marginal pressure so this frame feels discovered rather than suddenly introduced:
+
+- Saturn / the old king;
+- reversal;
+- institutional mortality;
+- ruins as coordinates;
+- public space versus platform;
+- survival after the interface;
+- recurrence;
+- recovery;
+- the difference between a small technical claim and a large reason for caring about it.
+
+Do not overload the technical argument.
+
+The marginalia should work as a second text running beside the first, especially in the fixed two-page print layout.

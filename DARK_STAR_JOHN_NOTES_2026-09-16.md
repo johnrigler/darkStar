@@ -89,3 +89,51 @@ A rough chapter progression is:
 **John: private world, unstable identity, animals, fading, transition**
 
 John should hand the book off rather than solve it.
+
+## 2026-10-03 integration: recorso, executable proof, disappearance
+
+John should now turn the criticism back onto the author and the physical book.
+
+The earlier sections still attempt to represent systems. John reaches the limit of representation.
+
+"Books don't work" should not mean that books are useless. It should mean that a book cannot complete an argument about agency, self-sovereignty, experimentation, persistence, and direct contact with systems.
+
+Eventually the reader must act:
+
+```text
+scan
+resolve
+verify
+play
+sign
+recover
+follow the address
+leave the book
+return differently
+```
+
+The publication should increasingly dissolve into the medium it has been describing. QR codes become doors. Advertisements can launch working systems. Strange addresses turn out to exist. Games run. Stickers alter state. The system rather than the author must answer.
+
+The existing Preface supplies the emotional logic in advance through the narrator's identification with ALP: being unheard, misunderstood, exhausted, and carried toward disappearance while the larger cycle continues.
+
+A useful movement is:
+
+```text
+loss -> continuation
+death -> recirculation
+unheard voice -> transmission
+```
+
+John therefore should not end triumphantly as the inventor explaining his system. He should lose authority over it.
+
+The dog transition can then serve as the final stripping-away of the ranking / profile world. After credentials, prestige, capitalism, politics, identity, technology, and argument, the dogs simply encounter the world.
+
+A compact Gospel sequence is:
+
+**Matthew: here is an argument.**
+
+**Mark: here is a conflict.**
+
+**Luke: representation and authority fragment.**
+
+**John: stop asking the author; test the system.**

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Star Lab — Passport</title>
+<link rel="stylesheet" href="../page.css">
+</head>
+<body>
+<main>
+<h1>Lab 4: make a physical anchor</h1>
+<p><strong>Goal:</strong> turn paper into a user-installed hyperlink without putting a private key on the visible sticker.</p>
+<ol>
+<li>Create or obtain a random public sticker identifier.</li>
+<li>Place the sticker beside a passage, image, object, or location you want to reopen later.</li>
+<li>Record the edition or artifact identifier and a semantic anchor describing the location.</li>
+<li>If control matters, bind the public sticker identifier to a signer through an explicit signed rule.</li>
+<li>Scan the sticker later and verify that the current binding can be reconstructed.</li>
+</ol>
+<pre>public sticker ID
+      +
+edition / object
+      +
+semantic anchor
+      +
+optional signature
+      =
+physical hyperlink</pre>
+<p>A visible QR is a pointer, not proof of physical possession. Anyone can photograph it. Authority must come from another rule when authority is needed.</p>
+</main>
+
+</body>
+</html>

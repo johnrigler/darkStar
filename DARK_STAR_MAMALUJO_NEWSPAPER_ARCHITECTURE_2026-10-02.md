@@ -593,3 +593,89 @@ The streams should cross.
 A reader can enter through any one of them and later discover the others.
 
 The result should feel less like reading a book and more like moving through a small public environment.
+---
+
+## 17. Straight advertisements can be portals
+
+Not every advertisement needs to be ironic, fictional, or editorial.
+
+Some should simply advertise a real thing the reader can do.
+
+A Lantern / Zork advertisement is a strong example.
+
+The ad can look ordinary:
+
+**PLAY ZORK**
+
+Enter Lantern.
+
+Scan to begin.
+
+That is enough.
+
+A reader may stop reading the essay immediately.
+
+That is not a failure of the publication.
+
+It is one of the intended exits.
+
+The path can be:
+
+Dark Star page -> Lantern ad -> Zork game -> play -> need continuity / save / identity -> create or load identity -> return to the wider public medium
+
+The identity step should emerge from use rather than appear first as a lecture about identity.
+
+If the reader already has a Dark Star copy, the physical artifact can participate in that identity creation process.
+
+The book therefore becomes one possible bridge into the identity system rather than a mandatory prerequisite.
+
+This is important:
+
+- someone can read first and act later;
+- someone can act first and read later;
+- someone can enter through a game and never read the essay at all;
+- someone can receive identity material through Dark Star and then use it in Lantern;
+- someone can discover the larger argument only after already participating.
+
+The advertisement is not merely selling the game.
+
+It is a portal into another part of the world.
+
+The game is not merely entertainment.
+
+It can become an onboarding surface.
+
+And identity is not merely a signup form.
+
+It can become something the player realizes they need because continuity suddenly matters.
+
+This is a better sequence than:
+
+essay -> explanation of identity -> explanation of game -> invitation to act
+
+Prefer:
+
+ad -> game -> consequence -> identity -> curiosity -> explanation
+
+The system should support both paths.
+
+### Design implication
+
+Real ads can be among the most important non-linear entry points in the publication.
+
+Possible straightforward ads:
+
+- PLAY ZORK / ENTER LANTERN;
+- OPEN MOGWAI;
+- FIND THIS ADDRESS IN CHISEL;
+- PRINT ANOTHER COPY;
+- BRING THIS TO A GATHERING;
+- RUN A LANTERN SERVER;
+- MAKE A STICKER SHEET;
+- LOAD YOUR IDENTITY.
+
+No explanatory essay is required beside every ad.
+
+The surrounding publication can explain the system later.
+
+The action can come first.

@@ -15,7 +15,13 @@
       <div class="cover-info-inner">
         <p class="cover-info-kicker">essay + field manual + executable publication</p>
         <h1>DARK STAR</h1>
-        <p class="cover-info-copy">vNext prototype: arguments alternate with activities. The old experimental edition remains available from index.html.</p>
+        <p class="cover-info-copy">vNext now opens with the four-chapter Dark Star argument. Earlier essay/lab pages remain available as an optional appendix.</p>
+        <div class="cover-info-links">
+          <p><strong>Edition</strong><br>
+            <button id="appendix-off" type="button">Core chapters</button>
+            <button id="appendix-on" type="button">Core + archive appendix</button>
+          </p>
+        </div>
         <div class="cover-info-links">
           <p><strong>Source</strong><br><a href="https://github.com/johnrigler/darkStar" target="_blank" rel="noopener">github.com/johnrigler/darkStar</a></p>
           <p><strong>Old viewer</strong><br><a href="index.html">index.html</a></p>
@@ -29,7 +35,19 @@
 </main>
 <div id="turn-left" class="turn-zone turn-left" aria-label="Previous spread"></div>
 <div id="turn-right" class="turn-zone turn-right" aria-label="Next spread"></div>
-<script src="book-vnext.js?v=vnext-1"></script>
-<script src="viewer.js?v=vnext-1"></script>
+<script src="book-vnext.js?v=vnext-2"></script>
+<script>
+(() => {
+  function setAppendix(value) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("appendix", value ? "1" : "0");
+    url.searchParams.delete("page");
+    window.location.href = url.toString();
+  }
+  document.getElementById("appendix-off")?.addEventListener("click", () => setAppendix(false));
+  document.getElementById("appendix-on")?.addEventListener("click", () => setAppendix(true));
+})();
+</script>
+<script src="viewer.js?v=vnext-2"></script>
 </body>
 </html>

@@ -379,3 +379,75 @@ The reader can discover that the same conceptual object has been re-instantiated
 That is especially compatible with the Wake / ricorso layer of Dark Star.
 
 The idea returns, altered by its transport.
+
+
+---
+
+## 13. The ledger as a second text
+
+The transactions should not be presented merely as demonstrations of individual technical tricks.
+
+Taken together, they begin to form a second text underneath Dark Star.
+
+The printed publication teaches a way of seeing:
+
+- readable addresses;
+- recurrence;
+- transport across media;
+- unstable identity;
+- public coordinates;
+- images encoded as address rows;
+- literary fragments;
+- video references;
+- repeated phrases;
+- cross-chain re-instantiation;
+- records that outlive the interface that first displayed them.
+
+Once the reader reaches the ledger, those same ideas are already there.
+
+The effect should be that Dark Star has not invented a symbolic system and then decorated a blockchain with examples.
+
+Instead, the book gradually reveals that the ledger has been accumulating this material all along.
+
+Some transactions contain direct literary fragments, including *Finnegans Wake* material.
+
+Others are not quotations from the Wake but behave in a Wake-like way:
+
+- language mutates;
+- names recur;
+- images become text;
+- text becomes address space;
+- media point to other media;
+- one chain repeats something first expressed on another;
+- a technical experiment becomes a later cultural artifact;
+- apparently unrelated entries begin to echo one another.
+
+This creates a useful double reading:
+
+```text
+Dark Star
+-> teaches the grammar
+-> reader enters ledger
+-> ledger appears to contain the world already
+-> reader returns to Dark Star differently
+```
+
+The ledger therefore becomes a kind of sedimentary public archive.
+
+It contains technical history, cultural history, abandoned experiments, jokes, videos, literary fragments, images, addresses, messages, and later reinterpretations.
+
+No single transaction needs to carry the whole meaning.
+
+The coherence emerges through accumulation and recurrence.
+
+This should not be overstated as proof that every historical transaction was consciously authored as part of one master plan.
+
+The stronger artistic claim is that the same mind, tools, motifs, and experiments recur across time and chains, so the archive can now be read as a unified field.
+
+Dark Star is the reader for that field.
+
+Chisel is one instrument for decoding it.
+
+Mogwai is one place where those decoded objects can become social again.
+
+The newspaper / Mamalujo format can expose this gradually by placing ledger fragments beside essays until the distinction between "illustration" and "source text" begins to collapse.

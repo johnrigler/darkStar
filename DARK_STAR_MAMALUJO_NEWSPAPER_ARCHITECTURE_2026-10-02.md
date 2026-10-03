@@ -936,3 +936,104 @@ The two streams should occasionally cross.
 By John, the crossing should feel deliberate and unavoidable.
 
 The main argument has widened into convergence, and the secondary stories have independently arrived at the same place.
+---
+
+## 21. Enter first, identify later
+
+Dark Star should not begin with identity creation.
+
+The reader should be able to enter the system before deciding to become a participant.
+
+A likely path is:
+
+printed QR -> GitHub-hosted Chisel portal -> inspect / browse / decode -> follow another doorway -> play / read / criticize / leave a message -> continuity becomes useful -> create or load identity
+
+This is the inverse of the normal platform sequence:
+
+signup -> account -> permission -> experience
+
+Prefer:
+
+experience -> consequence -> desire for continuity -> identity
+
+The reader may already have scanned several QR codes by the time identity becomes relevant.
+
+They have already seen the stickers.
+
+They have already seen Chisel.
+
+They may already have entered Lantern or Mogwai.
+
+They may already understand that the system contains ledger artifacts, messages, games, addresses, and public history.
+
+Identity then appears as a tool rather than an admission ticket.
+
+### Criticism as an easy first message
+
+One of the easiest reasons to speak is disagreement.
+
+The system should make criticism an obvious and legitimate first contribution.
+
+A reader should be able to say:
+
+- this argument is wrong;
+- this transaction means something else;
+- this interface is confusing;
+- this story is offensive;
+- this image is misread;
+- this tool is broken;
+- this should be done differently.
+
+The medium should not require agreement in order to participate.
+
+A criticism message does not need to be written into a cryptocurrency transaction.
+
+It can be stored through FileProxy or another replaceable service.
+
+But if the system is expected to preserve dialogue, reply to the speaker, associate later comments, or restore a session, then the message needs a stable identity context.
+
+The important distinction is:
+
+message persistence != ledger permanence
+
+A message can live in a service layer.
+
+Identity can still be cryptographic and portable.
+
+The ledger can be used selectively for durable anchors, public coordinates, attestations, or artifacts rather than for every sentence.
+
+### Sticker activation
+
+By the time identity is useful, the reader should already possess the physical mechanism for creating or loading it.
+
+The publication has been showing QR-code stickers throughout.
+
+The identity action can therefore feel like recognition:
+
+"Those things I have been looking at are the tool."
+
+The path can be:
+
+scan into Chisel -> explore anonymously -> encounter need for identity -> place the appropriate stickers into the sticker interface -> scan with phone -> identity becomes available to the portal -> save game / post message / receive reply / carry history
+
+Some readers will never return to the essay after this point.
+
+That is acceptable.
+
+They have crossed from publication into medium.
+
+Others will later return to Dark Star and understand the earlier pages differently because they have already used the machinery.
+
+### Do not force the ledger
+
+The architecture should avoid treating every interaction as an on-chain event.
+
+A lightweight message can remain off-chain.
+
+A game save can remain off-chain.
+
+A reply can remain off-chain.
+
+The ledger should be used where public durability, shared indexing, attestation, or transport across services adds value.
+
+This keeps the public medium broader than cryptocurrency while preserving the ledger as one of its durable layers.

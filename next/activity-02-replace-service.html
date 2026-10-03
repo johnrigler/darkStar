@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Star Lab — Replace a Service</title>
+<link rel="stylesheet" href="../page.css">
+
+</head>
+<body>
+<main>
+<h1>Lab 2: replace a service</h1>
+<p><strong>Goal:</strong> prove that a provider is useful without making it sovereign.</p>
+<ol>
+<li>Choose one durable identifier: a txid, address, CID, or signed artifact.</li>
+<li>Resolve it using the service Dark Star normally suggests.</li>
+<li>Copy the durable identifier itself, not the page URL.</li>
+<li>Resolve the identifier through another provider, gateway, explorer, or local tool.</li>
+<li>Compare what changed and what remained invariant.</li>
+</ol>
+<p>If no alternate provider can recover the object, write down the dependency you discovered. That is not failure. It is an architectural fact.</p>
+<pre>service A ─┐
+service B ─┼─> same durable thing
+local tool ┘</pre>
+<p>The point is not to abolish servers. The point is to make server replacement ordinary.</p>
+</main>
+</body>
+</html>

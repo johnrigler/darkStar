@@ -102,6 +102,18 @@ world around them and the infrastructure underneath them.
 **Dark Star is not the religion. It is the strange printed doorway into a
 religious operating system.**
 
+## vNext editorial prototype
+
+The current editorial prototype reorganizes Dark Star around essays, labs, images, and executable publication rather than using the older Gospel/Bell sequence as the book's explanatory spine.
+
+- [Systematic editorial architecture](DARK_STAR_EDITORIAL_ARCHITECTURE_2026-10-02.md)
+- [vNext browser viewer](index-vnext.html)
+- [vNext folded US Letter print renderer](print-booklet-letter-vnext.html)
+
+The prototype is 28 pages / 7 folded Letter sheets. It preserves the existing cover, Preface, and train centerfold, reuses selected Bell art as visual essays, and adds short activity pages for inspection, service replacement, language encoding, physical anchors, and recovery.
+
+The existing `index.html` and `book.js` remain intact as the earlier experimental edition. The vNext sequence is deliberately parallel until it has been physically printed and proofed.
+
 ## Dated concept notes
 
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)

@@ -20,12 +20,11 @@ const DARK_STAR_VNEXT_PAGES = [
   "next/06-servers-are-workers.html",
 
   "next/07-recognition-is-not-adoption.html",
-  "next/08-language-hacks.html",
-  "next/activity-03-language.html",
-
   "centerfold-train-left.html",
   "centerfold-train-right.html",
 
+  "next/08-language-hacks.html",
+  "next/activity-03-language.html",
   "next/09-mythos-as-maps.html",
   "next/10-executable-publication.html",
   "next/activity-04-passport.html",

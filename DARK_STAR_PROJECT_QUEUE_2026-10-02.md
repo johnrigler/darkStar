@@ -304,3 +304,31 @@ Key requirements:
 - preserve conventional PDF readability even while the print object becomes nonlinear.
 
 The next layout prototype should test a real two-spread newspaper treatment for Chapter 1 and Chapter 2 before redesigning the entire issue.
+
+
+---
+
+## P0 — Recover Luke DigiByte transaction semantics
+
+Use the actual DigiByte transaction, not remembered wording:
+
+`d8eef1586bb88d192d3284726407c307f0c54b1c023b7ef343e401eb89ea098d`
+
+Current Chisel live data places it at DigiByte block height 21778721.
+
+Tasks:
+
+- fetch/decode the full transaction;
+- recover every output address in order;
+- determine exactly how the Luke / Luck / Likes / Lakes phrase is encoded;
+- identify the Base57 image relationship;
+- archive a stable local copy of the decoded transaction;
+- create a Chisel deep-link or reliable search route;
+- create a QR for the ledger transaction;
+- create a QR for the Chisel view;
+- add the actual output/address strings to Luke marginalia;
+- note any repeated Polygon/Dogecoin variants separately rather than conflating them.
+
+The printed image should point to the actual ledger artifact.
+
+Do the same for the *Finnegans Wake* Preface quotation in Dogecoin: locate the exact Dogecoin transaction and make the printed quotation a route into the ledger object.

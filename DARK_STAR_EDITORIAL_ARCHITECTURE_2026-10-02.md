@@ -523,3 +523,26 @@ The publication succeeds when the reader can say not only:
 but:
 
 > I know how to do one thing differently now.
+
+## 23. Hacker epistemology, profilicity, and recorso
+
+The October 3 synthesis in `DARK_STAR_HACKER_PROFILICITY_RECURSO_NOTES_2026-10-03.md` should be treated as part of the editorial spine.
+
+It adds a recurring distinction between **operational consequence** and **institutional evaluation**:
+
+- Matthew establishes the hacker epistemology through Graham, Hanauer, Zork, BASIC, typing/calculus, AIX, authenticity, credentials, Blub, Lisp, and lambda calculus.
+- Mark makes the hacker insight politically ambiguous through Thiel, monopoly, mimetic competition, spectacle, and elite system manipulation.
+- Luke turns prolificity into profilicity: recursive observation, ranking, attention, credentials, algorithms, AI, crypto, and competing representations destabilize the page.
+- John turns the critique onto the author and the book. Representation is no longer sufficient; the reader must test, scan, resolve, verify, play, sign, recover, and leave the printed object.
+
+This thread also clarifies the role of the Preface and recorso. The narrator's ALP identification supplies the emotional motion from disappearance toward transmission. Dark Star should increasingly permit the author to lose authority while artifacts, tools, identities, games, and other people's uses continue.
+
+A governing editorial principle is:
+
+> necessity first, strangeness second.
+
+When the publication looks strange, there should often be a real mechanical reason underneath the strangeness.
+
+A useful reader rule is:
+
+> When Dark Star looks strange, test it.

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Star — Servers Are Workers</title>
+<link rel="stylesheet" href="../page.css">
+
+</head>
+<body>
+<main>
+<h1>Servers are workers</h1>
+<p>A service does not need to be permanent merely because the identity or artifact it handles is important.</p>
+<p>A server can be more like a miner, block explorer, RPC provider, indexer, hydrator, search engine, game host, cache, gateway, or relay.</p>
+<p>It performs work. It may be paid for that work. It may disappear. Another provider may replace it.</p>
+<p>This is acceptable when the durable state does not live exclusively inside the provider.</p>
+<pre>identity  -> cryptographic control
+content   -> durable/content-addressed object
+service   -> replaceable worker
+payment   -> compensation for useful work
+trust     -> verification + explicit assumptions</pre>
+<p>This is institutional decomposability. Identity can persist while the host changes. Content can persist while the index changes. Verification can persist while the interface changes.</p>
+<p>The server is not the cathedral.</p>
+<p><strong>It is a worker.</strong></p>
+</main>
+</body>
+</html>

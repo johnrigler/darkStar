@@ -10,10 +10,12 @@ It separates the project into things you can actually visit or do rather than pr
 - [print the folded Letter booklet](print-booklet-letter-vnext.html);
 - [read *There Is No Spoon*](stack-capture.html);
 - [read *The Address Is the Index*](technical-paper.html);
+- [read *No Gatekeeper*](no-gatekeeper.html);
+- [read *The Book Is Not the Thing*](book-is-not-the-thing.html);
 - [read *The Public Index*](dark-star-public-index.html);
 - follow the working thesis notes, mythos, mechanics, and tools from the world index.
 
-*There Is No Spoon* is Chapter 1 and explains stack capture. *The Address Is the Index* is Chapter 2 and gives the concrete blockchain case: readable burn-style addresses used as durable public coordinates. *The Public Index* then asks what durable public coordinates change institutionally.
+The opening sequence is now four chapters. *There Is No Spoon* explains stack capture. *The Address Is the Index* gives the concrete blockchain case: readable burn-style addresses used as durable public coordinates. *No Gatekeeper* asks what that architecture gives us in identity, reputation, payment, and replaceable services. *The Book Is Not the Thing* applies the same critique to media itself and explains why Dark Star must become an executable publication rather than only a book. *The Public Index* remains a separate institutional essay.
 
 Dark Star is an experimental work of comic fiction. Every physical page is
 an ordinary HTML resource that can be opened and edited directly. The book

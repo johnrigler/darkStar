@@ -110,7 +110,7 @@ The current editorial prototype reorganizes Dark Star around essays, labs, image
 - [vNext browser viewer](index-vnext.html)
 - [vNext folded US Letter print renderer](print-booklet-letter-vnext.html)
 
-The prototype is 28 pages / 7 folded Letter sheets. It preserves the existing cover, Preface, and train centerfold, reuses selected Bell art as visual essays, and adds short activity pages for inspection, service replacement, language encoding, physical anchors, and recovery.
+The prototype is 28 pages / 7 folded Letter sheets. It preserves the existing cover and Preface, places the train on the true physical center spread, reuses selected Bell art as visual essays, and adds short activity pages for inspection, service replacement, language encoding, physical anchors, and recovery.
 
 The existing `index.html` and `book.js` remain intact as the earlier experimental edition. The vNext sequence is deliberately parallel until it has been physically printed and proofed.
 
@@ -137,6 +137,7 @@ Human-readable intent: **copy it, print it, sell copies, give it away, modify it
 - [2026-09-28 — Loss of Slack and the Irreversible World](DARK_STAR_LOSS_OF_SLACK_NOTES_2026-09-28.md)
 - [2026-10-02 — Recombined Agency and Institutional Decomposition](DARK_STAR_RECOMBINED_AGENCY_NOTES_2026-10-02.md)
 - [2026-10-02 — Architectural Genesis: Friction, Erasure, and Replaceable Layers](DARK_STAR_ARCHITECTURAL_GENESIS_2026-10-02.md)
+- [2026-10-02 — Stack Capture, Metric Capture, and the Alien Problem](DARK_STAR_STACK_CAPTURE_NOTES_2026-10-02.md)
 - [2026-10-02 — Circulation, Kits, and Service Economy](DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md)
 
 The working essay can be revised as wrapped text blocks with

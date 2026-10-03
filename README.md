@@ -114,6 +114,19 @@ The prototype is 28 pages / 7 folded Letter sheets. It preserves the existing co
 
 The existing `index.html` and `book.js` remain intact as the earlier experimental edition. The vNext sequence is deliberately parallel until it has been physically printed and proofed.
 
+## License and circulation
+
+Dark Star is deliberately reproducible.
+
+- Original publication content is licensed **CC BY-SA 4.0**.
+- Software code is licensed **MIT**.
+- Random numbers, functional QR encoding, simple colored borders, and the general idea of printing or trading random QR identifiers are not claimed as proprietary Dark Star content merely because the project uses them.
+- Third-party material remains subject to its own rights and licenses.
+
+See [LICENSE.md](LICENSE.md), [LICENSE-CONTENT](LICENSE-CONTENT), and [LICENSE-CODE](LICENSE-CODE).
+
+Human-readable intent: **copy it, print it, sell copies, give it away, modify it, run your own gathering, and pass it on.**
+
 ## Dated concept notes
 
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)
@@ -123,6 +136,7 @@ The existing `index.html` and `book.js` remain intact as the earlier experimenta
 - [2026-09-28 — The Late Age, Withdrawal, and the Counter-Man](DARK_STAR_LATE_AGE_NOTES_2026-09-28.md)
 - [2026-09-28 — Loss of Slack and the Irreversible World](DARK_STAR_LOSS_OF_SLACK_NOTES_2026-09-28.md)
 - [2026-10-02 — Recombined Agency and Institutional Decomposition](DARK_STAR_RECOMBINED_AGENCY_NOTES_2026-10-02.md)
+- [2026-10-02 — Architectural Genesis: Friction, Erasure, and Replaceable Layers](DARK_STAR_ARCHITECTURAL_GENESIS_2026-10-02.md)
 - [2026-10-02 — Circulation, Kits, and Service Economy](DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md)
 
 The working essay can be revised as wrapped text blocks with

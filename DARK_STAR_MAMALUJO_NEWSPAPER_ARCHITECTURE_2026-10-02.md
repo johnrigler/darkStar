@@ -827,3 +827,112 @@ EPUB, PDF, HTML, print, and image editions may all exist, but none should be mis
 A conventional e-book is one rendering.
 
 The publication is the larger system of artifacts, transitions, identities, records, and participant actions.
+---
+
+## 20. Four side-story streams
+
+The four Mamalujo sections can each carry a secondary newspaper story that runs beside the principal essay.
+
+These are not merely illustrations of the essay.
+
+They are parallel narratives that can be followed independently, interrupted with continued-on-page jumps, resumed later, and allowed to become stranger as the publication moves from Matthew toward John.
+
+The secondary stream should roughly mirror the expansion of the main argument:
+
+technical constraint -> institutional constraint -> cultural / social world -> historical / mythic convergence
+
+### Matthew / Man
+
+Primary essay: **There Is No Spoon**.
+
+Secondary stories can establish the problem of institutional rigidity and the outsider who does not fit comfortably inside it.
+
+Two recurring source threads:
+
+- Nick Hanauer and the 'pitchforks are coming' warning;
+- Paul Graham on what it means to be a hacker.
+
+The Hanauer thread widens the page from software structures toward concentrated wealth, institutional stability, and pressure accumulating outside apparently successful systems.
+
+The Graham thread establishes the hacker as a person who approaches the world through direct understanding, construction, modification, and refusal to treat inherited boundaries as natural.
+
+Together they create a useful Matthew counterpoint:
+
+the system appears stable -> pressure is accumulating -> the hacker does not naturally remain inside the system's prescribed compartments
+
+These stories can appear as newspaper articles, excerpts, pull quotes, tiny profiles, or continued-on-page fragments rather than as long explanatory digressions inside the main essay.
+
+### Mark / Lion
+
+Primary essay: **The Address Is the Index**.
+
+The secondary story can become the Peter Thiel dinosaur / Elon Musk dinosaur sequence.
+
+It should retain the strange game-like quality already associated with the Mark material rather than becoming a conventional biographical argument.
+
+The dinosaurs can function as recurring visual / textual objects that a reader encounters in fragments while the primary essay is explaining how public coordinates and ledger artifacts can carry meaning.
+
+The side story can therefore begin to feel less like commentary and more like an artifact from another layer of the publication.
+
+A reader may follow the dinosaur thread without following the technical explanation.
+
+### Luke / Bull
+
+Primary essay: **No Gatekeeper**.
+
+Luke already has a ledger-native visual object: the Luke image associated with the DigiByte transaction.
+
+That artifact can become the anchor of the Luke side stream.
+
+The image, address-language, transaction id, QR routes, and repeated Luke / Luck / Likes / Lakes material can occupy the same persistent marginal space used by the other side stories.
+
+This makes Luke the point where the secondary narrative ceases to be merely printed commentary and visibly enters the ledger.
+
+The side story is now also a public artifact.
+
+### John / Eagle
+
+Primary essay: **The Dark Interval**.
+
+John is where the secondary narrative should reach convergence.
+
+The side story becomes ricorso.
+
+John is angry at Matthew, Mark, and Luke, the synoptics, and can be shown yelling toward Mama Lu / Mamalujo.
+
+This should not require a literal theological explanation on first encounter.
+
+The emotional structure is enough:
+
+Matthew, Mark, and Luke have told overlapping versions -> John sees something larger or different -> John refuses the settled account -> the fourfold structure becomes self-conscious -> recurrence begins
+
+John's side stream can therefore become more fragmented, accusatory, prophetic, circular, and Wakeian than the earlier three.
+
+The phrase or image of ricorso can recur as a return mechanism rather than only as an essay concept.
+
+John is not simply the fourth chapter.
+
+He is the point at which the earlier technical, economic, hacker, dinosaur, ledger, identity, and mythic streams begin to be visible as one convergence.
+
+### Newspaper behavior
+
+Each of these side stories can use ordinary newspaper devices:
+
+- headline;
+- tiny deck / subhead;
+- one colored word in a persistent position;
+- illustration;
+- pull quote;
+- continued on page N;
+- QR continuation;
+- ledger continuation;
+- classified or ad-like fragment;
+- correction or later annotation.
+
+The reader should be able to follow only the main essay, only the side stories, or alternate between them.
+
+The two streams should occasionally cross.
+
+By John, the crossing should feel deliberate and unavoidable.
+
+The main argument has widened into convergence, and the secondary stories have independently arrived at the same place.

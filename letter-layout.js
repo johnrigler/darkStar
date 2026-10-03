@@ -20,7 +20,7 @@
 
     const link = doc.createElement("link");
     link.rel = "stylesheet";
-    link.href = "letter-page.css";
+    link.href = new URL("letter-page.css", window.location.href).href;
     link.dataset.darkStarLetterLayout = "true";
     doc.head.appendChild(link);
   }

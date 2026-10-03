@@ -3,24 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dark Star — Code Smaller</title>
+<title>Dark Star — Code Smaller / Escape the Stack</title>
 <link rel="stylesheet" href="../page.css">
-
 </head>
 <body>
 <main>
-<h1>Code smaller</h1>
-<p>Chisel uses an architectural rule that belongs in the larger Dark Star argument: do not confuse institutional complexity with technical necessity.</p>
-<p>A modern application can become legacy while it is still young if it accumulates enough dependencies, build systems, ownership boundaries, hidden state, and switching costs.</p>
-<p>AI makes another approach practical. Instead of asking a model to generate more code inside every inherited layer, ask first:</p>
-<pre>Why does this layer exist?
-Does the original constraint still exist?
-Can the browser already do it?
-Can the protocol already do it?
-Can the layer be removed?</pre>
-<p>Chisel therefore prefers vanilla browser JavaScript, explicit network boundaries, local signing, static/IPFS-compatible distribution, small adapters, inspectable state, fixtures, and source that remains close to what actually runs.</p>
-<p>The aim is not minimalism as style.</p>
-<p>The aim is <strong>recoverability and legibility</strong>, including legibility to an AI that may need to reconstruct the project after the original conversation has disappeared.</p>
+<h1>Code smaller. Escape the stack.</h1>
+<p>Useful tools can harden into a measuring stick. A framework solves a real problem, then becomes a standard, then a curriculum, then a job category, then an investor's picture of what a serious project should look like.</p>
+<pre>tool
+→ standard
+→ stack
+→ specialists
+→ metrics
+→ funding
+→ stronger standard</pre>
+<p>Dark Star calls this <strong>stack capture</strong>: the tools used to implement ideas begin deciding which ideas are easy for the community to recognize.</p>
+<p>The result is strange. Removing a token, server, framework, API, account database, or smart contract can make a system technically simpler while making it socially harder to explain.</p>
+<p>Chisel therefore asks before adding a layer:</p>
+<pre>What property requires this?
+Does the old constraint still exist?
+Can the browser do it?
+Can the protocol do it?
+Can the user own the state?
+Can the service be replaced?</pre>
+<p>This is not anti-React, anti-Node, anti-EVM, or anti-standard. Those tools solve real problems. The target is inherited necessity.</p>
+<p>The aim is <strong>recoverability and legibility</strong>: code and artifacts that remain understandable after the original framework, server, provider, team, or conversation disappears.</p>
 </main>
 </body>
 </html>

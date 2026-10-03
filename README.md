@@ -156,6 +156,7 @@ Human-readable intent: **copy it, print it, sell copies, give it away, modify it
 - [2026-10-02 — Architectural Genesis: Friction, Erasure, and Replaceable Layers](DARK_STAR_ARCHITECTURAL_GENESIS_2026-10-02.md)
 - [2026-10-02 — Stack Capture, Metric Capture, and the Alien Problem](DARK_STAR_STACK_CAPTURE_NOTES_2026-10-02.md)
 - [2026-10-02 — Circulation, Kits, and Service Economy](DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md)
+- [2026-10-02 — Current Dark Star Project Queue](DARK_STAR_PROJECT_QUEUE_2026-10-02.md)
 
 The working essay can be revised as wrapped text blocks with
 [`dark-star-essay-editor.html`](dark-star-essay-editor.html). The editor reads

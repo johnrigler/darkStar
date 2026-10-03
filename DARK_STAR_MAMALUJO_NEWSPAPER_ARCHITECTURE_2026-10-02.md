@@ -1037,3 +1037,28 @@ A reply can remain off-chain.
 The ledger should be used where public durability, shared indexing, attestation, or transport across services adds value.
 
 This keeps the public medium broader than cryptocurrency while preserving the ledger as one of its durable layers.
+---
+
+## 22. Moderation as an experiential permanence lesson
+
+The service layer and the ledger layer should remain meaningfully different.
+
+FileProxy or another hosted message service can moderate and delete messages under its own rules.
+
+A participant who cares enough about a statement to make it independently durable can choose a ledger inscription instead.
+
+That creates an experiential permanence gradient:
+
+moderated / replaceable service -> identity-linked conversation -> durable public ledger artifact
+
+The important lesson is not that every message belongs on-chain.
+
+It is that different layers have different persistence and governance properties.
+
+A participant should be able to discover that distinction through use rather than only through explanation.
+
+A hosted service can remove content.
+
+A durable ledger artifact is a different act, with different costs, consequences, and recoverability.
+
+The architecture has taught one of its central lessons once the participant understands the difference well enough to choose deliberately between those layers.

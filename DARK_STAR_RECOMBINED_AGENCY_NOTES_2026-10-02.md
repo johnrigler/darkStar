@@ -647,3 +647,30 @@ read it
 The point is not merely to be understood.
 
 The point is to make another behavior possible.
+
+
+---
+
+## 18. Architectural genesis
+
+The replaceable-service thesis was not derived only from abstract decentralization theory.
+
+An earlier hosted project used conventional web infrastructure including WordPress. After the public-facing environment was compromised, the hosting provider contacted the account/site owner. The upstream owner responded by shutting down the entire partition. Because there were not enough independent copies and recovery paths, the useful system effectively disappeared with the hosting decision.
+
+That experience sharpened the question:
+
+> Why should failure of one front end, owner, host, or service erase the useful system behind it?
+
+Later experience with Node.js, React-style application stacks, APIs, and alternative runtimes such as Deno made the surrounding layers easier to question.
+
+The point is not that React literally cannot participate in software with operating-system access. The important observation is architectural: once a UI, API, service, database, provider, account, and deployment platform become the normal composition, each layer can begin justifying the next.
+
+Dark Star and Chisel therefore keep reopening the question:
+
+> Which layers are actually necessary?
+
+The stronger answer is not merely fewer dependencies.
+
+It is a system in which durable identity, artifacts, and protocol state remain recoverable while servers, explorers, gateways, front ends, and other useful services can be replaced.
+
+The fuller origin story is recorded in [DARK_STAR_ARCHITECTURAL_GENESIS_2026-10-02.md](DARK_STAR_ARCHITECTURAL_GENESIS_2026-10-02.md).

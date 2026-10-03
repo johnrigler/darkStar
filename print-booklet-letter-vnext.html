@@ -10,12 +10,22 @@
 <body class="booklet-preview letter-booklet-preview" data-print-mode="booklet">
 <aside class="print-help">
 <strong>Dark Star vNext</strong>
-<span>28 pages / 7 sheets.</span>
+<span id="edition-count"></span>
 <span>US Letter landscape, duplex, flip short edge.</span>
-<span>Center spread: train on pages 14–15.</span>
+<span><a href="?appendix=0">core chapters</a> · <a href="?appendix=1">core + archive appendix</a></span>
 </aside>
 <main id="print-document" aria-label="Dark Star vNext Letter print job"></main>
-<script src="book-vnext.js"></script>
+<script src="book-vnext.js?v=vnext-2"></script>
+<script>
+(() => {
+  const count = window.DARK_STAR_BOOK.pages.length;
+  const padded = Math.ceil(count / 4) * 4;
+  const sheets = padded / 4;
+  const label = window.DARK_STAR_BOOK.includeAppendix ? "core + archive appendix" : "core chapters";
+  document.getElementById("edition-count").textContent =
+    `${count} authored pages · ${sheets} folded sheets after booklet padding · ${label}`;
+})();
+</script>
 <script src="print-random.js"></script>
 <script src="print.js"></script>
 <script src="letter-layout.js"></script>

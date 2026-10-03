@@ -332,3 +332,33 @@ Tasks:
 The printed image should point to the actual ledger artifact.
 
 Do the same for the *Finnegans Wake* Preface quotation in Dogecoin: locate the exact Dogecoin transaction and make the printed quotation a route into the ledger object.
+
+---
+
+## P0 — Morning print prototype
+
+Create a concrete print prototype that shows how the new architecture actually looks on paper.
+
+First prototype should cover enough pages to test:
+
+- Matthew opening with clean essay hierarchy;
+- persistent lower-right secondary thread;
+- one newspaper-style continued-on-page jump;
+- one sincere ad / portal, preferably Lantern / Zork;
+- one Mamalujo pictogram marker;
+- one ledger-native marginal object;
+- visible QR handoff to Chisel;
+- progressive increase in page instability;
+- at least one removable / wallet-oriented page concept;
+- print-safe margins and legibility at letter size.
+
+Do not attempt the whole publication before validating the print grammar.
+
+The morning review should answer:
+
+- Does the main argument remain readable?
+- Does wandering attention find meaningful secondary material?
+- Do the persistent positional threads read as intentional?
+- Do the QR / ad exits feel like doors rather than footnotes?
+- Does the object still work as a practical paper-wallet / identity artifact?
+- Does the printed page feel more like an environment than an e-book dump?

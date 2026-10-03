@@ -679,3 +679,80 @@ No explanatory essay is required beside every ad.
 The surrounding publication can explain the system later.
 
 The action can come first.
+---
+
+## 18. Persistent positional threads
+
+Dark Star can carry secondary narratives or motifs through a fixed physical position on successive pages.
+
+A strong example is the lower-right corner.
+
+The element can be extremely small:
+
+- one colored word;
+- one woman's name;
+- one line of dialogue;
+- one tiny classified;
+- one sentence from an inset story;
+- one ledger address fragment;
+- one Mamalujo symbol;
+- one instruction;
+- one advertisement fragment.
+
+The key is positional persistence.
+
+The reader turns the page and something appears again in the same place.
+
+At first it may look decorative.
+
+After several pages it becomes obvious that another sequence is running underneath the primary text.
+
+The B-52s '52 Girls' idea is a useful model: a succession of women's names can appear one at a time in a contrasting color, occupying the same small region of each page.
+
+The page does not need to explain the sequence immediately.
+
+The repeated position creates recognition before interpretation.
+
+This technique can be used for several different threaded objects:
+
+### Name thread
+
+A sequence of names, such as the women named in '52 Girls', appearing page by page.
+
+### Story thread
+
+A tiny tract or story progresses one line or panel at a time in the same corner.
+
+### Advertisement thread
+
+A recurring ad changes slightly from page to page and eventually becomes a functional doorway.
+
+### Ledger thread
+
+Successive address fragments, transaction references, or encoded rows gradually reveal a larger artifact.
+
+### Mamalujo thread
+
+Matthew / Mark / Luke / John symbols recur in the same position and slowly acquire meaning.
+
+### Bell thread
+
+The compact Dark Star parable can appear as a recurring inset in a fixed region while the main argument flows around it.
+
+The important rule is that these threads should not require the main prose to stop.
+
+They should coexist with it.
+
+A reader following the essay can ignore them.
+
+A wandering reader can begin following the side-thread instead.
+
+A returning reader may notice on a second pass that the side-thread had been telling another story all along.
+
+This makes page position itself part of the publication grammar.
+
+The lower-right corner can become a kind of persistent channel.
+
+That channel can later be occupied by names, story fragments, ledger clues, ads, or other recurring elements depending on the edition.
+
+The exact content can remain editable by hand during composition. The important thing to preserve in the system is the concept of a fixed recurring location carrying an independent sequence.

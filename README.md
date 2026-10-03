@@ -122,6 +122,8 @@ The existing `index.html` and `book.js` remain intact as the earlier experimenta
 - [2026-09-24 — Dark Star: The Public Index (working essay)](dark-star-public-index.html)
 - [2026-09-28 — The Late Age, Withdrawal, and the Counter-Man](DARK_STAR_LATE_AGE_NOTES_2026-09-28.md)
 - [2026-09-28 — Loss of Slack and the Irreversible World](DARK_STAR_LOSS_OF_SLACK_NOTES_2026-09-28.md)
+- [2026-10-02 — Recombined Agency and Institutional Decomposition](DARK_STAR_RECOMBINED_AGENCY_NOTES_2026-10-02.md)
+- [2026-10-02 — Circulation, Kits, and Service Economy](DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md)
 
 The working essay can be revised as wrapped text blocks with
 [`dark-star-essay-editor.html`](dark-star-essay-editor.html). The editor reads

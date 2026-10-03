@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dark Star — Nested Media Artifact</title>
+<link rel="stylesheet" href="../page.css">
+</head>
+<body>
+<main>
+<h1>Nested media artifact</h1>
+<figure style="float:right;width:42%;margin:0 0 .12in .16in;border:1pt solid #222;padding:.04in">
+<img id="doge-image" alt="Dogecoin Explorer mobile screenshot with many output addresses" style="display:block;width:100%;height:auto">
+</figure>
+<p>A ledger artifact is rarely encountered naked.</p>
+<p>This Dogecoin transaction was seen through an explorer, through a browser, through a phone screenshot, and then embedded in a printed book.</p>
+<pre>ledger
+  ↓
+explorer
+  ↓
+browser
+  ↓
+phone
+  ↓
+screenshot
+  ↓
+book</pre>
+<p>Each layer adds interpretation and can disappear independently.</p>
+<p>The readable address fragments belong to the transaction. The explorer layout does not. The phone chrome does not. The advertisement does not. The screenshot preserves all of them together as evidence of one encounter.</p>
+<p>This is media archaeology happening almost immediately after publication.</p>
+<p>The useful question is always: <strong>which layer must survive for the artifact to remain reconstructable?</strong></p>
+</main>
+<script src="../doge-image-0.js"></script>
+<script src="../doge-image-1.js"></script>
+<script src="../doge-image-2.js"></script>
+<script src="../doge-image-3.js"></script>
+<script src="../doge-image-4.js"></script>
+<script src="../doge-image-5.js"></script>
+<script src="../doge-image-6.js"></script>
+<script src="../doge-image-7.js"></script>
+<script>
+if (window.DOGE_IMAGE_CHUNKS) {
+  document.getElementById("doge-image").src = "data:image/jpeg;base64," + window.DOGE_IMAGE_CHUNKS.join("");
+}
+</script>
+</body>
+</html>

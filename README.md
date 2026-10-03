@@ -9,11 +9,11 @@ It separates the project into things you can actually visit or do rather than pr
 - [read the current vNext book](index-vnext.html);
 - [print the folded Letter booklet](print-booklet-letter-vnext.html);
 - [read the technical paper](technical-paper.html);
-- [read *The Stack Becomes the Message*](stack-capture.html);
+- [read *There Is No Spoon*](stack-capture.html);
 - [read *The Public Index*](dark-star-public-index.html);
 - follow the working thesis notes, mythos, mechanics, and tools from the world index.
 
-The papers are deliberately separate. The technical paper asks how the machinery works. *The Public Index* asks what durable public coordinates change institutionally. *The Stack Becomes the Message* asks how standards, frameworks, metrics, and investment vocabulary can become filters on what a technical community is able to perceive.
+The papers are deliberately separate. The technical paper asks how the machinery works. *The Public Index* asks what durable public coordinates change institutionally. *There Is No Spoon* asks how standards, frameworks, metrics, and investment vocabulary can become filters on what a technical community is able to perceive.
 
 Dark Star is an experimental work of comic fiction. Every physical page is
 an ordinary HTML resource that can be opened and edited directly. The book

@@ -579,3 +579,46 @@ A Dark Star circulation system is working when all of the following can happen:
 10. The next gathering can use another service provider and still participate in the same broader medium.
 
 At that point the project has crossed from publication into circulation.
+
+
+---
+
+## 16. Do not manufacture scarcity in the primitives
+
+Dark Star should distinguish authored creative works from protocol-level building blocks.
+
+The project does not intend to assert proprietary control over the idea of:
+
+- generating random numbers;
+- encoding random numbers as QR codes;
+- printing QR codes as stickers;
+- surrounding them with simple colored borders;
+- trading those random identifiers;
+- assigning later meaning to otherwise random identifiers.
+
+Those are intended to remain ordinary building material.
+
+A specific Dark Star page, illustration, sticker sheet composition, essay, or original visual design may contain protectable creative expression. The atomic primitives underneath it should not become tollbooths.
+
+The working principle is:
+
+> **Protect attribution where useful. Do not manufacture scarcity in the primitives.**
+
+This is also an economic principle.
+
+The capital asset Dark Star is trying to grow is not exclusive ownership of the QR atom.
+
+It is a larger ecology of:
+
+- people who understand the system;
+- reproducible publications;
+- local gatherings;
+- operating knowledge;
+- replaceable services;
+- software;
+- durable artifacts;
+- protocols;
+- reputation;
+- and the ability to teach the next person.
+
+Trying to monopolize random QR labels would shrink that ecology rather than strengthen it.

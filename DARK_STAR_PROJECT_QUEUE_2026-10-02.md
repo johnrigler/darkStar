@@ -278,3 +278,29 @@ The earlier technical chapters should contain sparse marginal pressure so this f
 Do not overload the technical argument.
 
 The marginalia should work as a second text running beside the first, especially in the fixed two-page print layout.
+
+
+---
+
+## P0 — Mamalujo / newspaper physical redesign
+
+Reimagine the four-chapter print edition as an unstable newspaper / Sunday supplement rather than a linear book.
+
+Use the architecture in:
+
+[DARK_STAR_MAMALUJO_NEWSPAPER_ARCHITECTURE_2026-10-02.md](DARK_STAR_MAMALUJO_NEWSPAPER_ARCHITECTURE_2026-10-02.md)
+
+Key requirements:
+
+- keep the four arguments as the intellectual spine;
+- allow non-linear entry through headlines, illustrations, stickers, QR codes, sidebars, and continuation jumps;
+- make Chapter 1 visually most stable and Chapter 4 most destabilized;
+- let Mamalujo emerge gradually rather than being explained up front;
+- support argument readers, skimmers, operators, inheritors, return readers, and game/collector readers;
+- design used/inherited copies as a first-class case;
+- use "continued on page..." jumps across fixed left/right printed spreads;
+- use QR codes for online expansion rather than hidden/expandable print content;
+- treat QR codes as medium changes, not merely footnotes;
+- preserve conventional PDF readability even while the print object becomes nonlinear.
+
+The next layout prototype should test a real two-spread newspaper treatment for Chapter 1 and Chapter 2 before redesigning the entire issue.

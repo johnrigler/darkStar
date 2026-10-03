@@ -8,12 +8,12 @@ It separates the project into things you can actually visit or do rather than pr
 
 - [read the current vNext book](index-vnext.html);
 - [print the folded Letter booklet](print-booklet-letter-vnext.html);
-- [read the technical paper](technical-paper.html);
 - [read *There Is No Spoon*](stack-capture.html);
+- [read *The Address Is the Index*](technical-paper.html);
 - [read *The Public Index*](dark-star-public-index.html);
 - follow the working thesis notes, mythos, mechanics, and tools from the world index.
 
-The papers are deliberately separate. The technical paper asks how the machinery works. *The Public Index* asks what durable public coordinates change institutionally. *There Is No Spoon* asks how standards, frameworks, metrics, and investment vocabulary can become filters on what a technical community is able to perceive.
+*There Is No Spoon* is Chapter 1 and explains stack capture. *The Address Is the Index* is Chapter 2 and gives the concrete blockchain case: readable burn-style addresses used as durable public coordinates. *The Public Index* then asks what durable public coordinates change institutionally.
 
 Dark Star is an experimental work of comic fiction. Every physical page is
 an ordinary HTML resource that can be opened and edited directly. The book

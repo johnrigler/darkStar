@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Dark Star World Index</title>
+  <style>
+    :root{--paper:#f5f0e6;--ink:#17130f;--muted:#62594f;--line:#b8ab99;--accent:#8a5d14;--night:#171a26;--nightInk:#f2ead8;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--paper)}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper)}main{width:min(58rem,calc(100% - 2rem));margin:0 auto;padding:3rem 0 5rem}
+    header{border-top:.9rem solid var(--night);border-bottom:1px solid var(--ink);padding:2.2rem 0 1.8rem}h1,h2,h3{font-family:Arial,Helvetica,sans-serif;line-height:1.08}
+    h1{margin:0;font-size:clamp(2.7rem,8vw,5.5rem);letter-spacing:-.055em}.subtitle{max-width:46rem;color:var(--muted);font-size:1.25rem;line-height:1.5}
+    .meta{font:700 .76rem/1.4 Arial,Helvetica,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin-top:1.4rem}
+    h2{margin:3rem 0 1rem;font-size:1.65rem}.intro{max-width:47rem;font-size:1.12rem;line-height:1.68}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.2rem 0}
+    .card{display:block;border:1px solid var(--line);padding:1.1rem 1.15rem;background:#fffaf0;text-decoration:none;color:inherit;min-height:9rem}
+    .card:hover{border-color:var(--ink);transform:translateY(-1px)}.card h3{margin:0 0 .45rem;font-size:1.15rem}.card p{margin:.2rem 0;color:var(--muted);font-size:1rem;line-height:1.5}
+    .tag{font:700 .72rem/1.3 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6b4709}
+    .night{margin:3rem calc(50% - 50vw);padding:2.4rem max(1rem,calc(50vw - 29rem));background:var(--night);color:var(--nightInk)}
+    .night h2{margin-top:0}.night a{color:var(--nightInk)}ul{line-height:1.65}a{color:#5d3b06;text-underline-offset:.14em}
+    footer{margin-top:4rem;padding-top:1.2rem;border-top:1px solid var(--ink);color:var(--muted)}
+    @media(max-width:700px){.grid{grid-template-columns:1fr}}
+    @media print{main{width:auto;padding:0}.grid{display:block}.card{margin:.5rem 0;break-inside:avoid}.night{margin:2rem 0;padding:1rem;background:#fff;color:#000;border:2px solid #000}.night a{color:#000}}
+  </style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Dark Star</h1>
+  <p class="subtitle">A world index for the papers, printed books, experiments, tools, and working notes. There is no single correct route through it.</p>
+  <p class="meta">World index · October 2026</p>
+</header>
+
+<p class="intro">Dark Star is not one book and not one paper. It is a set of connected objects built around the same question: what can people keep, reconstruct, verify, exchange, and continue when the institution or service that first presented the object is no longer assumed to survive?</p>
+
+<h2>Start here</h2>
+<div class="grid">
+  <a class="card" href="index-vnext.html">
+    <div class="tag">Read / browse</div>
+    <h3>The vNext Dark Star book</h3>
+    <p>The current browser edition of the visual publication: essays, images, labs, artifacts, and the executable-publication structure.</p>
+  </a>
+  <a class="card" href="print-booklet-letter-vnext.html">
+    <div class="tag">Print / assemble</div>
+    <h3>Print the booklet</h3>
+    <p>The current folded US Letter renderer. The paper object is part of the system, not merely a printout of the website.</p>
+  </a>
+  <a class="card" href="technical-paper.html">
+    <div class="tag">Paper 01</div>
+    <h3>Chisel: Human-Readable Ledger Artifacts</h3>
+    <p>The technical paper. Start here for the mechanism: readable ledger artifacts, indexing, persistence, signatures, and recoverability.</p>
+  </a>
+  <a class="card" href="stack-capture.html">
+    <div class="tag">Paper 02</div>
+    <h3>The Stack Becomes the Message</h3>
+    <p>The argument about stack capture, metric capture, primitive blindness, and why useful standards can begin determining what a community is able to recognize.</p>
+  </a>
+</div>
+
+<h2>The larger arguments</h2>
+<div class="grid">
+  <a class="card" href="dark-star-public-index.html">
+    <div class="tag">Essay</div>
+    <h3>The Public Index</h3>
+    <p>What changes when institutions no longer possess the only surviving copy of the record, and address space becomes a durable public coordinate system.</p>
+  </a>
+  <a class="card" href="DARK_STAR_RECOMBINED_AGENCY_NOTES_2026-10-02.md">
+    <div class="tag">Working thesis</div>
+    <h3>Recombined Agency</h3>
+    <p>AI, self-sovereign identity, replaceable institutions, and the possibility of recombining capabilities that industrial systems divided into mandatory specialist layers.</p>
+  </a>
+  <a class="card" href="DARK_STAR_MONEY_AS_FIRST_MESSAGE_NOTES_2026-09-30.md">
+    <div class="tag">Working thesis</div>
+    <h3>Money as the First Message</h3>
+    <p>Why cryptocurrency's financial meaning may be the first successful interpretation of a larger medium rather than the final definition of that medium.</p>
+  </a>
+  <a class="card" href="DARK_STAR_ADDRESS_SPACE_INDEX_NOTES_2026-09-24.md">
+    <div class="tag">Working thesis</div>
+    <h3>Address Space as Public Index</h3>
+    <p>The deeper address-space argument behind Chisel: readable coordinates, accumulated history, and independently reconstructable collections.</p>
+  </a>
+</div>
+
+<div class="night">
+  <h2>Do something, not just read</h2>
+  <p>Dark Star is intended to cross the boundary between publication and machinery. The reader should be able to move from an argument into an object, an experiment, a printed artifact, or a working protocol.</p>
+  <p><a href="polygon.html">Open the Polygon tool</a> · <a href="doge-soup.html">Open Doge Soup</a> · <a href="dark-star-essay-editor.html">Open the essay editor</a> · <a href="DARK_STAR_MECHANICS.md">Read the mechanics</a></p>
+</div>
+
+<h2>Older and parallel editions</h2>
+<div class="grid">
+  <a class="card" href="index.html">
+    <div class="tag">Earlier edition</div>
+    <h3>Original Dark Star browser sequence</h3>
+    <p>The earlier experimental edition remains intact rather than being overwritten by vNext.</p>
+  </a>
+  <a class="card" href="bell.html">
+    <div class="tag">Picture sequence</div>
+    <h3>The Bell</h3>
+    <p>The Bell material as its own visual sequence. It remains part of the Dark Star image language even as the editorial spine changes.</p>
+  </a>
+  <a class="card" href="DARK_STAR_COMIC_PACKAGE.md">
+    <div class="tag">Story / production</div>
+    <h3>Comic package</h3>
+    <p>Working material for the visual and narrative side of Dark Star.</p>
+  </a>
+  <a class="card" href="DARK_STAR_MYTHOS.md">
+    <div class="tag">Mythic layer</div>
+    <h3>Dark Star mythos</h3>
+    <p>Saturn, reversal, recurrence, death imagery, McLuhan, Vico, and the symbolic structure surrounding the technical system.</p>
+  </a>
+</div>
+
+<h2>Architecture and build notes</h2>
+<ul>
+  <li><a href="DARK_STAR_EDITORIAL_ARCHITECTURE_2026-10-02.md">Editorial architecture</a></li>
+  <li><a href="DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md">Executable publication</a></li>
+  <li><a href="DARK_STAR_ARCHITECTURAL_GENESIS_2026-10-02.md">Architectural genesis</a></li>
+  <li><a href="DARK_STAR_STACK_CAPTURE_NOTES_2026-10-02.md">Stack-capture source notes</a></li>
+  <li><a href="DARK_STAR_PASSPORT_NOTES_2026-10-02.md">Passport notes</a></li>
+  <li><a href="PRINT_TO_PDF.md">Print / PDF notes</a></li>
+</ul>
+
+<h2>How to think about the collection</h2>
+<p class="intro">The papers are not meant to collapse into one manifesto. They are separate lenses. The technical paper asks whether the mechanism works. The Public Index asks what durable indexing changes institutionally. The Stack paper asks why established technical ecosystems can fail to perceive lower-level alternatives. Recombined Agency asks what happens when identity, computation, publication, and expertise can be composed differently. The visual book turns those arguments into an encounter rather than requiring the reader to accept them as prose.</p>
+
+<footer>
+  <p>Source repository: <a href="https://github.com/johnrigler/darkStar">johnrigler/darkStar</a>. This page is intended to remain a stable front door while the individual experiments continue to move.</p>
+</footer>
+</main>
+</body>
+</html>

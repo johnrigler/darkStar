@@ -451,3 +451,70 @@ Every cartridge should be tested with concrete questions:
 
 The reusable invention is the transition from publication as something consumed
 to publication as an environment people operate inside.
+
+
+## Another publication, same machinery
+
+The Anna Olivia / Carolyn Fowler material should be treated as another publication, not as another section of Dark Star.
+
+It does not need to assume that its reader already knows Dark Star, Chisel, the ledger model, or the identity system.
+
+It also does not need to explain those systems before using them.
+
+The publication can simply offer a different experience built on the same underlying machinery.
+
+Its surface can be more beautiful, intimate, narrative, social, domestic, literary, fashion-conscious, visual, or otherwise tuned to the audience it actually attracts. The design should be audience-specific without reducing women to a single set of interests or aesthetics.
+
+The key architectural distinction is:
+
+publication identity != protocol identity
+
+The publication may differ radically while the underlying artifacts remain interoperable.
+
+Shared primitives can include:
+
+- interchangeable sticker identities;
+- perforated wallet pages;
+- removable paper-wallet leaves;
+- QR entry points;
+- public ledger coordinates;
+- recoverable identity material;
+- Chisel-compatible objects;
+- Mogwai-compatible public history;
+- shared lookup and recovery logic.
+
+The Anna Olivia / Carolyn Fowler publication should therefore be able to give a reader new stickers and new removable wallet pages without creating a separate incompatible identity universe.
+
+A reader can enter through that publication first.
+
+They may encounter story, image, fashion, relationships, translation, ritual, gossip, place, memory, or another culturally specific route into the system long before they encounter the technical explanation.
+
+The path can be:
+
+Anna Olivia / Carolyn Fowler publication -> sticker or wallet action -> ledger entry -> online experience -> Mogwai / Chisel / related tools -> optional discovery of Dark Star
+
+Dark Star is therefore not the canonical front door.
+
+It is one front door.
+
+Once online, the reader should be able to move laterally into the Dark Star rendering of the same underlying system, just as a Dark Star reader should be able to encounter Anna Olivia / Carolyn Fowler material without needing to restart identity from zero.
+
+This creates a publication family:
+
+Dark Star = technical / mythic / newspaper-wallet entry
+
+Anna Olivia / Carolyn Fowler = narrative / aesthetic / social entry
+
+Passport = youth / exploration / collecting entry
+
+Lantern = game / play entry
+
+Mogwai = public-square / social entry
+
+Chisel = inspection / construction / decoding instrument
+
+The publications can look unrelated on the surface while still touching the same ledger and identity substrate underneath.
+
+That is preferable to forcing one editorial object to serve every audience.
+
+The system should feel larger than any one publication.

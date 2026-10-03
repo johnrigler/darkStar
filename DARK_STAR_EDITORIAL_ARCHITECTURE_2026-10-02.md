@@ -298,6 +298,61 @@ A 32-page issue is eight.
 
 The first vNext prototype targets **28 pages** so the book remains physically small enough to feel like a tract, field guide, or unusual periodical rather than a conventional trade book.
 
+## 7A. The physical issue is a kit
+
+The folded booklet is only the largest component.
+
+A physical Dark Star issue may also contain random QR-code stickers, fun stickers, loose inserts, writable cards, and multiple perforated passbook leaves. A transparent resealable bag is a practical first package because it keeps the heterogeneous parts together while allowing the object to remain visibly strange.
+
+Random QR stickers should begin as distinguishable objects rather than as links with one predetermined purpose. Their meaning may be assigned later through trade, placement, annotation, signatures, ledger history, or other conventions.
+
+Several perforated leaves may be distributed through the booklet. They are pages intended to leave the book.
+
+The physical issue should support:
+
+```text
+open
+→ tear
+→ trade
+→ stick
+→ scan
+→ bind
+→ recover
+→ pass on
+```
+
+The booklet therefore becomes a construction kit rather than a sealed literary object.
+
+## 7B. Circulation and service economy
+
+Dark Star should be easy to copy, print, sell, give away, regift, and use as the basis for another gathering.
+
+The intended economic principle is:
+
+> **Monetize service, not dependency.**
+
+Useful work can be paid for even when the underlying artifact and protocol are freely reproducible.
+
+Computational services may include explorers, indexers, gateways, Lantern/Zork servers, hydrators, caches, or other replaceable workers.
+
+Human services may include printing, assembly, teaching, hosting, troubleshooting, recovery help, food, and event organization.
+
+A small gathering can begin in ordinary cash or credit. The organizer may provide tiny amounts of their own crypto for exercises so participants do not need to speculate or risk meaningful personal funds merely to learn.
+
+The person who attends should be able to become the next provider.
+
+> **Teaching should fork.**
+
+A participant can print copies, assemble kits, host another event, charge for their own work, accept tips, give materials away, or invent another local model without owing a franchise fee to the original author.
+
+The intended permission is broader than ordinary readership:
+
+> Copy this. Sell copies. Give it away. Trade it. Modify your copy. Run your own gathering. If you are finished with this copy, pass it on.
+
+A formal repository/content license should eventually make this legally explicit.
+
+The detailed model is preserved in [DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md](DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md).
+
 ## 8. Proposed vNext page rhythm
 
 The prototype should alternate argument and operation.

@@ -4,250 +4,390 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>Chisel: Human-Readable Ledger Artifacts</title>
+  <title>The Address Is the Index — Dark Star</title>
   <style>
     :root {
-      --paper: #fff;
-      --ink: #171411;
-      --muted: #625c55;
-      --line: #cfc7bc;
-      --accent: #76500b;
-      --code: #f4f1ec;
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--ink);
-      background: var(--paper);
+      --paper:#fffdf8; --ink:#171411; --muted:#625c55; --line:#cfc7bc;
+      --accent:#76500b; --code:#f4f1ec; --night:#171a26; --nightInk:#f2ead8;
+      font-family:Georgia,"Times New Roman",serif; color:var(--ink); background:var(--paper);
     }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--paper); }
-    main { width: min(48rem, calc(100% - 2rem)); margin: 0 auto; padding: 3rem 0 5rem; }
-    header { border-bottom: 2px solid var(--ink); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
-    h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; line-height: 1.1; }
-    h1 { font-size: clamp(2rem, 7vw, 4rem); margin: 0 0 .6rem; letter-spacing: -.04em; }
-    h2 { margin: 3rem 0 1rem; font-size: 1.55rem; }
-    h3 { margin: 2rem 0 .7rem; font-size: 1.1rem; }
-    p, li { font-size: 1.06rem; line-height: 1.63; }
-    .subtitle { max-width: 40rem; color: var(--muted); font-size: 1.18rem; }
-    .meta { margin-top: 1.3rem; font: 700 .78rem/1.4 Arial, Helvetica, sans-serif; letter-spacing: .09em; text-transform: uppercase; }
-    .abstract, .warning, .definition { border-left: .3rem solid var(--accent); padding: .2rem 1rem; margin: 1.5rem 0; }
-    .warning { border-color: #8b1e16; }
-    code, pre { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
-    code { background: var(--code); padding: .08rem .25rem; }
-    pre { overflow-x: auto; background: var(--code); padding: 1rem; line-height: 1.45; border: 1px solid var(--line); }
-    figure { margin: 2.4rem 0; break-inside: avoid; }
-    figure img { display: block; width: 100%; max-height: 42rem; object-fit: contain; border: 1px solid var(--line); background: #fff; }
-    figcaption { color: var(--muted); font-size: .9rem; line-height: 1.45; margin-top: .55rem; }
-    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .96rem; }
-    th, td { border-bottom: 1px solid var(--line); padding: .7rem; text-align: left; vertical-align: top; }
-    th { font-family: Arial, Helvetica, sans-serif; }
-    a { color: #513600; text-decoration-thickness: .08em; text-underline-offset: .13em; }
-    .flow { font: 700 1rem/1.7 Arial, Helvetica, sans-serif; text-align: center; border: 1px solid var(--line); padding: 1rem; }
-    footer { border-top: 1px solid var(--ink); margin-top: 4rem; padding-top: 1rem; color: var(--muted); }
-    @page { size: letter; margin: .7in; }
-    @media print {
-      main { width: auto; padding: 0; }
-      body { font-size: 10.5pt; }
-      p, li { font-size: 10.5pt; }
-      h2, h3 { break-after: avoid; }
-      a { color: inherit; }
-      a[href]::after { content: " (" attr(href) ")"; font-size: 8pt; overflow-wrap: anywhere; }
-      figure a::after, header a::after { content: none; }
-    }
+    *{box-sizing:border-box} body{margin:0;background:var(--paper)}
+    main{width:min(48rem,calc(100% - 2rem));margin:0 auto;padding:3rem 0 5rem}
+    header{border-top:.8rem solid var(--night);border-bottom:2px solid var(--ink);padding:2rem 0 1.6rem;margin-bottom:2.5rem}
+    h1,h2,h3{font-family:Arial,Helvetica,sans-serif;line-height:1.08}
+    h1{font-size:clamp(2.3rem,7vw,4.7rem);letter-spacing:-.045em;margin:0 0 .8rem}
+    h2{margin:3rem 0 1rem;font-size:1.65rem} h3{margin:2rem 0 .7rem;font-size:1.08rem}
+    p,li{font-size:1.06rem;line-height:1.67}.subtitle{max-width:42rem;color:var(--muted);font-size:1.22rem}
+    .meta{margin-top:1.2rem;font:700 .76rem/1.4 Arial,Helvetica,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+    .abstract,.definition,.warning,.claim{border-left:.3rem solid var(--accent);padding:.25rem 1rem;margin:1.6rem 0}
+    .warning{border-color:#8b1e16}.claim{background:#fffaf0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .sequence{padding:1rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:700 .98rem/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;text-align:center;overflow-wrap:anywhere}
+    blockquote{margin:2rem 0;padding:.2rem 0 .2rem 1.25rem;border-left:.35rem solid var(--accent)}
+    blockquote p{font-size:1.16rem}
+    code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}code{background:var(--code);padding:.08rem .25rem}
+    pre{overflow-x:auto;background:var(--code);padding:1rem;line-height:1.5;border:1px solid var(--line);font-size:.94rem}
+    figure{margin:2.4rem 0;break-inside:avoid}figure img{display:block;width:100%;max-height:42rem;object-fit:contain;border:1px solid var(--line);background:#fff}
+    figcaption{color:var(--muted);font-size:.9rem;line-height:1.45;margin-top:.55rem}
+    table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.96rem}th,td{border-bottom:1px solid var(--line);padding:.7rem;text-align:left;vertical-align:top}th{font-family:Arial,Helvetica,sans-serif}
+    .toc{border:1px solid var(--line);padding:1rem 1.25rem;background:#fff}.toc ol{columns:2;column-gap:2rem}.toc li{break-inside:avoid;margin:.25rem 0}
+    .night{margin:3rem calc(50% - 50vw);padding:2.4rem max(1rem,calc(50vw - 24rem));background:var(--night);color:var(--nightInk)}.night h2{margin-top:0}
+    a{color:#513600;text-decoration-thickness:.08em;text-underline-offset:.13em}
+    footer{border-top:1px solid var(--ink);margin-top:4rem;padding-top:1rem;color:var(--muted)}
+    @page{size:letter;margin:.7in}@media(max-width:620px){.toc ol{columns:1}}
+    @media print{main{width:auto;padding:0}body,.night{background:#fff;color:#000}p,li{font-size:10.5pt}.night{margin:2rem 0;padding:1rem;border:2px solid #000}h2,h3{break-after:avoid}a{color:inherit}}
   </style>
 </head>
 <body>
 <main>
-  <header>
-    <p><a href="stack-capture.html">← Chapter 1: There Is No Spoon</a></p>
-    <h1>Chisel: Human-Readable Ledger Artifacts</h1>
-    <p class="subtitle">A technical note on carrier addresses, transaction data, local interpretation, paper identity artifacts, and cross-chain verification.</p>
-    <p class="meta">Dark Star · Chapter 2 · John Rigler · Working draft 1.0 · September 2026</p>
-  </header>
+<header>
+  <p><a href="stack-capture.html">← Chapter 1: There Is No Spoon</a></p>
+  <h1>The Address Is the Index</h1>
+  <p class="subtitle">Writing directly into the ledger before rebuilding the application stack around it.</p>
+  <p class="meta">Dark Star · Chapter 2 · John Rigler · October 2026</p>
+</header>
 
-  <section class="definition">
-    <p><strong>From the previous chapter.</strong> “There Is No Spoon” described stack capture: the point at which familiar tools and architectural layers become so normal that people begin looking for them as evidence that a project is complete or serious. This chapter is the concrete case. It begins below the usual application stack and asks what properties were already present in cryptocurrency transactions before wallets, smart-contract platforms, token economics, and modern Web3 application patterns became the dominant way of seeing the medium.</p>
-  </section>
+<section class="abstract">
+  <p><strong>Where we are.</strong> The previous chapter described stack capture: useful tools become expected clues, and then unfamiliar systems are judged by whether those clues are present. This chapter asks the reader to carry that problem forward. The example here will look too small if you are waiting for a token, a smart contract, a backend, an account system, or a conventional Web3 application. The claim is lower-level than those things.</p>
+</section>
 
-  <section class="abstract" aria-labelledby="abstract-title">
-    <h2 id="abstract-title">Abstract</h2>
-    <p>Chisel is a browser-first toolkit for constructing and interpreting cryptocurrency transactions as small public artifacts. On UTXO chains, it combines deliberately chosen output addresses, output order, values, and null-data outputs. On EVM chains, it reads controlled transaction fields such as receiver addresses and calldata. A compatible reader can render these fields as language, identifiers, images, receipts, or pointers to larger content.</p>
-    <p>The central observation is limited but useful: transaction infrastructure already preserves and exposes fields that can carry meaning beyond payment. The chain supplies consensus over bytes and transaction order. Chisel supplies a human-readable interpretation. This paper specifies that boundary and states the associated limitations. It does not claim that block explorers must preserve a particular interface, that every carrier address is mathematically unspendable, or that browser-local signing is safe without verifying the code delivered to the browser.</p>
-  </section>
+<section class="claim">
+  <p><strong>The claim:</strong> cryptocurrency already gives us a durable public address space and an ordered public transaction history. I do not see why that address space cannot also be used as a shared public index, using deliberately constructed, obviously non-wallet addresses as human-readable labels.</p>
+</section>
 
-  <h2>1. Scope</h2>
-  <p>This paper describes a method, not a new consensus protocol. Chisel does not ask a network to understand prose, portraits, or identity rituals. It constructs transactions that remain valid under the network's existing rules, then interprets selected fields according to an external grammar. Other software can reproduce the interpretation from the same transaction bytes.</p>
-  <p>The architecture separates three layers:</p>
-  <ul>
-    <li><strong>Ledger layer:</strong> confirmed transactions, outputs, calldata, logs, block order, and transaction identifiers.</li>
-    <li><strong>Interpretation layer:</strong> Chisel's rules for decoding addresses, amounts, output order, text, image rows, and content identifiers.</li>
-    <li><strong>Experience layer:</strong> Dark Star, Mogwai, games, printed artifacts, and local indexes built from decoded records.</li>
-  </ul>
-  <p>No application can make a ledger say more than its bytes contain. Conversely, an application does not need a chain's permission to assign a reproducible meaning to fields the transaction author already controls.</p>
+<p>By <em>shared public index</em>, I do not mean a centralized index owned by one company. I mean a common coordinate system: an address can become a durable place under which transactions and references accumulate, and another reader can reconstruct that history from the ledger.</p>
 
-  <h2>2. Historical precedent</h2>
-  <p>Bitcoin's genesis block contains a newspaper headline in its coinbase input. The fact is narrow: human-readable editorial language was embedded in Bitcoin data at block zero. It does not, by itself, prove that Bitcoin was intended to be a general publishing system. It does establish that a transaction record can carry both protocol function and human context.</p>
+<nav class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#person">A different kind of blockchain user</a></li>
+    <li><a href="#bitcoin">Start with Bitcoin itself</a></li>
+    <li><a href="#record">A transaction is also a record</a></li>
+    <li><a href="#address">What an address normally means</a></li>
+    <li><a href="#claim">The address can be the index</a></li>
+    <li><a href="#unspendable">Obviously unspendable, technically precise</a></li>
+    <li><a href="#language">Putting language into address space</a></li>
+    <li><a href="#history">How an index accumulates history</a></li>
+    <li><a href="#wrongclues">Why this looks wrong</a></li>
+    <li><a href="#images">The same carrier can hold other structure</a></li>
+    <li><a href="#evm">The EVM without starting from a contract</a></li>
+    <li><a href="#boundary">What the ledger knows</a></li>
+    <li><a href="#conclusion">The smaller claim</a></li>
+  </ol>
+</nav>
 
-  <figure>
-    <img src="https://rigler.org/paper11/genesis-times-headline.jpg" alt="The Times front page dated 3 January 2009">
-    <figcaption>The Times, 3 January 2009. The referenced headline appears in the Bitcoin genesis block's coinbase input.</figcaption>
-  </figure>
+<h2 id="person">1. A different kind of blockchain user</h2>
 
-  <figure>
-    <img src="https://rigler.org/paper11/genesis-block-hexdump.jpeg" alt="Hex dump showing the Bitcoin genesis block coinbase text">
-    <figcaption>A hexadecimal view of the genesis coinbase data. The ledger preserves bytes; software decides whether and how to display them as language.</figcaption>
-  </figure>
+<p>It may help to begin with the kind of person making the argument.</p>
 
-  <h2>3. Two different meanings of “unspendable”</h2>
-  <p>The earlier Dark Star draft used <em>unspendable</em> too broadly. Chisel must distinguish two mechanisms.</p>
+<p>I am not primarily approaching a blockchain as a place to launch a new currency, create a financial product, or build a company around a smart contract.</p>
 
-  <div class="definition">
-    <p><strong>Provably unspendable output:</strong> an output whose locking script cannot succeed. A conventional example is a null-data output beginning with <code>OP_RETURN</code>. Nodes can determine from the script itself that the output cannot be spent.</p>
-  </div>
+<p>I am the sort of user who notices that the ledger is already public, already ordered, already checksummed, already replicated, and already full of fields that I can control when I create a transaction.</p>
 
-  <div class="definition">
-    <p><strong>Carrier or burn-style address:</strong> a syntactically valid address deliberately constructed from chosen bytes rather than derived from a key held by the author. No usable private key is known. Spending from it is treated as computationally infeasible, but that is not the same claim as a script being logically impossible to satisfy.</p>
-  </div>
+<p>So I put messages there.</p>
 
-  <p>This distinction matters. A familiar pay-to-public-key-hash address encodes a version and a hash-sized payload with a checksum. Constructing a valid-looking address from selected payload bytes does not prove that no private key preimage exists. It means the author did not obtain the address by generating and retaining such a key. Chisel can use the address as a durable carrier while describing the security property accurately.</p>
-  <p>A null-data output is different. Bitcoin-style <code>OP_RETURN</code> terminates script evaluation in failure and is explicitly used for unspendable data outputs. Relay policies, standard size limits, and fees vary by network and software version; those are operational constraints rather than a universal constant.</p>
+<p>That behavior is unusual enough that it is easy to misread. The conventional question is often: <em>what application are you building on top of the blockchain?</em></p>
 
-  <h2>4. The UTXO carrier</h2>
-  <p>A Chisel record can distribute meaning across ordinary transaction components:</p>
+<p>My earlier question is: <em>what is already possible inside the transaction itself?</em></p>
 
-  <table>
-    <thead><tr><th>Field</th><th>Possible use</th><th>What consensus guarantees</th></tr></thead>
-    <tbody>
-      <tr><td>Output address or script payload</td><td>Readable fragments, identifiers, labels, image rows</td><td>The exact locking script and output position are included in the transaction</td></tr>
-      <tr><td>Output order</td><td>Sequence and grouping</td><td>The transaction serializes outputs in a fixed order</td></tr>
-      <tr><td>Output value</td><td>Small numeric code or binder</td><td>The value is part of the signed transaction</td></tr>
-      <tr><td><code>OP_RETURN</code> data</td><td>Short text, a digest, schema marker, or content pointer</td><td>The bytes are included in a provably unspendable output</td></tr>
-      <tr><td>Transaction ID and block position</td><td>Citation and chronology</td><td>Subject to the chain's confirmation and reorganization model</td></tr>
-    </tbody>
-  </table>
+<p>This difference is exactly the kind of difference Chapter 1 was about. If you begin by looking for the normal Web3 stack, you can miss the object because the object is underneath the stack.</p>
 
-  <p>For example, a carrier string may be designed so part of the address is visually readable:</p>
-  <pre>9sSADXANDXWEARYXiXGoXBACKZZZc6o8QR</pre>
-  <p>The address remains a machine-validated string for the selected network. A Chisel decoder applies additional rules: prefixes can identify a schema or network; reserved characters can stand for spaces or separators; padding can fill the fixed-width carrier; and the address checksum detects many transcription errors. These interpretation rules are not enforced by the chain. They must be versioned and published so an independent decoder can reproduce them.</p>
+<h2 id="bitcoin">2. Start with Bitcoin itself</h2>
 
-  <h3>4.1 Indexing is useful but not guaranteed</h3>
-  <p>Once a carrier output is confirmed, full nodes and indexers can derive the address or script from the transaction. Many block explorers expose address pages and search functions, making the output easy to discover without Chisel. That behavior is valuable but not a consensus obligation. An explorer may disable prefix search, filter burn-style addresses, change its interface, omit a chain, or disappear.</p>
-  <p>The durable reference is therefore the transaction identifier plus a documented decoding rule. Explorer search is a convenience layer. For stronger independence, Chisel can read raw transaction data from multiple public sources or from a local node and compare results.</p>
+<p>Bitcoin is normally introduced as digital money. That is reasonable. Money is the use that made the system historically important.</p>
 
-  <h2>5. Raster rows</h2>
-  <p>The same carrier can represent data that is not language. Chisel's BASE57 image work treats an image as ordered rows. Each row is quantized to a restricted palette and encoded with an address-safe alphabet; repeated characters can represent runs of repeated colors. A checksum protects the carrier string, while the transaction and row label establish order.</p>
-  <pre>#0 SNMMMBQXiiiiisrrrriiXQBBMMM12AD3f
+<p>But the ledger has always contained more than bare numbers.</p>
+
+<p>The Bitcoin genesis block includes a human-readable newspaper headline in its coinbase data: a reference to <em>The Times</em> of London on 3 January 2009. The important point here is modest. Bitcoin began with human language embedded directly in the record.</p>
+
+<figure>
+  <img src="https://rigler.org/paper11/genesis-times-headline.jpg" alt="The Times front page dated 3 January 2009">
+  <figcaption>The newspaper front page referenced in the Bitcoin genesis block.</figcaption>
+</figure>
+
+<figure>
+  <img src="https://rigler.org/paper11/genesis-block-hexdump.jpeg" alt="Hex dump showing the Bitcoin genesis block coinbase text">
+  <figcaption>The genesis coinbase bytes. The network preserves bytes; software can display those bytes as language when an encoding is known.</figcaption>
+</figure>
+
+<p>This does not prove that Bitcoin was intended to become a publishing system. It shows something more basic: protocol data and human meaning can occupy the same durable record.</p>
+
+<h2 id="record">3. A transaction is also a record</h2>
+
+<p>A cryptocurrency transaction is usually explained as movement of value.</p>
+
+<p>But technically it is also a signed, ordered data structure that becomes part of a public history.</p>
+
+<p>Depending on the blockchain, a transaction can contain or determine things such as:</p>
+
+<ul>
+  <li>which previous funds are being used;</li>
+  <li>which addresses or scripts receive outputs;</li>
+  <li>the order of those outputs;</li>
+  <li>their values;</li>
+  <li>small explicit data fields;</li>
+  <li>a transaction identifier;</li>
+  <li>a position in the larger chain history.</li>
+</ul>
+
+<p>The financial interpretation is real. It is not the only property of the structure.</p>
+
+<p class="sequence">signed transaction → public ordering → durable reference → independently retrievable bytes</p>
+
+<p>Once you notice those properties, another question appears: can some of the fields be deliberately chosen so that the transaction is also readable?</p>
+
+<h2 id="address">4. What an address normally means</h2>
+
+<p>A cryptocurrency address is normally presented as a destination for payment.</p>
+
+<p>You generate a private key. From that key, software derives public information and eventually an address. Someone sends value to that address. The holder of the private key can later authorize spending under the network's rules.</p>
+
+<p>So the cultural meaning of an address becomes:</p>
+
+<p class="sequence">address = wallet destination = money belongs here</p>
+
+<p>That is the normal use.</p>
+
+<p>But on several cryptocurrency systems, an address is also a fixed-format string with a network prefix, a payload, and a checksum or comparable validation structure.</p>
+
+<p>The software checks whether the string is structurally valid. It does not ask whether the string looks like language to a human being.</p>
+
+<p>That gap is where this project begins.</p>
+
+<h2 id="claim">5. The address can be the index</h2>
+
+<p>Suppose an address is not generated in the ordinary way from a private key you intend to use.</p>
+
+<p>Instead, suppose you deliberately construct the payload so that much of the resulting address contains readable language, then calculate the required checksum so the network and ordinary software still recognize it as a valid address.</p>
+
+<p>Now the address can function in two worlds at once.</p>
+
+<p>To ordinary cryptocurrency software, it is an address.</p>
+
+<p>To a human reader using a published convention, it is a label.</p>
+
+<p>For example, one of the address conventions used by this project can produce strings in which the readable portion occupies almost the entire address:</p>
+
+<pre>DCxDoMoxARiGATozzzzzzzzzzzzzVwQnWq</pre>
+
+<p>The exact grammar is not important yet. What matters is that this is not a vanity address discovered by repeatedly generating keys until a few desired letters happen to appear. The readable payload is deliberately constructed, and the checksum is then made valid for the selected chain.</p>
+
+<p>That changes the conceptual role of the address.</p>
+
+<blockquote>
+  <p>If an address can be a durable human-readable label, then transactions associated with that address can form a durable public index under that label.</p>
+</blockquote>
+
+<p>The index is not a new blockchain feature. It is a new use of address space that already exists.</p>
+
+<h2 id="unspendable">6. “Obviously unspendable,” technically precise</h2>
+
+<p>In ordinary conversation I call these <strong>unspendable addresses</strong> because their purpose is visually obvious: they are full of language or padding and were not created as wallets whose private keys I intend to hold.</p>
+
+<p>That human description needs one technical qualification.</p>
+
+<div class="definition">
+  <p><strong>Provably unspendable output:</strong> some transaction outputs are constructed so their script cannot succeed. A common Bitcoin-family example is an <code>OP_RETURN</code> output. The impossibility of spending is explicit in the script.</p>
+</div>
+
+<div class="definition">
+  <p><strong>Human-readable carrier or burn-style address:</strong> a syntactically valid address constructed from selected bytes rather than generated from a retained private key. No usable private key is known to the author. In practical terms the output is intended to be burned, but that is different from a mathematical proof that no key preimage could exist.</p>
+</div>
+
+<p>The distinction matters for technical accuracy, but it does not weaken the indexing idea.</p>
+
+<p>The point of the readable address is not that the blockchain has been taught a new kind of script. The point is that a valid address can also carry a human-readable label, and the ledger can accumulate transactions associated with that label.</p>
+
+<h2 id="language">7. Putting language into address space</h2>
+
+<p>Once this is possible, an encoding grammar can make the labels more systematic.</p>
+
+<p>A prefix can identify what kind of thing the address names. Reserved characters can stand for spaces or separators. Padding can fill unused positions. The final checksum remains whatever the selected network requires.</p>
+
+<p>A human-readable address can therefore behave less like a bank account number and more like a small public inscription.</p>
+
+<p>Different address families can mark different categories: a person, a subject, a transport, a text fragment, or a pointer into another storage system.</p>
+
+<p>The blockchain does not understand those categories.</p>
+
+<p>People and software do.</p>
+
+<p>That distinction is important. No consensus change is required. No miners or validators need to agree that a particular prefix means “person” or “subject.” The ledger only needs to preserve the transaction exactly as it already does.</p>
+
+<h2 id="history">8. How an address becomes an index</h2>
+
+<p>The next step is the part I think is easiest to overlook because block explorers already make it look ordinary.</p>
+
+<p>Block explorers commonly group transaction history by address. Enter an address and the explorer shows transactions associated with it.</p>
+
+<p>That interface is normally interpreted financially: this is the history of money associated with an account-like destination.</p>
+
+<p>But if the address itself is a readable subject label, the same grouping becomes something else.</p>
+
+<p class="sequence">readable address → shared coordinate → transactions → ordered public history</p>
+
+<p>A subject address can accumulate references. A person address can accumulate attestations or publications. A document address can accumulate revisions. An address can point outward to larger content. A later reader can inspect the history without first asking the original application for its database.</p>
+
+<p>This is what I mean by using the <strong>address space as an index</strong>.</p>
+
+<p>It is “central” only in the sense that many different readers can converge on the same coordinate. It is not centralized around one operator.</p>
+
+<p>Explorer interfaces are convenient, but they are not the durable part. An explorer can disappear or change its search behavior. The underlying transactions can still be reconstructed from another explorer, an indexer, or a local node.</p>
+
+<p>So the stronger formulation is:</p>
+
+<p class="sequence">ledger record + address convention + published grammar + independent reader</p>
+
+<h2 id="wrongclues">9. Why this looks wrong from inside the normal stack</h2>
+
+<p>At this point Chapter 1 should be doing useful work.</p>
+
+<p>A reader trained on modern Web3 may instinctively ask:</p>
+
+<ul>
+  <li>Where is the smart contract that defines the index?</li>
+  <li>Where is the database?</li>
+  <li>Where is the backend service?</li>
+  <li>Where is the token?</li>
+  <li>Where is the account system?</li>
+  <li>Where is the schema registry?</li>
+  <li>Who owns the namespace?</li>
+</ul>
+
+<p>Those questions come from recognizable architectures.</p>
+
+<p>But the experiment here is specifically to see how much can be done <em>before</em> those layers are added.</p>
+
+<p>The address is already globally valid according to the chain's rules. The transaction history is already public. The checksum is already validated. The ordering is already preserved. The transaction identifier is already a durable citation.</p>
+
+<p>If I add a company database merely so the index looks like an application database, I may make the system easier to recognize while making the underlying idea harder to see.</p>
+
+<p>This is the practical collision with stack capture:</p>
+
+<blockquote>
+  <p>The missing pieces are not always unfinished work. Sometimes the missing pieces are the result.</p>
+</blockquote>
+
+<h2 id="images">10. The same carrier can hold other structure</h2>
+
+<p>Once an address is understood as a fixed-width carrier rather than only as a payment destination, text is not the only possible interpretation.</p>
+
+<p>Earlier Chisel experiments used address-sized rows to encode highly compressed raster images. A restricted alphabet represented colors and repeated runs. Multiple ordered addresses reconstructed the image.</p>
+
+<pre>#0 SNMMMBQXiiiiisrrrriiXQBBMMM12AD3f
 #1 SNMMMBQXiiiippuuuuurriiiQQBMM91PT7E
 #2 SNMMMBQXipppppuppupppiXXQMM9bcs4i</pre>
-  <p>The rendering is not stored as a PNG in those rows. It is reconstructed by a decoder from palette and run-length rules. Independent implementations should produce the same raster from the same ordered inputs.</p>
 
-  <figure>
-    <img src="https://rigler.org/paper11/chisel-base57-rows.png" alt="Decoded BASE57 portrait shown beside encoded address rows">
-    <figcaption>A reconstructed portrait beside the address rows from which it is decoded.</figcaption>
-  </figure>
+<figure>
+  <img src="https://rigler.org/paper11/chisel-base57-rows.png" alt="Decoded BASE57 portrait shown beside encoded address rows">
+  <figcaption>A reconstructed portrait beside address-sized encoded rows.</figcaption>
+</figure>
 
-  <figure>
-    <img src="https://rigler.org/paper11/chisel-portal-portrait.png" alt="Chisel portal displaying a decoded portrait and its linked transaction data">
-    <figcaption>The portrait rendered in the Chisel portal. The portal is a decoder and viewer; the referenced transaction data remains independently retrievable.</figcaption>
-  </figure>
+<figure>
+  <img src="https://rigler.org/paper11/chisel-portal-portrait.png" alt="Chisel portal displaying a decoded portrait and its linked transaction data">
+  <figcaption>A Chisel reader reconstructing the portrait. The image is an interpretation of durable ordered carriers, not a PNG magically understood by the chain.</figcaption>
+</figure>
 
-  <h2>6. EVM extension</h2>
-  <p>The method is not confined to UTXO chains. An Ethereum-family transaction contains an optional <code>input</code> or <code>data</code> field. For a contract call, those bytes normally identify a function and encode arguments. A sender can also place controlled bytes in a transaction for a decoder to interpret, subject to gas costs and the execution behavior of the destination.</p>
-  <p>Twenty-byte receiver addresses can also be chosen to resemble or encode data, but the same qualification applies as with burn-style UTXO addresses: a chosen address is not automatically a cryptographic identity, and “no known key” is not identical to “no possible key.” A contract can instead emit logs or store state under explicit rules when stronger semantics are needed.</p>
+<p>This is not the central claim of the chapter. It is evidence that once the address is treated as a carrier, other interpretations become possible.</p>
 
-  <figure>
-    <img src="https://rigler.org/paper11/evm-gomez-decoded-record.png" alt="Chisel decoding a Polygon transaction containing word-like receiver addresses">
-    <figcaption>A Polygon record decoded by Chisel. The receiver fields are interpreted as words by a published application grammar.</figcaption>
-  </figure>
+<h2 id="evm">11. The EVM without starting from a contract</h2>
 
-  <figure>
-    <img src="https://rigler.org/paper11/evm-prashanth-exchange.png" alt="A Chisel-decoded message exchange on the Sepolia test network">
-    <figcaption>A message exchange decoded from Sepolia testnet transactions.</figcaption>
-  </figure>
+<p>The same habit of looking underneath the expected stack applies to Ethereum-family chains.</p>
 
-  <figure>
-    <img src="https://rigler.org/paper11/sepolia-etherscan-inputdata.png" alt="A Sepolia block explorer displaying raw transaction input data">
-    <figcaption>The corresponding transaction data displayed by a public explorer. Explorer presentation is convenient evidence, while the transaction and receipt are the reproducible references.</figcaption>
-  </figure>
+<p>Ethereum is usually introduced through smart contracts. That makes sense because the EVM made programmable shared state extraordinarily useful.</p>
 
-  <p>Keeping EVM examples online is intentional. Printed Dark Star issues can point to this paper with a QR code, while the online paper can link directly to transaction explorers, contract addresses, source code, and updated decoding tools. The printed artifact remains small; the verification surface can continue to evolve.</p>
+<p>But an Ethereum-style transaction also contains ordinary fields: sender, receiver, value, and an optional data field. Those fields exist before we decide that every meaningful application must begin with a large smart contract.</p>
 
-  <h2>7. Content-addressed extensions</h2>
-  <p>Transactions are expensive and size-constrained compared with ordinary files. A common pattern is to place a digest or content identifier in the transaction and keep the larger object in a content-addressed system such as IPFS. A content identifier lets a reader verify that retrieved bytes match the referenced object. It does not guarantee availability by itself.</p>
-  <p>IPFS content must remain hosted or pinned by at least one reachable provider. A resilient publication should use multiple pins or providers, retain local copies, and record enough information to republish the same bytes under the same content identifier. The chain can preserve the commitment even when no current provider serves the object, but retrieval then requires someone who still possesses the bytes.</p>
+<p>So Chisel can also read deliberately chosen transaction data or receiver addresses as carriers.</p>
 
-  <h2>8. Verification and threat model</h2>
-  <p>Chisel moves several operations into the browser, but “local” does not automatically mean “trusted.” The threat model has distinct parts:</p>
-  <ul>
-    <li><strong>Delivered-code integrity:</strong> a compromised host can serve altered JavaScript that steals keys or changes transactions before signing. Users need a trusted copy, reviewed source, reproducible hashes, offline execution, or another integrity mechanism. HTTPS protects transport, not a compromised origin.</li>
-    <li><strong>RPC and proxy integrity:</strong> a proxy that never receives private keys still can omit or falsify balances, fee estimates, transactions, and chain state. Results should be compared across sources or verified against a local node when stakes justify it.</li>
-    <li><strong>Signing clarity:</strong> the interface must display the exact network, inputs, outputs, values, fees, and data that will be signed. Human-readable labels are annotations, not replacements for the actual transaction.</li>
-    <li><strong>Chain finality:</strong> records are subject to reorganizations and the security assumptions of the selected network. Confirmation depth should match the intended use.</li>
-    <li><strong>Decoder longevity:</strong> a custom encoding survives only if its versioned specification and implementation survive. Publishing both is part of the artifact.</li>
-    <li><strong>Privacy:</strong> public ledgers are not private identity stores. Correlating addresses, labels, QR codes, and physical events can create a permanent association.</li>
-  </ul>
+<figure>
+  <img src="https://rigler.org/paper11/evm-gomez-decoded-record.png" alt="Chisel decoding a Polygon transaction containing word-like receiver addresses">
+  <figcaption>A Polygon transaction interpreted by Chisel as a readable record.</figcaption>
+</figure>
 
-  <h2>9. Paper identity artifacts</h2>
-  <p>Dark Star uses paper as an entry point rather than as the complete technical specification. A printed sheet can hold a portal QR code and blank positions for separately produced labels. Participants assemble the labels physically, then use the resulting artifact to enter an online tool or game.</p>
-  <p>The design goal is that no ordinary printer receives a completed private key in one printable document. That does not, by itself, make the process secure. Component generation, entropy, distribution, observation, photography, label reuse, and later key entry all affect the result. Until the complete process has been independently reviewed, the assembled artifact should be treated as educational and should not protect material financial value.</p>
+<figure>
+  <img src="https://rigler.org/paper11/evm-prashanth-exchange.png" alt="A Chisel-decoded message exchange on the Sepolia test network">
+  <figcaption>A message exchange decoded from Sepolia transactions.</figcaption>
+</figure>
 
-  <figure>
-    <img src="https://rigler.org/paper11/easybase-qr-grid.png" alt="EasyBase sheet of color-coded QR labels">
-    <figcaption>An EasyBase prototype sheet. Color and position help manage distinct labels during physical distribution; they are logistics aids, not cryptographic protections.</figcaption>
-  </figure>
+<figure>
+  <img src="https://rigler.org/paper11/sepolia-etherscan-inputdata.png" alt="A Sepolia block explorer displaying raw transaction input data">
+  <figcaption>The same kind of transaction data visible through an ordinary block explorer.</figcaption>
+</figure>
 
-  <p class="flow">paper issue → QR or label ritual → transaction or identifier → independent retrieval → Chisel or another compatible decoder</p>
+<p>Again, the point is not that smart contracts are unnecessary. The point is that a smart contract should enter because its semantics are required, not because “Web3 project” has become synonymous with “smart-contract application.”</p>
 
-  <h2>10. What the method does and does not claim</h2>
-  <table>
-    <thead><tr><th>Claim supported here</th><th>Claim not made here</th></tr></thead>
-    <tbody>
-      <tr><td>Existing transaction fields can carry reproducibly decodable meaning.</td><td>A blockchain understands or endorses that meaning.</td></tr>
-      <tr><td>A carrier address can be constructed without retaining a usable key.</td><td>Every such address is mathematically proven to have no private key.</td></tr>
-      <tr><td><code>OP_RETURN</code> can create a provably unspendable data output on compatible UTXO chains.</td><td>All chains accept identical sizes, fees, or relay policies.</td></tr>
-      <tr><td>Explorers often make carrier records easy to inspect.</td><td>An explorer is required to preserve search, prefix matching, or presentation.</td></tr>
-      <tr><td>Browser software can construct and sign locally.</td><td>Code served by a website is automatically trustworthy.</td></tr>
-      <tr><td>Content addressing verifies retrieved bytes.</td><td>An IPFS identifier guarantees that a provider will remain online.</td></tr>
-      <tr><td>The technique works across both UTXO and account-based transaction models.</td><td>The security and semantics of those models are identical.</td></tr>
-    </tbody>
-  </table>
+<h2 id="boundary">12. What the ledger knows, and what it does not</h2>
 
-  <h2>11. Reproducibility requirements</h2>
-  <p>A Chisel artifact should publish enough information for an independent implementation:</p>
-  <ol>
-    <li>Network and transaction identifier.</li>
-    <li>Encoding name and version.</li>
-    <li>Exact character alphabet, separators, padding, and checksum rules.</li>
-    <li>Rules for selecting and ordering transaction fields.</li>
-    <li>Palette and run-length rules for raster records.</li>
-    <li>Expected decoded bytes or digest for a test vector.</li>
-    <li>Source code or compact reference implementation.</li>
-    <li>Any external content identifiers and a pinning or replication plan.</li>
-  </ol>
-  <p>Without those items, a portal screenshot demonstrates that one interface rendered something. With them, another reader can prove that the rendering follows from the recorded transaction.</p>
+<p>The blockchain does not know that an address contains a word.</p>
 
-  <h2>12. Conclusion</h2>
-  <p>Chisel's contribution is not a new place to hide arbitrary files. It is a small grammar for treating existing transaction fields as public, ordered, checksummed carriers that humans and independent software can read. The approach is intentionally modest: consensus preserves bytes; published rules turn selected bytes into artifacts; paper and narrative give people a reason to encounter them.</p>
-  <p>Dark Star can therefore remain a short printed periodical. It does not need to carry the complete history of blockchain data, the EVM extension, the security model, or every worked example. A QR code can bring the reader to this living technical layer, where claims can be corrected, examples can be linked, and additional networks can be tested without expanding the printed object.</p>
+<p>It does not know that one address means a person and another means a subject.</p>
 
-  <h2>References</h2>
-  <ol>
-    <li><a href="https://developer.bitcoin.org/devguide/transactions.html">Bitcoin Developer Guide: Transactions</a> — standard transaction forms and null-data outputs.</li>
-    <li><a href="https://developer.bitcoin.org/reference/transactions.html">Bitcoin Developer Reference: Transactions</a> — transaction serialization and script behavior.</li>
-    <li><a href="https://ethereum.org/developers/docs/apis/json-rpc/">Ethereum JSON-RPC API</a> — transaction objects and the data field.</li>
-    <li><a href="https://docs.ipfs.tech/concepts/persistence/">IPFS: Persistence, permanence, and pinning</a> — why content addressing does not alone guarantee availability.</li>
-    <li><a href="https://www.w3.org/TR/sri-2/">W3C Subresource Integrity</a> — browser verification of fetched resource hashes.</li>
-    <li><a href="https://github.com/johnrigler/chisel">Chisel source repository</a> — implementation and current tools.</li>
-    <li><a href="https://github.com/johnrigler/darkStar">Dark Star source repository</a> — printed and online publication components.</li>
-  </ol>
+<p>It does not know that a sequence of address rows represents an image.</p>
 
-  <section class="warning">
-    <h2>Security status</h2>
-    <p>This document describes experimental software and physical identity exercises. It is not a security audit. Do not use an unreviewed paper-key process, demonstration wallet, or experimental decoder to protect funds or credentials whose loss would matter.</p>
-  </section>
+<p>It does not know whether a human-readable statement is true.</p>
 
-  <footer>
-    <p><a href="stack-capture.html">← Chapter 1: There Is No Spoon</a> · <a href="dark-star-world.html">Dark Star world index</a></p>
-    <p>Dark Star / Chisel / Mogwai · Working technical paper · September 2026</p>
-  </footer>
+<p>The ledger contributes something narrower:</p>
+
+<ul>
+  <li>the exact transaction bytes;</li>
+  <li>their ordering;</li>
+  <li>network validation according to consensus rules;</li>
+  <li>a durable transaction identifier;</li>
+  <li>replication across independent systems.</li>
+</ul>
+
+<p>The interpretation comes from a published grammar.</p>
+
+<p>That means the durable object is not merely “data on a blockchain.” It is:</p>
+
+<p class="sequence">ledger bytes + published grammar + independent implementation</p>
+
+<p>This also imposes limits. A readable carrier is not automatically an identity. A public statement is not automatically true. An address explorer is not consensus. A content hash does not guarantee availability. Browser-local signing is not automatically safe if malicious code was delivered to the browser.</p>
+
+<p>The technique should be judged on the narrower claim it actually makes.</p>
+
+<h2 id="conclusion">13. The smaller claim</h2>
+
+<p>The claim in this chapter is deliberately smaller than “blockchain changes everything.”</p>
+
+<p>It is that cryptocurrency address space is already a public, machine-validated coordinate system, and transaction history is already an ordered public record.</p>
+
+<p>If people deliberately create addresses that are visibly not ordinary wallet destinations, fill those addresses with readable structure, and publish the grammar used to interpret them, then those addresses can function as durable public labels.</p>
+
+<p>Transactions associated with those labels can then function as a public index.</p>
+
+<p>No token is required to make the label meaningful.</p>
+
+<p>No smart contract is required merely to declare that the label exists.</p>
+
+<p>No company database is required to be the only surviving copy of the history.</p>
+
+<p>Those things may still be useful later. But they are later questions.</p>
+
+<blockquote>
+  <p>The experiment begins by asking what the ledger already gives us before the stack tells us what we are supposed to build.</p>
+</blockquote>
+
+<p>Chisel is simply the working tool through which I have been exploring that question.</p>
+
+<section class="warning">
+  <h2>Technical caution</h2>
+  <p>Human-readable burn-style addresses should not be described as mathematically impossible to spend unless the locking script itself makes that true. The project uses “unspendable” colloquially for addresses intentionally constructed without a retained private key, while distinguishing those from provably unspendable outputs such as compatible <code>OP_RETURN</code> scripts. These experiments should not be used to protect funds or credentials whose loss would matter without independent review.</p>
+</section>
+
+<h2>References</h2>
+<ol>
+  <li><a href="https://developer.bitcoin.org/devguide/transactions.html">Bitcoin Developer Guide: Transactions</a></li>
+  <li><a href="https://developer.bitcoin.org/reference/transactions.html">Bitcoin Developer Reference: Transactions</a></li>
+  <li><a href="https://ethereum.org/developers/docs/apis/json-rpc/">Ethereum JSON-RPC API</a></li>
+  <li><a href="https://github.com/johnrigler/chisel">Chisel source repository</a></li>
+  <li><a href="https://github.com/johnrigler/darkStar">Dark Star source repository</a></li>
+</ol>
+
+<footer>
+  <p><a href="stack-capture.html">← Chapter 1: There Is No Spoon</a> · <a href="dark-star-world.html">Dark Star world index</a></p>
+  <p>Dark Star · Chapter 2 · October 2026</p>
+</footer>
 </main>
 </body>
 </html>

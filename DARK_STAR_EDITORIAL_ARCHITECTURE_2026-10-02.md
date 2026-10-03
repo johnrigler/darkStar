@@ -56,6 +56,7 @@ These are the arguments a new reader should encounter first:
 - Recognition Is Not Adoption
 - Executable Publication
 - Proof Is Recovery
+- Stack Capture / Metric Capture
 
 These essays explain what the project thinks is different.
 
@@ -88,6 +89,36 @@ These should remain exact and falsifiable:
 - M64, Base57, MacDougall and other representational experiments
 
 The technical paper remains a separate deeper document. The physical book should provide a readable map into it rather than trying to print the entire paper.
+
+### C2. Stack capture and metric capture
+
+Dark Star should also explain how a successful technical stack can become a social measuring system.
+
+The progression is:
+
+```text
+tool
+→ standard
+→ stack
+→ curriculum
+→ specialist role
+→ investor category
+→ metric
+→ funding filter
+→ message capture
+```
+
+This is **stack capture**: implementation tools begin determining which ideas a community can easily recognize.
+
+A related phenomenon is **metric capture**: the measurements used to compare projects begin determining what kinds of projects can attract attention or capital.
+
+In Web3 this can make a familiar composition — EVM contract, wallet, React/Next interface, API/RPC infrastructure, token, and tokenomics — look like the medium itself rather than one historically successful way of composing the medium.
+
+Dark Star should not attack those tools. It should reopen the question underneath them:
+
+> What property actually requires this layer?
+
+The detailed argument is preserved in [DARK_STAR_STACK_CAPTURE_NOTES_2026-10-02.md](DARK_STAR_STACK_CAPTURE_NOTES_2026-10-02.md).
 
 ### D. Language laboratories
 
@@ -349,7 +380,7 @@ The intended permission is broader than ordinary readership:
 
 > Copy this. Sell copies. Give it away. Trade it. Modify your copy. Run your own gathering. If you are finished with this copy, pass it on.
 
-A formal repository/content license should eventually make this legally explicit.
+The repository now makes this legally explicit through CC BY-SA 4.0 for original publication content and MIT for code; see `LICENSE.md`.
 
 The detailed model is preserved in [DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md](DARK_STAR_CIRCULATION_SERVICE_ECONOMY_NOTES_2026-10-02.md).
 
@@ -369,15 +400,14 @@ The prototype should alternate argument and operation.
 08 activity: inspect a durable artifact
 
 09 essay: Recombined Agency
-10 essay: Code Smaller / AI-readable systems
+10 essay: Code Smaller / Stack Capture
 11 activity: replace a service
 12 essay: Servers Are Workers
 
 13 essay: Recognition Is Not Adoption
-14 essay: Language Hacks
-15 activity: encode / decode language
-
-16-17 train centerfold
+14-15 train centerfold
+16 essay: Language Hacks
+17 activity: encode / decode language
 
 18 essay: Mythos as Parallel Maps
 19 essay: Executable Publication

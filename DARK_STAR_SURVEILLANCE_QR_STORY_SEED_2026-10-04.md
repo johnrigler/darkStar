@@ -694,3 +694,111 @@ Possible production associations:
 
 Do not explain these associations in narration. Let them accumulate through title, structure, repetition, imagery, timing, and the contrast between institutional crisis and ordinary closing time.
 
+## Voice-session pass: Nina, the casino pitch, and the second audience
+
+The spy story needs to breathe more slowly.
+
+### Nina first
+
+Introduce Nina as a real working person before the QR event.
+
+She works graveyard surveillance for a tribal business enterprise with a casino and related properties. Her competence is pattern recognition developed through repetition. She watches vendors, employees, guests, doors, reports, and ordinary procedural traffic. The reader should spend enough time with her that the eventual QR anomaly feels like a deviation from a known world rather than an immediate plot device.
+
+Nina is not initially "receiving a message" in any mystical sense. She is simply doing her job.
+
+### Vale as 1099 contractor
+
+Vale is an independent security consultant trying to get paid.
+
+His immediate casino motive is practical and almost embarrassingly ordinary: he wants somebody with authority to write him a monthly check.
+
+He learns that the CEO likes golf. He follows the CEO's conversational terrain, listens to golf stories, laughs in the right places, adjusts his pitch, and masks socially enough to remain in the room.
+
+Do not make every business conversation secretly profound. Much of this is sales behavior.
+
+A plausible casino pitch is modest:
+- a few thousand dollars per month;
+- no giant transformation program;
+- call Vale when something feels wrong;
+- have him look at vendor claims, purchases, dashboards, and failure assumptions;
+- use him as an outside skeptic.
+
+The business-side pitch is not Mogwai. It is how Vale survives.
+
+### Acronym / thunderword signaling
+
+While Nina reviews Vale's ordinary meetings, the casino's AI transcription or monitoring system repeatedly flags ambiguous three-letter strings:
+
+- CIA = Culinary Institute of America
+- NSA = National Speakers Association
+- FBI = an innocuous alternate expansion such as Fashion Business Industry
+
+Each instance is individually harmless.
+
+The pattern matters because the machine flags the federal acronym before the human listener decides what the words mean.
+
+Three separate instances create statistical irritation in Nina's mind. She does not need certainty. She marks timestamps.
+
+This should feel like a thunderword mechanism: the visible token carries one literal public meaning while also striking another semantic system.
+
+Do not explain "he is sending her a signal" in narration. Let Nina notice repetition and let later investigators notice that Nina noticed.
+
+### The second pitch
+
+Vale's deeper pitch is not the casino pitch.
+
+The deeper pitch is to whoever may be monitoring him.
+
+He jokes that if security is listening, they are part of the audience too. He can exaggerate the price dramatically for that hypothetical client, for example a federal rate orders of magnitude above the casino retainer.
+
+The deeper product is the user's Mogwai idea translated into story terms:
+
+- decentralized public messaging;
+- public ledgers as durable reference points;
+- content-addressed storage;
+- identity not dependent on one platform;
+- messages that can remain findable even if an institution or server fails;
+- a way for people who do not trust the same infrastructure to converge on the same public reference.
+
+This is what Vale believes might matter to intelligence or security people if the government around them were becoming unreliable.
+
+His actual pitch, beneath the jokes, is still self-interested: hire him.
+
+Do not sentimentalize this. Vale wants the work and wants the money.
+
+### Two audiences
+
+The larger thematic structure eventually involves two audiences:
+- the intelligence/security institution;
+- the general public.
+
+They encounter the same system differently during a period of institutional transition or decline.
+
+The agency experiences the idea as a security problem, signaling mechanism, resilience tool, or threat to centralized control.
+
+The public encounters it through ordinary artifacts, QR codes, stories, GitHub, paper, and social circulation.
+
+This mirrors Mogwai itself: the same durable message can exist without a single controlling broadcaster and be read differently by different communities.
+
+Keep this in production notes. Do not have the narrator announce "the FBI and the public were the two audiences."
+
+### Independent discovery
+
+The agency should not become dependent on Vale as prophet.
+
+As the investigation unfolds, capable people inside the institution independently rediscover Web3 / decentralized-public-memory ideas.
+
+Vale may have attracted attention, but he does not own the insight.
+
+This matters because the story's institutional crisis is not solved by one genius outsider. The gift is that the mechanism becomes visible, reproducible, and available to people already inside the system.
+
+### Emotional register
+
+The embedded spy story can stay clean and controlled even though the veteran narrator is drinking.
+
+The bar frame carries the unstable oral texture.
+
+The spy narrative carries the high-pressure institutional question.
+
+Those registers should remain distinct.
+

@@ -962,3 +962,64 @@ Then everyone goes home.
 
 Do not explain this structure in the finished prose.
 
+## Decentralized lineage: Satoshi, BSV, and parallel collaborators
+
+Vale should appear to come out of a loose culture of crypto-language experimenters rather than a formal organization.
+
+This group is not a group in the conventional sense.
+
+There may be:
+- people around BSV;
+- independent Bitcoin / UTXO experimenters;
+- people in the Baltic or northern-European crypto scene;
+- writers, coders, archivists, protocol obsessives, and odd linguistic hackers;
+- people who know one another only through repositories, transactions, forum posts, conference encounters, or public artifacts.
+
+Vale draws inspiration from them and sometimes appears to collaborate with them, but collaboration does not require synchronized work or explicit coordination.
+
+One person publishes a strange encoding.
+Another notices it months later.
+Someone else builds a tool around it.
+A fourth person preserves the result on-chain.
+Years later, Vale references the technique in a different context.
+
+That is collaboration in this world.
+
+The lineage can reach backward toward the Satoshi story itself:
+- pseudonymous authorship;
+- public technical artifacts;
+- identity ambiguity;
+- protocol as message;
+- durable public work outliving the social context that produced it.
+
+Do not turn this into "who was Satoshi" speculation as a plot engine. The useful inheritance is structural: important work can be public, pseudonymous, durable, and only loosely attached to conventional institutions.
+
+### Real-world inspiration
+
+Production inspiration can include people such as Kier and Eric from the broader crypto / BSV-adjacent world the author has encountered.
+
+Do not insert living real people directly into the fiction unless there is a specific reason to do so.
+
+Instead, fictionalize the pattern:
+- geographically dispersed technical people;
+- strong individual theories;
+- overlapping tools;
+- occasional disagreement;
+- partial mutual influence;
+- little centralized coordination.
+
+This should literally resemble the author's own experience: independently building in public, borrowing from others, being borrowed from, occasionally talking directly, and often discovering that another person has been thinking along a nearby line without either person directing the other.
+
+### Story function
+
+When investigators look for "the organization," they should keep finding evidence of influence without finding command.
+
+Shared vocabulary does not imply membership.
+
+Similar techniques do not imply a leader.
+
+Common use of BSV or other ledgers does not imply a unified political or technical program.
+
+This frustrates conventional intelligence analysis because the social topology resembles the technical topology:
+distributed, asynchronous, public, forkable, and only partially legible from the outside.
+

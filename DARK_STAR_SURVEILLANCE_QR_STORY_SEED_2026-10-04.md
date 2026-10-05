@@ -2131,3 +2131,17 @@ Keep it casual.
 
 The pleasure is that two people who appear to be talking about a strange hobby between songs may understand the architecture more quickly than the formal task force.
 
+## Pancho and Lefty background texture
+
+In the Barlow music scene, another act can be performing **"Pancho and Lefty"** in the background while Barlow and the bassist talk.
+
+Do not quote the lyrics.
+
+Use the song as atmosphere:
+- familiar outlaw melancholy;
+- people in the room recognizing it immediately;
+- conversation continuing underneath the performance;
+- a faint thematic echo of fugitives, loyalty, distance, and legend without explaining the symbolism.
+
+The music should remain part of the room rather than becoming a literary footnote.
+

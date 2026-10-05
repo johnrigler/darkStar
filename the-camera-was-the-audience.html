@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>The Camera Was the Audience — Dark Star</title>
+  <style>
+    :root{
+      --paper:#f5f0e6;
+      --ink:#17130f;
+      --muted:#62594f;
+      --line:#b8ab99;
+      --night:#171a26;
+      --nightInk:#f2ead8;
+      --accent:#8a5d14;
+      font-family:Georgia,"Times New Roman",serif;
+      color:var(--ink);
+      background:var(--paper)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper)}
+    main{width:min(46rem,calc(100% - 2rem));margin:0 auto;padding:3rem 0 5rem}
+    header{border-top:.9rem solid var(--night);border-bottom:1px solid var(--ink);padding:2.3rem 0 1.8rem}
+    h1,h2{font-family:Arial,Helvetica,sans-serif;line-height:1.05}
+    h1{margin:0;font-size:clamp(2.8rem,9vw,5.7rem);letter-spacing:-.055em}
+    .subtitle{max-width:38rem;color:var(--muted);font-size:1.2rem;line-height:1.5}
+    .meta{font:700 .75rem/1.4 Arial,Helvetica,sans-serif;letter-spacing:.11em;text-transform:uppercase;margin-top:1.4rem}
+    article{padding-top:1.8rem}
+    p{font-size:1.08rem;line-height:1.72;margin:0 0 1.25rem}
+    .break{margin:2.5rem 0;text-align:center;letter-spacing:.7em;color:var(--muted)}
+    .monitor{margin:2.2rem 0;padding:1.25rem 1.35rem;background:var(--night);color:var(--nightInk);font:1rem/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;border-left:.5rem solid var(--accent)}
+    .smallcaps{font-variant:small-caps;letter-spacing:.04em}
+    footer{margin-top:4rem;padding-top:1.2rem;border-top:1px solid var(--ink);color:var(--muted)}
+    a{color:#5d3b06;text-underline-offset:.14em}
+    @page{size:letter;margin:.72in}
+    @media print{
+      main{width:auto;padding:0}
+      body{background:#fff;color:#000}
+      p{font-size:10.5pt;line-height:1.55}
+      .monitor{background:#fff;color:#000;border:2px solid #000}
+      header{border-top:.3rem solid #000}
+    }
+  </style>
+</head>
+<body>
+<main>
+<header>
+  <h1>The Camera Was the Audience</h1>
+  <p class="subtitle">A Dark Star story about surveillance, public ledgers, and the mistake of assuming that the person being watched is the passive one.</p>
+  <p class="meta">Dark Star · October 2026</p>
+</header>
+
+<article>
+<p>At 2:13 in the morning, the man unfolded the paper.</p>
+
+<p>Mara saw it first on Camera 47, the wide shot above the east entrance. The shift had been quiet enough that she had been reading the incident log backward, looking for mistakes made by the day crew. A drunk had fallen asleep against a slot bank. A woman had reported a missing purse and found it under her own chair. Two men had argued over whether a machine had flashed the word BONUS before resetting. Nothing required thought.</p>
+
+<p>Then the man came through the sliding doors carrying what looked like a folded road map.</p>
+
+<p>He was in his fifties, maybe older. No hat. Work shirt, jeans, ordinary shoes. He did not look up at the camera. That was what Mara remembered later. People who knew cameras were there usually looked at them. People who did not know usually looked everywhere else. This man behaved as though the camera were neither hidden nor interesting.</p>
+
+<p>He stopped exactly six floor tiles beyond the entrance and unfolded the paper once, twice, then twice again.</p>
+
+<p>A black-and-white pattern filled almost the whole sheet.</p>
+
+<p>Mara sat forward.</p>
+
+<p>“QR,” said Lenny from the next station.</p>
+
+<p>“No kidding.”</p>
+
+<p>“Big one.”</p>
+
+<p>It was enormous. Too large for a phone screen, too large for a restaurant menu, too large for anything except being seen from far away. But it was also wrong. The lower edge was wider than the upper edge. The finder squares were stretched. Standing in the lobby, it would have looked badly printed.</p>
+
+<p>On Camera 47 it was nearly perfect.</p>
+
+<p>Mara pulled the feed full-screen.</p>
+
+<p>The page became a square inside a square.</p>
+
+<p>“He made it for the camera,” she said.</p>
+
+<p>Lenny stopped chewing.</p>
+
+<p>The man held the sheet still for perhaps eight seconds. Then he folded it back into quarters, tucked it under his arm, walked past the coffee kiosk, and disappeared into the casino.</p>
+
+<p>They rewound the feed.</p>
+
+<p>“Can you scan a screen?” Lenny asked.</p>
+
+<p>Mara took out her phone.</p>
+
+<p>The camera recognized the code before she had centered it.</p>
+
+<p>It did not open a website.</p>
+
+<p>It produced a string.</p>
+
+<div class="monitor">DEx6F3A9QzP8...9mT2
+DBx47
+M64: qf9X2...</div>
+
+<p>“What is that?”</p>
+
+<p>“Gibberish.”</p>
+
+<p>“Maybe crypto.”</p>
+
+<p>“Everything is crypto to you.”</p>
+
+<p>“Because half the weird stuff is crypto now.”</p>
+
+<p>Mara copied the string into a text file and attached the frame grab to the incident log. She tagged the event <span class="smallcaps">UNUSUAL SIGNAGE / POSSIBLE SECURITY TEST</span>.</p>
+
+<p>Before the shift ended, the man had lost forty-three dollars at blackjack, eaten a bowl of soup, spent twenty minutes watching a video poker machine without playing it, and left through the west doors.</p>
+
+<p>He never unfolded the paper again.</p>
+
+<div class="break">• • •</div>
+
+<p>The incident should have died in the casino.</p>
+
+<p>Instead, it acquired copies.</p>
+
+<p>The security manager forwarded Mara’s report to the casino’s outside technology contractor because of the strange string. The contractor recognized the first segment as the shape of a public-ledger transaction identifier, although not one from a network he used. He passed it to a former colleague who did blockchain investigations for an insurance company.</p>
+
+<p>That colleague found the transaction.</p>
+
+<p>It contained almost nothing.</p>
+
+<p>A few dozen bytes. An address that appeared intentionally unreadable until someone noticed that the capitalization was not random. A second reference. A compressed block of text beginning with <span class="smallcaps">M64</span>.</p>
+
+<p>Meanwhile, a county-owned traffic camera had caught the same man crossing a frontage road two hours before he entered the casino. The folded paper was visible under his arm. A private automated license-plate camera farther west captured his van the next morning.</p>
+
+<p>No crime had occurred.</p>
+
+<p>That did not prevent the anomaly from moving.</p>
+
+<p>It moved because nobody understood it.</p>
+
+<p>A screenshot went to one analyst, then another. Someone asked whether the QR code was a marker for a surveillance test. Someone else asked whether the transaction contained instructions. The casino’s report was attached. The traffic-camera still was attached. An investigator wrote that the QR appeared to have been “perspective corrected for elevated camera acquisition.” Another changed the phrase to “pre-warped for known camera geometry.”</p>
+
+<p>By the time the packet reached Special Agent Daniel Rusk, six agencies and three private companies had touched it.</p>
+
+<p>Rusk’s first reaction was irritation.</p>
+
+<p>His second was embarrassment.</p>
+
+<p>He understood the trick immediately.</p>
+
+<p>The paper had not been distorted by the camera. It had been distorted for the camera.</p>
+
+<p>The man had done to the QR code what sidewalk artists did to chalk drawings: stretch the image so that from one particular angle it snapped into shape. Except the privileged viewer was not a pedestrian standing on a painted X.</p>
+
+<p>It was a surveillance camera.</p>
+
+<p>Rusk enlarged Camera 47’s image until the QR filled his monitor.</p>
+
+<p>It looked clean enough to print.</p>
+
+<p>“Who is this guy?” his supervisor asked.</p>
+
+<p>“Security consultant. Mostly network architecture. Some crypto work. No record.”</p>
+
+<p>“Political?”</p>
+
+<p>“Everybody’s political now.”</p>
+
+<p>“That wasn’t my question.”</p>
+
+<p>Rusk looked again at the square.</p>
+
+<p>“Not in any useful way.”</p>
+
+<p>The supervisor pointed at the screen.</p>
+
+<p>“Useful way.”</p>
+
+<p>That was the phrase Rusk remembered.</p>
+
+<div class="break">• • •</div>
+
+<p>The consultant’s name was Elias Vale.</p>
+
+<p>Vale made his living explaining security to people who believed they had already purchased it. His clients bought cameras, identity systems, intrusion detection, endpoint management, compliance products, zero-trust architectures, threat feeds, and dashboards. Vale arrived later and asked what they thought these things proved.</p>
+
+<p>He irritated executives.</p>
+
+<p>He was useful to engineers.</p>
+
+<p>He had no obvious access to classified systems. He had never worked for the federal government. His public writing was mostly technical, with occasional essays about institutional memory and the tendency of organizations to mistake custody of information for ownership of truth.</p>
+
+<p>The blockchain transaction from the casino did not identify him.</p>
+
+<p>It led to another transaction.</p>
+
+<p>That led to a small content-addressed file.</p>
+
+<p>The file contained a compressed text that took two days to reconstruct because the encoding was partly documented and partly playful. It used capitalization, punctuation, letter substitutions, and a tiny dictionary recorded elsewhere on the ledger.</p>
+
+<p>The decoded message was disappointing.</p>
+
+<div class="monitor">A CAMERA IS A READER.
+
+A READER IS AN AUDIENCE.
+
+THE QUESTION IS NOT WHO CAN SEE YOU.
+
+THE QUESTION IS WHO YOU CAN REACH
+BECAUSE THEY INSIST ON SEEING YOU.</div>
+
+<p>Rusk read it three times.</p>
+
+<p>His supervisor called it hacker poetry.</p>
+
+<p>The cyber team called it an invitation.</p>
+
+<p>The intelligence liaison called it signaling.</p>
+
+<p>The lawyer assigned to the matter asked the only question Rusk thought mattered.</p>
+
+<p>“Invitation to what?”</p>
+
+<p>No one knew.</p>
+
+<p>So they kept looking.</p>
+
+<div class="break">• • •</div>
+
+<p>They got the phone because the phone was easier than the meaning.</p>
+
+<p>The authorization came through channels Rusk did not control. By then Vale had become an unresolved object, which was more dangerous bureaucratically than being a known criminal. Known criminals fit boxes. Unresolved objects generated meetings.</p>
+
+<p>Most of Vale’s calls were tedious.</p>
+
+<p>He argued with a client about a firewall rule. He told someone not to expose a database port. He spent fifteen minutes explaining why a QR code did not have to contain a URL. He called his sister. He ordered tires.</p>
+
+<p>Then, late on a Tuesday afternoon, he called a former colleague named Priya.</p>
+
+<p>They talked about a consulting proposal.</p>
+
+<p>Vale laughed.</p>
+
+<p>“I’m going to do this one like I’m briefing the FBI,” he said.</p>
+
+<p>Priya groaned. “Please don’t.”</p>
+
+<p>“No, listen. It’ll be funny. Very serious. Flags. Seal on the wall. Everybody pretending the coffee isn’t terrible.”</p>
+
+<p>“You’ve never briefed the FBI.”</p>
+
+<p>“That’s why I can do it correctly.”</p>
+
+<p>Rusk smiled despite himself.</p>
+
+<p>Vale changed his voice, not into an impersonation exactly, but into the flattened cadence of someone presenting slides to people who wanted the conclusion before the evidence.</p>
+
+<p>“Agents,” he said, “our principal vulnerability is not foreign penetration. It is career topology.”</p>
+
+<p>Priya laughed.</p>
+
+<p>Vale continued.</p>
+
+<p>“Every large institution eventually develops two maps. The map on paper tells you who is authorized to do what. The real map tells you who can survive doing it.”</p>
+
+<p>Rusk stopped smiling.</p>
+
+<p>“People inside the system learn the second map. They know which rule can be cited and which rule can be used. They know which supervisor wants the truth, which wants the phrase that causes no trouble, and which wants the truth rewritten until it becomes the phrase.”</p>
+
+<p>Priya said something about this being cheerful.</p>
+
+<p>Vale ignored her.</p>
+
+<p>“So the security problem is not that everyone becomes corrupt. That would be easier. Most people remain basically decent. The security problem is isolation. Each decent person thinks he is the only one noticing.”</p>
+
+<p>Rusk looked through the glass wall of the monitoring room.</p>
+
+<p>Two analysts were arguing quietly near a printer.</p>
+
+<p>Vale went on.</p>
+
+<p>“The organization does not need to order everyone to lie. It only needs to make each person uncertain whether anybody else will stand beside them if they refuse.”</p>
+
+<p>Priya said, “What are you selling in this imaginary pitch?”</p>
+
+<p>“Nothing.”</p>
+
+<p>“That’s a bad pitch.”</p>
+
+<p>“I’m selling redundancy.”</p>
+
+<p>“That’s worse.”</p>
+
+<p>“Independent memory. If a record matters, more than one person should know where it is. If an instruction contradicts the written policy, preserve both. If somebody asks you to change language, keep the earlier language. If the official channel becomes unreliable, don’t invent a secret channel. Find another legitimate one.”</p>
+
+<p>Rusk wrote that sentence down.</p>
+
+<p>He was not supposed to take personal notes from live collection.</p>
+
+<p>He wrote it anyway.</p>
+
+<div class="break">• • •</div>
+
+<p>The next morning an internal memorandum crossed Rusk’s desk.</p>
+
+<p>It concerned an investigation he had only touched indirectly. The facts in the opening paragraph were technically true and materially false.</p>
+
+<p>That happened all the time.</p>
+
+<p>The memo said a requested review had “identified no responsive irregularity.” What had actually happened was that the review had been halted after a jurisdictional dispute. No one had identified anything because no one had finished looking.</p>
+
+<p>Rusk would normally have forwarded it.</p>
+
+<p>Instead, he replied with a question.</p>
+
+<p>Was “identified no responsive irregularity” intended to mean the review was completed?</p>
+
+<p>The response arrived eleven minutes later.</p>
+
+<p><span class="smallcaps">PLEASE ROUTE QUESTIONS THROUGH SUPERVISION.</span></p>
+
+<p>He did.</p>
+
+<p>His supervisor stared at him for a long moment.</p>
+
+<p>“Why are you making this difficult?”</p>
+
+<p>“I’m asking what it means.”</p>
+
+<p>“You know what it means.”</p>
+
+<p>“That’s why I’m asking.”</p>
+
+<p>The supervisor rubbed his forehead.</p>
+
+<p>“Daniel.”</p>
+
+<p>Nothing dramatic happened.</p>
+
+<p>No one threatened him. No one fired him. The memo went out unchanged.</p>
+
+<p>That evening Rusk sat in his car for twenty minutes before starting the engine.</p>
+
+<p>He felt ridiculous.</p>
+
+<p>Vale’s voice had gotten inside his head, and the worst part was that Vale had never spoken to him.</p>
+
+<p>Rusk decided the entire thing was manipulation.</p>
+
+<p>The next day he requested reassignment from the Vale matter.</p>
+
+<p>The request was denied.</p>
+
+<div class="break">• • •</div>
+
+<p>The tracts appeared three weeks later.</p>
+
+<p>Someone placed them under windshield wipers in a strip-club parking lot across the arterial from a federal office complex.</p>
+
+<p>The location guaranteed attention for two reasons.</p>
+
+<p>First, employees from the complex used the lot during lunch because the restaurant next door had better parking than the federal garage.</p>
+
+<p>Second, nobody wanted to explain why they had found one there.</p>
+
+<p>The pamphlet looked like something a street preacher would hand out at a bus station. Cheap paper. Heavy black drawings. A cartoon eye above a camera. A little square QR code on the back.</p>
+
+<p>The title was:</p>
+
+<div class="monitor">YOU ARE ALREADY INSIDE</div>
+
+<p>The QR code led to a ledger transaction.</p>
+
+<p>The transaction pointed to another compressed message.</p>
+
+<p>This one was shorter.</p>
+
+<div class="monitor">DO NOT SAVE THE INSTITUTION.
+
+SAVE THE RECORD.
+
+DO NOT FIND THE LEADER.
+
+FIND THE OTHER PERSON WHO NOTICED.</div>
+
+<p>Rusk did not receive one.</p>
+
+<p>He heard about them because an assistant special agent in charge ordered them collected.</p>
+
+<p>By noon there were photographs in three group chats.</p>
+
+<p>By three there were jokes.</p>
+
+<p>By five someone had printed the cartoon eye and taped it over the lens of a broken copier.</p>
+
+<p>The agency distributed the message to itself.</p>
+
+<p>No malware had crossed the network.</p>
+
+<p>No server had been penetrated.</p>
+
+<p>No central database had been unlocked.</p>
+
+<p>An unresolved object had simply acquired enough institutional gravity that people carried it from room to room.</p>
+
+<p>Rusk understood then what the first QR code had done.</p>
+
+<p>It had not contained the operation.</p>
+
+<p>It had created the enigma.</p>
+
+<div class="break">• • •</div>
+
+<p>Rusk failed anyway.</p>
+
+<p>That was the part he would later tell honestly.</p>
+
+<p>He did not become a whistleblower.</p>
+
+<p>He did not walk into a congressional office carrying boxes.</p>
+
+<p>He did not expose a conspiracy.</p>
+
+<p>When a report he had worked on was rewritten above him, he complained once and then signed the routing acknowledgment.</p>
+
+<p>When a colleague asked whether he would put his objection in writing, Rusk said he needed to think about it.</p>
+
+<p>When the deadline passed, he had not thought enough.</p>
+
+<p>He watched people with less information and more confidence move upward.</p>
+
+<p>He began avoiding Vale’s intercepted calls because they made him feel accused.</p>
+
+<p>One night he deleted the personal note containing the phrase <span class="smallcaps">another legitimate channel</span>.</p>
+
+<p>He went home and slept badly.</p>
+
+<p>For a month nothing happened.</p>
+
+<p>Then a woman from records management called him.</p>
+
+<p>Her name was Elena Park. He had met her once.</p>
+
+<p>“Did you request preservation on the Harrow material?” she asked.</p>
+
+<p>“No.”</p>
+
+<p>“Somebody did.”</p>
+
+<p>“Who?”</p>
+
+<p>“That’s why I’m calling you.”</p>
+
+<p>The preservation request was procedurally ordinary. That was what made it interesting. Someone had used a dull, legitimate mechanism to prevent a group of working files from being overwritten under a routine retention schedule.</p>
+
+<p>The request cited a pending review Rusk had never heard of.</p>
+
+<p>“Who opened the review?” he asked.</p>
+
+<p>“Office of Professional Responsibility.”</p>
+
+<p>Rusk sat up.</p>
+
+<p>“Why?”</p>
+
+<p>“I thought you knew.”</p>
+
+<p>He did not.</p>
+
+<p>Two days later another agent asked him, quietly, whether he had seen the casino QR.</p>
+
+<p>Rusk said yes.</p>
+
+<p>The agent nodded and walked away.</p>
+
+<p>A week after that, someone from the Inspector General’s office requested an old email chain.</p>
+
+<p>Then a lawyer from outside the Bureau requested metadata associated with a document Rusk had assumed nobody cared about.</p>
+
+<p>Then Priya, the woman on Vale’s call, published a technical note describing a method for making perspective-corrected QR codes for fixed cameras. It contained no mention of the FBI.</p>
+
+<p>The demonstration image showed a square painted as a trapezoid.</p>
+
+<p>Underneath it she wrote:</p>
+
+<div class="monitor">THE VIEWER DETERMINES THE SHAPE.</div>
+
+<p>Rusk realized he had been waiting for a movement to announce itself.</p>
+
+<p>There was no movement.</p>
+
+<p>There were people.</p>
+
+<div class="break">• • •</div>
+
+<p>The decision to bring Vale in was made above Rusk.</p>
+
+<p>Officially it was an interview.</p>
+
+<p>Unofficially everyone called it the pickup.</p>
+
+<p>Vale arrived without a lawyer.</p>
+
+<p>That irritated them.</p>
+
+<p>He sat in a conference room with a paper cup of water and looked smaller than he had on Camera 47.</p>
+
+<p>Rusk watched from the adjoining room.</p>
+
+<p>Two agents questioned Vale about the casino, the ledger transactions, the tracts, the camera geometry, the people who might be helping him.</p>
+
+<p>Vale answered almost everything.</p>
+
+<p>Yes, he had made the casino QR.</p>
+
+<p>Yes, he had corrected it for perspective.</p>
+
+<p>Yes, the transaction was his.</p>
+
+<p>No, he did not know who distributed the tracts.</p>
+
+<p>No, there was no organization.</p>
+
+<p>No, there was no membership list.</p>
+
+<p>No, there was no encrypted command channel.</p>
+
+<p>“What do you call it?” one agent asked.</p>
+
+<p>Vale shrugged.</p>
+
+<p>“A message.”</p>
+
+<p>“To whom?”</p>
+
+<p>Vale looked toward the mirrored glass.</p>
+
+<p>Rusk felt his stomach tighten.</p>
+
+<p>“You,” Vale said.</p>
+
+<p>The interviewing agent turned slightly.</p>
+
+<p>“Me?”</p>
+
+<p>“Whoever is listening.”</p>
+
+<p>“You knew you were being monitored?”</p>
+
+<p>“Eventually.”</p>
+
+<p>“And you altered your communications because of that?”</p>
+
+<p>Vale smiled.</p>
+
+<p>“Everyone alters their communications when they know somebody is listening.”</p>
+
+<p>“So you were instructing federal agents.”</p>
+
+<p>“No.”</p>
+
+<p>“You just said the message was for us.”</p>
+
+<p>“That’s different.”</p>
+
+<p>“How?”</p>
+
+<p>Vale leaned back.</p>
+
+<p>“Instructions tell people what to do. I was trying to remind people that they can still decide.”</p>
+
+<p>The interviewing agent looked down at his notes.</p>
+
+<p>“Decide what?”</p>
+
+<p>“Which part belongs to them.”</p>
+
+<p>Rusk closed his eyes.</p>
+
+<p>He was suddenly angry.</p>
+
+<p>Not at Vale.</p>
+
+<p>At the elegance of it.</p>
+
+<p>Vale had arranged to be caught by doing almost nothing that required catching.</p>
+
+<p>The surveillance system had performed the expensive part. It had found the code, escalated it, decoded it, circulated it, opened the investigation, monitored the calls, summoned the meetings, printed the screenshots, and finally delivered the speaker into a room surrounded by the people he had wanted to address.</p>
+
+<p>The institution had mistaken attention for control.</p>
+
+<div class="break">• • •</div>
+
+<p>Rusk did not save the Bureau.</p>
+
+<p>Nobody did.</p>
+
+<p>The phrase itself became embarrassing after a while.</p>
+
+<p>What happened was smaller.</p>
+
+<p>The preservation review became a project.</p>
+
+<p>It needed someone who understood both the technical records and the procedural history. Nobody senior wanted it. It was too narrow to advance anyone’s career and too politically awkward to kill cleanly.</p>
+
+<p>Rusk volunteered.</p>
+
+<p>For the first time in twelve years, something had his name on it that was not merely an assignment passed down through three levels of supervision.</p>
+
+<p>He made the scope small enough to survive.</p>
+
+<p>Which systems retained original versions of modified reports?</p>
+
+<p>Which metadata persisted after edits?</p>
+
+<p>Which lawful preservation mechanisms could be invoked by ordinary employees?</p>
+
+<p>Which offices possessed independent copies?</p>
+
+<p>Which records disappeared only because everyone assumed somebody else had them?</p>
+
+<p>Elena Park joined from records management.</p>
+
+<p>A lawyer from OPR joined.</p>
+
+<p>An analyst Rusk had never met sent him a spreadsheet containing thirty-seven anomalies.</p>
+
+<p>Someone from a field office in Arizona wrote, “I think this is the project the paper was talking about.”</p>
+
+<p>Rusk stared at that sentence for a long time.</p>
+
+<p>Then he laughed.</p>
+
+<p>He finally understood why Vale had bothered him.</p>
+
+<p>Vale was intelligent. Vale worked hard. Vale had seen something real. None of those facts gave him authority.</p>
+
+<p>Rusk had spent years assuming that if his judgment were good enough, eventually someone would empower him to use it.</p>
+
+<p>No one had.</p>
+
+<p>He had confused competence with position.</p>
+
+<p>The project did not fix that.</p>
+
+<p>It gave him a piece he could move.</p>
+
+<div class="break">• • •</div>
+
+<p>Months later, after the Vale matter had been closed without charges, Mara was back on the casino night shift.</p>
+
+<p>Camera 47 had been replaced.</p>
+
+<p>The new camera had a wider lens and better low-light performance. It also sat six inches farther to the left.</p>
+
+<p>A man she did not recognize entered carrying a folded sheet.</p>
+
+<p>Mara called Lenny over before the man had finished opening it.</p>
+
+<p>The QR looked wrong.</p>
+
+<p>Worse than the first one.</p>
+
+<p>On the new camera, however, the finder squares settled into place.</p>
+
+<p>Perfectly.</p>
+
+<p>Lenny stared at the monitor.</p>
+
+<p>“Same guy?”</p>
+
+<p>“No.”</p>
+
+<p>“You going to scan it?”</p>
+
+<p>Mara already had her phone out.</p>
+
+<p>The code resolved to a public transaction recorded three days earlier.</p>
+
+<p>There was only one line.</p>
+
+<div class="monitor">YOU MOVED THE CAMERA.</div>
+
+<p>Mara looked up at Camera 47.</p>
+
+<p>For the first time in years of watching people who could not see her, she felt watched back.</p>
+
+<p>Then she began to laugh.</p>
+</article>
+
+<footer>
+  <p><a href="dark-star-world.html">Return to the Dark Star World Index</a></p>
+</footer>
+</main>
+</body>
+</html>

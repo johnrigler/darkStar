@@ -2201,3 +2201,27 @@ Keep the president mostly offstage.
 
 The less the story argues about him directly, the larger the aftermath can feel.
 
+## Aging leadership / failed turnover
+
+The post-president crisis should also imply a deeper succession problem.
+
+Much of the governing class has remained in office far longer than a healthy political system would have tolerated.
+
+The story does not need to argue explicitly for term limits.
+
+Show the consequence instead:
+- very old committee chairs;
+- judges postponing retirement;
+- temporary officials who have become semi-permanent;
+- leaders refusing to leave because they fear who will replace them;
+- institutions whose succession mechanisms have become politically dangerous;
+- younger staff carrying much of the operational load while authority remains concentrated above them.
+
+The dead president's departure therefore exposes a system that has not practiced ordinary turnover well.
+
+A useful production idea:
+
+**succession itself has become an emergency.**
+
+This should contribute to the sense that the country is being run by structures that survived longer than the assumptions that created them.
+

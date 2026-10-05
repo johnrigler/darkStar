@@ -1388,3 +1388,97 @@ That is one of the clearest examples of the story's broader idea that the ledger
 
 It is a public memory surface.
 
+## Long-form payoff: spectatorship, civic uprising, and the courts
+
+The intelligence agencies should remain partly spectators throughout the story.
+
+The reader may never learn whether Vale was formally hired.
+
+That ambiguity is useful.
+
+The agencies watch, investigate, borrow, adapt, and sometimes use pieces of the toolkit, but they never become the unquestioned center of the system.
+
+Vale's security background explains why he thought the intelligence world might understand the value of these tools. He wanted to show them something. He also wanted to get paid.
+
+But the technology exceeds that relationship.
+
+### Nonviolent uprising
+
+A major later movement in the story can be a mass civic/legal uptake of the same toolkit.
+
+This is explicitly an alternative to political violence.
+
+People who might otherwise feel voiceless or isolated instead gain practical tools for:
+- preserving evidence;
+- proving when records existed;
+- comparing versions;
+- building shared timelines;
+- finding similarly situated people;
+- coordinating legal challenges;
+- publishing durable public references;
+- carrying records across organizations and jurisdictions.
+
+The power comes from scale.
+
+One person with an odd filing can be ignored.
+
+Thousands of people using compatible evidentiary and provenance tools create a different problem for institutions.
+
+The courts begin encountering the same technical patterns repeatedly:
+- hashes;
+- ledger timestamps;
+- QR-linked records;
+- content-addressed evidence bundles;
+- machine-readable timelines;
+- cross-jurisdiction comparisons.
+
+The point is not that blockchain automatically wins cases.
+
+The point is that ordinary people can arrive with better-preserved, more legible, more shareable records and can discover one another without requiring one central organization.
+
+### Reach toward the highest court
+
+The movement can eventually become large enough that cases using these tools reach appellate courts and, eventually, the Supreme Court.
+
+Do not resolve how the Supreme Court ultimately responds.
+
+The dramatic fact is that voices which previously would have remained isolated have acquired enough persistence and procedural mass to reach the highest institutional level.
+
+The common person's voice becomes harder to erase because:
+- the record persists;
+- other people can verify it;
+- similar cases can find one another;
+- legal arguments can accumulate rather than restart from zero.
+
+This is one possible concrete manifestation of the broader Mogwai idea.
+
+### Relationship to CertLedger
+
+CertLedger can serve as the factual and technical precursor to this fictional civic uprising.
+
+Its work on provenance, public legal records, recurring procedural patterns, and machine-readable case structures can feed the fictional world.
+
+Dark Star can then imagine what happens when those capabilities become culturally widespread.
+
+Again, avoid exposition in the finished story.
+
+Show:
+- a housing defendant with a QR-linked record;
+- a debt case with an externally preserved timeline;
+- a lawyer citing a public timestamp;
+- unrelated litigants using similar tools;
+- an appellate appendix containing durable public references;
+- Nina realizing the pattern no longer points back to Vale.
+
+### Core inversion
+
+The investigation begins because the government is watching Vale.
+
+Later, the important development is that ordinary people have learned how to create records the government and courts must look at.
+
+Surveillance is gradually inverted into addressability.
+
+The watchers remain watchers.
+
+But now the watched can place durable things in the field of view.
+

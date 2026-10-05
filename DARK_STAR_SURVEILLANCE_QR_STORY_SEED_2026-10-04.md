@@ -1863,3 +1863,73 @@ The investigation supplies structural tension.
 
 The observed world supplies technical and human depth.
 
+## Character ecology: public, security experts, and Byzantine substrate
+
+Vale should not function as the singular star of the world.
+
+He is one locally important figure inside a much larger ecology.
+
+This is structurally Wake-like:
+characters can become temporarily central without becoming the permanent center of the universe.
+
+The story can be thought of as containing several broad classes of people.
+
+### 1. Ordinary public / civic characters
+
+These are the people in the bar, litigants, church members, clerks, workers, relatives, people trying to get home, people who only half understand the larger crisis.
+
+They experience the world at human scale.
+
+They are not merely background.
+
+They are the social body through which the larger systems eventually matter.
+
+### 2. Cybersecurity experts / technical interpreters
+
+Vale belongs here.
+
+So do consultants, security engineers, analysts, penetration testers, network people, protocol tinkerers, and people who live between institutional risk and technical possibility.
+
+They often understand:
+- failure modes;
+- identity systems;
+- provenance;
+- distributed infrastructure;
+- how organizations misunderstand their own technology;
+- how to repurpose existing systems.
+
+They are translators between institutions and technical reality.
+
+They may be socially awkward, commercially hungry, status-conscious, independent, or badly integrated into conventional institutions.
+
+Vale is one example of this class, not its sole representative.
+
+### 3. Byzantine / consensus layer
+
+This is a different class again.
+
+These are the miners and proof-of-work participants whose machines maintain the durable substrate.
+
+They may barely care about the social or linguistic uses layered on top of the chain.
+
+Yet their work makes those uses possible.
+
+The "Byzantine soldiers" image belongs most naturally here:
+a dispersed infrastructure class solving consensus and producing the blocks on which everyone else writes.
+
+### Interactions among the classes
+
+The interesting action happens where the layers touch:
+
+- public people use tools invented by security experts;
+- security experts exploit affordances created by miners;
+- miners preserve artifacts whose meaning they may never know;
+- institutions surveil all three;
+- courts later encounter records generated across all three layers.
+
+No class fully understands the whole system.
+
+That partial understanding is productive.
+
+It keeps the world from collapsing into a single explanatory voice or hero.
+

@@ -1933,3 +1933,63 @@ That partial understanding is productive.
 
 It keeps the world from collapsing into a single explanatory voice or hero.
 
+## Two-bar frame revision
+
+The veteran should move through at least two bars.
+
+### First bar
+
+The first bar is where he tries hardest to make the story matter.
+
+He tells it to different people.
+Some women listen for a while and then find a reason to leave.
+He tries the story on pool players.
+He drinks too much.
+He becomes repetitive and aggrieved when people stop listening.
+
+The emotional crisis happens here.
+
+A parking-lot argument develops with another man.
+The veteran throws his beer bottle onto the pavement and it shatters.
+He squares up and moves as though he is going to fight, but does not actually land a punch.
+Security intervenes, ejects him, and puts him on a bus.
+
+The scene should be humiliating rather than heroic.
+
+### Bus
+
+The bus is a decompression chamber between the two bars.
+
+The veteran is suddenly alone with his reflection and the aftermath of his behavior.
+
+Do not turn this into a grand epiphany.
+
+The bus simply carries him somewhere else.
+
+### Second bar
+
+The woman he eventually goes home with is at the second bar.
+
+She did not witness the parking-lot collapse.
+
+She already knows him.
+
+That matters.
+
+She can immediately recognize his condition without needing the whole story.
+
+He offers to tell her the story.
+She does not need to hear it.
+
+Their interaction should move toward ordinary conversation rather than another performance.
+
+By closing time, the relationship can become both practical and romantic.
+
+They go home together.
+
+This gives the frame a geographic as well as emotional movement:
+
+**first bar -> humiliation -> bus -> second bar -> familiarity -> home**
+
+The girlfriend/partner figure should no longer be staged as if she had been sitting beside him through the entire first-bar sequence.
+

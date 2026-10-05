@@ -1267,3 +1267,66 @@ He is an entry point.
 
 The deeper discovery is a distributed human ecology in which people working in solitude have nonetheless built a shared technical world.
 
+## Byzantine generals vs. application-layer hackers
+
+Refine the earlier "Byzantine warriors" image.
+
+The useful distinction is between the consensus layer and the human application layer.
+
+The **Byzantine generals** metaphor belongs more naturally to the miners / validators of a proof-of-work ledger:
+- they maintain consensus;
+- they order transactions;
+- they expend resources;
+- they make the shared substrate durable;
+- they solve the classic coordination problem at the infrastructure level.
+
+Vale and the distributed collaborators are not those generals.
+
+They are **using** the consensus system.
+
+They piggyback on top of it.
+
+They are closer to hackers, protocol artists, inscription makers, archivists, and language experimenters who exploit the properties of the ledger for purposes the miners may not care about at all.
+
+They inherit:
+- permanence;
+- timestamping;
+- global replication;
+- public verifiability;
+- censorship resistance;
+- economic finality;
+
+and then build strange social and linguistic systems on top.
+
+This is important because it separates the story into layers:
+
+1. **Proof-of-work substrate**
+   - miners;
+   - consensus;
+   - blocks;
+   - economic security.
+
+2. **Public artifact layer**
+   - inscriptions;
+   - hashes;
+   - content references;
+   - identity;
+   - QR codes;
+   - durable messages.
+
+3. **Human culture layer**
+   - Vale;
+   - distributed collaborators;
+   - asynchronous discovery;
+   - language games;
+   - occasional direct communication;
+   - reuse and reinterpretation.
+
+The people in the story are not "running the system" in the same sense as miners.
+
+They are exploiting the affordances of the system.
+
+That makes them feel more like hackers than soldiers.
+
+Keep "Byzantine" only as a suggestive production echo if useful; do not confuse the application-layer actors with the consensus mechanism itself.
+

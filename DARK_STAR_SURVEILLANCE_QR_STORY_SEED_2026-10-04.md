@@ -1993,3 +1993,36 @@ This gives the frame a geographic as well as emotional movement:
 
 The girlfriend/partner figure should no longer be staged as if she had been sitting beside him through the entire first-bar sequence.
 
+## Veteran: alcoholism, failure, and effort
+
+The veteran is an alcoholic.
+
+Do not make that his entire identity, and do not sentimentalize it.
+
+He sometimes fails badly:
+- drinks too much;
+- misreads situations;
+- becomes repetitive;
+- gets thrown out;
+- nearly fights someone;
+- embarrasses himself.
+
+But he also keeps trying to behave responsibly.
+
+The bus scene is a good example.
+
+Security effectively puts him on the bus after the parking-lot incident. Once seated, however, he privately reframes the ride as evidence that he made a responsible choice because he is not driving drunk.
+
+That is funny because the choice was only partly his.
+
+It is also revealing.
+
+He wants to think of himself as someone who is still making good decisions.
+
+That tension should recur:
+failure followed by genuine, imperfect attempts to work, recover, repair, or behave responsibly.
+
+The woman at the second bar understands this pattern.
+
+She is not fooled by him, but she also does not reduce him to his worst moment.
+

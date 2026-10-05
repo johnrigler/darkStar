@@ -2159,3 +2159,45 @@ This can be the last direct encounter between Nina's group and Vale. After that,
 
 A useful line for Barlow's later interpretation: the system did not attack the agency; it made the agency legible.
 
+## The dead president as background condition
+
+The Trump-like president / national leader should already be dead when the main spy story unfolds.
+
+He died of old age roughly two months earlier.
+
+Do not make his death a mystery, assassination plot, or climactic event.
+
+The important thing is the aftermath.
+
+His death removes the apparent center while leaving behind:
+- directives issued during his final period in office;
+- loyalists who believe those directives remain binding;
+- opponents who treat them as politically dead;
+- acting officials and rival chains of authority;
+- emergency litigation;
+- contradictory guidance;
+- unstable custody and transfer practices;
+- records being changed, reposted, or quietly revised;
+- career staff preserving screenshots because official links are no longer trusted;
+- offices acting before guidance arrives.
+
+This is where much of the story's danger and action comes from.
+
+The antagonist is not the dead president as an individual.
+
+The antagonist is the institutional condition left behind:
+a government whose formal hierarchy still exists but whose practical legitimacy, memory, and command structure have become unstable.
+
+That instability should feed downward into every layer of the story:
+- Nina's work;
+- Mercer's overreaction;
+- Barlow's concern;
+- Vale's pitch;
+- legal preservation;
+- public uptake of provenance tools;
+- ordinary people feeling that something is wrong without understanding the architecture.
+
+Keep the president mostly offstage.
+
+The less the story argues about him directly, the larger the aftermath can feel.
+

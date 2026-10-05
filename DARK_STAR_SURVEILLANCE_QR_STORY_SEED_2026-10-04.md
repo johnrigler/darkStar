@@ -563,3 +563,34 @@ Do not state the underlying pattern as a thesis in the finished story. Avoid exp
 
 The reader should infer the pattern before any character fully articulates it.
 
+## Framing layer: veteran narrator in the bar
+
+Possible framing device: the surveillance story is not presented as a seamless omniscient narrative. It is being told by an ex-military veteran with PTSD while sitting in a bar.
+
+The bar is not merely a prologue or epilogue. It can interrupt and temporarily become the story.
+
+The narrator tells Vale's story to people around him. Then the room intrudes:
+
+- someone orders another round;
+- two women come into the bar and join the conversation;
+- the narrator shifts his attention to them;
+- the women tell their own fragments or challenge details;
+- somebody becomes jealous or belligerent;
+- a drunken argument briefly displaces the surveillance story;
+- the bar's noise, jokes, misunderstandings, repetitions, and half-heard phrases contaminate the telling;
+- eventually the narrator returns to Vale.
+
+The model is closer to an oral, unstable telling than to a conventional frame narrative.
+
+The Finnegans Wake pub scenes are a useful tonal reference: the bar is a social language-machine. Voices overlap. Story, gossip, flirtation, hostility, memory, hearsay, and performance blur together. The telling changes because the room changes.
+
+Do not make the veteran narrator a diagnostic case study. PTSD should emerge through behavior, gaps, reactions, sensory fixation, avoidance, or abrupt changes in attention rather than exposition.
+
+The narrator may not be fully reliable, but unreliability should come from memory, alcohol, trauma, social interruption, and the oral nature of the telling, not from a cheap twist that "none of it happened."
+
+The bar scenes can periodically take over completely. For several pages the reader may forget Vale, Mara, and Barlow, then a phrase, object, argument, or joke loops back into the surveillance story.
+
+This creates a linguistic structure where the story can ferment over time. Notes, repeated phrases, accidental echoes, misheard acronyms, jokes, and barroom interruptions can later migrate into the main narrative.
+
+Keep this in notes until enough material accumulates to decide where the frame enters the finished HTML.
+

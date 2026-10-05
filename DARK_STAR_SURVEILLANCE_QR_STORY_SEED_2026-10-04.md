@@ -802,3 +802,19 @@ The spy narrative carries the high-pressure institutional question.
 
 Those registers should remain distinct.
 
+## Character-role revision: Nina is the FBI agent
+
+Nina should be the FBI protagonist.
+
+The casino surveillance worker is a separate character, currently Tess.
+
+This shifts the emotional center cleanly:
+- Tess detects the initial anomaly because she is competent at repetitive surveillance work.
+- Tess notices the acronym pattern and preserves the timestamps.
+- Nina receives the packet later inside the Bureau and becomes the character who must interpret what Tess noticed.
+- Nina is the one whose institutional arc matters.
+
+Do not merge Tess and Nina again unless there is a strong structural reason. Their separation is useful because it creates a handoff between ordinary private/tribal surveillance work and federal institutional interpretation.
+
+This also reinforces one of the story's recurring patterns: the important thing is often noticed first by someone lower in the hierarchy, then reinterpreted later by someone with more institutional authority.
+

@@ -273,3 +273,234 @@ The central trick is almost embarrassingly simple:
 He knows someone is watching.
 
 So he talks to them.
+
+## Second-stage reveal: the enigma propagates
+
+The QR code should not unlock a central computer, compromise a database, or reveal a conventional secret.
+
+Its more interesting function is memetic and procedural.
+
+The code becomes an enormous unresolved object inside the institution.
+
+Nobody can initially explain why it was presented to a surveillance camera, why it was pre-warped for that camera's perspective, or why the decoded payload appears to be only a compact ledger reference.
+
+The unresolved nature of the object causes it to spread.
+
+Screenshots circulate.
+
+Security teams ask technical teams.
+
+Technical teams ask cyber investigators.
+
+Cyber investigators ask intelligence personnel.
+
+Someone notices the public-chain transaction.
+
+Someone else recognizes the M64-like encoding.
+
+Someone reconstructs the referenced content.
+
+The institution propagates the message because the institution is trying to solve it.
+
+The enigma becomes the distribution mechanism.
+
+This is important:
+
+> the agency is not hacked;
+> the agency distributes the message to itself.
+
+## The camera handoff
+
+The casino surveillance worker is not the eventual federal protagonist.
+
+The first observer is only the entry point.
+
+The event moves outward because the camera image is strange enough to escape the casino's internal system.
+
+Possible path:
+
+1. casino surveillance captures the oversized QR;
+2. casino security cannot interpret it;
+3. an external camera system, traffic camera, license-plate system, or Flock-style network catches the same subject or associated vehicle;
+4. the repeated appearance of the same code across camera systems makes the event look intentional;
+5. local or private security escalates it;
+6. a federal analyst receives the material as an unresolved technical anomaly.
+
+The transfer should feel bureaucratic rather than cinematic.
+
+The consultant does not need to know which specific person will eventually see it.
+
+He only needs to understand how anomalies move through surveillance institutions.
+
+## The QR as public-chain reference
+
+The QR code should be physically far larger than necessary.
+
+That has two purposes.
+
+First, range. A distant camera can still resolve it.
+
+Second, unmistakable intentionality. Nobody needs to wonder whether the camera happened to capture a nearby QR code. The page itself says, visually:
+
+> this is for the camera.
+
+The QR payload should remain minimal.
+
+Preferably it resolves to a public blockchain transaction or compact reference rather than a conventional URL.
+
+The transaction contains a compact M64-like payload or a pointer into the larger Dark Star / Chisel address-space system.
+
+This creates an unusual but internally coherent bridge:
+
+```
+oversized paper QR
+        ↓
+camera captures code
+        ↓
+public blockchain transaction
+        ↓
+M64-like payload
+        ↓
+reconstructed message / artifact
+```
+
+The surveillance system becomes a reader for a public ledger.
+
+## Physical propagation
+
+Once people understand that the message is designed to be discovered by systems rather than handed directly to individuals, physical variants begin to appear.
+
+One possible Dark Star device is a Chick-tract-like printed object.
+
+These can be left where institutional employees will inevitably encounter them.
+
+The imagery can remain darkly comic.
+
+For example:
+
+- a tract tucked under windshield wipers;
+- a tract appearing in a parking lot used by federal employees;
+- copies left at diners, laundromats, bars, or other places where staff from the institution routinely pass through;
+- one deliberately absurd location, such as a topless bar across from or near a federal office, so the method feels simultaneously crude, funny, and impossible to ignore.
+
+The point is not covert tradecraft.
+
+The point is that low-tech paper can defeat assumptions about centralized distribution.
+
+The message keeps reappearing outside the channels the institution controls.
+
+## The apparent protagonist fails
+
+The first federal recipient should not become a conventional chosen hero.
+
+That would weaken the story.
+
+They struggle.
+
+They hesitate.
+
+They understand what the message is asking of them but cannot act decisively.
+
+They may preserve something small.
+
+They may ask one question.
+
+They may fail to expose anything important.
+
+They may appear, for a substantial portion of the story, to have failed entirely.
+
+This should feel painful but realistic.
+
+They are not positioned inside the agency to command a major response.
+
+They may lack status, political capital, managerial authority, or institutional protection.
+
+Their intelligence, integrity, and effort are not enough to manufacture authority.
+
+## The distributed reveal
+
+Later, the character discovers that the message did not depend on them.
+
+Other agents received it.
+
+Other analysts received fragments.
+
+People outside the FBI received it.
+
+A lawyer, journalist, contractor, casino employee, public defender, security engineer, or ordinary citizen may have independently reconstructed part of the same message.
+
+The apparent protagonist is not the leader of a movement.
+
+They are one activated node.
+
+That realization should be liberating rather than diminishing.
+
+They do not have to carry the institution alone.
+
+They can join.
+
+## From failed hero to project owner
+
+The character's arc should then turn.
+
+Because they are no longer trying to become the singular whistleblower, savior, or heroic dissident, they can finally do something smaller and more real.
+
+They are given, inherit, or create a project.
+
+The project is narrow enough that they can actually own it.
+
+For the first time, they are allowed to drive something rather than merely interpret orders from above.
+
+This gives them a new sympathy for the consultant.
+
+They now understand the consultant's structural problem:
+
+- intelligent enough to see the system;
+- conscientious enough to care;
+- technically capable;
+- institutionally disempowered.
+
+The consultant's entire strategy makes more sense once the agent experiences the same condition from inside the agency.
+
+The message was never:
+
+> become the hero.
+
+It was:
+
+> find the part you can actually move.
+
+## Thematic refinement
+
+The story should distinguish three different forms of power:
+
+1. positional power;
+2. informational power;
+3. networked agency.
+
+The consultant has little positional power.
+
+The agent initially has some institutional access but little practical authority.
+
+The enigma creates informational power.
+
+The distributed recipients create networked agency.
+
+The story resolves not when someone seizes the center, but when enough peripheral people stop behaving as isolated individuals.
+
+## Black Mirror echo without imitation
+
+The resemblance to a Black Mirror-style reveal should stay structural rather than referential.
+
+The reader first thinks the mysterious code is a key.
+
+Then they think it is a hack.
+
+Then they realize the real effect is social:
+
+> the code changed who was paying attention to whom.
+
+The central computer was never the target.
+
+The people inside the system were.
+

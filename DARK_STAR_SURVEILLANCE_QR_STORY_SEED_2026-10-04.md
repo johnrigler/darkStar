@@ -628,3 +628,19 @@ This can also provide a formal counterweight to the surveillance plot, which ten
 
 Keep any comparison to Joyce or to an earlier "woman story" in production notes. The prose should only enact the pattern.
 
+## Production note: unfinished ending through domestic indifference
+
+The veteran narrator's girlfriend has heard versions of the surveillance story many times.
+
+By the end of the night she is no longer really listening. This should be funny and ordinary, not cruel. She knows the beats, recognizes when he has changed only a sentence, and can correctly anticipate what he thinks is the "good part."
+
+The spy story should not receive a formal ending.
+
+After the bar closes, the couple goes home. The veteran continues talking while getting ready for bed. His girlfriend gives increasingly automatic responses. He begins another sentence about the story and falls asleep before finishing it.
+
+The girlfriend then goes to sleep.
+
+This makes the missing ending deliberate and domestic. The enormous institutional/surveillance narrative is interrupted not by revelation or violence, but by fatigue, repetition, familiarity, and bedtime.
+
+Do not explain the joke. Let the unfinished sentence and her lack of surprise carry it.
+

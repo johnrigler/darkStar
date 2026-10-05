@@ -2096,3 +2096,38 @@ This gives the story a useful contrast:
 - Mercer converts uncertainty into meetings.
 - Barlow converts unfamiliarity into questions.
 
+## Barlow music scene / Skunk Baxter-type peer
+
+Barlow should have a life outside the agency and can be a musician.
+
+One useful scene places him playing with a bassist whose career shape evokes Jeff "Skunk" Baxter: a serious musician who also understands defense/security systems.
+
+Do not necessarily use Baxter as a literal character.
+
+The fictional bassist should feel completely at home in both worlds.
+
+This gives Barlow someone who can understand the technical implications without requiring an agency briefing.
+
+Their conversation can happen:
+- while tuning;
+- between songs;
+- while moving amplifiers;
+- over a drink after a set.
+
+The music scene should not become a metaphor lecture.
+
+They simply both recognize that distributed systems, communications, security, and coordination are interesting.
+
+A useful dynamic:
+- Barlow keeps describing the investigators' attempts to find a hierarchy or control point.
+- The bassist immediately recognizes that this may be the wrong model.
+- He helps Barlow change the question rather than handing him an answer.
+
+This also deepens the intentional John Perry Barlow resonance.
+
+The story now has a small lineage where music culture, network culture, and security culture unexpectedly overlap.
+
+Keep it casual.
+
+The pleasure is that two people who appear to be talking about a strange hobby between songs may understand the architecture more quickly than the formal task force.
+

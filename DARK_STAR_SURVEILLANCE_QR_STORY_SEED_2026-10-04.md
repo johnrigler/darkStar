@@ -594,3 +594,15 @@ This creates a linguistic structure where the story can ferment over time. Notes
 
 Keep this in notes until enough material accumulates to decide where the frame enters the finished HTML.
 
+## Production note: the bartender and the vanishing bar world
+
+The bartender should be competent, sober, observant, and good at the work.
+
+Do not make the bartender an HCE-like center of drunken collapse. The bartender is the room's practical memory and timing mechanism: refills, tabs, water, food orders, specials, rides home, forgotten coats, who has had enough, who changed drinks, who is pretending not to want another.
+
+Use mundane drink conversation as real narrative texture. The patrons are drunk enough to become disproportionately excited about a special, a new cocktail, a refill, or a bartender remembering exactly what they wanted. The bartender does not share their intoxication; competence is part of the pleasure of the room.
+
+The bar scenes should also evoke, without directly explaining, a social world that feels as though it is disappearing: regulars, long conversations with strangers, a bartender who knows the room, overlapping stories, flirtation, arguments, accidental community, and hours spent somewhere without an algorithm organizing who speaks next.
+
+Do not state that this world is vanishing in the finished story. Build enough specific social detail that the reader can feel its age and fragility.
+

@@ -2145,3 +2145,17 @@ Use the song as atmosphere:
 
 The music should remain part of the room rather than becoming a literary footnote.
 
+## Revised causal spine
+
+The casino clue should first be noticed by automated video analysis, not by Tess. Vale briefly unrolls a large architectural-looking sheet with a sigil/eagle design containing the machine-readable square. Humans treat it as ordinary clutter; the surveillance software notices the embedded code.
+
+Nina later realizes she and Mercer can simply attend Ninth Baptist. Vale makes his familiar joke that if the FBI is listening, the church can sell them surveillance services and accept crypto. The congregation hears a church/crypto joke. Nina understands the context. Mercer treats it as suspicious and decides Vale should be brought in.
+
+While Vale is unavailable, his wider system begins creating documentary and legal pressure around his disappearance through ordinary institutional channels. Keep this literary and non-operational: records, preservation, timelines, inquiries, lawyers, and discrepancies rather than a cyberattack.
+
+Vale says he does not control the whole system but can stop the immediate cascade if given supervised computer access. He does so, the pressure stops, and they release him.
+
+This can be the last direct encounter between Nina's group and Vale. After that, his presence persists through tools, records, other people, and courts.
+
+A useful line for Barlow's later interpretation: the system did not attack the agency; it made the agency legible.
+

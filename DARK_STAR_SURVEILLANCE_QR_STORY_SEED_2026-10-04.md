@@ -1187,3 +1187,83 @@ The story should let readers infer this through behavior:
 
 This also helps explain why the distributed network develops internationally before the U.S. intelligence characters fully recognize what they are looking at.
 
+## Structural shift: from Vale to the distributed culture
+
+As the investigation deepens, the story should gradually stop being primarily about Vale.
+
+Vale remains a distinctive character, but the technology does not belong to him.
+
+The investigators begin by asking:
+**Who is Vale?**
+
+Later they are effectively asking:
+**What is this culture of practice?**
+
+They encounter other people who know different parts of the same toolkit:
+- ledger inscription;
+- strange compression or language systems;
+- public-key identity;
+- content addressing;
+- privacy-preserving payments;
+- browser-to-browser communication;
+- archival techniques;
+- durable public references;
+- distributed publication.
+
+No single person knows or controls all of it.
+
+The reader should feel the camera pulling back.
+
+Vale becomes one node among many.
+
+### Solitary collaboration
+
+A recurring visual/emotional pattern should be people working alone:
+- one person in a small apartment in Tallinn;
+- someone in Prague late at night;
+- a developer in Finland;
+- a person in Turkey watching a public ledger;
+- someone in a workshop, library, train station, church office, or rented room.
+
+They appear solitary.
+
+Yet their work touches.
+
+One notices another's transaction.
+One reuses an encoding.
+One replies through a public artifact.
+One forks a repository.
+One opens a temporary direct channel.
+One preserves something another person might lose.
+
+They are collaborating without behaving like a team.
+
+This is central.
+
+### "Byzantine warriors" as production image
+
+"Byzantine warriors" can be kept as a production metaphor for now.
+
+The useful qualities are:
+- dispersed;
+- defensive;
+- historically conscious;
+- technically resourceful;
+- used to contested systems;
+- preserving continuity across unstable institutions;
+- operating without a single center.
+
+Do not necessarily use that phrase in finished prose.
+
+The story should evoke the feeling through setting and behavior.
+
+### Narrative consequence
+
+Eventually the investigators can learn more about the technology from these other figures than from Vale himself.
+
+That prevents Vale from becoming a guru.
+
+He is an entry point.
+
+The deeper discovery is a distributed human ecology in which people working in solitude have nonetheless built a shared technical world.
+

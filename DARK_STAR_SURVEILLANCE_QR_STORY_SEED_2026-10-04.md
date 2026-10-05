@@ -818,3 +818,65 @@ Do not merge Tess and Nina again unless there is a strong structural reason. The
 
 This also reinforces one of the story's recurring patterns: the important thing is often noticed first by someone lower in the hierarchy, then reinterpreted later by someone with more institutional authority.
 
+## Ninth Baptist / church surveillance layer
+
+As the Bureau backgrounds Vale, it discovers that his company has a church relationship that looks odd on paper.
+
+Working name: **Ninth Baptist Church**.
+
+The name itself is an inversion/joke. "Ninth Baptist" sounds like it belongs to a city with a sequence of numbered Baptist churches, but there may be no First through Eighth nearby at all. Let characters notice this without turning it into a symbolic lecture.
+
+The company donates to the church. The entities share enough people, addresses, vendors, or practical relationships to make the structure look suspicious from a federal investigative perspective.
+
+The church scene should remain grounded and social:
+- ordinary congregation;
+- children;
+- food;
+- folding chairs;
+- technically competent but not glamorous people;
+- an entertaining preacher;
+- mundane religious life.
+
+The preacher can be genuinely good at preaching. This should not be treated as parody.
+
+Offerings and payments can use a mixed Web3 toolkit:
+- ordinary cash/bank payments;
+- public-chain crypto;
+- stablecoins;
+- privacy-oriented currencies such as Zcash or Monero;
+- occasional decentralized-finance use;
+- QR-code donation flows.
+
+Do not turn this into an operational how-to. The point is observational: investigators see unfamiliar financial infrastructure being used as ordinary community plumbing.
+
+Vale may live in a notably comfortable house connected somehow to a parsonage or church-benefit arrangement. This adds another ambiguous fact that looks suspicious from above but does not resolve neatly into wrongdoing.
+
+The recurring image is the surveillance "eye in the sky" following him into another domain and discovering that the same toolkit keeps reappearing.
+
+### Story function
+
+This layer should reinforce a key movement in the story:
+
+Vale is not merely hiding something.
+
+He is pointing toward a toolkit.
+
+The investigators begin by cataloging the toolkit as potentially suspicious:
+- wallets;
+- public ledgers;
+- private transactions;
+- DeFi;
+- content addressing;
+- QR codes;
+- distributed repositories.
+
+Over time, competent people inside the agency begin recognizing that parts of the same toolkit may be useful to them in an unstable institutional environment.
+
+Do not narrate this as "Web3 saves the FBI." Show gradual appropriation:
+- an analyst uses a content hash because it solves a provenance problem;
+- someone preserves a public reference outside an internal system;
+- someone notices that a ledger timestamp is useful;
+- another team independently reproduces a workflow.
+
+The interesting transition is from **object of surveillance** to **available infrastructure**.
+

@@ -534,3 +534,24 @@ They recognize that the visiting officials are focused on the wrong layer.
 
 Rather than turn this into a speech, show it in a brief low-status technical exchange after the high-status meeting. The humor comes from the contrast between institutional theater upstairs and competent comprehension downstairs.
 
+## Voice-session refinement: AI as medium, not sovereign actor
+
+The custody sequence should show the AI as an extension of Vale's agency rather than a separate superbeing.
+
+Key scene logic:
+
+- Barlow's team takes Vale into custody.
+- Vale calmly says that computer access before a certain time would make things easier.
+- Barlow refuses.
+- After the time passes, the public project advances on its own.
+- The visible effect is mundane but undeniable: new public records, fresh source material, README changes, and other repository work appear.
+- The "dead-man switch" is therefore not merely a one-time release. Each missed intervention allows another round of AI work to proceed.
+- When the agents ask Vale whether he can stop it, he says yes.
+- They give him a smartphone; he treats it as a general-purpose computer, accesses the public project, and stops the process.
+- This should make the room more confused, not less. Vale is neither powerless nor continuously in command.
+- Later the process can resume, preserving ambiguity about which part is schedule, AI continuity, other human participation, or Vale's prior intent.
+
+The thematic model is McLuhanian: AI is a medium extending the person. Vale remains the human source of intent. The AI extends research, memory, coding, comparison, documentation, and persistence. Avoid announcing this thesis directly in the finished prose; let the reader infer it from the way Vale and the system interact.
+
+This is an important distinction from stories in which AI itself becomes the central autonomous consciousness. Here the unsettling fact is that an ordinary technically capable person, using AI well, can exert the effective reach and persistence of a much larger team.
+

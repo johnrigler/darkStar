@@ -555,3 +555,11 @@ The thematic model is McLuhanian: AI is a medium extending the person. Vale rema
 
 This is an important distinction from stories in which AI itself becomes the central autonomous consciousness. Here the unsettling fact is that an ordinary technically capable person, using AI well, can exert the effective reach and persistence of a much larger team.
 
+## Production note: layered audiences
+
+Vale adapts the same underlying idea for different people: investors, engineers, lawyers, executives, and technical staff.
+
+Do not state the underlying pattern as a thesis in the finished story. Avoid explanatory lines that tell the reader what Vale's audience structure means. Show the pattern through repeated scenes, shifts in vocabulary, jokes, and moments where the same conversation later reads differently to another character.
+
+The reader should infer the pattern before any character fully articulates it.
+

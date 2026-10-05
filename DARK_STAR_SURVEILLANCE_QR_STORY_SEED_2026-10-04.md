@@ -1723,3 +1723,64 @@ Do not over-explain this in the fiction.
 
 Let one character see the pattern, realize what it is, and begin following the trail.
 
+## Formal rule: the narrator cannot actually explain the whole story
+
+The veteran should not be able to articulate the full meaning of Dark Star in ordinary barroom speech.
+
+That limitation is part of the form.
+
+He is drunk, emotionally invested, repetitive, distracted, interrupted, and often trying to impress people who are only half listening.
+
+A real person in that situation could not plausibly deliver a clean explanation of:
+- decentralized identity;
+- public ledgers;
+- content addressing;
+- intelligence institutions;
+- legal provenance;
+- distributed hacker cultures;
+- WebRTC;
+- AI-assisted discovery;
+- institutional collapse;
+- civic legal uptake.
+
+The fiction solves this by separating **what the veteran can say** from **what the reader can see**.
+
+The veteran begins or resumes the story.
+
+Then the narrative can open cinematically into a scene he could never literally narrate with that precision:
+- Nina in an FBI office;
+- Tess in casino surveillance;
+- Vale pitching a tribal CEO;
+- a hacker in Tallinn;
+- another person discovering an Arecibo inscription;
+- a church service using crypto donations;
+- a court filing appearing years later.
+
+The reader is allowed access beyond the veteran's words.
+
+When the story returns to the bar, his account may be much cruder than what the reader has just witnessed.
+
+This can become funny.
+
+He may summarize an entire intricate sequence as:
+"Then they figured out the blockchain thing."
+
+A listener may misunderstand something that the reader now understands perfectly.
+
+The veteran may insist that he already explained a detail which he absolutely did not explain.
+
+### Narrative consequence
+
+The bar narrator is therefore not a conventional omniscient storyteller.
+
+He is the ignition point.
+
+The embedded narrative becomes a movie in the reader's mind.
+
+This allows the story to carry technical and institutional complexity without making the veteran implausibly eloquent or turning the bar into a lecture hall.
+
+It also creates useful dramatic irony:
+the reader may understand the system better than the person telling the story.
+
+That absurdity is desirable.
+

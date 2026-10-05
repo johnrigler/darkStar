@@ -1784,3 +1784,82 @@ the reader may understand the system better than the person telling the story.
 
 That absurdity is desirable.
 
+## Three-layer narrative architecture
+
+The story now has three nested narrative levels.
+
+### Layer 1: the bar
+
+The veteran is telling the story.
+
+This layer is messy, social, interrupted, drunk, repetitive, funny, embarrassing, romantic, and local.
+
+It contains:
+- the bartender;
+- the girlfriend;
+- strangers;
+- women who come and go;
+- pool;
+- drinks;
+- arguments;
+- failed attempts to impress people;
+- the veteran's emotional collapse and recovery.
+
+This is the human frame.
+
+### Layer 2: the investigation
+
+Once the veteran enters the story, the prose can become clean and cinematic.
+
+This is the FBI / intelligence / institutional layer:
+- Nina;
+- Barlow;
+- Tess's reports;
+- surveillance analysis;
+- legal instability;
+- the investigation of Vale;
+- institutional crisis;
+- the gradual discovery of the distributed technical culture.
+
+Do not render this layer as drunken narration.
+
+The veteran is framing it, but the reader experiences it directly.
+
+### Layer 3: the observed world
+
+Inside the investigation, characters are themselves watching other people.
+
+This creates the third layer:
+- Tess watching Vale at the casino;
+- Nina reviewing Vale's meetings and calls;
+- investigators observing Ninth Baptist;
+- agencies studying hackers in Estonia, Finland, Prague, Turkey, and elsewhere;
+- analysts peering into public ledgers;
+- characters discovering other characters through inscriptions and artifacts.
+
+This layer may itself temporarily become cinematic and autonomous.
+
+The reader can inhabit the person being watched rather than remaining stuck behind the surveillance monitor.
+
+### Formal permission
+
+Do not over-explain how the veteran could know all of this.
+
+The frame gives permission for the story to exist.
+
+After that, the narrative is free to move through the nested layers as needed.
+
+The linguistic sleight of hand is intentional:
+
+**bar storyteller -> intelligence story -> observed person's story**
+
+The reader should feel the transitions rather than audit them.
+
+This architecture is necessary because keeping all three levels in the veteran's literal drunken voice would make the embedded story implausible and unreadable.
+
+The bar supplies emotional truth.
+
+The investigation supplies structural tension.
+
+The observed world supplies technical and human depth.
+

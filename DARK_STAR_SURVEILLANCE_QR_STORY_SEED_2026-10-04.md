@@ -1023,3 +1023,49 @@ Common use of BSV or other ledgers does not imply a unified political or technic
 This frustrates conventional intelligence analysis because the social topology resembles the technical topology:
 distributed, asynchronous, public, forkable, and only partially legible from the outside.
 
+## Vignette structure for the distributed collaborators
+
+The decentralized crypto-language network should be shown through short regional stories rather than explained as a social graph.
+
+These people do not need complete character arcs.
+
+A vignette may only need:
+- one room;
+- one conversation;
+- one local pressure;
+- one technical habit;
+- one reason permanence matters to that person.
+
+Possible locations include Estonia, Finland, Prague, and other places with strong digital-state, post-Soviet, borderland, archival, or infrastructure-conscious histories.
+
+The point is not exotic scenery.
+
+The point is that different environments produce independent reasons to care about the same toolkit.
+
+Examples of pressures that can shape a vignette:
+- governments changing quickly;
+- records migrating between systems;
+- language communities worrying about preservation;
+- memories of occupation or administrative replacement;
+- dependence on digital identity systems;
+- distrust of centralized intermediaries;
+- small technical communities with unusually high competence;
+- proximity to geopolitical instability;
+- awareness that infrastructure can become political overnight.
+
+Do not turn these into travel essays or geopolitical lectures.
+
+Let the environment explain the conviction.
+
+A person in Tallinn may care about durable identity for reasons different from a developer in Prague.
+A Finnish engineer may care about resilience because of infrastructure culture.
+A Czech archivist may care because records and regimes have changed before.
+
+They may never meet Vale.
+
+They may only encounter one another through code, a transaction, a repository, a strange encoding, or a copied idea.
+
+The cumulative effect should be that the investigators keep finding "other Vales" without finding a central organization.
+
+Each vignette adds another independent proof that the idea did not originate from one man.
+

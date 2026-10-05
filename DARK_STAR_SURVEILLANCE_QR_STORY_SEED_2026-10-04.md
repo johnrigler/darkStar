@@ -1119,3 +1119,34 @@ The investigators may initially interpret recurring interactions as evidence of 
 
 What they gradually encounter instead is a mesh of people independently watching the same durable public substrate and occasionally choosing to speak.
 
+## Real-world inspiration node: Matt Reddy / Cryptograffiti encounter
+
+Another production inspiration is Matt Reddy.
+
+The author's real-world connection to him began through an on-chain message associated with Eric Ersdahl's Cryptograffiti project, before Cryptograffiti later evolved toward a stream of images extracted from BSV blocks.
+
+This is useful because it demonstrates the exact social mechanism the story is trying to capture:
+
+- one person publishes something into a public ledger;
+- another person notices it later;
+- the artifact creates social contact without a prior relationship;
+- the ledger becomes both archive and introduction.
+
+Do not automatically insert the real person into the fiction by name.
+
+Instead, use the pattern to build a fictional counterpart if needed:
+- someone whose first contact with Vale or another node is an inscription;
+- a relationship that begins asynchronously;
+- mutual recognition through a public artifact before any direct conversation;
+- later optional contact through repository comments, direct messaging, WebRTC, or a conference encounter.
+
+This is especially important because it shows that "collaboration" can begin with discovery rather than coordination.
+
+The Cryptograffiti lineage also provides a concrete historical texture for the BSV-adjacent strand of the story:
+- messages embedded into public ledgers;
+- human-readable public artifacts;
+- later shifts toward image-heavy block streams;
+- geographically dispersed participants noticing one another through what the chain preserves.
+
+Keep the real-world names in production notes unless the author explicitly decides to fictionalize them less heavily.
+

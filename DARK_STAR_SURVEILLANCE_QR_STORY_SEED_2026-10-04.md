@@ -1330,3 +1330,61 @@ That makes them feel more like hackers than soldiers.
 
 Keep "Byzantine" only as a suggestive production echo if useful; do not confuse the application-layer actors with the consensus mechanism itself.
 
+## Cryptograffiti / BSV image-world as visual source
+
+A major real-world inspiration is the author's experience looking through Cryptograffiti and later through a full local copy of the BSV ledger.
+
+What was striking was not only code or text.
+
+There were many images.
+
+The effect was of people placing fragments of their ordinary world directly into public ledger transactions:
+- portraits;
+- family or social images;
+- screenshots;
+- drawings;
+- visual jokes;
+- local scenes;
+- objects;
+- fragments of everyday life.
+
+A significant portion appeared to come from Chinese-speaking users or Chinese contexts.
+
+Production significance:
+
+The ledger should sometimes feel less like a financial database and more like an accidental global image archive.
+
+This matters because it changes what "peering into the ledger" means.
+
+A character is not only reading transactions.
+
+They may be looking at another person's room, face, street, joke, artwork, or moment of ordinary life preserved inside a block.
+
+That can create a strong emotional bridge between otherwise isolated characters.
+
+Someone in Europe may first encounter another node not through prose, but through an image.
+
+An investigator may expect command traffic and instead find:
+- family photos;
+- memes;
+- religious images;
+- local advertisements;
+- drawings;
+- visual diary fragments;
+- ordinary life rendered permanent.
+
+This should feel uncanny precisely because the technology is real and mundane at the same time.
+
+### Bitcoin B / OP_RETURN texture
+
+The author specifically remembers images embedded using BSV transaction data patterns, including Bitcoin B-style publishing.
+
+Keep the technical layer accurate enough to give the story texture, but do not turn it into a protocol tutorial.
+
+The important literary effect is:
+**human images inside transaction history**.
+
+That is one of the clearest examples of the story's broader idea that the ledger is not merely money.
+
+It is a public memory surface.
+

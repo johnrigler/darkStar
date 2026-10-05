@@ -2026,3 +2026,33 @@ The woman at the second bar understands this pattern.
 
 She is not fooled by him, but she also does not reduce him to his worst moment.
 
+## Woman at the second bar: shared alcoholism, not caretaking
+
+The woman the veteran leaves with is likely also an alcoholic.
+
+Do not make her the sober caretaker who stands outside his pattern.
+
+She is inside the same world.
+
+They know each other, drink together, and understand one another partly because neither is pretending the other is fixed.
+
+Her clearer judgment in a particular moment should not imply sobriety as identity.
+
+Their ending can therefore be:
+- practical;
+- romantic;
+- unhealthy;
+- familiar;
+- tender;
+- funny.
+
+They leave together.
+They continue drinking at home.
+The veteran keeps trying to tell the story.
+They both eventually pass out.
+
+This preserves the key ending:
+the spy story remains unfinished because ordinary human life, alcohol, fatigue, and intimacy overtake it.
+
+The woman sees him clearly not because she is outside the problem, but because she knows the problem from inside.
+

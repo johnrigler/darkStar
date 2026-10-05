@@ -2056,3 +2056,7 @@ the spy story remains unfinished because ordinary human life, alcohol, fatigue, 
 
 The woman sees him clearly not because she is outside the problem, but because she knows the problem from inside.
 
+## Missed Arecibo reference
+
+A later pass should make the first puzzle a cultural-recognition failure rather than a hard cipher problem. Barlow's team overlooks an obvious Arecibo reference, while another team recognizes it quickly and explains the result. The joke is institutional overcomplication, not cryptographic brilliance.
+

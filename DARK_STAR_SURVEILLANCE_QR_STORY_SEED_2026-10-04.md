@@ -1069,3 +1069,53 @@ The cumulative effect should be that the investigators keep finding "other Vales
 
 Each vignette adds another independent proof that the idea did not originate from one man.
 
+## Ledger as meeting place
+
+The distributed collaborators should often encounter one another by peering into the same public ledgers.
+
+They do not begin with a private group chat.
+
+They notice:
+- recurring addresses;
+- unusual message formats;
+- familiar encodings;
+- repeated content hashes;
+- transaction patterns;
+- references that only make sense if another person has seen the same prior artifact.
+
+In that sense, the ledger functions partly as a public meeting place.
+
+One person leaves an artifact.
+Another recognizes it.
+A third replies by placing a new reference somewhere else.
+The conversation may be slow, indirect, and legible only to people who know what to look for.
+
+Sometimes that is enough.
+
+Sometimes they establish a more direct channel.
+
+Possible higher-level channels include:
+- WebRTC peer-to-peer sessions;
+- temporary browser-to-browser connections;
+- ordinary encrypted messaging;
+- short-lived video or audio calls;
+- collaborative editing sessions;
+- public repository issues or commits.
+
+Do not turn this into a protocol manual.
+
+The important narrative fact is that public discovery and private conversation are separate layers.
+
+The ledger lets them find one another without already belonging to the same organization.
+
+WebRTC or another direct channel lets them talk once mutual recognition has happened.
+
+This preserves the social topology:
+public first contact,
+optional direct contact,
+no permanent central room required.
+
+The investigators may initially interpret recurring interactions as evidence of command-and-control.
+
+What they gradually encounter instead is a mesh of people independently watching the same durable public substrate and occasionally choosing to speak.
+

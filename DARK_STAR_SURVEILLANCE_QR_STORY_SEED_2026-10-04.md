@@ -1150,3 +1150,40 @@ The Cryptograffiti lineage also provides a concrete historical texture for the B
 
 Keep the real-world names in production notes unless the author explicitly decides to fictionalize them less heavily.
 
+## Uneven technological urgency across countries
+
+A useful production principle is that the same decentralized technology can feel more or less urgent depending on what a character's society has recently experienced.
+
+Do not write this as a national stereotype.
+
+Instead, build individual characters whose histories make the toolkit legible sooner.
+
+A character in Estonia, Turkey, Prague, or another place with living memory of:
+- regime change;
+- censorship;
+- currency instability;
+- administrative replacement;
+- occupation;
+- contested media;
+- fragile archives;
+- abrupt changes in state power;
+- infrastructure becoming political;
+
+may immediately understand why durable public references, portable identity, cryptographic proofs, or non-centralized communication matter.
+
+An American character may initially experience the same tools as eccentric, overengineered, ideological, or unnecessary because the surrounding institutions have seemed more durable in their own lifetime.
+
+The distinction is experiential, not essential.
+
+This gives the regional vignettes a real function:
+they show that technologies which appear fantastical or paranoid in one environment can look ordinary and practical in another.
+
+The story should let readers infer this through behavior:
+- who immediately understands a ledger timestamp;
+- who already keeps offline copies;
+- who assumes a platform may disappear;
+- who asks what happens if a government changes;
+- who does not need Vale to explain why permanence matters.
+
+This also helps explain why the distributed network develops internationally before the U.S. intelligence characters fully recognize what they are looking at.
+

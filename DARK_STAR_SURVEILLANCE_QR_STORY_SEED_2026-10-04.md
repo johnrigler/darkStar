@@ -504,3 +504,33 @@ The central computer was never the target.
 
 The people inside the system were.
 
+## Style rule: inference over explanation
+
+The story should not explicitly announce its thematic conclusions when the world, behavior, and juxtaposition can carry them.
+
+Examples of notes that belong here rather than in the finished prose:
+
+- Vale has no conventional character arc. He functions as a fixed catalytic figure while Mara, Nina, Barlow, and other institutional characters change around him.
+- The reader should infer this from repeated encounters, not from sentences such as "Vale was not changing; everyone else was."
+- Institutional incompetence should be shown through behavior, procedural theater, misplaced certainty, and contrast with quieter competent teams.
+- Competent teams are often less narratively visible because they read the documentation, solve the problem, and return to work.
+- The story's style should emerge from world-building, recurring objects, technical details, institutional rituals, and character behavior rather than explanatory narration.
+- Where a thematic sentence feels useful during drafting, treat it as a seed for notes or scene design, then remove the direct explanation from the final story.
+
+## Law-firm false lead
+
+Barlow temporarily convinces himself that the AI continuity system is controlled through an account associated with a prestigious law firm.
+
+This creates an expensive institutional detour:
+
+- federal personnel travel to meet senior partners;
+- the partners respond with formal seriousness and cooperation;
+- the meeting focuses on accounts, process, preservation, privilege, and control;
+- Barlow leaves believing he has found a meaningful control point.
+
+Meanwhile, the firm's IT staff inspect the same architecture and immediately see that the account is only a pointer or administrative artifact, not a genuine point of control.
+
+They recognize that the visiting officials are focused on the wrong layer.
+
+Rather than turn this into a speech, show it in a brief low-status technical exchange after the high-status meeting. The humor comes from the contrast between institutional theater upstairs and competent comprehension downstairs.
+

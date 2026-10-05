@@ -606,3 +606,25 @@ The bar scenes should also evoke, without directly explaining, a social world th
 
 Do not state that this world is vanishing in the finished story. Build enough specific social detail that the reader can feel its age and fragility.
 
+## Production note: the man story and the woman story
+
+This surveillance/bar piece may function as the "man story" in counterpoint with the earlier woman-centered material.
+
+In the bar layer, the men can appear noisy, argumentative, self-dramatizing, technically obsessed, or drunk. The women have their own complex relationships with one another and with the men, but by closing time they are the ones who quietly sort out the practical world: coats, rides, who is going home with whom, who has had enough, who needs help getting out the door.
+
+Do not explain this as gender symbolism in the finished story. Let the closing choreography show it.
+
+The ending should remain ordinary:
+
+- the women take the men home to their different homes;
+- no revelation follows;
+- no violence or final twist interrupts the departure;
+- the bartender closes the bar;
+- the night simply ends.
+
+The effect should be Joyceian through structure and social texture rather than imitation. The bar gathers language, drunkenness, intimacy, argument, gendered social roles, and overlapping stories, then releases everyone back into ordinary life.
+
+This can also provide a formal counterweight to the surveillance plot, which tends toward systems, institutions, abstraction, and male technical performance. The bar ending returns the story to bodies, rides, coats, doors, homes, and closing time.
+
+Keep any comparison to Joyce or to an earlier "woman story" in production notes. The prose should only enact the pattern.
+

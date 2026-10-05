@@ -644,3 +644,53 @@ This makes the missing ending deliberate and domestic. The enormous institutiona
 
 Do not explain the joke. Let the unfinished sentence and her lack of surprise carry it.
 
+## Structural pass: Dark Star as title story
+
+Working title for the surveillance/bar story: **Dark Star**.
+
+Possible title for the larger book or collection: **Dark Star and Other Writings**.
+
+The spy story and the bar story should carry different kinds of weight.
+
+### Spy story
+
+The central abstract question is:
+
+> What would a patriot do if the government, or an institution such as the FBI, appeared to be compromised?
+
+Do not reduce this to a partisan answer or a simple conspiracy plot. The drama is in uncertainty: an institution can simultaneously be under pressure, contain compromised or frightened people, contain competent and loyal people, and still remain capable of receiving a gift from outside itself.
+
+Vale's intervention can function as that gift.
+
+The agency experiences the episode with enormous intensity. For the people inside it, questions of loyalty, memory, legitimacy, authority, duty, and institutional survival feel existential. The emotional register may approach David Lynch: ordinary rooms, procedural language, fluorescent offices, and technical details carrying almost unbearable psychic pressure.
+
+The spy narrative does not need to resolve each character conventionally. Its job is to hold the question open long enough for the characters to act inside it.
+
+### Veteran / bar story
+
+The emotional story belongs to the veteran narrator.
+
+The surveillance story resonates with him because he recognizes the patriotic dilemma. His military past gives the question personal force without requiring him to explain that force directly.
+
+He can tell the spy story clearly. Do not make the embedded story stylistically drunk merely because the frame narrator has been drinking. Once he enters the telling, the prose can become clean, controlled, and almost pristine.
+
+The bar represents the broader public only at the level of production design. Do not state this in the prose.
+
+People listen, stop listening, flirt, argue, order drinks, repeat themselves, miss important parts, remember strange details, and eventually go home. The veteran may experience the inner story as a profound national crisis while the people around him only intermittently attend to it.
+
+That contrast is central.
+
+### Dark Star image
+
+The "dark star" can operate as an event or gift that falls into the institution rather than as a simple villain or symbol.
+
+Possible production associations:
+- Saturn / Saturnalia
+- Vico: cycle, reversal, recurrence, institutional age and renewal
+- the fall of something dark that is both threatening and potentially generative
+- a gift that arrives in a form the institution initially experiences as danger
+- surveillance turned into address
+- an outside message forcing an institution to remember its own buried capacities
+
+Do not explain these associations in narration. Let them accumulate through title, structure, repetition, imagery, timing, and the contrast between institutional crisis and ordinary closing time.
+

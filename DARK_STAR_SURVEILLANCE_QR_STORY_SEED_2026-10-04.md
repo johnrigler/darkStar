@@ -1670,3 +1670,56 @@ The embedded story returns to systems, courts, tools, and uncertain hope.
 
 The bar returns to water, pool, coats, tabs, and going home.
 
+## Romantic practicality in the veteran's ending
+
+The woman who leaves with the veteran is not fooled by him.
+
+She has seen him stumble socially, repeat himself, drink too much, lose his audience, and become embarrassing.
+
+Her choice to go home with him should therefore be both practical and romantic.
+
+She does not rescue an imagined version of him.
+
+She chooses the person she actually knows.
+
+Keep the romance understated:
+- a jacket collar straightened;
+- an instruction that is also an invitation;
+- familiar teasing;
+- deciding who is driving;
+- going home without ceremony.
+
+The practical details are part of the romance rather than opposed to it.
+
+## Arecibo message as hacker discovery event
+
+One distributed-collaborator vignette can begin with an Arecibo-message inscription placed into a public transaction.
+
+This draws from the author's own experience of sending the Arecibo message into a transaction.
+
+In the fictional version:
+
+- one hacker publishes the Arecibo pattern into the ledger;
+- another person is not looking for that specific individual;
+- they use AI or automated analysis to scan public ledger data for unusual structured artifacts;
+- the Arecibo pattern is recognized as intentional rather than random;
+- that discovery leads the second person into the publisher's other artifacts;
+- from there they encounter thunderwords, unusual encodings, public references, and a broader language-game/toolkit.
+
+The AI should function as a telescope or search instrument.
+
+It finds the pattern.
+
+The human recognizes that the pattern means another person is there.
+
+This is a strong example of how the distributed collaborators meet:
+not through an introduction,
+not through a central platform,
+but through a durable public artifact whose structure carries enough intentionality to invite investigation.
+
+The Arecibo image also resonates naturally with the story's recurring concern with signaling to an unknown listener.
+
+Do not over-explain this in the fiction.
+
+Let one character see the pattern, realize what it is, and begin following the trail.
+

@@ -2060,3 +2060,39 @@ The woman sees him clearly not because she is outside the problem, but because s
 
 A later pass should make the first puzzle a cultural-recognition failure rather than a hard cipher problem. Barlow's team overlooks an obvious Arecibo reference, while another team recognizes it quickly and explains the result. The joke is institutional overcomplication, not cryptographic brilliance.
 
+## Character-name revision: Barlow as the perceptive agent
+
+The name **Barlow** should belong to a more perceptive security/intelligence character, not the managerial supervisor.
+
+The current supervisor has been renamed **Tom Mercer**.
+
+A new **Daniel Barlow** can function as one of the characters who actually understands what the distributed system is doing.
+
+The surname is an intentional production reference to **John Perry Barlow**:
+- Grateful Dead lyricist;
+- early network-culture thinker;
+- co-founder of the Electronic Frontier Foundation;
+- associated with arguments about cyberspace, civil liberties, and systems that exceed conventional institutional boundaries.
+
+Do not turn this into a biographical lecture in the story.
+
+A light joke or family explanation is enough, such as Barlow saying his father was a Deadhead.
+
+The deeper reference can remain available to readers who recognize it.
+
+### Narrative function
+
+Barlow should be one of the people who can explain difficult ideas without becoming a guru.
+
+He may recognize before others that:
+- the distributed collaborators are not a conventional command network;
+- the ledger acts as shared substrate rather than headquarters;
+- public discovery and direct communication are separate layers;
+- the system's importance lies partly in reducing dependence on central institutional trust.
+
+He can serve as a technical/philosophical interpreter for Nina while still remaining inside the security world.
+
+This gives the story a useful contrast:
+- Mercer converts uncertainty into meetings.
+- Barlow converts unfamiliarity into questions.
+

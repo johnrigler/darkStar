@@ -1482,3 +1482,80 @@ The watchers remain watchers.
 
 But now the watched can place durable things in the field of view.
 
+## Governing rhythm: vignette, then bar
+
+The story should repeatedly return to the bar after major embedded scenes.
+
+Possible rhythm:
+
+1. spy / surveillance scene
+2. bar
+3. regional collaborator vignette
+4. bar
+5. church / crypto scene
+6. bar
+7. agency scene
+8. bar
+9. civic legal uptake scene
+10. bar
+
+The bar is the reader's return point.
+
+At the production level, it represents the ordinary public experience of institutional crisis.
+
+Most people do not see:
+- internal briefings;
+- legal provenance systems;
+- decentralized technical communities;
+- cross-border infrastructure habits;
+- intelligence analysis;
+- subtle institutional failure.
+
+They experience fragments.
+
+A headline.
+A rumor.
+A weird story.
+A friend who insists something important is happening.
+A strange court case.
+A changed rule.
+A price increase.
+A relative who cannot get a document.
+A drunk veteran telling a story nobody can fully verify.
+
+People in the bar vaguely sense that something is off, but ordinary life absorbs attention:
+- work;
+- relationships;
+- drinking;
+- flirting;
+- rides home;
+- money;
+- fatigue;
+- food;
+- jokes;
+- jealousy;
+- tomorrow morning.
+
+Do not state that "the bar is America" or "the bar is the public."
+
+The repeated return should create that meaning structurally.
+
+### Function of the returns
+
+Each bar return should do at least one thing:
+- distort or simplify what was just told;
+- show that listeners missed an important detail;
+- introduce a mundane concern that overwhelms the grand narrative;
+- let a joke reframe a serious scene;
+- let the veteran become emotionally exposed;
+- let his girlfriend demonstrate that she has heard versions before;
+- let the bartender maintain practical order while everyone else drifts.
+
+The embedded scenes can feel increasingly large, technical, or historically consequential.
+
+The bar should remain stubbornly local.
+
+That contrast is central.
+
+The reader is repeatedly moved from systems-level crisis back to the scale at which most people actually live.
+

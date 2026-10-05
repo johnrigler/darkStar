@@ -1559,3 +1559,114 @@ That contrast is central.
 
 The reader is repeatedly moved from systems-level crisis back to the scale at which most people actually live.
 
+## Veteran's emotional arc: failed audience, drunken collapse, ordinary recovery
+
+The veteran should keep trying to tell the story to different people over the course of the night.
+
+He wants the story to matter to them.
+
+Sometimes he is trying to impress people, especially women.
+
+Sometimes he is trying to convince someone that the story means something larger.
+
+Often the listeners simply leave.
+
+They do not have to reject him dramatically.
+
+They can:
+- remember they need to meet someone;
+- go outside to smoke;
+- move to another table;
+- decide to play pool;
+- get pulled into another conversation;
+- leave with friends;
+- politely say they will be right back and never return.
+
+This should be funny at first.
+
+The veteran then drifts toward other people:
+- pool players;
+- regulars;
+- strangers at the other end of the bar;
+- someone who has only heard the last thirty seconds.
+
+He starts the story again from a different point.
+
+### Bar crisis
+
+At some point, near or during a major crisis inside the FBI story, the veteran's own night should break.
+
+He drinks too much.
+
+He becomes repetitive.
+
+He misreads a social situation.
+
+He tries too hard to impress someone.
+
+He says something embarrassing.
+
+He may become angry, sentimental, grandiose, or pathetic.
+
+The important thing is that he loses dignity.
+
+Do not make this a theatrical PTSD episode unless the scene earns it.
+
+The collapse can be socially ordinary and therefore more painful:
+a drunk man who thought he was fascinating realizes that the room has stopped listening.
+
+This is the emotional crisis of the frame story.
+
+### Recovery
+
+He does not need a grand redemption.
+
+Later, he sobers enough to re-enter the ordinary life of the bar.
+
+He plays pool.
+He drinks water.
+He helps someone find something.
+He sits quietly.
+The bartender treats him normally.
+The room moves on.
+
+The embarrassment remains, but it is no longer the whole night.
+
+### Woman he already knows
+
+Near the end, the woman he eventually leaves with should not feel like a sudden romantic reward.
+
+He knows her already.
+
+Their relationship can be familiar, complicated, and understated.
+
+She may have seen him do this before.
+
+By closing time, after the larger social drama has burned off, they simply decide to go home together.
+
+No romantic climax is necessary.
+
+The decision should feel mundane:
+coats,
+keys,
+who is driving,
+whether they need food,
+whether he is sober enough,
+whose place they are going to.
+
+This makes the ending feel lived rather than resolved.
+
+### Structural pairing
+
+The veteran's personal crisis can coincide roughly with the institutional crisis inside the spy story.
+
+Do not explain the parallel.
+
+The FBI story may be reaching its most intense point while the veteran is losing his audience and embarrassing himself.
+
+Then both stories can move into quieter aftermaths.
+
+The embedded story returns to systems, courts, tools, and uncertain hope.
+
+The bar returns to water, pool, coats, tabs, and going home.
+

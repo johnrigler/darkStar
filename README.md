@@ -146,6 +146,7 @@ Human-readable intent: **copy it, print it, sell copies, give it away, modify it
 
 ## Dated concept notes
 
+- [2026-10-08 — The Pane of Glass: Writing in One Another's Histories](DARK_STAR_SHARED_LEDGER_PANE_OF_GLASS_2026-10-08.md)
 - [2026-10-08 — Recognition Is Not Understanding](DARK_STAR_RECOGNITION_VS_UNDERSTANDING_NOTES_2026-10-08.md)
 - [2026-10-08 — Disclosure, Completion, and the Right to Move On](DARK_STAR_DISCLOSURE_AND_COMPLETION_NOTES_2026-10-08.md)
 - [2026-10-08 — The Folly of the Unabomber: Attention Is Not a Voice](DARK_STAR_UNABOMBER_FOLLY_NOTES_2026-10-08.md)

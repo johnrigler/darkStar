@@ -146,6 +146,7 @@ Human-readable intent: **copy it, print it, sell copies, give it away, modify it
 
 ## Dated concept notes
 
+- [2026-10-08 — The Folly of the Unabomber: Attention Is Not a Voice](DARK_STAR_UNABOMBER_FOLLY_NOTES_2026-10-08.md)
 - [2026-09-11 — Pulp Passbook, Ceremony, and Entry into Web3](README-2026-09-11.md)
 - [2026-09-20 — Executable Publication and Campaign Cartridges](DARK_STAR_EXECUTABLE_PUBLICATION_NOTES_2026-09-20.md)
 - [2026-09-24 — Address Space as Public Index](DARK_STAR_ADDRESS_SPACE_INDEX_NOTES_2026-09-24.md)

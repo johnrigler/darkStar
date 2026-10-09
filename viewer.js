@@ -30,6 +30,65 @@
   }
 
   let spread = spreadFromUrl();
+  const urlParams = new URLSearchParams(location.search);
+  let single = urlParams.get("view") === "single";
+  let selectedIndex = Math.max(0, Math.min(book.pages.length - 1, Number.parseInt(urlParams.get("page"), 10) - 1 || 0));
+
+  const toolbar = document.createElement("nav");
+  toolbar.id = "single-page-toolbar";
+  toolbar.setAttribute("aria-label", "Page controls");
+  toolbar.innerHTML = '<button type="button" data-action="back">Spread view</button><button type="button" data-action="prev">‹ Previous</button><span id="single-page-count"></span><button type="button" data-action="next">Next ›</button><button type="button" data-action="print">Print page</button>';
+  document.body.appendChild(toolbar);
+  const countLabel = toolbar.querySelector("#single-page-count");
+  function enterSingle(index) {
+    selectedIndex = Math.max(0, Math.min(book.pages.length - 1, index));
+    single = true;
+    render();
+  }
+  function exitSingle() {
+    single = false;
+    spread = selectedIndex === 0 ? 0 : Math.min(spreadCount - 1, 1 + Math.floor((selectedIndex - 1) / 2));
+    render();
+  }
+  toolbar.addEventListener("click", event => {
+    const action = event.target.closest("button")?.dataset.action;
+    if (action === "back") exitSingle();
+    if (action === "prev") enterSingle(selectedIndex - 1);
+    if (action === "next") enterSingle(selectedIndex + 1);
+    if (action === "print") {
+      const frame = right;
+      if (!frame.contentDocument) return;
+      const doc = frame.contentDocument;
+      if (!doc.getElementById("darkstar-single-print")) {
+        const style = doc.createElement("style");
+        style.id = "darkstar-single-print";
+        style.textContent = "@page { size: 7in 8.5in; margin: 0; } @media print { html, body { width:7in !important; height:8.5in !important; margin:0 !important; overflow:hidden !important; } }";
+        doc.head.appendChild(style);
+      }
+      frame.contentWindow.focus();
+      frame.contentWindow.print();
+    }
+  });
+
+  function bindLongPress(frame, index) {
+    const doc = frame.contentDocument;
+    if (!doc || !doc.body) return;
+    let timer = null, startX = 0, startY = 0, triggered = false;
+    const cancel = () => { clearTimeout(timer); timer = null; };
+    doc.addEventListener("pointerdown", event => {
+      if (single || (event.pointerType !== "touch" && event.pointerType !== "pen")) return;
+      if (event.target.closest("a,button,input,textarea,select")) return;
+      triggered = false;
+      startX = event.clientX; startY = event.clientY;
+      cancel();
+      timer = setTimeout(() => { timer = null; triggered = true; enterSingle(index); }, 550);
+    });
+    doc.addEventListener("pointermove", event => {
+      if (Math.hypot(event.clientX - startX, event.clientY - startY) > 12) cancel();
+    });
+    ["pointerup","pointercancel","scroll"].forEach(name => doc.addEventListener(name, cancel));
+    doc.addEventListener("contextmenu", event => { if (triggered) event.preventDefault(); });
+  }
 
   function fitPage(frame) {
     const slot = frame.parentElement;
@@ -177,12 +236,27 @@
       const currentIndex = Number.parseInt(frame.dataset.pageIndex, 10);
       if (Number.isFinite(currentIndex)) normalizeInterior(frame, currentIndex, side);
       fitPage(frame);
+      bindLongPress(frame, currentIndex);
     };
     frame.removeAttribute("srcdoc");
     frame.src = resource;
   }
 
   function render() {
+    document.body.classList.toggle("single-page-mode", single);
+    toolbar.hidden = !single;
+    countLabel.textContent = `Page ${selectedIndex + 1} / ${book.pages.length}`;
+    if (single) {
+      spreadElement.classList.remove("cover-spread");
+      blank(left);
+      load(right, selectedIndex, selectedIndex % 2 === 0 ? "right" : "left");
+      fitPages();
+      const url = new URL(location.href);
+      url.searchParams.set("page", String(selectedIndex + 1));
+      url.searchParams.set("view", "single");
+      history.replaceState(null, "", url);
+      return;
+    }
     const isCoverSpread = spread === 0;
     spreadElement.classList.toggle("cover-spread", isCoverSpread);
 
@@ -203,16 +277,19 @@
 
     const url = new URL(window.location.href);
     url.searchParams.set("page", urlPageIndex + 1);
+    url.searchParams.delete("view");
     window.history.replaceState(null, "", url);
   }
 
   function previous() {
+    if (single) { enterSingle(selectedIndex - 1); return; }
     if (spread === 0) return;
     spread -= 1;
     render();
   }
 
   function next() {
+    if (single) { enterSingle(selectedIndex + 1); return; }
     if (spread + 1 >= spreadCount) return;
     spread += 1;
     render();

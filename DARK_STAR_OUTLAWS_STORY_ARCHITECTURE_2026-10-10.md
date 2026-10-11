@@ -54,3 +54,12 @@ A grim inset can claim that AI data centers threaten cryptocurrencies. The techn
 - Final church scene: quiet realism and recognition.
 - Technical artifacts: correct and independently inspectable. Narrators can misunderstand them.
 - Preserve current folded-book pagination and centerfold. Prototype art and narrative before integrating untested QR or overflowing pages.
+
+## Canonical DOGE reference, not a website
+The Termux Easter-egg QR should encode a proposed **Chisel/Mogwai ledger URI** rather than any provider URL:
+
+```text
+doge:13ff2a763674714aa87ae9931bc74d352e07bac6590d198f0b020d08fc41f839
+```
+
+The `doge:` scheme is an **application-defined convention** here, not an already-universal browser URL scheme. It identifies a Dogecoin transaction, not a payment recipient or domain. Chisel/Mogwai can parse the scheme, validate the 64-hex transaction identifier, and resolve it through interchangeable Dogecoin nodes, explorer APIs, or a local index. A handler may register a custom external protocol or use an internal route; an ordinary browser cannot be assumed to open `doge:` natively. A user should always be able to copy the canonical identifier and switch providers. The Preface's four existing historical explorer QRs remain part of the original artifact; the phone comic can show this new canonical URI. The contrast is intentional: protocol address versus service URL.

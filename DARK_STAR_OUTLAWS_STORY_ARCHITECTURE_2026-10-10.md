@@ -24,7 +24,13 @@ Mogwai's **agentic footprint** spans the world: people and software with indepen
 ## The QR sequence and the donation
 Progress through separate panels: a real text payload, Python QR generation in Termux, scannable QR displayed at right, an observer scanning it, and a **Monero (XMR)** offering request to the church. Do not equate displaying a payment request with confirmation of payment.
 
-A separate Termux-screen **Easter egg QR** must link to the real **Dogecoin transaction from the Preface**. This must be a verified transaction reference, not the Monero address and not an invented Dogecoin destination. The existing Preface source has qr1.svg-qr4.svg and textual MacDougall addresses, but no clearly verified canonical Dogecoin txid has yet been extracted. The QR and a working explorer URI must be validated before print.
+A separate Termux-screen **Easter egg QR** must link to the real **Dogecoin transaction from the Preface**. This must be a verified transaction reference, not the Monero address and not an invented Dogecoin destination. The original `qr1.svg` has now been **decoded**, yielding the exact Blockchair transaction link below, and the immutable transaction ID is the canonical key:
+
+`13ff2a763674714aa87ae9931bc74d352e07bac6590d198f0b020d08fc41f839`
+
+`https://blockchair.com/dogecoin/transaction/13ff2a763674714aa87ae9931bc74d352e07bac6590d198f0b020d08fc41f839`
+
+The SVG's QR payload has been decoded locally, although the remote explorer's live response has not been independently confirmed. The other three original explorer QRs remain preserved, and should be checked against this same txid before claiming all four are equivalent. The preface textual addresses can act as secondary search clues. Use the txid in Chisel's Dogecoin transaction lookup or in a local indexed Dogecoin dataset; if Chisel's current Portal lacks exact txid lookup, add it rather than making an explorer URL the canonical artifact.
 
 Reproducible QR generation, once the correct URI has been identified:
 

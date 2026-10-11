@@ -151,6 +151,12 @@ This is why the reader's transition into Web3 should be authentic rather than si
 
 The book does not merely tell a story about another place. At certain points it contains pieces of that place.
 
+### The Outlaws and the comic inside the comic
+
+The outer **Dark Star** narrative is an ordinary-person comic set among Christmas-time bar-goers called **the Outlaws**. An intoxicated teller mistakes a sincere, technically grounded surveillance-and-hacker religious tract for an exhaustive account of reality. The tract has no authorial wink. Its phone terminals, code and cryptographic objects work; its paranoid reading of people's motives need not. Sunday church attendance brings the tract's supposed antagonists together as real people: an FBI agent and the source who helped her professional life, while she supported his projects. Their lives escape the tract's categories. Read the canonical [Outlaws story architecture](DARK_STAR_OUTLAWS_STORY_ARCHITECTURE_2026-10-10.md) for scenes, medium, dead man's switch, global Mogwai infrastructure, and QR recurrence.
+
+The four Gospels are a **continuous illuminated-text inset** with Book of Kells-like visual grammar, distinct from both the outer bar comic and the earnest surveillance tract.
+
 ### Narrative Architecture: the Four Gospels
 
 The opening movement of **Dark Star** is organized as four chapters named **Matthew, Mark, Luke, and John**. They are not merely biblical labels. They are four progressively less stable systems for rendering the same world.

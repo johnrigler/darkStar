@@ -23,6 +23,10 @@ ends with a page that encourages the reader—perhaps in the company of
 others—to create a secret, personalized paper wallet leading into the
 universe of ideas sometimes called #web3.
 
+## The Outlaws: narrative architecture
+
+[Read the working architecture for the Christmas bar comic, sincere surveillance tract, continuous Gospels, Termux phone sequence, distributed dead man's switch, Monero church donations, Preface Dogecoin QR Easter egg, and Sunday church reveal](DARK_STAR_OUTLAWS_STORY_ARCHITECTURE_2026-10-10.md). This is a narrative/production brief. QR payload and physical print proof remain to be verified before integrating the pages into the active booklet.
+
 ## What Dark Star is
 
 Dark Star is a periodical that calls the reader out of the printed page and

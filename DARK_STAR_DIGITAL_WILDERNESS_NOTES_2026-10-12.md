@@ -19,6 +19,27 @@ The demonstration should begin with the citadel people already recognize. Open P
 
 Only after that should Dark Star introduce Chisel and Mogwai. The argument is not that gambling is secretly a better form of publication. It is that the financial applications have exposed programmable and persistent substrate that can support **other kinds of worlds**.
 
+## Luke: the casino at the edge of the desert
+
+The digital wilderness has a physical analogue: the high desert of western New Mexico, with an illuminated casino rising from the dark landscape. Tribal casinos here are real institutions with distinct histories, tribal sovereignty, jobs and economic functions. The literary comparison is about the **architecture of attention** at a casino and in a token-trading terminal, not a claim that Native communities or their businesses are inherently dishonest.
+
+Luke is the Gospel of the most current world. In the established Dark Star Gospel sequence, Luke's ox, AI, Elon Musk and social-media acceleration already push the attention economy toward its limit. The desert casino makes that world visible. Inside: rewards, scores, flashing displays, carefully paced stimulation, the promise of a sudden reversal of fortune. On the phone: trending tokens, boosts, green and red candles, alerts, paid signal channels and trading bots. Both environments encourage the participant to mistake **visible activity for a favorable probability**.
+
+Take the contrast beyond an accusation that everything is literally fraudulent. A lawful game can have disclosed odds; a public ledger can faithfully record a transaction; a wallet can perform real cryptography. The manipulative element can reside in the presentation, the framing, the promotion, or the asymmetry between those who understand the mechanisms and those who react to the lights. Luke's extreme thesis is that every human activity is at risk of being reformatted as engagement, a contest, a conversion funnel, or a purchasable signal.
+
+### Possible visual sequence
+
+1. **Desert at night:** wide unlit land, a concentrated island of casino lights on the horizon.
+2. **Inside:** the illuminated machines, rewards, loops and an ordinary person who cannot quite turn away.
+3. **Phone held in the same frame:** a Solana launchpad or trading terminal; the visual grammar rhymes, but the mechanics are not claimed to be identical.
+4. **The feed:** glowing token symbols, Telegram alerts, paid attention and AI-generated exhortations. Include one sober transaction detail or market fee beneath the spectacle.
+5. **Outside again:** the lights remain but do not define the surrounding country. The person has a wallet key and a transaction identifier that can be examined without the casino interface.
+6. **The exit:** the camera moves from trading UI to raw chain record to Chisel/Mogwai's different interpretation of durable address space.
+
+Luke is not the only legitimate use of computation, just the most dazzling caricature of its captured attention economy. John should not defeat him by winning the game. John should demonstrate that he can **leave the game without leaving the network**.
+
+This sequence is editorial guidance for the Gospel cartridge, not an implemented printed page or a documented claim about any specific casino or Telegram group.
+
 ## The Graph and the difference between data and interpretation
 
 The Graph is relevant as indexing infrastructure: it allows developers to organize on-chain data into queryable representations. A graph or index makes records legible, but its schema, operators, and service availability are distinct from the underlying ledger's consensus. The ability to **rebuild an index from raw chain data and published schema/transform rules** should be a first-class design goal. A hosted index must not become the only surviving version of a community's memory.

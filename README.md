@@ -377,3 +377,7 @@ Print settings:
 Keep the sheets in printed order, nest them, and fold once through the
 center. Page order is generated at print time, so adding or editing an
 HTML page does not require manually rebuilding the imposition.
+
+## ETHDenver 2027 coordination
+
+See [the project-specific ETHDenver / Zorkmid notes](docs/ethdenver-print-bridge.md) for the proposed physical dartboard demonstration, conference materials, optional Zorkmid/ Base integration, and delivery gates. These are plans, not claims that a token, venue, or showcase is live.

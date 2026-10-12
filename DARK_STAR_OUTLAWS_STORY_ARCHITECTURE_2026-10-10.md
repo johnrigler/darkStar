@@ -8,6 +8,10 @@ Working narrative and art direction, 2026-10-10
 
 **The Gospels** are another continuous inset work, visually an illuminated Book-of-Kells-like manuscript with shared ornaments and marginalia. Matthew: capitalist as heroic, exceptional problem-solver. Mark: Marcus Lyons/Egyptus, lion and Thiel's 'competition is for losers' maxim pushed to alpha dominance. Luke: ox/AI/Elon Musk/attention and social media accelerate out of control. John: outside the synoptic system, dismisses the contest itself and offers portable identity, ledgers and collaboration instead. Retain the distinction from the Bell and other inset stories.
 
+## Luke: casino lights in the digital wilderness
+
+Luke's existing ox/AI/social-media acceleration now has a specific visual setting: the illuminated casino in the New Mexico desert, juxtaposed with a flashy Solana token-trading terminal. This is a critique of attention design and speculation, **not** a claim about the ethics of Native American casino operators or tribal sovereignty. The world outside the lights represents the digital wilderness: publicly inspectable address space and durable records beyond a single trading interface. John does not win Luke's contest; he leaves the game while retaining direct access to the ledger. See [Digital Wilderness, Luke section](DARK_STAR_DIGITAL_WILDERNESS_NOTES_2026-10-12.md#luke-the-casino-at-the-edge-of-the-desert). Keep this as Gospel-cartridge art direction, not a silent change to the printed booklet.
+
 ## Agent and source
 At the center is a female FBI agent and a hacker/source she has cultivated. Their repeated public meetings look rather like dating. They are both working, but also value the relationship personally. He helps her FBI career. She helps his early church/project. He wants her to support the church in cryptocurrency but keeps developing his ideas, inducing genuine fear of missing out: he can move on without her. He eventually builds a crypto game with demonstrable utility and makes millions in the *fictional* future; she retires from the FBI. Financial success is not itself proof of utility.
 

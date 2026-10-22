@@ -23,6 +23,20 @@ ends with a page that encourages the reader—perhaps in the company of
 others—to create a secret, personalized paper wallet leading into the
 universe of ideas sometimes called #web3.
 
+## John Rigler — systems hacker
+
+[Read the author bio](john-rigler.html).
+
+John Rigler is a systems hacker and writer with a background in enterprise
+systems administration. His work spans portable identity and public records,
+institutional processes, water conservation, and the use of locally available
+clay to explore spaces connecting indoors and outdoors. Shelter, growing,
+shade, heating, and cooling are parts of the same systems inquiry.
+
+The bio is linked from the world index and both browser viewers. It is a
+separate web and print page; the booklet's reading order and page count are
+unchanged.
+
 ## The Outlaws: narrative architecture
 
 [Read the working architecture for the Christmas bar comic, sincere surveillance tract, continuous Gospels, Termux phone sequence, distributed dead man's switch, Monero church donations, Preface Dogecoin QR Easter egg, and Sunday church reveal](DARK_STAR_OUTLAWS_STORY_ARCHITECTURE_2026-10-10.md). This is a narrative/production brief. QR payload and physical print proof remain to be verified before integrating the pages into the active booklet.
